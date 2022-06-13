@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>viewBoard</title>
-<link rel="stylesheet" href="../css/viewBoard.css">
+<link rel="stylesheet" href="../yj_css/viewBoard.css">
 </head>
 <body>
 

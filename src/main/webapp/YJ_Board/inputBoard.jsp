@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>BoardInput</title>
 <link href="https://fonts.googleapis.com/css?family=Song+Myung:400" rel="stylesheet">
-<link rel="stylesheet" href="../css/inputBoard.css">
+<link rel="stylesheet" href="../yj_css/inputBoard.css">
 
 </head>
 <body>	
