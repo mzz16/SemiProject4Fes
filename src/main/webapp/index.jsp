@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/inputBoard.css">
-<link rel="stylesheet" href="css/viewBoard.css">
+<link rel="stylesheet" href="yj_css/index.css">
+<link rel="stylesheet" href="yj_css/inputBoard.css">
+<link rel="stylesheet" href="yj_css/viewBoard.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
 	<!--상단 홈 메뉴 영 -->
 	<div class="homeDiv">
-		<div id="home"><a href="MainHC"><img id="logoimg" src="img/logo_kari.png"></a></div>
+		<div id="home"><a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a></div>
 		<div id="menu"><a href="">축제정보일람</a></div>
 		<div id="menu"><a href="">가는 길</a></div>
 		<div id="menu"><a href="BoardViewHC">후기게시판</a></div>

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body{
+	font-size: 20px;
+}
+.boardInput{
+	width: 80%;
+	vertical-align: middle;
+}
+.mainBoard{
+	margin: auto;
+	width: 90%;
+	background-color: lime;
+	align-content: center;
+}
+/* 게시판 제목 */
+#BoardtitleDiv{
+	display: flex;
+	margin: 10px;
+	background-color: orange; 
+}
+	#BoardtitleDiv div{
+		width:80%;
+		display: inline;
+	}
+
+/* 카테고리 선택 */
+#BoardCateDiv{
+	display: flex;
+	margin: 10px;
+}
+/* 닉네임 설정 */
+#BoardNameDiv{
+	display: flex;
+	margin: 10px;
+	background-color: orange; 
+}
+	#BoardNameDiv div {
+		width:80%;
+		display: inline;
+	}
+
+/* 글쓰기 영역 */
+#BoardTxtDiv{
+	display: flex;
+	margin: 15px;
+}
+	/* textarea 고정 */
+	#BoardTxtArea{
+		width: 800px;
+		height: 250px;
+		resize: none;
+	}
+
+/* 사진첨부영역 */
+#BoardImageDiv{
+	display: flex;
+	margin: 10px;
+}
