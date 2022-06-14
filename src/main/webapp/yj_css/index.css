@@ -8,11 +8,14 @@ body{
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 /* 홈 영역 전체*/
 .homeDiv{
+	/* 영역확인용 */
+	border: 2px solid black;
+	width: 97vw;
 	display: flex;
 	padding: 5px;
 	text-align: center;
@@ -20,14 +23,20 @@ a {
 }
 
 #home{
+	/* 영역확인용 */
+	border: 2px solid black;
+	
 	width: 30%; height: 100px;
 	font-size: 25pt;
 }
 #menu{
+	/* 영역확인용 */
+	border: 2px solid black;
+	
 	width: 15%; height: 50px;
 	font-size: 18pt;
 }
-#logoimg{
+#logoimg{	
 	width: 120px;
 	align-items: center;
 }
