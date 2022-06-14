@@ -7,14 +7,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class BoardViewHC
- */
 @WebServlet("/BoardViewHC")
 public class BoardViewHC extends HttpServlet {
 
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 게시판 글 불러오기
+		YJBoardDAO.getAllBoard(request);
+		
 		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
