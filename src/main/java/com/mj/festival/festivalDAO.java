@@ -70,17 +70,17 @@ public static void work(HttpServletRequest request) {
 				festivals.add(fes);
 					
 //				if (codeName.equals("축제-문화·예술")) {
-					System.out.println("--------------------");
-					System.out.println("분류코드 : " + codeName);
-					System.out.println("지역자치구 : " + guName);
-					System.out.println("축제타이틀 : " + title);
-					System.out.println("일시 : " + date);
-					System.out.println("장소 : " + place);
-					System.out.println("홈페이지 : " + orgLink);
-					System.out.println(orgLink);
-					System.out.println("연령제한 : " + useTarget);
-					System.out.println("가격 : " + useFee);
-					System.out.println("\n");
+//					System.out.println("--------------------");
+//					System.out.println("분류코드 : " + codeName);
+//					System.out.println("지역자치구 : " + guName);
+//					System.out.println("축제타이틀 : " + title);
+//					System.out.println("일시 : " + date);
+//					System.out.println("장소 : " + place);
+//					System.out.println("홈페이지 : " + orgLink);
+//					System.out.println(orgLink);
+//					System.out.println("연령제한 : " + useTarget);
+//					System.out.println("가격 : " + useFee);
+//					System.out.println("\n");
 //					
 //					
 //				} else if(codeName.equals("축제-자연·경관")) {

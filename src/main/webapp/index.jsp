@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="yj_css/index.css">
 <link rel="stylesheet" href="yj_css/inputBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoard.css">
-
+<link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
