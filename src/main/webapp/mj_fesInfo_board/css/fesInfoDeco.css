@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#fesInfoTitle{
+	width: 75%;
+	background-color: red;
+	align-content: center;
+	border: 1px;
+	text-align: left;
+}

@@ -46,8 +46,8 @@ a {
 .ContentDiv{
 	display: flex;
 	padding: 10px;
-	align-content: center;
-	text-align: center;
+/* align-content: center;
+	text-align: center;*/
 }
 
 #contentSlide{
