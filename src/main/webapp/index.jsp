@@ -9,9 +9,12 @@
 <link rel="stylesheet" href="yj_css/inputBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoard.css">
 <link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
+<!-- 폰트관련 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -20,7 +23,7 @@
 		<div id="home"><a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a></div>
 		<div id="menu"><a href="festivalHC">축제정보일람</a></div>
 		<div id="menu"><a href="">가는 길</a></div>
-		<div id="menu"><a href="BoardViewHC">후기게시판</a></div>
+		<div id="menu"><a href="BoardViewHC">게시판</a></div>
 		<div id="menu"><a href="">출처정보</a></div>
 	</div>
 	

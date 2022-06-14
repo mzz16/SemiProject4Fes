@@ -2,7 +2,7 @@
 
 /* 기본 태그에 관한 css */
 body{
-	font-family: 'Song Myung', serif;
+	font-family: 'Noto Serif KR', serif;
 	margin: none;
 	padding: none;
 }
@@ -13,8 +13,6 @@ a {
 
 /* 홈 영역 전체*/
 .homeDiv{
-	/* 영역확인용 */
-	border: 2px solid black;
 	width: 97vw;
 	display: flex;
 	padding: 5px;
@@ -23,16 +21,11 @@ a {
 }
 
 #home{
-	/* 영역확인용 */
-	border: 2px solid black;
-	
 	width: 30%; height: 100px;
 	font-size: 25pt;
 }
 #menu{
-	/* 영역확인용 */
-	border: 2px solid black;
-	
+
 	width: 15%; height: 50px;
 	font-size: 18pt;
 }
