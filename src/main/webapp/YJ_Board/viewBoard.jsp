@@ -28,16 +28,16 @@
 			<!-- 글 목록 출력 -->
 			<table id="seeNoteTable" border="1">
 				<tr>
-					<td>카테고리</td>
+					<td>게시판 분류</td>
 					<td>글 제목</td>
-					<td>작성일시</td>
+					<td>작성일자</td>
 				</tr>
 			
 				<!--배열에 넣은 것을 출력-->
 				<c:forEach var="b" items="${boards}">
-				<tr>
+				<tr id="seeNoteTable_detail" onclick="location.href='BoardViewHC?number=${b.no}'">
 					<td>${b.cate }</td>
-					<td onclick="location.href=">${b.title}</td>
+					<td>${b.title}</td>
 					<td><fmt:formatDate value="${b.date}"/></td>
 				</tr>
 			</c:forEach>

@@ -7,12 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/festivalHC")
-public class festivalHC extends HttpServlet {
+@WebServlet("/festivalInfoCon")
+public class festivalInfoCon extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		request.setAttribute("contentPage", "mj_fesInfo_board/mjIndex.jsp");
+		request.setAttribute("contentPage", "mj_fesInfo_board/fesInfoBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
+	
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -12,7 +12,7 @@
 <body>	
 
 	<!-- 게시판 영역(글쓰기용)-->
-<form action="BoardHC" name="makeBoard" method="post" enctype="multipart/form-data">
+	<form action="BoardInputHC" name="makeBoard" method="post" enctype="multipart/form-data">
 
 	<div class="mainBoard">
 		
@@ -27,9 +27,8 @@
 		<div id="BoardCateDiv">카테고리 
 		<div>
 			<select name="boardType">
-				<option value="allB">전체보기</option>
-				<option value="freeB">자유게시판</option>
-				<option value="reviewB">후기게시판</option>
+				<option value="자유게시판">자유게시판</option>
+				<option value="후기게시판">후기게시판</option>
 			</select>
 		</div>
 		</div>

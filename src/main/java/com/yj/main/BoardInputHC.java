@@ -18,7 +18,13 @@ public class BoardInputHC extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 게시글 작성하기(입력)
+		YJBoardDAO.regBoard(request);
 	
+		//전체목록 보여주기
+		YJBoardDAO.getAllBoard(request);
+		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 }
