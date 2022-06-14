@@ -4,38 +4,42 @@
 /* 글쓰기버튼 */
 .BoardInputDiv{
 	text-align: right;
-	margin-right: 20px;
-	margin-top: 5px; margin-bottom: 5px;
+	margin-right: 20px;	margin-top: 5px; margin-bottom: 5px;
+
+}
+.BoardInputDiv button{
+	width: 150px; height: 20px;
 }
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain{
+	width: 100%;
 	display: flex;
 }
  /* 카테고리 선택 영역 */
 .BoardCateDiv{
-	width:30%;
+	width:35%;
 	background-color: blue;
 }
 
 .BoardCateDiv div{
-	margin: 20px;
+	width: 90%;
+	margin: 15px;
+	padding: 5px;
 	background-color: yellow;
 }
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv{
-	width:70%;
-	background-color: fuchsia;
+	width:65%;
 }
 
 #boardSeeNote{
 	width: 100%;
 	display: flex;
- 
 }
-#boardSeeNote div {
-	margin: 10px;
-	background-color: yellow;
-	border: 1px solid black;
+
+#seeNoteTable {
+	width: 100%;
 }
+
