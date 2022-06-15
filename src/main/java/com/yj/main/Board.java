@@ -11,12 +11,13 @@ public class Board {
 	private String txt;
 	private String fName;
 	private Date date;
+	private String password;
 
 	public Board() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Board(int no, String cate, String title, String name, String txt, String fName, Date date) {
+	public Board(int no, String cate, String title, String name, String txt, String fName, Date date, String password) {
 		super();
 		this.no = no;
 		this.cate = cate;
@@ -25,6 +26,7 @@ public class Board {
 		this.txt = txt;
 		this.fName = fName;
 		this.date = date;
+		this.password = password;
 	}
 
 	public int getNo() {
@@ -83,4 +85,13 @@ public class Board {
 		this.date = date;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
 }
