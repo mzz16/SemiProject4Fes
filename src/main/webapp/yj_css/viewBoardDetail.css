@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 .viewBoardMain {
-	/* 영역확인용 */
-	border: 2px solid blue;
 	width: auto;
 	height: auto;
 	margin: 10px;

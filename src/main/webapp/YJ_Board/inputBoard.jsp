@@ -62,7 +62,7 @@
 			<!-- 비밀번호 입력 -->
 			<div id="BoardPWDiv">
 				<div>비밀번호</div>
-				<input class="boardInput" name="password">
+				<input name="password">
 			</div>
 
 

@@ -44,5 +44,6 @@
 }
 
 #seeNoteTable_detail:hover{
+	background-color:lime;
 	color:#6098FF;  
 }

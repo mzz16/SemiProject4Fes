@@ -26,7 +26,7 @@
 	<div class="BoardSeeNoteDiv">
 		<div id="boardSeeNote">
 			<!-- 글 목록 출력 -->
-			<table id="seeNoteTable" border="1">
+			<table id="seeNoteTable">
 				<tr>
 					<td>게시판 분류</td>
 					<td>글 제목</td>
