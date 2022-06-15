@@ -57,7 +57,7 @@ label{
 /*   margin: 20px auto; */
   border-radius: 5px;
   box-shadow: 0 0 100px gray;
-   overflow: hidden;   /* 부모 요소가 자식 요소 높이 값 인식하기 */
+  overflow: hidden;    /* 부모 요소가 자식 요소 높이 값 인식하기 */
   position: absolute;
    opacity: 0.8;
    bottom: 383px;
