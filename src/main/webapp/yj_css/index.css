@@ -39,15 +39,14 @@ a {
 .ContentDiv{
 	display: flex;
 	padding: 10px;
-/* align-content: center;
-	text-align: center;*/
 }
 
 #contentSlide{
 	width: 76%; 
 	height: auto;
 	margin: 10px;
-	background-color: aqua;
+	/* 영역확인용 */
+	background-color: silver;
 	margin: 15px;
 }
 #content01 {
