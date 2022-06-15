@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-	<h1>Home.jsp :-) </h1>
+	<h1>Home.jsp</h1>
 	
 	
 	
