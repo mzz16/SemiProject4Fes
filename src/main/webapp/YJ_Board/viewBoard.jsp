@@ -30,6 +30,7 @@
 				<tr>
 					<td>게시판 분류</td>
 					<td>글 제목</td>
+					<td>작성자</td>
 					<td>작성일자</td>
 				</tr>
 			
@@ -38,6 +39,7 @@
 				<tr id="seeNoteTable_detail" onclick="location.href='BoardViewHC?number=${b.no}'">
 					<td>${b.cate }</td>
 					<td>${b.title}</td>
+					<td>${b.name}</td>
 					<td><fmt:formatDate value="${b.date}"/></td>
 				</tr>
 			</c:forEach>
