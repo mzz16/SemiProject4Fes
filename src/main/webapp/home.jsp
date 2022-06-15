@@ -11,8 +11,5 @@
 	<h1>Home.jsp</h1>
 	
 	
-	
-	
-	
 </body>
 </html>
