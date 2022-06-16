@@ -3,6 +3,7 @@ package com.yj.main;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 
@@ -19,9 +20,7 @@ public class YJBoardDAO {
 		ResultSet rs = null;
 
 		try {
-
 			String sql = "select*from BOARD_DB order by B_DATE desc";
-
 			con = DBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
@@ -106,8 +105,8 @@ public class YJBoardDAO {
 			String sql = "select*from BOARD_DB where b_no = ?";
 			pstmt = con.prepareStatement(sql);
 
-				pstmt.setInt(1, Integer.parseInt(request.getParameter("number")));
-			
+			pstmt.setInt(1, Integer.parseInt(request.getParameter("number")));
+
 			rs = pstmt.executeQuery();
 
 			Board b = null;
@@ -154,6 +153,7 @@ public class YJBoardDAO {
 
 	}
 
+	// 글 업데이트하기.
 	public static void updateBoard(HttpServletRequest request) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -231,6 +231,188 @@ public class YJBoardDAO {
 			System.out.println("등록실패");
 		} finally {
 			DBManager.close(con, pstmt, null);
+		}
+
+	}
+
+	// 카테고리 선택으로 글 불러오기
+	public static void getBoardCate(HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		try {
+
+			String userCate = request.getParameter("cate");
+			String sql = "";
+			String cateSelect = "";
+
+			if (userCate.equals("all")) {
+				sql = "select*from BOARD_DB order by B_DATE desc";
+			} else if (userCate.equals("free") || userCate.equals("review")) {
+				sql = "select*from BOARD_DB WHERE b_cate like ? order by B_DATE desc";
+				if (userCate.equals("free")) {
+					cateSelect = "%자유게시판%";
+				} else if (userCate.equals("review")) {
+					cateSelect = "%후기게시판%";
+				}
+			}
+
+			con = DBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, cateSelect);
+
+			rs = pstmt.executeQuery();
+
+			// 가변배열에 넣기
+			ArrayList<Board> boards = new ArrayList<Board>();
+
+			Board b = null;
+
+			while (rs.next()) {
+				b = new Board(rs.getInt("b_no"), rs.getString("b_cate"), rs.getString("b_title"),
+						rs.getString("b_name"), rs.getString("b_txt"), rs.getString("b_img"), rs.getDate("b_date"),
+						rs.getString("b_pw"));
+				boards.add(b);
+			}
+			request.setAttribute("boards", boards);
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+
+	}
+
+	// 페이징관련
+	// 마지막페이지 계산
+	public static void lastPage(HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		String category = "";
+		String sql = "";
+		String cateSelect = "";
+
+		try {
+			con = DBManager.connect();
+
+			if (request.getParameter("cate").equals("all")) {
+				category = (String) request.getAttribute("cate");
+				sql = "select count(*) from BOARD_DB";
+				pstmt = con.prepareStatement(sql);
+
+			} else if (request.getParameter("cate").equals("free") || request.getParameter("cate").equals("review")) {
+
+				category = (String) request.getParameter("cate");
+				sql = "select count(*) from BOARD_DB WHERE B_CATE LIKE ?";
+				pstmt = con.prepareStatement(sql);
+
+				if (request.getParameter("cate").equals("free")) {
+					cateSelect = "%자유게시판%";
+					pstmt.setString(1, cateSelect);
+				} else if (request.getParameter("cate").equals("review")) {
+					cateSelect = "%후기게시판%";
+					pstmt.setString(1, cateSelect);
+				}
+			}
+
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				int total = rs.getInt("COUNT(*)");
+				int lastpage = (int) Math.ceil((double) total / 10);
+				request.setAttribute("lastpage", lastpage);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
+		}
+
+	}
+
+	// 페이지 로딩
+	public static void showPage(HttpServletRequest request) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		String sql = "";
+		String cateSelect = "";
+
+		String category = request.getParameter("cate");
+		String vpage = request.getParameter("vpage");
+
+		if (vpage == null) {
+			vpage = "1";
+		}
+
+		int page = Integer.parseInt(vpage);
+		// 1p 1 1~10
+		// 2p 2 11~20
+		// 3p 3 21~30
+		int rnStart = 1;
+		int rnEnd = 10;
+
+		if (page != 1) {
+			rnStart = page * 10 - 9;
+			rnEnd = rnStart + 9;
+		}
+		try {
+
+			if (request.getParameter("cate").equals("all")) {
+				category = (String) request.getParameter("cate");
+				sql = "select * from BOARD_DB where b_no between ? and ? order by b_date desc";
+
+				con = DBManager.connect();
+				pstmt = con.prepareStatement(sql);
+
+				pstmt.setInt(1, rnStart);
+				pstmt.setInt(2, rnEnd);
+
+			} else if (request.getParameter("cate").equals("free") || request.getParameter("cate").equals("review")) {
+				category = (String) request.getAttribute("cate");
+				sql = "select * from BOARD_DB where B_CATE = ? AND b_no between ? and ? order by b_date desc";
+				;
+				if (request.getParameter("cate").equals("free")) {
+					cateSelect = "%자유게시판%";
+				} else if (request.getParameter("cate").equals("review")) {
+					cateSelect = "%후기게시판%";
+				}
+				con = DBManager.connect();
+				pstmt = con.prepareStatement(sql);
+
+				pstmt.setString(1, cateSelect);
+				pstmt.setInt(2, rnStart);
+				pstmt.setInt(3, rnEnd);
+			}
+
+			rs = pstmt.executeQuery();
+
+			ArrayList<Board> boards = new ArrayList<Board>();
+			Board b = null;
+
+			while (rs.next()) {
+				b = new Board(rs.getInt("b_no"), rs.getString("b_cate"), rs.getString("b_title"),
+						rs.getString("b_name"), rs.getString("b_txt"), rs.getString("b_img"), rs.getDate("b_date"),
+						rs.getString("b_pw"));
+
+				boards.add(b);
+			}
+
+			request.setAttribute("board", boards);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(con, pstmt, rs);
 		}
 
 	}
