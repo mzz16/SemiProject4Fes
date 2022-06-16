@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class festivalHC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		festivalDAO.getFestival(request);
+		
 		
 		request.setAttribute("contentPage", "mj_fesInfo_board/mjIndex.jsp");
 		

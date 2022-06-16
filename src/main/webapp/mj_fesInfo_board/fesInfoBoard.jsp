@@ -11,13 +11,13 @@
 
 	<div id="fesInfo">
 		<div class="fesInfoTitle">
-			축제타이틀
+			축제타이틀 ${festival.title }
 			<ul>
-				<li>장소</li>
-				<li>일시</li>
-				<li>프로그램 소개</li>
+				<li>장소 ${festival.place }</li>
+				<li>일시 ${festival.fdate }</li>
+				<li>프로그램 소개 ${festival.program }</li>
 			</ul>
-			<ul class="programLink">프로그램 링크</ul>
+			<ul class="programLink">프로그램 링크 ${festival.orglink }</ul>
 
 			<button onclick="history.back(-1)"
 				class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"

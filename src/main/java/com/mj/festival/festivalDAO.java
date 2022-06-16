@@ -191,11 +191,9 @@ public class festivalDAO {
 			
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-			
 			String guName = (String) request.getAttribute("guname");
-			
 			pstmt.setString(1, guName);
+			rs = pstmt.executeQuery();
 			
 			ArrayList<festival> festivals = new ArrayList<festival>();
 			festival f = null;
@@ -213,13 +211,51 @@ public class festivalDAO {
 						rs.getString("usetarget"), 
 						rs.getString("usefee"));
 				
-				
-				
-				
 				festivals.add(f);
 			}
 			
-				request.setAttribute("fes", festivals);
+				
+			
+			
+		} catch (Exception e) {
+			System.out.println(e);
+			
+		} finally {
+			FesDBManager.close(con, pstmt, rs);
+		}
+	}
+
+
+	public static void getFestivalInfo(HttpServletRequest request) {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+			
+		try {
+			String sql = "select * from festival_list where title=?";
+			
+			con = FesDBManager.connect();
+			pstmt = con.prepareStatement(sql);
+			String title = (String)request.getAttribute("title");
+			pstmt.setString(1, title);
+			rs = pstmt.executeQuery();
+			
+			festival f = null;
+			
+			while (rs.next()) {
+				f = new festival();
+				
+				f.setTitle(rs.getString("title"));
+				f.setPlace(rs.getString("place"));
+				f.setFdate(rs.getString("fdate"));
+				f.setProgram(rs.getString("program"));
+				f.setOrgLink(rs.getString("orglink"));
+				
+				request.setAttribute("festival", f);
+			}
+			
+				
 			
 			
 		} catch (Exception e) {
