@@ -19,7 +19,7 @@
 	<div class="homeDiv">
 		<div id="home"><a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a></div>
 		<div id="menu"><a href="">축제정보일람</a></div>
-		<div id="menu"><a href="">가는 길</a></div>
+		<div id="menu"><a href="searchMapHC">가는 길</a></div>
 		<div id="menu"><a href="BoardViewHC">후기게시판</a></div>
 		<div id="menu"><a href="">출처정보</a></div>
 	</div>
