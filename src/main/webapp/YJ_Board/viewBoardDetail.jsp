@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,17 +49,24 @@
 			<div id="viewBoardDate">${board.date}</div>
 			<div id="viewBoardName">작성자: ${board.name}</div>
 		</div>
-		<div id="viewBoardImg">
+		
+		
+		<c:if test="${board.fName ne null}">
+			<div id="viewBoardImg">
 			<img style="max-width: 100%; height: auto;"
 				src="fileFolder/${board.fName}">
-		</div>
+			</div>
+		</c:if>
+		
+		
 		<div id="viewBoardTxt">${board.txt}</div>
-
+		<br>
 		<div>
 			<button onclick="location.href='BoardViewHC'">뒤로가기</button>
 			<button onclick="updateBoard('${board.no}','${board.password}')">수정하기</button>
 			<button onclick="deleteBoard('${board.no}','${board.password}')">삭제하기</button>
 		</div>
+		<br>
 	</div>
 </body>
 </html>
