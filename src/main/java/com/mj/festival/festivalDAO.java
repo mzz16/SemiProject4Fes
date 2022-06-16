@@ -187,11 +187,15 @@ public class festivalDAO {
 		ResultSet rs = null;
 			
 		try {
-			String sql = "select * from festival_list";
+			String sql = "select * from festival_list where guname=?";
 			
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
+			
+			String guName = (String) request.getAttribute("guname");
+			
+			pstmt.setString(1, guName);
 			
 			ArrayList<festival> festivals = new ArrayList<festival>();
 			festival f = null;
@@ -208,6 +212,8 @@ public class festivalDAO {
 						rs.getString("mainimg"), 
 						rs.getString("usetarget"), 
 						rs.getString("usefee"));
+				
+				
 				
 				
 				festivals.add(f);
