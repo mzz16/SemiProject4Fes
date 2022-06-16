@@ -13,25 +13,32 @@
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain{
+	font-family: 'Hahmlet', serif;
+	background-color: #FFFDFA;
 	width: 100%;
 	display: flex;
 }
  /* 카테고리 선택 영역 */
 .BoardCateDiv{
 	width:35%;
-	background-color: blue;
 }
 
 .BoardCateDiv div{
 	width: 90%;
 	margin: 15px;
-	padding: 5px;
 	background-color: yellow;
 }
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv{
+	text-align: center;
+	padding:20px;
+	margin-left: 5px;
 	width:65%;
+}
+#seeNoteTopTr{
+	background-color: #586fab;
+	font-weight: 800;
 }
 
 #boardSeeNote{
@@ -44,6 +51,9 @@
 }
 
 #seeNoteTable_detail:hover{
-	background-color:lime;
-	color:#6098FF;  
+  	font-weight:600;
+  	color: navy;
+  	background-color: #b6d1d4;
+  	
+
 }

@@ -10,26 +10,30 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/BoardViewHC")
 public class BoardViewHC extends HttpServlet {
 
-   
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		if(request.getParameter("cate")==null) {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		if (request.getParameter("cate") == null) {
 			// 게시판 글 하나 불러오기
 			YJBoardDAO.getOneBoard(request);
 			request.setAttribute("contentPage", "YJ_Board/viewBoardDetail.jsp");
-			request.getRequestDispatcher("index.jsp").forward(request, response);	
-		} else{
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		} else {
 			// 게시판 글 불러오기
-			YJBoardDAO.getAllBoard(request);
-			
+//			YJBoardDAO.getAllBoard(request);
+
+			YJBoardDAO.lastPage(request);
+			YJBoardDAO.showPage(request);
+
 			request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
-		
+
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 	}
 
 }

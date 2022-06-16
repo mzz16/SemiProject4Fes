@@ -12,8 +12,11 @@ public class BoardCateViewC extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//보드 불러오기
-		YJBoardDAO.getBoardCate(request);
+//		YJBoardDAO.getBoardCate(request);
 
+		YJBoardDAO.lastPage(request);
+		YJBoardDAO.showPage(request);
+		
 		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
