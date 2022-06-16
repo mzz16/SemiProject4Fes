@@ -49,22 +49,27 @@
 					</c:forEach>
 
 				</table>
-
 			</div>
+
+			<!-- 페이징 관련 -->
+			<div>
+				<hr>
+				<div>◀</div>
+				<c:forEach var="i" begin="1" end="${lastpage}">
+					<div onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
+						<c:out value="${i}" />
+					</div>
+				</c:forEach>
+				<div>▶</div>
+			</div>
+
+
+
+
 		</div>
 
 	</div>
-	<!-- 페이징 관련 -->
-	<div>
-		<div>◀</div>
-		<c:forEach var="i" begin="1" end="${lastpage}">
-			<div
-				onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
-				<c:out value="${i}"/>
-			</div>
-		</c:forEach>
-		<div>▶</div>
-	</div>
+
 
 </body>
 </html>

@@ -46,9 +46,6 @@
 	<!-- 푸터 -->
 	<div class="footerDiv">
 		<div id="footer">그 외 정보
-			<div>
-				그 외 정보 작성란.
-			</div>
 		</div>
 		<div id="footer">유용한 연락처
 			<div>
@@ -57,7 +54,7 @@
 		</div>
 		<div id="footer">제작자정보
 			<div>
-				솔데스크 802호 세미프로젝트 4팀
+				soldesk 802 Semi-Project team4
 			</div>
 		</div>
 	</div>
