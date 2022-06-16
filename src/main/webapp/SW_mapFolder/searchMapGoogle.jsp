@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <title>Commutes and Destinations Map</title>
     <meta charset="utf-8"/>
@@ -213,7 +213,6 @@
         </div>
       </div>
     </div>
-    <script src="commutes.js"></script>
     <script>
       const CONFIGURATION = {
         "defaultTravelMode": "DRIVING",
@@ -229,7 +228,7 @@
           }
         ],
         "mapOptions": {"center":{"lat":47.6115,"lng":-122.3222},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":14,"zoomControl":true,"maxZoom":20},
-        "mapsApiKey": "YOUR_API_KEY_HERE"
+        "mapsApiKey": "AIzaSyCmV-XrdagKPY9a4DCGWgoFd28dH7su2Lg"
       };
 
       function initMap() {
@@ -239,7 +238,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmV-XrdagKPY9a4DCGWgoFd28dH7su2Lg&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v1_c" async defer></script>
   </body>
 </html>
-<script type="text/javascript">
+<script>
+
 
 
 const commutesEl = {

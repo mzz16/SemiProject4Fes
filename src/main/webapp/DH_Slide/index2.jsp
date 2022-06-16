@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+	
 <link rel="stylesheet" href="../dh_css/index.css">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -12,14 +14,24 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<style>
+.bx-wrapper {
+	border: 0;
+	background: #fbfbfb;
+	box-shadow: none;
+} /* 슬라이드 테두리 제거 */
+
+
+
+.bxslider :nth-child(1) {
+	
+}
+</style>
 
 </head>
 
 
 <body>
-
-
-
 
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
@@ -53,24 +65,15 @@
 
 	<!-- bxslider설정 -->
 	<script>
-        slider = $('.bxslider').bxSlider();
-        $('.bxslider').bxSlider({
-        	  auto: true,
-        	  autoControls: false,
-        	  stopAutoOnClick: false,
-        	  pager: false,
-        	  controls: false,  
-        	});
-        
-       /*  $('.gotoslide5').click(function() {
-            slider.goToSlide(2);
-        }); */
-            
-       
-            
-               
-                  
-            </script>
+		let slider = $('.bxslider').bxSlider({
+			auto : true,
+			autoControls : false,
+			stopAutoOnClick : false,
+			pager : false,
+			controls : false,
+		});
+	</script>
+
 
 
 
@@ -87,7 +90,7 @@
 
 		<!-- img 영역   -->
 		<div class="map-1">
-			<img src="../dh_img/info_map1_1.png" usemap="#Map">
+			<img src="../dh_img/info_map1_1.png" usemap="#Map" id="imgId">
 			<map name="Map">
 				<area shape="rect" coords="10,77,109,227"
 					href="javascript:custom_function(0);" alt="Sun" />
@@ -108,25 +111,115 @@
 		</div>
 
 		<script>
+			function custom_function(index) {
 
-function custom_function(index){
-	
-	if( typeof slider.goToSlide === 'function' ){ 
-		slider.goToSlide(index);  // 해당 슬라이더로 이동 
-	} else { //무엇인가 잘못됬으면
-	alert('에러');
-	}
-	
-	
-	
-	
-	
-	
-	}
+				if (typeof slider.goToSlide === 'function') {
+					slider.goToSlide(index); // 해당 슬라이더로 이동 
+				} else { //무엇인가 잘못됬으면
+					alert('에러');
+				}
 
+				if (index == 0) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_1.png";
+				}
+				if (index == 1) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_2.png";
+				}
+				if (index == 2) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_3.png";
+				}
+				if (index == 3) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_4.png";
+				}
+
+				if (index == 4) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_5.png";
+				}
+
+				if (index == 5) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_6.png";
+				}
+
+				if (index == 6) {
+					document.getElementById("imgId").src = "../dh_img/info_map1_7.png";
+				}
+
+			}
+		</script>
+		
+	<script type="text/javascript" src="../dh_css/jquery.js"></script>
+	
+<script type="text/javascript">
+			$(function() {
+				var observer = new MutationObserver(function(mutations) {
+					target = document.getElementById('slider');
+				    	let child = $(target).find("div");
+						for (var i = 0; i < 9; i++) {
+							let includeFalse = $(child[i]).attr("aria-hidden");
+							  if(includeFalse == 'false'){  
+								/*  alert(i); */
+								 
+								 
+								 if (i == 1) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_1.png";
+									}
+								 if (i == 2) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_2.png";
+									}
+								 if (i == 3) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_3.png";
+									}
+								 if (i == 4) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_4.png";
+									}
+								 if (i == 5) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_5.png";
+									}
+								 if (i == 6) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_6.png";
+									}
+								 if (i == 7) {
+										document.getElementById("imgId").src = "../dh_img/info_map1_7.png";
+									}
+								 
+						
+							 }  // if문 닫음							
+							
+						}  // for문 닫음
+						
+						
+						
+						
+						
+						
+						
+						
+				    
+				});   // function mutations 닫음
+
+				
+				let target = document.getElementById('slider');
+				observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+			
+			});  // function 닫음
+				
+				/* let ss = $("#slider");
+				$(ss).csschange(function() {
+				let child = $(ss).children();
+				$(child).each(function () {
+					console.log($(child).attr("aria-hidden"));
+				});
+					
+				
+				
+				}); */
 </script>
 
+
+
+
 	</div>
+
 
 
 
