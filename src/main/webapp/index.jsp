@@ -24,7 +24,7 @@
 		<div id="home"><a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a></div>
 		<div id="menu"><a href="festivalHC">축제정보일람</a></div>
 		<div id="menu"><a href="">일정표</a></div>
-		<div id="menu"><a href="BoardViewHC">게시판</a></div>
+		<div id="menu"><a href="BoardViewHC?cate=all">게시판</a></div>
 		<div id="menu"><a href="">출처정보</a></div>
 	</div>
 	
