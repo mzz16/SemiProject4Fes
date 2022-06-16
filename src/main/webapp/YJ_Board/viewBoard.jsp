@@ -30,7 +30,7 @@
 			<div id="boardSeeNote">
 				<!-- 글 목록 출력 -->
 				<table id="seeNoteTable">
-					<tr>
+					<tr id="seeNoteTopTr">
 						<td>게시판 분류</td>
 						<td>글 제목</td>
 						<td>작성자</td>

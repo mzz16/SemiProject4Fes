@@ -10,10 +10,16 @@
 <link rel="stylesheet" href="yj_css/viewBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoardDetail.css">
 <link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
+
+
 <!-- 폰트관련 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap" rel="stylesheet">
 
 
 </head>
@@ -32,16 +38,28 @@
 	<!-- 기타 슬라이드 영역 -->
 	<div class="ContentDiv">
 		<div id="content01">위젯에가려지는영역</div>
-		<div id="contentSlide"><jsp:include page="${contentPage}"></jsp:include></div>
+		<div id="contentSlide"><jsp:include page="${contentPage}"/></div>
 		<div id="content02">위젯에가려지는영역</div>
 	</div>
 	
 	
 	<!-- 푸터 -->
 	<div class="footerDiv">
-		<div id="footer">그 외 정보</div>
-		<div id="footer">유용한 연락처</div>
-		<div id="footer">제작자정보</div>
+		<div id="footer">그 외 정보
+			<div>
+				그 외 정보 작성란.
+			</div>
+		</div>
+		<div id="footer">유용한 연락처
+			<div>
+				그 외 정보 작성란.
+			</div>
+		</div>
+		<div id="footer">제작자정보
+			<div>
+				솔데스크 802호 세미프로젝트 4팀
+			</div>
+		</div>
 	</div>
 
 

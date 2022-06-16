@@ -248,8 +248,12 @@ public class YJBoardDAO {
 			String sql = "";
 			String cateSelect = "";
 
+			con = DBManager.connect();
+
 			if (userCate.equals("all")) {
 				sql = "select*from BOARD_DB order by B_DATE desc";
+				pstmt = con.prepareStatement(sql);
+
 			} else if (userCate.equals("free") || userCate.equals("review")) {
 				sql = "select*from BOARD_DB WHERE b_cate like ? order by B_DATE desc";
 				if (userCate.equals("free")) {
@@ -257,11 +261,9 @@ public class YJBoardDAO {
 				} else if (userCate.equals("review")) {
 					cateSelect = "%후기게시판%";
 				}
+				pstmt = con.prepareStatement(sql);
+				pstmt.setString(1, cateSelect);
 			}
-
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, cateSelect);
 
 			rs = pstmt.executeQuery();
 
