@@ -252,7 +252,6 @@ public class festivalDAO {
 				request.setAttribute("fes", f);
 			}
 
->>>>>>> 3dc43d66f72495437e7f137906a0c4014691130b
 		} catch (Exception e) {
 			System.out.println(e);
 
