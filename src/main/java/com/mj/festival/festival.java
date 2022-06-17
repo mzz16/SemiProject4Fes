@@ -1,11 +1,13 @@
 package com.mj.festival;
 
 public class festival {
+	private int no;
 	private String codeName;
 	private String guName;
 	private String title;
-	private String date;
+	private String fdate;
 	private String place;
+	private String program;
 	private String orgLink;
 	private String mainImg;
 	private String useTarget;
@@ -15,18 +17,39 @@ public class festival {
 		// TODO Auto-generated constructor stub
 	}
 
-	public festival(String codeName, String guName, String title, String date, String place, String orgLink,
-			String mainImg, String useTarget, String useFee) {
+	public festival(int no, String codeName, String guName, String title, String fdate, String place, String program,
+			String orgLink, String mainImg, String useTarget, String useFee) {
 		super();
+		this.no = no;
 		this.codeName = codeName;
 		this.guName = guName;
 		this.title = title;
-		this.date = date;
+		this.fdate = fdate;
 		this.place = place;
+		this.program = program;
 		this.orgLink = orgLink;
 		this.mainImg = mainImg;
 		this.useTarget = useTarget;
 		this.useFee = useFee;
+	}
+	
+	public void showFestival()
+	{
+		System.out.println(no);
+		System.out.println(codeName);
+		System.out.println(guName);
+		System.out.println(title);
+		System.out.println(fdate);
+		System.out.println();
+		System.out.println();
+	}
+
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
 	}
 
 	public String getCodeName() {
@@ -53,12 +76,12 @@ public class festival {
 		this.title = title;
 	}
 
-	public String getDate() {
-		return date;
+	public String getFdate() {
+		return fdate;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setFdate(String fdate) {
+		this.fdate = fdate;
 	}
 
 	public String getPlace() {
@@ -67,6 +90,14 @@ public class festival {
 
 	public void setPlace(String place) {
 		this.place = place;
+	}
+
+	public String getProgram() {
+		return program;
+	}
+
+	public void setProgram(String program) {
+		this.program = program;
 	}
 
 	public String getOrgLink() {
@@ -100,7 +131,6 @@ public class festival {
 	public void setUseFee(String useFee) {
 		this.useFee = useFee;
 	}
-	
 	
 	
 }

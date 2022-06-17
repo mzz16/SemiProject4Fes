@@ -2,17 +2,19 @@
 
 /* 기본 태그에 관한 css */
 body{
-	font-family: 'Song Myung', serif;
+	font-family: 'Black Han Sans', sans-serif;
 	margin: none;
 	padding: none;
+	background-color: #f5f5f5;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 /* 홈 영역 전체*/
 .homeDiv{
+	width: 97vw;
 	display: flex;
 	padding: 5px;
 	text-align: center;
@@ -24,10 +26,11 @@ a {
 	font-size: 25pt;
 }
 #menu{
+
 	width: 15%; height: 50px;
 	font-size: 18pt;
 }
-#logoimg{
+#logoimg{	
 	width: 120px;
 	align-items: center;
 }
@@ -37,15 +40,12 @@ a {
 .ContentDiv{
 	display: flex;
 	padding: 10px;
-	align-content: center;
-	text-align: center;
 }
 
 #contentSlide{
 	width: 76%; 
 	height: auto;
 	margin: 10px;
-	background-color: aqua;
 	margin: 15px;
 }
 #content01 {
