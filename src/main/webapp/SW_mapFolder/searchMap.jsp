@@ -40,6 +40,13 @@ data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x357ca266e3947003:0xe7be97c172b7af6a!2m2!1d12
   <button class="question" id="que-2"><span id="que-2-toggle">+</span><span>地図</span></button>
   <iframe class="answer" id="ans-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.4457186626046!2d127.07093721608462!3d37.615202129095614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbb1530ae9ab3%3A0x568d8368d25d0f55!2sSeoul%20Rose%20Festival!5e0!3m2!1sja!2skr!4v1655306578927!5m2!1sja!2skr?hl=ja" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
   </div>
+  
+<span id="faq-title">ソウル<span style="color: red">バラ</span>フェス</span>
+<div> <img style="width: 100px " height="100px" src="../SW_image/aa.jpg"></div>
+<div class="faq-content"> 
+  <button class="question" id="que-3" value="서울역"><span id="que-3-toggle">+</span><span>地図</span></button>
+  <iframe class="answer" id="ans-3" src="http://localhost/semiPro_Team4/SW_mapFolder/sw_map.jsp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+  </div>
 
 
 <script>
