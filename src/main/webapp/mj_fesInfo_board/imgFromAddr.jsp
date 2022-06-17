@@ -37,6 +37,7 @@ try {
 		//map.put("mainImg", f.getMainImg());
 		//map.put("title", f.getTitle());
 //		obj.put("title", URLEncoder.encode(rs.getString("title"),"UTF-8"));
+		obj.put("m_no", rs.getString("m_no"));
 		obj.put("title", rs.getString("title"));
 		obj.put("mainImg", rs.getString("mainimg"));
 		arr.add(i, obj);
