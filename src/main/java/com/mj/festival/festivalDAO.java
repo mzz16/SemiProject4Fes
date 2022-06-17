@@ -61,7 +61,7 @@ public class festivalDAO {
 			ArrayList<festival> festivals = new ArrayList<festival>();
 
 			for (int i = 0; i < row.size(); i++) {
-				
+
 				JSONObject item = (JSONObject) row.get(i);
 				codeName = (String) item.get("CODENAME");
 				guName = (String) item.get("GUNAME");
@@ -73,34 +73,37 @@ public class festivalDAO {
 				mainImg = (String) item.get("MAIN_IMG");
 				useTarget = (String) item.get("USE_TRGT");
 				useFee = (String) item.get("USE_FEE");
-				
+
 				if (codeName.equals("����-��ȭ/����")) {
 
-					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
+					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg,
+							useTarget, useFee);
 					festivals.add(fes);
 
 				} else if (codeName.equals("����-�ڿ�/���")) {
-					
-				
-					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
-					festivals.add(fes);
-					
-				} else if (codeName.equals("����-����/����")) {
-					
 
-					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
+					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg,
+							useTarget, useFee);
 					festivals.add(fes);
-					
+
+				} else if (codeName.equals("����-����/����")) {
+
+					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg,
+							useTarget, useFee);
+					festivals.add(fes);
+
 				} else if (codeName.equals("����-�ù�ȭ��")) {
-					
-					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
+
+					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg,
+							useTarget, useFee);
 					festivals.add(fes);
-					
+
 				} else if (codeName.equals("����-��Ÿ")) {
-					
-					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
+
+					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg,
+							useTarget, useFee);
 					festivals.add(fes);
-					
+
 				}
 
 //				if (codeName.equals("����-��ȭ/����")) {
@@ -179,103 +182,83 @@ public class festivalDAO {
 
 	}
 
-	
 	public static void getFestival(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-			
+
 		try {
 			String sql = "select * from festival_list where guname=?";
-			
+
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			String guName = (String) request.getAttribute("guname");
 			pstmt.setString(1, guName);
 			rs = pstmt.executeQuery();
-			
+
 			ArrayList<festival> festivals = new ArrayList<festival>();
 			festival f = null;
-			
+
 			while (rs.next()) {
-				f = new festival(rs.getInt("m_no"), 
-						rs.getString("codename"), 
-						rs.getString("guname"), 
-						rs.getString("title"), 
-						rs.getString("fdate"), 
-						rs.getString("place"), 
-						rs.getString("program"), 
-						rs.getString("orglink"), 
-						rs.getString("mainimg"), 
-						rs.getString("usetarget"), 
+				f = new festival(rs.getInt("m_no"), rs.getString("codename"), rs.getString("guname"),
+						rs.getString("title"), rs.getString("fdate"), rs.getString("place"), rs.getString("program"),
+						rs.getString("orglink"), rs.getString("mainimg"), rs.getString("usetarget"),
 						rs.getString("usefee"));
-				
+
 				festivals.add(f);
-				
+
 				f.setTitle(rs.getString("title"));
 				f.setMainImg(rs.getString("mainimg"));
-				
+
 				request.setAttribute("fes", f);
-				
+
 			}
-			
-				
-			
-			
+
 		} catch (Exception e) {
 			System.out.println(e);
-			
+
 		} finally {
 			FesDBManager.close(con, pstmt, rs);
 		}
 	}
-
 
 	public static void getFestivalInfo(HttpServletRequest request) {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-			
+
 		try {
 			String sql = "select * from festival_list where m_no=?";
-			
+
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			String no = request.getParameter("m_no");
 			pstmt.setString(1, no);
 			rs = pstmt.executeQuery();
-			
+
 			festival f = null;
-			
+
 			while (rs.next()) {
 				f = new festival();
-				
+
 				f.setTitle(rs.getString("title"));
 				f.setPlace(rs.getString("place"));
 				f.setFdate(rs.getString("fdate"));
 				f.setProgram(rs.getString("program"));
 				f.setOrgLink(rs.getString("orglink"));
 				f.setMainImg(rs.getString("mainimg"));
-				
+
 				request.setAttribute("fes", f);
 			}
-			
-				
-			
-			
+
 		} catch (Exception e) {
 			System.out.println(e);
-			
+
 		} finally {
 			FesDBManager.close(con, pstmt, rs);
 		}
 	}
-
-
-	
-		
-	
 
 }
