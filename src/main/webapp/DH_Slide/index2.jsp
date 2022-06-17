@@ -157,7 +157,7 @@
 						for (var i = 0; i < 9; i++) {
 							let includeFalse = $(child[i]).attr("aria-hidden");
 							  if(includeFalse == 'false'){  
-								/*  alert(i); */
+								  alert(i); 
 								 
 								 
 								 if (i == 1) {
