@@ -28,7 +28,7 @@ public class festivalDAO {
 
 		try {
 //			k = new Scanner(System.in);
-//			System.out.println("°Ë»ö¾î : ");
+//			System.out.println("ï¿½Ë»ï¿½ï¿½ï¿½ : ");
 //			String str = k.next();
 //			str = URLEncoder.encode(str, "utf-8");
 
@@ -74,97 +74,97 @@ public class festivalDAO {
 				useTarget = (String) item.get("USE_TRGT");
 				useFee = (String) item.get("USE_FEE");
 				
-				if (codeName.equals("ÃàÁ¦-¹®È­/¿¹¼ú")) {
+				if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½È­/ï¿½ï¿½ï¿½ï¿½")) {
 
 					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
 					festivals.add(fes);
 
-				} else if (codeName.equals("ÃàÁ¦-ÀÚ¿¬/°æ°ü")) {
+				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½Ú¿ï¿½/ï¿½ï¿½ï¿½")) {
 					
 				
 					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
 					festivals.add(fes);
 					
-				} else if (codeName.equals("ÃàÁ¦-ÀüÅë/¿ª»ç")) {
+				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½")) {
 					
 
 					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
 					festivals.add(fes);
 					
-				} else if (codeName.equals("ÃàÁ¦-½Ã¹ÎÈ­ÇÕ")) {
+				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½Ã¹ï¿½È­ï¿½ï¿½")) {
 					
 					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
 					festivals.add(fes);
 					
-				} else if (codeName.equals("ÃàÁ¦-±âÅ¸")) {
+				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Å¸")) {
 					
 					festival fes = new festival(i, codeName, guName, title, fdate, place, program, orgLink, mainImg, useTarget, useFee);
 					festivals.add(fes);
 					
 				}
 
-//				if (codeName.equals("ÃàÁ¦-¹®È­/¿¹¼ú")) {
+//				if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½È­/ï¿½ï¿½ï¿½ï¿½")) {
 //					System.out.println("--------------------");
-//					System.out.println("ºÐ·ùÄÚµå : " + codeName);
-//					System.out.println("Áö¿ªÀÚÄ¡±¸ : " + guName);
-//					System.out.println("ÃàÁ¦Å¸ÀÌÆ² : " + title);
-//					System.out.println("ÀÏ½Ã : " + fdate);
-//					System.out.println("Àå¼Ò : " + place);
-//					System.out.println("È¨ÆäÀÌÁö : " + orgLink);
-//					System.out.println("¿¬·ÉÁ¦ÇÑ : " + useTarget);
-//					System.out.println("°¡°Ý : " + useFee);
+//					System.out.println("ï¿½Ð·ï¿½ï¿½Úµï¿½ : " + codeName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ : " + guName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½Æ² : " + title);
+//					System.out.println("ï¿½Ï½ï¿½ : " + fdate);
+//					System.out.println("ï¿½ï¿½ï¿½ : " + place);
+//					System.out.println("È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + orgLink);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + useTarget);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + useFee);
 //					System.out.println("\n");
 //
-//				} else if (codeName.equals("ÃàÁ¦-ÀÚ¿¬/°æ°ü")) {
+//				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½Ú¿ï¿½/ï¿½ï¿½ï¿½")) {
 //
 //					System.out.println("--------------------");
-//					System.out.println("ºÐ·ùÄÚµå : " + codeName);
-//					System.out.println("Áö¿ªÀÚÄ¡±¸ : " + guName);
-//					System.out.println("ÃàÁ¦Å¸ÀÌÆ² : " + title);
-//					System.out.println("ÀÏ½Ã : " + fdate);
-//					System.out.println("Àå¼Ò : " + place);
-//					System.out.println("È¨ÆäÀÌÁö : " + orgLink);
-//					System.out.println("¿¬·ÉÁ¦ÇÑ : " + useTarget);
-//					System.out.println("°¡°Ý : " + useFee);
+//					System.out.println("ï¿½Ð·ï¿½ï¿½Úµï¿½ : " + codeName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ : " + guName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½Æ² : " + title);
+//					System.out.println("ï¿½Ï½ï¿½ : " + fdate);
+//					System.out.println("ï¿½ï¿½ï¿½ : " + place);
+//					System.out.println("È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + orgLink);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + useTarget);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + useFee);
 //					System.out.println("\n");
 //
-//				} else if (codeName.equals("ÃàÁ¦-ÀüÅë/¿ª»ç")) {
+//				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½")) {
 //
 //					System.out.println("--------------------");
-//					System.out.println("ºÐ·ùÄÚµå : " + codeName);
-//					System.out.println("Áö¿ªÀÚÄ¡±¸ : " + guName);
-//					System.out.println("ÃàÁ¦Å¸ÀÌÆ² : " + title);
-//					System.out.println("ÀÏ½Ã : " + fdate);
-//					System.out.println("Àå¼Ò : " + place);
-//					System.out.println("È¨ÆäÀÌÁö : " + orgLink);
-//					System.out.println("¿¬·ÉÁ¦ÇÑ : " + useTarget);
-//					System.out.println("°¡°Ý : " + useFee);
+//					System.out.println("ï¿½Ð·ï¿½ï¿½Úµï¿½ : " + codeName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ : " + guName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½Æ² : " + title);
+//					System.out.println("ï¿½Ï½ï¿½ : " + fdate);
+//					System.out.println("ï¿½ï¿½ï¿½ : " + place);
+//					System.out.println("È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + orgLink);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + useTarget);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + useFee);
 //					System.out.println("\n");
 //
-//				} else if (codeName.equals("ÃàÁ¦-½Ã¹ÎÈ­ÇÕ")) {
+//				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½Ã¹ï¿½È­ï¿½ï¿½")) {
 //
 //					System.out.println("--------------------");
-//					System.out.println("ºÐ·ùÄÚµå : " + codeName);
-//					System.out.println("Áö¿ªÀÚÄ¡±¸ : " + guName);
-//					System.out.println("ÃàÁ¦Å¸ÀÌÆ² : " + title);
-//					System.out.println("ÀÏ½Ã : " + fdate);
-//					System.out.println("Àå¼Ò : " + place);
-//					System.out.println("È¨ÆäÀÌÁö : " + orgLink);
-//					System.out.println("¿¬·ÉÁ¦ÇÑ : " + useTarget);
-//					System.out.println("°¡°Ý : " + useFee);
+//					System.out.println("ï¿½Ð·ï¿½ï¿½Úµï¿½ : " + codeName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ : " + guName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½Æ² : " + title);
+//					System.out.println("ï¿½Ï½ï¿½ : " + fdate);
+//					System.out.println("ï¿½ï¿½ï¿½ : " + place);
+//					System.out.println("È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + orgLink);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + useTarget);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + useFee);
 //					System.out.println("\n");
 //
-//				} else if (codeName.equals("ÃàÁ¦-±âÅ¸")) {
+//				} else if (codeName.equals("ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½Å¸")) {
 //
 //					System.out.println("--------------------");
-//					System.out.println("ºÐ·ùÄÚµå : " + codeName);
-//					System.out.println("Áö¿ªÀÚÄ¡±¸ : " + guName);
-//					System.out.println("ÃàÁ¦Å¸ÀÌÆ² : " + title);
-//					System.out.println("ÀÏ½Ã : " + fdate);
-//					System.out.println("Àå¼Ò : " + place);
-//					System.out.println("È¨ÆäÀÌÁö : " + orgLink);
-//					System.out.println("¿¬·ÉÁ¦ÇÑ : " + useTarget);
-//					System.out.println("°¡°Ý : " + useFee);
+//					System.out.println("ï¿½Ð·ï¿½ï¿½Úµï¿½ : " + codeName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ : " + guName);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½Æ² : " + title);
+//					System.out.println("ï¿½Ï½ï¿½ : " + fdate);
+//					System.out.println("ï¿½ï¿½ï¿½ : " + place);
+//					System.out.println("È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + orgLink);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + useTarget);
+//					System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + useFee);
 //					System.out.println("\n");
 //				}
 
@@ -212,6 +212,12 @@ public class festivalDAO {
 						rs.getString("usefee"));
 				
 				festivals.add(f);
+				
+				f.setTitle(rs.getString("title"));
+				f.setMainImg(rs.getString("mainimg"));
+				
+				request.setAttribute("fes", f);
+				
 			}
 			
 				
@@ -233,12 +239,12 @@ public class festivalDAO {
 		ResultSet rs = null;
 			
 		try {
-			String sql = "select * from festival_list where title=?";
+			String sql = "select * from festival_list where m_no=?";
 			
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
-			String title = (String)request.getAttribute("title");
-			pstmt.setString(1, title);
+			String no = request.getParameter("m_no");
+			pstmt.setString(1, no);
 			rs = pstmt.executeQuery();
 			
 			festival f = null;
@@ -251,8 +257,9 @@ public class festivalDAO {
 				f.setFdate(rs.getString("fdate"));
 				f.setProgram(rs.getString("program"));
 				f.setOrgLink(rs.getString("orglink"));
+				f.setMainImg(rs.getString("mainimg"));
 				
-				request.setAttribute("festival", f);
+				request.setAttribute("fes", f);
 			}
 			
 				

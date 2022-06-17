@@ -12,7 +12,6 @@ public class festivalHC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		
 		request.setAttribute("contentPage", "mj_fesInfo_board/mjIndex.jsp");
 		
 		request.getRequestDispatcher("index.jsp").forward(request, response);
