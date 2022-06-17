@@ -33,7 +33,7 @@ public class festivalDAO {
 //			str = URLEncoder.encode(str, "utf-8");
 
 			URL url = new URL(
-					"http://openapi.seoul.go.kr:8088/75784a6a50706d6a3633574c735743/json/culturalEventInfo/1/100/");
+					"http://openapi.seoul.go.kr:8088/75784a6a50706d6a3633574c735743/json/culturalEventInfo/1/1000/");
 //			System.out.println(url);
 
 			BufferedReader bf;
@@ -189,12 +189,11 @@ public class festivalDAO {
 		ResultSet rs = null;
 
 		try {
+
 			String sql = "select * from festival_list where guname=?";
 
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
-			String guName = (String) request.getAttribute("guname");
-			pstmt.setString(1, guName);
 			rs = pstmt.executeQuery();
 
 			ArrayList<festival> festivals = new ArrayList<festival>();
@@ -253,6 +252,7 @@ public class festivalDAO {
 				request.setAttribute("fes", f);
 			}
 
+>>>>>>> 3dc43d66f72495437e7f137906a0c4014691130b
 		} catch (Exception e) {
 			System.out.println(e);
 
