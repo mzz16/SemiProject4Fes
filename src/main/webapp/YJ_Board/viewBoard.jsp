@@ -13,7 +13,7 @@
 <body>
 
 	<div class="BoardInputDiv">
-		<button onclick="location.href='BoardInputHC'">글쓰기</button>
+		<button id="btn_write" onclick="location.href='BoardInputHC'">글쓰기</button>
 	</div>
 
 	<div class="ViewBoardMain">
@@ -52,15 +52,15 @@
 			</div>
 
 			<!-- 페이징 관련 -->
-			<div>
-				<hr>
-				<div>◀</div>
+			<div	class="pagingDivMain">		
+				<div id="pagingTriDiv">◀</div>
+				<br>
 				<c:forEach var="i" begin="1" end="${lastpage}">
-					<div onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
+					<div id="pagingNumDiv" onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
 						<c:out value="${i}" />
 					</div>
 				</c:forEach>
-				<div>▶</div>
+				<div id="pagingTriDiv">▶</div>
 			</div>
 
 

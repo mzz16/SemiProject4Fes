@@ -12,7 +12,6 @@ public class BoardViewHC extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		if (request.getParameter("cate") == null) {
 			// 게시판 글 하나 불러오기
 			YJBoardDAO.getOneBoard(request);
@@ -20,7 +19,7 @@ public class BoardViewHC extends HttpServlet {
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 		} else {
 			// 게시판 글 불러오기
-//			YJBoardDAO.getAllBoard(request);
+			YJBoardDAO.getAllBoard(request);
 
 			YJBoardDAO.lastPage(request);
 			YJBoardDAO.showPage(request);
