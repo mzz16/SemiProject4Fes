@@ -21,6 +21,8 @@
 	href="mj_fesInfo_board/css/demo.css" />
 <link rel="stylesheet" type="text/css"
 	href="mj_fesInfo_board/css/component.css" />
+<link rel="stylesheet" type="text/css"
+	href="mj_fesInfo_board/css/fesInfoHiddenDeco.css" />
 <script src="mj_fesInfo_board/js/modernizr.min.js"></script>
 <script type="text/javascript" src="mj_fesInfo_board/js/jquery.js"></script>
 <script type="text/javascript">
@@ -155,11 +157,11 @@
 	
 	<div id='my_div' style="display: none" >
 			<div>
-				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+				<a href="festivalInfoCon" class="phtostackPk photostackImg"><img
 					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
 			</div>
 			<div>		
-				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+				<h2 class="photostackTitle">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
 			</div>
 		</div>
 
@@ -298,23 +300,6 @@
 				</figure>
 			</div>
 		</section>
-
-	<table border=1>
-		<tr>
-			<td>사진</td>
-			<td>타이틀</td>
-		</tr>
-		
-		<tr>
-			<td>
-				<a href="festivalInfoCon" class="phtostack-pk photostack-img">
-				<img src="" /></a>
-			</td>
-			<td>
-				<h2 class="photostack-title"></h2>
-			</td>
-		</tr>
-	</table>
 
 		
 		
