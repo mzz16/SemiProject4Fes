@@ -12,6 +12,7 @@
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain {
+	font-family: 'Noto Sans KR', sans-serif;
 	background-color: #FFFDFA;
 	width: 100%;
 	display: flex;
@@ -24,20 +25,19 @@
 .BoardCateDiv div {
 	width: 90%;
 	margin: 15px;
-	background-color: yellow;
+	font-size: 20pt;
 }
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv {
 	text-align: center;
-	padding: 20px;
+
 	margin-left: 5px;
 	width: 65%;
 }
 
 #seeNoteTopTr {
-	background-color: #586fab;
-	font-weight: 800;
+	background-color: #02C39A;
 }
 
 #boardSeeNote {
@@ -51,8 +51,8 @@
 
 #seeNoteTable_detail:hover {
 	font-weight: 600;
-	color: navy;
-	background-color: #b6d1d4;
+	color:#028090;
+	background-color: #F0F3BD;
 }
 
 /* 페이징관련 */
