@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class searchMapHC extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("contentPage", "SW_mapFolder/searchMap.jsp");
+		request.setAttribute("contentPage", "SW_mapFolder/sw_map.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	
 	}
