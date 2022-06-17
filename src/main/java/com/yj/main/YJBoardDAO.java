@@ -321,7 +321,6 @@ public class YJBoardDAO {
 		
 		//sql문 실행하기
 		rs = pstmt.executeQuery();
-		System.out.println("count완료");
 		
 			if (rs.next()) {
 				int total = rs.getInt("count(*)");
@@ -367,8 +366,6 @@ public class YJBoardDAO {
 				
 				
 				String sql = "";
-//				----------------------------------------------
-				System.out.println("여기 거쳐감");
 				
 				if (cate.equals("all")) {
 					sql = "select*from (select rownum as rn,b_no, b_cate, b_title, b_name, b_txt, b_img, b_date, b_pw from (select * from BOARD_DB order by b_date desc))where rn between ? and ? ";

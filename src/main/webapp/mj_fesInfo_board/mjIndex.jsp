@@ -70,6 +70,7 @@
 
 					let pkpk = stackpk[i];
 					let m_no = "festivalInfoCon?m_no=" + ppk;
+
 					$(pkpk).attr("href", m_no);
 					let simg = stackimg[i];
 					$(simg).attr("src", mimg);
@@ -143,12 +144,12 @@
 					<option value="joonggu">중구</option>
 					<option value="joonranggu">중랑구</option>
 			</select></td>
+
 			
 			<td>
 			<span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span id="numberOfFes"></span> 개
 			</span> <input type='button' value='더보기' onclick='toggleDiv()'>
 			</td>
-			
 		</tr>
 	</table>
 	
@@ -246,6 +247,13 @@
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
+
+
+
+
+
+
+
 				<figure data-dummy>
 					<a href="#" class="photostack-img coverImg"><img
 						src="mj_fesInfo_board/img/11.jpg" alt="img11" /></a>
@@ -291,7 +299,22 @@
 			</div>
 		</section>
 
-
+	<table border=1>
+		<tr>
+			<td>사진</td>
+			<td>타이틀</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img">
+				<img src="" /></a>
+			</td>
+			<td>
+				<h2 class="photostack-title"></h2>
+			</td>
+		</tr>
+	</table>
 
 		
 		
@@ -302,6 +325,7 @@
 		<script src="mj_fesInfo_board/js/photostack.js"></script>
 		<script>
 			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+
 
 			new Photostack(document.getElementById('photostack-1'), {
 				callback : function(item) {
@@ -319,5 +343,6 @@
 				}
 			});
 		</script>
+
 </body>
 </html>
