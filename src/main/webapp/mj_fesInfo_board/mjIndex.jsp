@@ -67,9 +67,10 @@
 					ppk = obj.result[j].m_no;
 					stitle = obj.result[j].title;
 					mimg = obj.result[j].mainImg;
-					
+
 					let pkpk = stackpk[i];
-					let m_no = "festivalInfoCon?m_no="+ppk;
+					let m_no = "festivalInfoCon?m_no=" + ppk;
+
 					$(pkpk).attr("href", m_no);
 					let simg = stackimg[i];
 					$(simg).attr("src", mimg);
@@ -94,6 +95,17 @@
 			}
 		});
 
+	}
+</script>
+<script type="text/javascript">
+	function toggleDiv() {
+		const div = document.getElementById('my_div');
+
+		if (div.style.display == 'none') {
+			div.style.display = 'block';
+		} else {
+			div.style.visibility = 'hidden';
+		}
 	}
 </script>
 </head>
@@ -132,12 +144,24 @@
 					<option value="joonggu">중구</option>
 					<option value="joonranggu">중랑구</option>
 			</select></td>
-			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp;
-					<span id="numberOfFes"></span> 개
-			</span>
-				<button>더보기</button></td>
+
+			
+			<td>
+			<span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span id="numberOfFes"></span> 개
+			</span> <input type='button' value='더보기' onclick='toggleDiv()'>
+			</td>
 		</tr>
 	</table>
+	
+	<div id='my_div' style="display: none" >
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+		</div>
 
 	<div class="container">
 		<!-- Top Navigation -->
@@ -194,10 +218,6 @@
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
-
-
-
-
 
 				<figure data-dummy>
 					<a href="#" class="photostack-img"><img
@@ -296,35 +316,33 @@
 		</tr>
 	</table>
 
-
-	</div>
-	<!-- /container -->
-	<script src="mj_fesInfo_board/js/classie.js"></script>
-	<script src="mj_fesInfo_board/js/photostack.js"></script>
-	<script>
-		// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
-
-		new Photostack(document.getElementById('photostack-1'), {
-			callback : function(item) {
-				//console.log(item)
-			}
-		});
-		new Photostack(document.getElementById('photostack-2'), {
-			callback : function(item) {
-				//console.log(item)
-			}
-		});
-		new Photostack(document.getElementById('photostack-3'), {
-			callback : function(item) {
-				//console.log(item)
-			}
-		});
-	</script>
+		
+		
+		
+		</div>
+		<!-- /container -->
+		<script src="mj_fesInfo_board/js/classie.js"></script>
+		<script src="mj_fesInfo_board/js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
 
 
-	
-
-
+			new Photostack(document.getElementById('photostack-1'), {
+				callback : function(item) {
+					//console.log(item)
+				}
+			});
+			new Photostack(document.getElementById('photostack-2'), {
+				callback : function(item) {
+					//console.log(item)
+				}
+			});
+			new Photostack(document.getElementById('photostack-3'), {
+				callback : function(item) {
+					//console.log(item)
+				}
+			});
+		</script>
 
 </body>
 </html>
