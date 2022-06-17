@@ -53,7 +53,7 @@
 			<img src="../dh_festival_slide_img/서대문구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/종로구.jpeg">
+			<img src="../dh_festival_slide_img/종로구.png">
 		</div>
 		<div>
 			<img src="../dh_festival_slide_img/성북구.png">
@@ -62,7 +62,7 @@
 			<img src="../dh_festival_slide_img/동대문구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/종로구.png">
+			<img src="../dh_festival_slide_img/중랑구.jpeg">
 		</div>
 		<div>
 			<img src="../dh_festival_slide_img/마포구.jpeg">
@@ -89,7 +89,7 @@
 			<img src="../dh_festival_slide_img/구로구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img영등포구.jpeg">
+			<img src="../dh_festival_slide_img/영등포구.jpeg">
 		</div>
 		<div>
 			<img src="../dh_festival_slide_img/금천구.jpeg">
@@ -146,15 +146,14 @@
 
 
 		<!-- img 영역   -->
-		<div class="organ-info autonomy">
-		<div class="autonomy">
-			<img src="../dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1" style="margin-left: auto; margin-right: auto; max-width: 100%; max-height: 100%;">
 		
-			
+		<div class="map-1">
+			<img src="../dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1" >
+		
 			<map name="autonomyMap">
 			
-				<area shape="poly" coords="464,38,448,41,439,50,433,54,436,60,438,74,436,82,425,89,421,98,412,106,412,111,414,116,420,129,418,137,422,142,421,150,427,158,437,164,441,170,445,175,466,181,466,193,477,203,481,203,496,210,503,209,509,210,510,215,524,207,531,198,540,187,544,179,536,172,527,165,517,150,509,139,503,132,500,131,495,124,486,123,479,120,477,104,477,96,479,91,479,83,483,76,480,69,473,59,467,52" 
-				 href="https://www.naver.com/" alt="강북구" >
+				<area shape="poly" coords="421,151,437,164,448,179,464,183,467,198,483,203,491,210,508,209,510,217,521,210,534,196,543,182,530,167,515,151,503,135,494,124,478,122,475,96,482,78,472,58,465,40,437,53,440,81,416,110,421,131" 
+				 href="javascript:custom_function(0);" alt="강북구" >
 				 
 				<area shape="poly" coords="530,165,512,142,501,129,494,124,483,122,479,114,477,101,478,90,482,77,483,71,471,56,468,50,465,40,464,32,463,27,467,12,471,7,487,3,496,1,505,2,511,12,514,20,524,18,530,12,536,16,544,15,549,25,549,36,544,54,542,76,546,83,549,101,551,106,554,119,556,130,556,141,548,135,539,142"
 				 href="javascript:custom_function(1);"  alt="도봉구" >
@@ -230,7 +229,6 @@
 			
 			</map>
   	</div>
-	</div>
 
 
 		<script>
@@ -243,7 +241,7 @@
 				}
 
 				if (index == 0) {
-					document.getElementById("imgId1").src = "../dh_area_img/강북구.png";
+					document.getElementById("imgId1").src = "../dh_area_img/강서구.png";
 				}
 				
 				
@@ -251,8 +249,8 @@
 				
 			}
 		</script>
-		
-	<script type="text/javascript" src="../dh_css/jquery.js"></script>
+	</div>
+<!-- 	<script type="text/javascript" src="../dh_css/jquery.js"></script>
 	
 <script type="text/javascript">
 			$(function() {
@@ -323,7 +321,7 @@
 
 
 
-	</div>
+	</div> -->
 
 
 <!-- <div class="organ-info autonomy">
