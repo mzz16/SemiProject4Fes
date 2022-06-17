@@ -31,6 +31,8 @@
 
 
 <body>
+<div style="position: relative;">
+
 
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
@@ -110,38 +112,23 @@
 		<div>
 			<img src="../dh_festival_slide_img/강동구.jpeg">
 		</div>
+</div>
 
 
 
-
-
-
-	</div>
-	<!-- bxslider 닫음 -->
-
-
-
-	<!-- bxslider설정 -->
-	<script>
-		let slider = $('.bxslider').bxSlider({
-			auto : true,
-			autoControls : false,
-			stopAutoOnClick : false,
-			pager : false,
-			controls : false,
-		});
-	</script>
-
-
-
-
-	<!-- 지도 영역 -->
+	
+<!-- 지도 영역 -->
 	<div id="img_content">
 
+
+
+
+<!-- 텍스트 영역  -->
 		<div class="plan_tit">
 			<p class="tit">서울지도</p>
-			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제를 보실 수 있습니다.</p>
-		</div>
+			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.</p>
+		</div> 
+		<!-- 텍스트 닫음 -->
 
 
 
@@ -231,6 +218,28 @@
 			</map>
   	</div>
 
+	</div>
+	</div>
+	
+	<!-- bxslider 닫음 -->
+
+
+
+	<!-- bxslider설정 -->
+	<script>
+		let slider = $('.bxslider').bxSlider({
+			auto : true,
+			autoControls : false,
+			stopAutoOnClick : false,
+			pager : false,
+			controls : false,
+		});
+	</script>
+
+
+
+
+	
 
 		<script>
 			function custom_function(index) {
@@ -455,7 +464,6 @@
 	
 	
 	
-</div> <!-- img_content 닫음 -->
 
 			
 							
