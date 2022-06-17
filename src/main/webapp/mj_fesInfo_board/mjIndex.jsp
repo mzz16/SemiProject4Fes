@@ -106,8 +106,73 @@
 		if (div.style.display == 'none') {
 			div.style.display = 'block';
 		} else {
-			div.style.visibility = 'hidden';
+			div.style.display = 'hidden';
 		}
+	}
+	
+	function setSelectedFestival() {
+		var langSelect = document.getElementById("selectbox");
+
+		// select element에서 선택된 option의 value가 저장된다.
+		var selectValue = langSelect.options[langSelect.selectedIndex].value;
+
+		// select element에서 선택된 option의 text가 저장된다.
+		var selectText = langSelect.options[langSelect.selectedIndex].text;
+		selectText = encodeURI(selectText);
+		// ajax 통신
+		$.ajax({
+			type : "GET", // HTTP method type(GET, POST) 형식이다.
+			dataType : "text",
+			url : "mj_fesInfo_board/imgFromAddr.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
+			data : {
+				guname : selectText
+			},// Json 형식의 데이터이다.
+			success : function(data) { // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+				const obj = JSON.parse(data);
+				let stackpk = $(".phtostack-pk");
+				let stackimg = $(".photostack-img").children();
+				let stacktitle = $(".photostack-title");
+
+				let pk;
+				let stitle;
+				let mimg;
+				let j = 0;
+				for (var i = 0; i < obj.result.length; i++) {
+
+					//console.log(obj.result[i]);
+
+					j = i % obj.result.length;
+					ppk = obj.result[j].m_no;
+					stitle = obj.result[j].title;
+					mimg = obj.result[j].mainImg;
+
+					let pkpk = stackpk[i];
+					let m_no = "festivalInfoCon?m_no=" + ppk;
+
+					$(pkpk).attr("href", m_no);
+					let simg = stackimg[i];
+					$(simg).attr("src", mimg);
+					let settitle = stacktitle[i];
+					$(settitle).text(stitle);
+
+					/*
+					// 더미 성공
+					let simg2 = stackimg2[i];
+					$(simg2).attr("src", mimg);
+					let settitle2 = stacktitle2[i];
+					$(settitle).text(stitle);
+					 */
+
+				}
+
+			},
+			error : function(XMLHttpRequest, textStatus, errorThrown) { // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+				alert("통신 실패.")
+				console.log(textStatus);
+				console.log(errorThrown);
+			}
+		});
+
 	}
 </script>
 </head>
@@ -150,18 +215,53 @@
 			
 			<td>
 			<span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span id="numberOfFes"></span> 개
-			</span> <input type='button' value='더보기' onclick='toggleDiv()'>
+			</span> <input type='button' value='더보기' onclick='setSelectedFestival()'>
 			</td>
 		</tr>
 	</table>
 	
 	<div id='my_div' style="display: none" >
 			<div>
-				<a href="festivalInfoCon" class="phtostackPk photostackImg"><img
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
 					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
 			</div>
 			<div>		
-				<h2 class="photostackTitle">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
+			</div>
+			<div>
+				<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					src="" /> ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a>
+			</div>
+			<div>		
+				<h2 class="photostack-title">ㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h2>
 			</div>
 		</div>
 
