@@ -43,6 +43,8 @@ function getmap() {
  
         // 이제 이미지 객체에 지도를 출력한다.
         image.src = map_url;
+        
+        s
     }
     
     // geolocation 요청이 실패하면 호출되는 콜백 함수 :
