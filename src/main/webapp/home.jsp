@@ -24,7 +24,7 @@
 </head>
 <body>
 	
-<div style="position: relative;">
+<div style="position: relative;" >
 
 
 	<!-- 슬라이더 영역 -->
