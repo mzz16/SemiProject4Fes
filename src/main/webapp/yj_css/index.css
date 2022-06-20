@@ -70,6 +70,7 @@ a {
 
 #content02 {
 	margin: 10px;
+	padding: inherit;
 	width: 15%;
 	height: auto;
 	background-color: #d6cbac;

@@ -78,10 +78,9 @@
 		<div id="footer">
 			그 외 정보
 			<div id="footerDetail">
-				<a href="https://kto.visitkorea.or.kr/kor.kto">한국관광공사</a><br> <a
-					href="https://www.mcst.go.kr/kor/main.jsp">문화체육관광부</a> <a
-					href="https://www.discoverseoulpass.com/app/main">Discover
-					Seoul Pass</a>
+				<a href="https://kto.visitkorea.or.kr/kor.kto">한국관광공사</a><br> 
+				<a href="https://www.mcst.go.kr/kor/main.jsp">문화체육관광부</a><br>
+				<a href="https://www.discoverseoulpass.com/app/main">Discover Seoul Pass</a>
 
 			</div>
 		</div>
