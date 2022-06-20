@@ -196,7 +196,6 @@ public class festivalDAO {
 			pstmt = con.prepareStatement(sql);
 			
 			String kangnam = request.getParameter("Seoul");
-			System.out.println(kangnam);
 			pstmt.setString(1, kangnam);
 			
 			rs = pstmt.executeQuery();
@@ -206,7 +205,8 @@ public class festivalDAO {
 
 			while (rs.next()) {
 				f = new festival();
-
+				
+				f.setNo(rs.getInt("m_no"));
 				f.setGuName(rs.getString("guname"));
 				f.setTitle(rs.getString("title"));
 				f.setMainImg(rs.getString("mainimg"));
@@ -243,10 +243,13 @@ public class festivalDAO {
 
 			while (rs.next()) {
 				f = new festival();
-
+				
+				f.setNo(rs.getInt("m_no"));
 				f.setTitle(rs.getString("title"));
 				f.setPlace(rs.getString("place"));
 				f.setFdate(rs.getString("fdate"));
+				f.setUseTarget(rs.getString("usetarget"));
+				f.setUseFee(rs.getString("usefee"));
 				f.setProgram(rs.getString("program"));
 				f.setOrgLink(rs.getString("orglink"));
 				f.setMainImg(rs.getString("mainimg"));
@@ -261,5 +264,7 @@ public class festivalDAO {
 			FesDBManager.close(con, pstmt, rs);
 		}
 	}
-
+	
+	
+	
 }
