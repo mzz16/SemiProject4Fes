@@ -194,25 +194,27 @@ public class festivalDAO {
 
 			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
+			
+			String kangnam = request.getParameter("Seoul");
+			System.out.println(kangnam);
+			pstmt.setString(1, kangnam);
+			
 			rs = pstmt.executeQuery();
-
+			
 			ArrayList<festival> festivals = new ArrayList<festival>();
 			festival f = null;
 
 			while (rs.next()) {
-				f = new festival(rs.getInt("m_no"), rs.getString("codename"), rs.getString("guname"),
-						rs.getString("title"), rs.getString("fdate"), rs.getString("place"), rs.getString("program"),
-						rs.getString("orglink"), rs.getString("mainimg"), rs.getString("usetarget"),
-						rs.getString("usefee"));
+				f = new festival();
 
-				festivals.add(f);
-
+				f.setGuName(rs.getString("guname"));
 				f.setTitle(rs.getString("title"));
 				f.setMainImg(rs.getString("mainimg"));
 
-				request.setAttribute("fes", f);
-
+//				System.out.println(rs.getString("guname"));
+				festivals.add(f);
 			}
+				request.setAttribute("fes", festivals);
 
 		} catch (Exception e) {
 			System.out.println(e);
