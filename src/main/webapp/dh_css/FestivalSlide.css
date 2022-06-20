@@ -19,13 +19,14 @@
    background: black;
   width: 414px;
   height: 309px;
-  left:30%;
-  top: 250px; 
+  right:0px;
+bottom: 6px;
   /* margin: 20px auto; */
   border-radius: 5px;
   box-shadow: 0 0 100px gray;
   position: absolute;
  z-index: 3;
+ opacity: 0.9;
 }
 
  
