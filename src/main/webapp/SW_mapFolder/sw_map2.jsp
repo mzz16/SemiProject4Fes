@@ -1,8 +1,213 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="kr">
 <head>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <!--bootstrapcdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>길찾기</title>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05&libraries=services,clusterer,drawing"></script>
+    <script src="kakaoMapsJavaScriptAPIwrapper.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script src="/toastrWrapper.js"></script>
+
+<style >
+ .map_wrap,
+        .map_wrap * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+            font-size: 12px;
+        }
+
+        .map_wrap a,
+        .map_wrap a:hover,
+        .map_wrap a:active {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .map_wrap {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        #menu_wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            margin: 10px 0 30px 10px;
+            padding: 5px;
+            overflow-y: auto;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: 1;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+
+        .bg_white {
+            background: #fff;
+        }
+
+        #menu_wrap hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 2px solid #5F5F5F;
+            margin: 3px 0;
+        }
+
+        #menu_wrap .option {
+            text-align: center;
+        }
+
+        #menu_wrap .option p {
+            margin: 10px 0;
+        }
+
+        #menu_wrap .option button {
+            margin-left: 5px;
+        }
+
+        #placesList li {
+            list-style: none;
+        }
+
+        #placesList .item {
+            position: relative;
+            border-bottom: 1px solid #888;
+            overflow: hidden;
+            cursor: pointer;
+            min-height: 65px;
+        }
+
+        #placesList .item span {
+            display: block;
+            margin-top: 4px;
+        }
+
+        #placesList .item h5,
+        #placesList .item .info {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #placesList .item .info {
+            padding: 10px 0 10px 55px;
+        }
+
+        #placesList .info .gray {
+            color: #8a8a8a;
+        }
+
+        #placesList .info .jibun {
+            padding-left: 26px;
+            background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;
+        }
+
+        #placesList .info .tel {
+            color: #009900;
+        }
+
+        #placesList .item .markerbg {
+            float: left;
+            position: absolute;
+            width: 36px;
+            height: 37px;
+            margin: 10px 0 0 10px;
+            background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;
+        }
+
+        #placesList .item .marker_1 {
+            background-position: 0 -10px;
+        }
+
+        #placesList .item .marker_2 {
+            background-position: 0 -56px;
+        }
+
+        #placesList .item .marker_3 {
+            background-position: 0 -102px
+        }
+
+        #placesList .item .marker_4 {
+            background-position: 0 -148px;
+        }
+
+        #placesList .item .marker_5 {
+            background-position: 0 -194px;
+        }
+
+        #placesList .item .marker_6 {
+            background-position: 0 -240px;
+        }
+
+        #placesList .item .marker_7 {
+            background-position: 0 -286px;
+        }
+
+        #placesList .item .marker_8 {
+            background-position: 0 -332px;
+        }
+
+        #placesList .item .marker_9 {
+            background-position: 0 -378px;
+        }
+
+        #placesList .item .marker_10 {
+            background-position: 0 -423px;
+        }
+
+        #placesList .item .marker_11 {
+            background-position: 0 -470px;
+        }
+
+        #placesList .item .marker_12 {
+            background-position: 0 -516px;
+        }
+
+        #placesList .item .marker_13 {
+            background-position: 0 -562px;
+        }
+
+        #placesList .item .marker_14 {
+            background-position: 0 -608px;
+        }
+
+        #placesList .item .marker_15 {
+            background-position: 0 -654px;
+        }
+
+        #pagination {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        #pagination a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #pagination .on {
+            font-weight: bold;
+            cursor: default;
+            color: #777;
+        }
+	
+</style>
+<html>
     <meta charset="utf-8">
     <title>마커에 이벤트 등록</title>
     
@@ -27,7 +232,7 @@ var positions = [
         latlng: new kakao.maps.LatLng(37.615197, 127.073125)
     },
     {
-        content: '<div>솔데스크</div>', 
+        content: '<div>솔데스크</div> <img style="width: 100px " height="100px" src="../SW_image/aa.jpg">', 
         latlng: new kakao.maps.LatLng(37.569325, 126.986006)
     },
     {
@@ -139,43 +344,8 @@ function displayPlaces(places) {
 
             // 마커에 클릭이벤트를 등록합니다
             kakao.maps.event.addListener(marker, 'click', function () {
-                var detailAddr;
-                // HTML5의 geolocaiton으로 사용할 수 있는지 확인합니다.
-                if (navigator.geolocation) {
-                    
-                    // GeoLocation을 이용해서 접속 위치를 얻어옵니다.
-                    navigator.geolocation.getCurrentPosition(function(position){
-                        
-                        var lat = position.coords.latitude, // 위도
-                            lon = position.coords.longitude; // 경도
-                            
-                        var locPostion = new kakao.maps.LatLng(lat, lon), //마커가 표시될 위치를 geolocation 좌표로 생성합니다.
-                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다.
-                            
-                        // 주소-좌표 변환 객체를 생성합니다
-                        
-                        searchDetailAddrFromCoords(locPostion, function(result, status) {
-                            if (status === kakao.maps.services.Status.OK) {
-                                detailAddr = !!result[0].road_address ? result[0].road_address.address_name : result[0].address.address_name;
-
-
-                                location.href = "https://map.kakao.com/?sName="+detailAddr+"&eName="+title                                            
-                            }   
-                        });                                        
-                    });
-                }      
-            });    
-
-            itemEl.onmouseover = function () {
-                displayInfowindow(marker, title);
-            };
-
-            itemEl.onmouseout = function () {
-                infowindow.close();
-            };
-        })(marker, places[i].place_name);
-
-        fragment.appendChild(itemEl);
+                
+              alert('hh')
     }
 
     // 검색결과 항목들을 검색결과 목록 Elemnet에 추가합니다
@@ -272,6 +442,7 @@ function displayPagination(pagination) {
             })(i);
         }
 
+        
         fragment.appendChild(el);
     }
     paginationEl.appendChild(fragment);
@@ -345,5 +516,17 @@ for (var i = 0; i < positions.length; i ++) {
 }
 */
 </script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>
