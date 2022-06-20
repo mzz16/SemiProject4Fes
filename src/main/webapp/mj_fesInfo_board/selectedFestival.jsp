@@ -11,7 +11,7 @@
 <%@page import="com.mj.festival.FesDBManager"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%
-Connection con = null;
+/*Connection con = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
 	
@@ -36,7 +36,7 @@ try {
 	    	JSONObject obj = new JSONObject();   //{}
 		map.put("mainImg", f.getMainImg());
 		map.put("title", f.getTitle());
-		/*obj.put("title", URLEncoder.encode(rs.getString("title"),"UTF-8"));*/
+		obj.put("title", URLEncoder.encode(rs.getString("title"),"UTF-8"));
 		obj.put("m_no", rs.getString("m_no"));
 		obj.put("title", rs.getString("title"));
 		obj.put("mainImg", rs.getString("mainimg"));
@@ -61,7 +61,7 @@ try {
 	FesDBManager.close(con, pstmt, rs);
 }
 
-
+*/
 
   
 %>

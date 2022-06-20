@@ -26,8 +26,7 @@
 <script type="text/javascript">
 	function setImgFromAddr() {
 		var langSelect = document.getElementById("selectbox");
-		
-		
+
 		// select element에서 선택된 option의 value가 저장된다.
 		var selectValue = langSelect.options[langSelect.selectedIndex].value;
 
@@ -194,30 +193,50 @@
 						$(simg2).attr("src", mimg);
 						let settitle2 = stacktitle2[i];
 						$(settitle).text(stitle);
-						 */
+	 */
 
-				/*	}
+	/*	}
 
-				//}
+	//}
 
-			},
-			error : function(XMLHttpRequest, textStatus, errorThrown) { // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
-				alert("통신 실패.")
-				console.log(textStatus);
-				console.log(errorThrown);
-			}
-		});
+	},
+	error : function(XMLHttpRequest, textStatus, errorThrown) { // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+	alert("통신 실패.")
+	console.log(textStatus);
+	console.log(errorThrown);
+	}
+	});
 
 	}
 	 */
+
+	$(document).ready(function() {
+		$("#fesList").on("click", function() {
+			//select라는 태그 이름을 이용해서 select 박스를 선택한 후
+			// .val()함수로 값을 가져오면 option의 value 값을 가져온다. 
+			//따라서 val1, val2, val3...의 값을 가져온다.
+			var kkk = $("select option:selected").val();
+			alert(kkk);
+			location.href = "festivalListCon?Seoul=" + kkk;
+		});
+
+		/*	$("#fesList").on("click", function(){
+				//select라는 태그 이름을 이용해서 select 박스를 선택한 후
+				// .text()함수로 값을 가져오면 option의 text 값을 가져온다. 
+				//따라서 txtVal1, txtVal2, txtVal3...의 값을 가져온다.
+				var kkk = $("select option:selected").text();
+				alert(kkk);
+			});*/
+	})
 </script>
 </head>
 
 <body>
-
+	<!-- <form action="festivalListCon"> -->
 	<table border="1" width="500px";>
 		<tr>
 			<td>주소</td>
+			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
 			<td><select name="festival" id="selectbox"
 				onchange="setImgFromAddr();">
 
@@ -226,39 +245,37 @@
 
 
 					<option value="">---선택---</option>
-					<option value="kangnam">강남구</option>
-					<option value="kangdong">강동구</option>
-					<option value="kangbook">강북구</option>
-					<option value="kwanak">관악구</option>
-					<option value="kwangjin">광진구</option>
-					<option value="kumcheon">금천구</option>
-					<option value="nowon">노원구</option>
-					<option value="dobong">도봉구</option>
-					<option value="dongdaemoon">동대문구</option>
-					<option value="mapo">마포구</option>
-					<option value="seocho">서초구</option>
-					<option value="seongdong">성동구</option>
-					<option value="seongbook">성북구</option>
-					<option value="songpa">송파구</option>
-					<option value="yangcheon">양천구</option>
-					<option value="yongsan">용산구</option>
-					<option value="eunpyong">은평구</option>
-					<option value="jongro">종로구</option>
-					<option value="joonggu">중구</option>
-					<option value="joonranggu">중랑구</option>
+					<option value="강남구">강남구</option>
+					<option value="강동구">강동구</option>
+					<option value="강북구">강북구</option>
+					<option value="관악구">관악구</option>
+					<option value="광진구">광진구</option>
+					<option value="금천구">금천구</option>
+					<option value="노원구">노원구</option>
+					<option value="도봉구">도봉구</option>
+					<option value="동대문구">동대문구</option>
+					<option value="마포구">마포구</option>
+					<option value="서초구">서초구</option>
+					<option value="성동구">성동구</option>
+					<option value="성북구">성북구</option>
+					<option value="송파구">송파구</option>
+					<option value="양천구">양천구</option>
+					<option value="용산구">용산구</option>
+					<option value="은평구">은평구</option>
+					<option value="종로구">종로구</option>
+					<option value="중구">중구</option>
+					<option value="중랑구">중랑구</option>
 			</select></td>
 
 
-			<td>
-			<span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
-					id="numberOfFes"></span> 개</span> 
-			<button onclick="location.href='festivalListCon'">더보기</button>
-			<!-- <input type='button' id='select_btn' value='더보기'
-				onclick='setSelectedFestival()' onclick="festivalListCon"> -->
-			</td>
+			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
+					id="numberOfFes"></span> 개
+			</span>
+				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
+				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>
-
+	<!-- </form> -->
 	<!-- <div id='my_div'>
 		<table border="1">
 			<tr>
