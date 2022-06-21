@@ -8,7 +8,12 @@
 	margin-bottom: 5px;
 }
 
-
+.BoardInputDiv button{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 13pt;
+	background-color:#dfdfdd ;
+	color: #514f4a;
+}
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain {
@@ -19,10 +24,13 @@
 }
 /* 카테고리 선택 영역 */
 .BoardCateDiv {
+	font-family: 'Do Hyeon', sans-serif;
 	width: 35%;
 }
 
 .BoardCateDiv div {
+	background-color: #688acb;
+	color: #dfdfdd;
 	width: 90%;
 	margin: 15px;
 	font-size: 20pt;
@@ -31,13 +39,15 @@
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv {
 	text-align: center;
-
+	margin-top: 15px;
 	margin-left: 5px;
 	width: 65%;
 }
 
 #seeNoteTopTr {
-	background-color: #02C39A;
+	font-family: 'Do Hyeon', sans-serif;
+	color: #dfdfdd;
+	background-color:#688acb;
 }
 
 #boardSeeNote {
@@ -51,8 +61,8 @@
 
 #seeNoteTable_detail:hover {
 	font-weight: 600;
-	color:#028090;
-	background-color: #F0F3BD;
+	color: #514f4a;
+	background-color: #dfdfdd;
 }
 
 /* 페이징관련 */
@@ -64,7 +74,7 @@
 }
 
 .pagingDivMain div {
-	background-color: lime;
+	font-weight: 600;
 	margin-right: 10px;
 	margin-left: 10px;
 	align-content: center;
