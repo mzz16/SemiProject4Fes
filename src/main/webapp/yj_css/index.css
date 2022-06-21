@@ -1,75 +1,101 @@
 @charset "UTF-8";
 
 /* 기본 태그에 관한 css */
-body{
-	font-family: 'Noto Serif KR', serif;
-	margin: none;
-	padding: none;
+body {
+	font-family: 'Do Hyeon', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #dfdfdd;
 }
 
 a {
-  text-decoration: none; 
+	text-decoration: none;
 }
 
 /* 홈 영역 전체*/
-.homeDiv{
-	width: 97vw;
+.homeDiv {
+	background-color: #a4a199;
+	width: 100vw;
+	height: auto;
 	display: flex;
-	padding: 5px;
 	text-align: center;
 	align-items: flex-end;
 }
 
-#home{
-	width: 30%; height: 100px;
-	font-size: 25pt;
-}
-#menu{
-
-	width: 15%; height: 50px;
-	font-size: 18pt;
-}
-#logoimg{	
-	width: 120px;
-	align-items: center;
+#home {
+	width: 30%;
+	height: auto;
 }
 
+#menu>a {
+	width: 15%;
+	height: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 23pt;
+	color: #514f4a;
+}
+
+#logoimg {
+	width: 30%;
+	justify-content: center;
+}
+
+#bannerImg {
+	width: 100%;
+}
+
+#bannerImg:hover {
+	opacity: 70%;
+}
 
 /* 콘텐트 영역 전체*/
-.ContentDiv{
+.ContentDiv {
 	display: flex;
 	padding: 10px;
-/* align-content: center;
-	text-align: center;*/
 }
 
-#contentSlide{
-	width: 76%; 
+#contentSlide {
+	width: 70%;
 	height: auto;
 	margin: 10px;
-	background-color: aqua;
 	margin: 15px;
 }
+
 #content01 {
 	margin: 10px;
-	width: 12%;
-	background-color: gray;
-}
-#content02 {
-	margin: 10px;
-	width: 12%;
-	background-color: gray;
+	width: 15%;
+	height: auto;
 }
 
+#content02 {
+	margin: 10px;
+	padding: inherit;
+	width: 15%;
+	height: auto;
+	background-color: #d6cbac;
+	color: #514f4a;
+	font-size: 23pt;
+	text-align: center;
+}
 
 /* 푸터 영역 */
 .footerDiv {
+	background-color: #a4a199;
+	color: #514f4a;
+	margin: auto;
+	padding: inherit;
+	height: auto;
+	width: 100%;
 	display: flex;
-	padding: 10px;
-	height: 50px;
-	text-align: center;
+	justify-content: center;
 }
-#footer{
-	width: 85%;
-	border: 1px solid black;
+
+#footer {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#footerDetail {
+	text-align: left;
 }

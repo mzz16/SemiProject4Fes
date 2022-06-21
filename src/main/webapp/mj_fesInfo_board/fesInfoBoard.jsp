@@ -5,29 +5,33 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/fesInfoDeco.css">
+<link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
 </head>
 <body>
 
 	<div id="fesInfo">
 		<div class="fesInfoTitle">
-			축제타이틀
+			${fes.title }
 			<ul>
-				<li>장소</li>
-				<li>일시</li>
-				<li>프로그램 소개</li>
+				<li>장소 : ${fes.place }</li>
+				<li>일시 : ${fes.fdate }</li>
+				<li>이용대상 : ${fes.useTarget }</li>
+				<li>이용요금 : ${fes.useFee }</li>
+				<li>${fes.program }</li>
 			</ul>
-			<ul class="programLink">프로그램 링크</ul>
-
 			<button onclick="history.back(-1)"
 				class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
-				data-text="이전으로">
+				data-text="이전으로" style="float: right;">
 				<span>이전으로</span>
 			</button>
+			<ul class="programLink">${fes.orgLink }</ul>
+
 		</div>
 
 	</div>
-	<div class="fesInfoImg">메인 이미지</div>
+	<div>
+		<img class="fesInfoImg" src="${fes.mainImg }">
+	</div>
 
 </body>
 </html>
