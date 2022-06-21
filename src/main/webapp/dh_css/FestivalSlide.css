@@ -42,8 +42,15 @@ bottom: 6px;
 position: absolute;
 }
 
+.map-1{
+	width: 100%;
+}
+
+
 #imgId1{
  margin-top: 63px;
+ max-width: 100%;
+ height: auto;
 }
 
 
