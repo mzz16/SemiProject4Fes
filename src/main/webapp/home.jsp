@@ -97,7 +97,7 @@
 			<img src="dh_festival_slide_img/서초구2.jpeg">
 		</div>
 		<div>
-			<img src=".dh_festival_slide_img/강남구.jpeg">
+			<img src="dh_festival_slide_img/강남구.jpeg">
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/송파구2.jpeg">
