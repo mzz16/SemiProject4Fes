@@ -46,6 +46,7 @@
 #viewBoardTxt {
 	display: inline-block;
 	margin: 15px;
+	padding:10px;
 	background-color: #FFFDFA;
 	width: 95%;
 	text-align: left;

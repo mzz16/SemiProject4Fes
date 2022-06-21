@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#seoulGu {
+	font-size: 30pt;
+	font-weight: 500;
+}
+
+#pathMainDiv {
+	border: 1px;
+	background-color: blue;
+}
+
+#fesImg {
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+#fesTitle {
+	float: right;
+	background: yellow;
+}
+
+.fesInfoDetailButton {
+	margin: auto;
+	display: block;
+}
