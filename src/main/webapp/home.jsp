@@ -5,11 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-	
+
+
+
+ 
+ 
 <style>
 
 /* 슬라이드 테두리 제거 */
@@ -19,15 +24,21 @@
 	box-shadow: none;
 } 
 
-</style>
+@media ( max-width: 1000px ) {
+  #img_content { 
+  background: #cd0028; 
+  }
+}
+
+  
+  </style>
 
 </head>
 <body>
-	
-<div style="position: relative;" id="container">
-<div style="position: relative;" >
 
-
+  
+<div style="position: relative; " >
+  
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
 		
@@ -110,15 +121,15 @@
 
 
 
-	
+
 <!-- 지도 영역 -->
-	<div id="img_content">
+	<div id="img_content" >
 
 
 
 
 <!-- 텍스트 영역  -->
-		<div class="plan_tit">
+		<div class="plan_tit" >
 			<p class="tit">서울지도</p>
 			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.</p>
 		</div> 
@@ -130,7 +141,7 @@
 		<!-- img 영역   -->
 		
 		<div class="map-1">
-			<img src="dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1" >
+			<img src="dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1"  >
 		
 			<map name="autonomyMap">
 			
@@ -447,7 +458,21 @@
 				
 				}); */
 </script>
+ <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <script src="./jquery.rwdImageMaps.min.js"></script> -->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+  
+	<script type="text/javascript">
+  $(function() {
+	  $('img[usemap]').rwdImageMaps();
+	  
+	  });
+	});
+  </script>
 	
-	
+
 </body>
 </html>
