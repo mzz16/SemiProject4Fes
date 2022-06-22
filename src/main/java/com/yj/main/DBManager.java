@@ -11,7 +11,7 @@ public class DBManager {
 
 	// DB 작업 시에 어찌되었든 연결 해야됨.
 	public static Connection connect() throws SQLException {
-String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
+		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
 		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
 	}
 
