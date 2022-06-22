@@ -32,22 +32,22 @@
 	background-color: #688acb;
 	color: #dfdfdd;
 	width: 90%;
-	margin: 15px;
+	text-align: right;
+	margin: 10px;
 	font-size: 20pt;
+	
+	padding-right: 10px
 }
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv {
 	text-align: center;
 	margin-top: 15px;
-	margin-left: 5px;
 	width: 65%;
 }
 
 #seeNoteTopTr {
 	font-family: 'Do Hyeon', sans-serif;
-	color: #dfdfdd;
-	background-color:#688acb;
 }
 
 #boardSeeNote {
