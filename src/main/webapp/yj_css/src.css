@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.srcMainDiv2{
+	width: 100%;
+	text-align: center;
+}
+
+#logoImgSrc{
+	width: 30%;
+	margin: 1px;
+}

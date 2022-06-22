@@ -5,21 +5,22 @@ body {
 	font-family: 'Do Hyeon', sans-serif;
 	margin: 0px;
 	padding: 0px;
-	background-color: #dfdfdd;
 }
 
 a {
+	color: white;
 	text-decoration: none;
 }
 
 /* 홈 영역 전체*/
 .homeDiv {
-	background-color: #a4a199;
-	width: 100vw;
+	border-bottom: 1px solid  #a4a199;
+	width: 100%;
 	height: auto;
 	display: flex;
 	text-align: center;
 	align-items: flex-end;
+	justify-content: center;
 }
 
 #home {
@@ -37,8 +38,9 @@ a {
 }
 
 #logoimg {
-	width: 30%;
+	width:50%;
 	justify-content: center;
+	margin: 10px;
 }
 
 #bannerImg {
@@ -73,7 +75,7 @@ a {
 	padding: inherit;
 	width: 15%;
 	height: auto;
-	background-color: #d6cbac;
+	background-color: #a4a199;
 	color: #514f4a;
 	font-size: 23pt;
 	text-align: center;
@@ -81,10 +83,11 @@ a {
 
 /* 푸터 영역 */
 .footerDiv {
-	background-color: #a4a199;
-	color: #514f4a;
+	background-color: #dfdfdd;
+	color: white;
 	margin: auto;
-	padding: inherit;
+	padding-bottom:20px;
+	padding-top:15px;
 	height: auto;
 	width: 100%;
 	display: flex;
@@ -92,6 +95,7 @@ a {
 }
 
 #footer {
+	text-align: center;
 	margin-left: 50px;
 	margin-right: 50px;
 }
