@@ -25,6 +25,7 @@
 <body>
 	
 <div style="position: relative;" id="container">
+<div style="position: relative;" >
 
 
 	<!-- 슬라이더 영역 -->

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="yj_css/inputBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoardDetail.css">
+<link rel="stylesheet" href="yj_css/src.css">
 <link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
 
 <!-- 폰트영역 -->
@@ -23,16 +24,6 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
-<!-- 날씨관련 -->
-<script>
-	//30초 마다 새로고침
-	$(document).ready(function() {
-		setTimeout(function() {
-			window.location.reload(1);
-		}, 30000);
-	});
-</script>
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 <body>
@@ -43,7 +34,7 @@
 			<a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a>
 		</div>
 		<div id="menu">
-			<a href="festivalHC">축제정보</a>
+			<a href="festivalHC">축제정보일람</a>
 		</div>
 		<div id="menu">
 			<a href="searchMapHC">지도보기</a>
@@ -52,7 +43,7 @@
 			<a href="BoardViewHC?cate=all">게시판</a>
 		</div>
 		<div id="menu">
-			<a href="">출처정보</a>
+			<a href="indexSrcC">사이트정보</a>
 		</div>
 	</div>
 
@@ -76,28 +67,36 @@
 	<!-- 푸터 -->
 	<div class="footerDiv">
 		<div id="footer">
-			그 외 정보
+			도움이 되는 연결고리
 			<div id="footerDetail">
+			<hr>
 				<a href="https://kto.visitkorea.or.kr/kor.kto">한국관광공사</a><br> 
 				<a href="https://www.mcst.go.kr/kor/main.jsp">문화체육관광부</a><br>
-				<a href="https://www.discoverseoulpass.com/app/main">Discover Seoul Pass</a>
+				<a href="https://www.discoverseoulpass.com/app/main">Discover Seoul Pass</a><br>
+				<a href="https://www.120dasan.or.kr/dsnc/main/main.do">다산120콜센터</a>
 
-			</div>
-		</div>
-		<div id="footer">
-			유용한 연락처
-			<div id="footerDetail">
-				<br> 그 외 정보 작성란.
 			</div>
 		</div>
 		<div id="footer">
 			제작자정보
 			<div id="footerDetail">
-				<br> soldesk 802 <br> Semi-Project team4<br> with MZ.
+				<hr> soldesk 802 <br> Semi-Project team4 with MZ.
 			</div>
 		</div>
 	</div>
 
 
 </body>
+<!-- 날씨관련 -->
+<script type="text/javascript">
+	$(function() {
+		//30초 마다 새로고침
+		$(document).ready(function() {
+			setTimeout(function() {
+				window.location.reload(1);
+			}, 30000);
+		});
+	});
+</script>
+<script type="text/javascript" src="jQuery/jQuery.js"></script>
 </html>
