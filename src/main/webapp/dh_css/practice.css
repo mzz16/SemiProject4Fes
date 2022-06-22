@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media(max-width: 320px){
+	
+	.container{
+	width: 440px;
+	}
+	
+	.navbar-brand{
+	padding: 14px 20px;
+	}
+	
+	.navbar-toggle{
+margin-right: 125px;
+	}
+	
+}
+
+@media(min-width: 1024px){
+	
+	#example_img_large{
+	display: block;
+	}
+	
+	
+	#example_img_small{
+	
+	display: none;
+	}
+	
+}
+
+
+@media(max-width: 768px){
+	example_img_large{
+	display: none;
+	
+	}
+	
+		#example_img_small{
+	
+	display: block;
+	
+	
+	
+}
+
+
+}
