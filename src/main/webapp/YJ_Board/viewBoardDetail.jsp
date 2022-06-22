@@ -62,7 +62,7 @@
 		<div id="viewBoardTxt">${board.txt}</div>
 		<br>
 		<div>
-			<button onclick="location.href='BoardViewHC'">뒤로가기</button>
+			<button onclick="location.href='BoardViewHC'">목록으로</button>
 			<button onclick="updateBoard('${board.no}','${board.password}')">수정하기</button>
 			<button onclick="deleteBoard('${board.no}','${board.password}')">삭제하기</button>
 		</div>

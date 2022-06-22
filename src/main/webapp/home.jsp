@@ -35,10 +35,10 @@
 
 </head>
 <body>
-	
+
+  
 <div style="position: relative; " >
-
-
+  
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
 		
