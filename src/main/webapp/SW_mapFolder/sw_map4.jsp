@@ -39,7 +39,7 @@ var marker = new kakao.maps.Marker({
     position: markerPosition
 });
  
-// 마커가 지도 위에 표시되도록 설정합니다
+// 마커가 지도 위에 표시되도록 설정합니다ww
 //marker.setMap(map);
  
 // 인포윈도우를 생성합니다
