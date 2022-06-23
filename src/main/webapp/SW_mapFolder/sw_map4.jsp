@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<div id="map" style="width:100%;height:99%;"></div>
+<div id="map" style="width:100%;height:100vh;"></div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05"></script>
 <script>
