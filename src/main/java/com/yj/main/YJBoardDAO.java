@@ -425,7 +425,7 @@ public class YJBoardDAO {
 	
 		try {
 			
-			String sql = "select * from BOARD_DB order by B_DATE desc limit 5";
+			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB order by B_DATE desc) where rownum <= 5";
 			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
@@ -434,13 +434,14 @@ public class YJBoardDAO {
 			
 			while (rs.next()) {
 				Board b = new Board();
-				
+				b.setNo(rs.getInt("b_no"));
+				b.setCate(rs.getString("b_cate"));
 				b.setTitle(rs.getString("b_title"));
 				
 				boards.add(b);
 			}
 			
-			
+			request.setAttribute("boards", boards);
 			
 			
 			
@@ -449,9 +450,6 @@ public class YJBoardDAO {
 		} finally {
 			DBManager_Main.close(con, pstmt, rs);
 		}
-
-
-
-}
+	}
 
 }
