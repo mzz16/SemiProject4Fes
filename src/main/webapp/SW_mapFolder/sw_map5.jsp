@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<div id="map" style="width:100%;height:99%;"></div>
+<div id="map" style="width:100%;height:500px;"></div>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05"></script>
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
