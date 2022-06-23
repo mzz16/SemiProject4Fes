@@ -3,8 +3,8 @@ package com.yj.main;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 
 import com.oreilly.servlet.MultipartRequest;
@@ -416,5 +416,39 @@ public class YJBoardDAO {
 		}
 
 	}
+	
+	public static void showMainPage(HttpServletRequest request) {
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+	
+		try {
+			
+			String sql = "select * from BOARD_DB order by B_DATE desc limit 5";
+			con = DBManager_Main.connect();
+			pstmt = con.prepareStatement(sql);
+<<<<<<< HEAD
+			rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				
+			}
+=======
+>>>>>>> 7134c248f56bc61ebf56988458876f99c39f19c7
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager_Main.close(con, pstmt, rs);
+		}
+
+
+
+}
 
 }
