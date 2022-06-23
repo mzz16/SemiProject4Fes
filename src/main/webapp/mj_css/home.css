@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.BoardTable {
+	float: left;
+}
+
+.showBoardTitle {
+	font-size: 25pt;
+}
+
+.gotoBoard {
+	margin-left: 270px;
+}
+
+.showTbTitle {
+	background-color: #dfdfdd;
+	text-align: center;
+}
+
+.showListNo {
+	width: 50px;
+	text-align: center;
+}
+
+.showListCate {
+	width: 100px;
+	text-align: center;
+}
+
+.showListTitle {
+	width: 250px;
+	text-align: center;
+}
+
+#calendar {
+	max-width: 1100px;
+	margin: 0 auto;
+	
+}
