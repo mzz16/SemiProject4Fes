@@ -18,32 +18,125 @@
 <style>
 
 /* 슬라이드 테두리 제거 */
-.bx-wrapper {
+ .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
 	box-shadow: none;
 } 
 
-@media ( max-width: 1000px ) {
+
+@media ( max-width: 1023px ) {
   #img_content { 
-  background: #cd0028; 
+ position :fixed;
+  border : 5px solid red;
+  background: red; 
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+  border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+   
   }
+  
+#img_content .plan_tit {
+	font-size: 50%;
+}
+
+}
+
+
+
+
+@media ( max-width: 900px ) {
+  #img_content { 
+ position :fixed;
+  border : 5px solid orange;
+  background: orange;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+  
+ #img_content .plan_tit {
+	font-size: 30%;
+}
+ 
+}
+
+
+
+
+@media ( max-width: 800px ) {
+  #img_content {
+  display : none;
+ position : fixed;
+  border : 5px solid yellow;
+  background: yellow;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+
 }
 
   
   </style>
+<script type="text/javascript">
+// 현재 창 width를 구하기
 
+// 그게 800 이하가 되면? 버튼 생성
+
+// 그 버튼 누르면?display 속성 조절
+$(function() {
+	
+var size = document.getElementById("size");
+
+window.onresize = function(event){
+var innerWidth = window.innerWidth;
+
+
+if (innerWidth < 800) {
+	$("#addBtn").css("display", "block");
+}else{
+	$("#addBtn").css("display", "none");
+	
+}
+
+
+}		
+
+
+$("#plusBtn").click(function() {
+	$("#img_content").css("display", "block");
+	$("#addBtn").css("display", "none");
+});
+
+$("#xBtn").click(function() {
+	$("#img_content").css("display", "none");
+	$("#addBtn").css("display", "block");
+});
+
+})
+
+</script>
 </head>
-<body>
+<body id="size">
 
   
-<div style="position: relative; " >
+<div style="position: relative; border: 1px solid blue; height: 250px" id="contain" >
   
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
 		
 		<div>
-			<img src="dh_festival_slide_img/강북구.jpeg">
+			<img src="dh_festival_slide_img/강북구.jpeg" >
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/도봉구.jpeg">
@@ -129,9 +222,11 @@
 
 
 <!-- 텍스트 영역  -->
-		<div class="plan_tit" >
+		<div class="plan_tit" style="position: relative;" >
 			<p class="tit">서울지도</p>
-			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.</p>
+			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.
+			 <span id="xBtn" style="position: absolute; right: 20px; top:0px; color: white; font-size: 30pt">x</span></p>
+			
 		</div> 
 		<!-- 텍스트 닫음 -->
 
@@ -470,10 +565,13 @@
 	  $('img[usemap]').rwdImageMaps();
 	  
 	  });
-	});
+
+	
   </script>
 	
-	
+	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px;">
+		<span id="plusBtn" style="font-size: 30pt;">+</span>
+	</div>
 	
 	
 	<!-- 게시판 노출 영역 -->
