@@ -18,16 +18,60 @@
 <style>
 
 /* 슬라이드 테두리 제거 */
-.bx-wrapper {
+ .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
 	box-shadow: none;
 } 
 
-@media ( max-width: 1000px ) {
+@media ( max-width: 1023px ) {
   #img_content { 
+  border : 5px solid orange;
   background: #cd0028; 
+   width: 50%;
+    height: 50%; 
+   bottom: 0px;
+   
+   
+   
   }
+  
+#img_content .plan_tit {
+	font-size: 50%;
+}
+
+}
+
+
+
+
+@media ( max-width: 767px ) {
+  #img_content { 
+  border : 5px solid orange;
+  background: green;
+   width: 50%;
+   height: 50%; 
+   bottom: 0px;
+  }
+  
+ #img_content .plan_tit {
+	font-size: 30%;
+}
+ 
+}
+
+
+
+
+@media ( max-width: 639px ) {
+  #img_content { 
+  border : 5px solid orange;
+  background: blue;
+   width: 50%;
+    height: 50%;
+   bottom: 0px;
+  }
+
 }
 
   
@@ -37,13 +81,13 @@
 <body>
 
   
-<div style="position: relative; " >
+<div style="position: relative; border: 1px solid blue;" id="contain" >
   
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
 		
 		<div>
-			<img src="dh_festival_slide_img/강북구.jpeg">
+			<img src="dh_festival_slide_img/강북구.jpeg" >
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/도봉구.jpeg">
