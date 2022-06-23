@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<div id="map" style="width:100%;height:99%;"></div>
+<div id="map" style="width:100%;height:100vh;"></div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05"></script>
 <script>
@@ -39,7 +39,7 @@ var marker = new kakao.maps.Marker({
     position: markerPosition
 });
  
-// 마커가 지도 위에 표시되도록 설정합니다
+// 마커가 지도 위에 표시되도록 설정합니다ww
 //marker.setMap(map);
  
 // 인포윈도우를 생성합니다

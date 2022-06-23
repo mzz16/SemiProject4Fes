@@ -21,16 +21,81 @@
 <style>
 
 /* 슬라이드 테두리 제거 */
-.bx-wrapper {
+ .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
 	box-shadow: none;
+} 
+#addBtn{
+display: none;
 }
 
-@media ( max-width : 1000px ) {
-	#img_content {
-		background: #cd0028;
-	}
+@media ( max-width: 1023px ) {
+  #img_content { 
+ position :fixed;
+  border : 5px solid #cd0028;
+  background: #cd0028; 
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+  border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+   
+  }
+  
+#img_content .plan_tit {
+	font-size: 50%;
+}
+
+}
+
+
+
+
+@media ( max-width: 900px ) {
+  #img_content { 
+ position :fixed;
+  border : 5px solid orange;
+  background: orange;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+  
+ #img_content .plan_tit {
+	font-size: 30%;
+}
+ 
+
+ 
+}
+
+
+
+
+@media ( max-width: 800px ) {
+  #img_content {
+ position : fixed;
+  border : 5px solid blue;
+  background: blue;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+
+}
+
+@media ( max-width: 700px ) {
+  #img_content {
+  display : none;
+  }
 }
 </style>
 <script>
@@ -639,10 +704,48 @@
     calendar.render();
   });
 
+
+  </style>
+<script type="text/javascript">
+// 현재 창 width를 구하기
+
+// 그게 800 이하가 되면? 버튼 생성
+
+// 그 버튼 누르면?display 속성 조절
+$(function() {
+	
+var size = document.getElementById("size");
+
+window.onresize = function(event){
+var innerWidth = window.innerWidth;
+/* console.log(innerWidth); */
+
+
+if (innerWidth < 700) {
+	$("#addBtn").css("display", "block");
+}else{
+	$("#addBtn").css("display", "none");
+	
+}
+
+
+}		
+
+
+$("#plusBtn").click(function() {
+	$("#img_content").css("display", "block");
+	$("#addBtn").css("display", "none");
+});
+
+$("#xBtn").click(function() {
+	$("#img_content").css("display", "none");
+	$("#addBtn").css("display", "block");
+});
+
+})
 </script>
 </head>
-<body>
-
+<body id="size">
 
 	<div style="position: relative;">
 
@@ -724,6 +827,87 @@
 			<div>
 				<img src="dh_festival_slide_img/강동구.jpeg">
 			</div>
+
+  
+<div style="position: relative; border: 1px solid blue; height: 250px" id="contain" >
+  
+	<!-- 슬라이더 영역 -->
+	<div class="bxslider" id="slider">
+		
+		<div>
+			<img src="dh_festival_slide_img/강북구.jpeg" >
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/도봉구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/노원구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/은평구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/서대문구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/종로구.png">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/성북구.png">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/동대문구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/중랑구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/마포구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/용산구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/중구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/성동구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/광진구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/강서구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/양천구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/구로구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/영등포구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/금천구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/동작구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/관악구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/서초구2.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/강남구.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/송파구2.jpeg">
+		</div>
+		<div>
+			<img src="dh_festival_slide_img/강동구.jpeg">
 		</div>
 
 
@@ -735,12 +919,14 @@
 
 
 
-			<!-- 텍스트 영역  -->
-			<div class="plan_tit">
-				<p class="tit">서울지도</p>
-				<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.</p>
-			</div>
-			<!-- 텍스트 닫음 -->
+
+<!-- 텍스트 영역  -->
+		<div class="plan_tit" style="position: relative;" >
+			<p class="tit">서울지도</p>
+			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.
+			 <span id="xBtn" style="position: absolute; right: 20px; bottom: 5px;"> <img src="dh_map_img/btn_close.png"> </span></p>
+		</div> 
+		<!-- 텍스트 닫음 -->
 
 
 
@@ -1108,9 +1294,13 @@
 	});
   </script>
 
-
-
-
+	
+  </script>
+	
+	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px;">
+		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png"> </span>
+	</div>
+	
 	<!-- 게시판 노출 영역 -->
 	<div id=showBoard>
 		<div class=showBoardTitle> 게시판  <button class="gotoBoard" onclick="location.href='BoardViewHC?cate=all'"> +MORE </button></div>
