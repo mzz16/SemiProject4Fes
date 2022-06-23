@@ -219,6 +219,7 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
+
 			DBManager_Main.close(con, pstmt, rs);
 		}
 	}
@@ -231,6 +232,7 @@ public class festivalDAO {
 
 		try {
 			String sql = "select * from festival_list where m_no=?";
+
 
 			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
