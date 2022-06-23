@@ -1,132 +1,243 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dh_css/FestivalSlide.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-	
-<link rel="stylesheet" href="../dh_css/FestivalSlide.css">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+ 
+ 
 <style>
-.bx-wrapper {
+
+/* 슬라이드 테두리 제거 */
+ .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
 	box-shadow: none;
+} 
+#addBtn{
+display: none;
+}
 
-} /* 슬라이드 테두리 제거 */
+@media ( max-width: 1023px ) {
+  #img_content { 
+ position :fixed;
+  border : 5px solid #cd0028;
+  background: #cd0028; 
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+  border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+   
+  }
+  
+#img_content .plan_tit {
+	font-size: 50%;
+}
+
+}
 
 
 
 
-</style>
+@media ( max-width: 900px ) {
+  #img_content { 
+ position :fixed;
+  border : 5px solid orange;
+  background: orange;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+  
+ #img_content .plan_tit {
+	font-size: 30%;
+}
+ 
 
+ 
+}
+
+
+
+
+@media ( max-width: 800px ) {
+  #img_content {
+ position : fixed;
+  border : 5px solid blue;
+  background: blue;
+   width: 40%;
+   bottom: 0px;
+   	right:0px;
+   	 border-radius: 5px;
+ z-index: 3;
+ opacity: 0.9;
+  }
+
+}
+
+@media ( max-width: 700px ) {
+  #img_content {
+  display : none;
+  }
+
+}
+
+  
+  </style>
+<script type="text/javascript">
+// 현재 창 width를 구하기
+
+// 그게 800 이하가 되면? 버튼 생성
+
+// 그 버튼 누르면?display 속성 조절
+$(function() {
+	
+var size = document.getElementById("size");
+
+window.onresize = function(event){
+var innerWidth = window.innerWidth;
+/* console.log(innerWidth); */
+
+
+if (innerWidth < 700) {
+	$("#addBtn").css("display", "block");
+}else{
+	$("#addBtn").css("display", "none");
+	
+}
+
+
+}		
+
+
+$("#plusBtn").click(function() {
+	$("#img_content").css("display", "block");
+	$("#addBtn").css("display", "none");
+});
+
+$("#xBtn").click(function() {
+	$("#img_content").css("display", "none");
+	$("#addBtn").css("display", "block");
+});
+
+})
+
+</script>
 </head>
+<body id="size">
 
-
-<body>
-<div style="position: relative;">
-
-
+  
+<div style="position: relative; border: 1px solid blue; height: 250px" id="contain" >
+  
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
 		
 		<div>
-			<img src="../dh_festival_slide_img/강북구.jpeg">
+			<img src="dh_festival_slide_img/강북구.jpeg" >
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/도봉구.jpeg">
+			<img src="dh_festival_slide_img/도봉구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/노원구.jpeg">
+			<img src="dh_festival_slide_img/노원구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/은평구.jpeg">
+			<img src="dh_festival_slide_img/은평구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/서대문구.jpeg">
+			<img src="dh_festival_slide_img/서대문구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/종로구.png">
+			<img src="dh_festival_slide_img/종로구.png">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/성북구.png">
+			<img src="dh_festival_slide_img/성북구.png">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/동대문구.jpeg">
+			<img src="dh_festival_slide_img/동대문구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/중랑구.jpeg">
+			<img src="dh_festival_slide_img/중랑구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/마포구.jpeg">
+			<img src="dh_festival_slide_img/마포구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/용산구.jpeg">
+			<img src="dh_festival_slide_img/용산구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/중구.jpeg">
+			<img src="dh_festival_slide_img/중구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/성동구.jpeg">
+			<img src="dh_festival_slide_img/성동구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/광진구.jpeg">
+			<img src="dh_festival_slide_img/광진구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/강서구.jpeg">
+			<img src="dh_festival_slide_img/강서구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/양천구.jpeg">
+			<img src="dh_festival_slide_img/양천구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/구로구.jpeg">
+			<img src="dh_festival_slide_img/구로구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/영등포구.jpeg">
+			<img src="dh_festival_slide_img/영등포구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/금천구.jpeg">
+			<img src="dh_festival_slide_img/금천구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/동작구.jpeg">
+			<img src="dh_festival_slide_img/동작구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/관악구.jpeg">
+			<img src="dh_festival_slide_img/관악구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/서초구2.jpeg">
+			<img src="dh_festival_slide_img/서초구2.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/강남구.jpeg">
+			<img src="dh_festival_slide_img/강남구.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/송파구2.jpeg">
+			<img src="dh_festival_slide_img/송파구2.jpeg">
 		</div>
 		<div>
-			<img src="../dh_festival_slide_img/강동구.jpeg">
+			<img src="dh_festival_slide_img/강동구.jpeg">
 		</div>
 </div>
 
 
 
-	
+
 <!-- 지도 영역 -->
-	<div id="img_content">
+	<div id="img_content" >
 
 
 
 
 <!-- 텍스트 영역  -->
-		<div class="plan_tit">
+		<div class="plan_tit" style="position: relative;" >
 			<p class="tit">서울지도</p>
-			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.</p>
+			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.
+			 <span id="xBtn" style="position: absolute; right: 20px; bottom: 5px;"> <img src="dh_map_img/btn_close.png"> </span></p>
+			
 		</div> 
 		<!-- 텍스트 닫음 -->
 
@@ -136,7 +247,7 @@
 		<!-- img 영역   -->
 		
 		<div class="map-1">
-			<img src="../dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1" >
+			<img src="dh_area_img/서울지도.png"  alt="자치구별 관련축제정보" usemap="#autonomyMap" id="imgId1"  >
 		
 			<map name="autonomyMap">
 			
@@ -251,79 +362,79 @@
 				}
 
 				if (index == 0) {
-					document.getElementById("imgId1").src = "../dh_area_img/강북구.png";
+					document.getElementById("imgId1").src = "dh_area_img/강북구.png";
 				}
 				if (index == 1) {
-					document.getElementById("imgId1").src = "../dh_area_img/도봉구.png";
+					document.getElementById("imgId1").src = "dh_area_img/도봉구.png";
 				}
 				if (index == 2) {
-					document.getElementById("imgId1").src = "../dh_area_img/노원구.png";
+					document.getElementById("imgId1").src = "dh_area_img/노원구.png";
 				}
 				if (index == 3) {
-					document.getElementById("imgId1").src = "../dh_area_img/은평구.png";
+					document.getElementById("imgId1").src = "dh_area_img/은평구.png";
 				}
 				if (index == 4) {
-					document.getElementById("imgId1").src = "../dh_area_img/서대문구.png";
+					document.getElementById("imgId1").src = "dh_area_img/서대문구.png";
 				}
 				if (index == 5) {
-					document.getElementById("imgId1").src = "../dh_area_img/종로구.png";
+					document.getElementById("imgId1").src = "dh_area_img/종로구.png";
 				}
 				if (index == 6) {
-					document.getElementById("imgId1").src = "../dh_area_img/성북구.png";
+					document.getElementById("imgId1").src = "dh_area_img/성북구.png";
 				}
 				if (index == 7) {
-					document.getElementById("imgId1").src = "../dh_area_img/동대문구.png";
+					document.getElementById("imgId1").src = "dh_area_img/동대문구.png";
 				}
 				if (index == 8) {
-					document.getElementById("imgId1").src = "../dh_area_img/중랑구.png";
+					document.getElementById("imgId1").src = "dh_area_img/중랑구.png";
 				}
 				if (index == 9) {
-					document.getElementById("imgId1").src = "../dh_area_img/마포구.png";
+					document.getElementById("imgId1").src = "dh_area_img/마포구.png";
 				}
 				if (index == 10) {
-					document.getElementById("imgId1").src = "../dh_area_img/용산구.png";
+					document.getElementById("imgId1").src = "dh_area_img/용산구.png";
 				}
 				if (index == 11) {
-					document.getElementById("imgId1").src = "../dh_area_img/중구.png";
+					document.getElementById("imgId1").src = "dh_area_img/중구.png";
 				}
 				if (index == 12) {
-					document.getElementById("imgId1").src = "../dh_area_img/성동구.png";
+					document.getElementById("imgId1").src = "dh_area_img/성동구.png";
 				}
 				if (index == 13) {
-					document.getElementById("imgId1").src = "../dh_area_img/광진구.png";
+					document.getElementById("imgId1").src = "dh_area_img/광진구.png";
 				}
 				if (index == 14) {
-					document.getElementById("imgId1").src = "../dh_area_img/강서구.png";
+					document.getElementById("imgId1").src = "dh_area_img/강서구.png";
 				}
 				if (index == 15) {
-					document.getElementById("imgId1").src = "../dh_area_img/양천구.png";
+					document.getElementById("imgId1").src = "dh_area_img/양천구.png";
 				}
 				if (index == 16) {
-					document.getElementById("imgId1").src = "../dh_area_img/구로구.png";
+					document.getElementById("imgId1").src = "dh_area_img/구로구.png";
 				}
 				if (index == 17) {
-					document.getElementById("imgId1").src = "../dh_area_img/영등포구.png";
+					document.getElementById("imgId1").src = "dh_area_img/영등포구.png";
 				}
 				if (index == 18) {
-					document.getElementById("imgId1").src = "../dh_area_img/금천구.png";
+					document.getElementById("imgId1").src = "dh_area_img/금천구.png";
 				}
 				if (index == 19) {
-					document.getElementById("imgId1").src = "../dh_area_img/동작구.png";
+					document.getElementById("imgId1").src = "dh_area_img/동작구.png";
 				}
 				if (index == 20) {
-					document.getElementById("imgId1").src = "../dh_area_img/관악구.png";
+					document.getElementById("imgId1").src = "dh_area_img/관악구.png";
 				}
 				if (index == 21) {
-					document.getElementById("imgId1").src = "../dh_area_img/서초구.png";
+					document.getElementById("imgId1").src = "dh_area_img/서초구.png";
 				}
 				if (index == 22) {
-					document.getElementById("imgId1").src = "../dh_area_img/강남구.png";
+					document.getElementById("imgId1").src = "dh_area_img/강남구.png";
 				}
 				if (index == 23) {
-					document.getElementById("imgId1").src = "../dh_area_img/송파구.png";
+					document.getElementById("imgId1").src = "dh_area_img/송파구.png";
 				}
 				if (index == 24) {
-					document.getElementById("imgId1").src = "../dh_area_img/강동구.png";
+					document.getElementById("imgId1").src = "dh_area_img/강동구.png";
 				}
 				
 				
@@ -332,7 +443,7 @@
 			}
 		</script>
 	
-	<script type="text/javascript" src="../dh_css/jquery.js"></script>
+	<script type="text/javascript" src="dh_css/jquery.js"></script>
 	
 <script type="text/javascript">
 			$(function() {
@@ -346,79 +457,79 @@
 								 
 								 
 								 if (i == 1) {
-										document.getElementById("imgId1").src = "../dh_area_img/강북구.png";
+										document.getElementById("imgId1").src = "dh_area_img/강북구.png";
 									}
 								 if (i == 2) {
-										document.getElementById("imgId1").src = "../dh_area_img/도봉구.png";
+										document.getElementById("imgId1").src = "dh_area_img/도봉구.png";
 									}
 								 if (i == 3) {
-										document.getElementById("imgId1").src = "../dh_area_img/노원구.png";
+										document.getElementById("imgId1").src = "dh_area_img/노원구.png";
 									}
 								 if (i == 4) {
-										document.getElementById("imgId1").src = "../dh_area_img/은평구.png";
+										document.getElementById("imgId1").src = "dh_area_img/은평구.png";
 									}
 								 if (i == 5) {
-										document.getElementById("imgId1").src = "../dh_area_img/서대문구.png";
+										document.getElementById("imgId1").src = "dh_area_img/서대문구.png";
 									}
 								 if (i == 6) {
-										document.getElementById("imgId1").src = "../dh_area_img/종로구.png";
+										document.getElementById("imgId1").src = "dh_area_img/종로구.png";
 									}
 								 if (i == 7) {
-										document.getElementById("imgId1").src = "../dh_area_img/성북구.png";
+										document.getElementById("imgId1").src = "dh_area_img/성북구.png";
 									}
 								 if (i == 8) {
-										document.getElementById("imgId1").src = "../dh_area_img/동대문구.png";
+										document.getElementById("imgId1").src = "dh_area_img/동대문구.png";
 									}
 								 if (i == 9) {
-										document.getElementById("imgId1").src = "../dh_area_img/중랑구.png";
+										document.getElementById("imgId1").src = "dh_area_img/중랑구.png";
 									}
 								 if (i == 10) {
-										document.getElementById("imgId1").src = "../dh_area_img/마포구.png";
+										document.getElementById("imgId1").src = "dh_area_img/마포구.png";
 									}
 								 if (i == 11) {
-										document.getElementById("imgId1").src = "../dh_area_img/용산구.png";
+										document.getElementById("imgId1").src = "dh_area_img/용산구.png";
 									}
 								 if (i == 12) {
-										document.getElementById("imgId1").src = "../dh_area_img/중구.png";
+										document.getElementById("imgId1").src = "dh_area_img/중구.png";
 									}
 								 if (i == 13) {
-										document.getElementById("imgId1").src = "../dh_area_img/성동구.png";
+										document.getElementById("imgId1").src = "dh_area_img/성동구.png";
 									}
 								 if (i == 14) {
-										document.getElementById("imgId1").src = "../dh_area_img/광진구.png";
+										document.getElementById("imgId1").src = "dh_area_img/광진구.png";
 									}
 								 if (i == 15) {
-										document.getElementById("imgId1").src = "../dh_area_img/강서구.png";
+										document.getElementById("imgId1").src = "dh_area_img/강서구.png";
 									}
 								 if (i == 16) {
-										document.getElementById("imgId1").src = "../dh_area_img/양천구.png";
+										document.getElementById("imgId1").src = "dh_area_img/양천구.png";
 									}
 								 if (i == 17) {
-										document.getElementById("imgId1").src = "../dh_area_img/구로구.png";
+										document.getElementById("imgId1").src = "dh_area_img/구로구.png";
 									}
 								 if (i == 18) {
-										document.getElementById("imgId1").src = "../dh_area_img/영등포구.png";
+										document.getElementById("imgId1").src = "dh_area_img/영등포구.png";
 									}
 								 if (i == 19) {
-										document.getElementById("imgId1").src = "../dh_area_img/금천구.png";
+										document.getElementById("imgId1").src = "dh_area_img/금천구.png";
 									}
 								 if (i == 20) {
-										document.getElementById("imgId1").src = "../dh_area_img/동작구.png";
+										document.getElementById("imgId1").src = "dh_area_img/동작구.png";
 									}
 								 if (i == 21) {
-										document.getElementById("imgId1").src = "../dh_area_img/관악구.png";
+										document.getElementById("imgId1").src = "dh_area_img/관악구.png";
 									}
 								 if (i == 22) {
-										document.getElementById("imgId1").src = "../dh_area_img/서초구.png";
+										document.getElementById("imgId1").src = "dh_area_img/서초구.png";
 									}
 								 if (i == 23) {
-										document.getElementById("imgId1").src = "../dh_area_img/강남구.png";
+										document.getElementById("imgId1").src = "dh_area_img/강남구.png";
 									}
 								 if (i == 24) {
-										document.getElementById("imgId1").src = "../dh_area_img/송파구.png";
+										document.getElementById("imgId1").src = "dh_area_img/송파구.png";
 									}
 								 if (i == 25) {
-										document.getElementById("imgId1").src = "../dh_area_img/강동구.png";
+										document.getElementById("imgId1").src = "dh_area_img/강동구.png";
 									}
 							
 						
@@ -453,22 +564,26 @@
 				
 				}); */
 </script>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+ <!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <script src="./jquery.rwdImageMaps.min.js"></script> -->
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.js"></script>
+  
+	<script type="text/javascript">
+  $(function() {
+	  $('img[usemap]').rwdImageMaps();
+	  
+	  });
 
-			
-							
-		
-
-
+	
+  </script>
+	
+	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px;">
+		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png"> </span>
+	</div>
+	
+	
 </body>
 </html>
