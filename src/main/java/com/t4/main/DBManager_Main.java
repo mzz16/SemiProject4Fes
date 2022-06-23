@@ -1,4 +1,5 @@
-package com.yj.main;
+package com.t4.main;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,12 +7,19 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class DBManager {
+public class DBManager_Main {
 	// AOP개념으로; DB할 때마다 반복되는 내용 정리
 
 	// DB 작업 시에 어찌되었든 연결 해야됨.
 	public static Connection connect() throws SQLException {
+		// yj
 		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
+		// mj
+	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
+		// sw
+	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
+		// dh
+	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
 		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
 	}
 	
