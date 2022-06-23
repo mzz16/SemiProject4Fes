@@ -10,7 +10,7 @@
 <style>
 #map{
 width: 100%;
-height: 100%;
+height: 500px;
 /* position: absolute; left: 0px; top: 0px;  */
 }
 </style>
