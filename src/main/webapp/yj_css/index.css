@@ -8,13 +8,12 @@ body {
 }
 
 a {
-	color: white;
 	text-decoration: none;
 }
 
 /* 홈 영역 전체*/
 .homeDiv {
-	border-bottom: 1px solid  #a4a199;
+	margin-left: auto; margin-right:auto;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -23,28 +22,30 @@ a {
 	justify-content: center;
 }
 
-#home {
+#home > a{
 	width: 30%;
 	height: auto;
+	font-size: 30pt;
+	color:black;
 }
 
-#menu>a {
+#menu > a {
 	width: 15%;
 	height: auto;
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 23pt;
-	color: #514f4a;
+	color:black;
 }
 
-#logoimg {
+/* #logoimg {
 	width:50%;
 	justify-content: center;
 	margin: 10px;
-}
+} */
 
 #bannerImg {
-	width: 100%;
+	width: 80%;
 }
 
 #bannerImg:hover {
@@ -58,33 +59,29 @@ a {
 }
 
 #contentSlide {
-	width: 70%;
-	height: auto;
+	width: 65%;
 	margin: 10px;
 	margin: 15px;
 }
 
 #content01 {
 	margin: 10px;
-	width: 15%;
-	height: auto;
+	width: 17%;
+/* 	height: auto; */
 }
 
 #content02 {
 	margin: 10px;
 	padding: inherit;
-	width: 15%;
-	height: auto;
-	background-color: #a4a199;
-	color: #514f4a;
-	font-size: 23pt;
+	width: 17%;	
+	height: 63%;
+	background-color:#ADE628;
+	font-size: 17pt;
 	text-align: center;
 }
 
 /* 푸터 영역 */
 .footerDiv {
-	background-color: #dfdfdd;
-	color: white;
 	margin: auto;
 	padding-bottom:20px;
 	padding-top:15px;

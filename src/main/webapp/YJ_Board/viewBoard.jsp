@@ -21,9 +21,9 @@
 			<div id="boardCate1"
 				onclick="location.href='BoardCateViewC?cate=all'">전체 보기</div>
 			<div id="boardCate2"
-				onclick="location.href='BoardCateViewC?cate=free'">자유게시판</div>
+				onclick="location.href='BoardCateViewC?cate=free'">자유게시판으로</div>
 			<div id="boardCate3"
-				onclick="location.href='BoardCateViewC?cate=review'">후기게시판</div>
+				onclick="location.href='BoardCateViewC?cate=review'">후기게시판으로</div>
 		</div>
 
 		<div class="BoardSeeNoteDiv">
