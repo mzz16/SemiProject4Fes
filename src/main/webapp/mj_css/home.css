@@ -28,12 +28,14 @@
 }
 
 .showListTitle {
-	width: 250px;
+	width: 200px;
 	text-align: center;
 }
 
 #calendar {
-	max-width: 1100px;
-	margin: 0 auto;
-	
+	/*max-width: 1100px;*/
+	/*margin: 0 auto;*/
+	/* margin-top: -200px; */
+	width: 420px;
+	float: right;
 }
