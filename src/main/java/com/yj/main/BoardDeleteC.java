@@ -16,6 +16,9 @@ public class BoardDeleteC extends HttpServlet {
 		//게시글 목록으로 돌아가기
 		YJBoardDAO.getAllBoard(request);
 		
+		YJBoardDAO.lastPage(request);
+		YJBoardDAO.showPage(request);
+		
 		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
