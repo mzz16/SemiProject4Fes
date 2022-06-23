@@ -15,6 +15,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.t4.main.DBManager_Main;
 
 public class festivalDAO {
@@ -217,6 +219,7 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
+
 			DBManager_Main.close(con, pstmt, rs);
 		}
 	}
@@ -229,6 +232,7 @@ public class festivalDAO {
 
 		try {
 			String sql = "select * from festival_list where m_no=?";
+
 
 			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);

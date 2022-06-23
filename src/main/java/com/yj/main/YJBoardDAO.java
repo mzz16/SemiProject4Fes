@@ -428,6 +428,14 @@ public class YJBoardDAO {
 			String sql = "select * from BOARD_DB order by B_DATE desc limit 5";
 			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
+<<<<<<< HEAD
+			rs = pstmt.executeQuery();
+			
+			while (rs.next()) {
+				
+			}
+=======
+>>>>>>> 7134c248f56bc61ebf56988458876f99c39f19c7
 			
 			
 			
