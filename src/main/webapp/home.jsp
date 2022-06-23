@@ -23,13 +23,15 @@
 	background: #fbfbfb;
 	box-shadow: none;
 } 
-
+#addBtn{
+display: none;
+}
 
 @media ( max-width: 1023px ) {
   #img_content { 
  position :fixed;
-  border : 5px solid red;
-  background: red; 
+  border : 5px solid #cd0028;
+  background: #cd0028; 
    width: 40%;
    bottom: 0px;
    	right:0px;
@@ -65,6 +67,8 @@
 	font-size: 30%;
 }
  
+
+ 
 }
 
 
@@ -72,16 +76,22 @@
 
 @media ( max-width: 800px ) {
   #img_content {
-  display : none;
  position : fixed;
-  border : 5px solid yellow;
-  background: yellow;
+  border : 5px solid blue;
+  background: blue;
    width: 40%;
    bottom: 0px;
    	right:0px;
    	 border-radius: 5px;
  z-index: 3;
  opacity: 0.9;
+  }
+
+}
+
+@media ( max-width: 700px ) {
+  #img_content {
+  display : none;
   }
 
 }
@@ -100,9 +110,10 @@ var size = document.getElementById("size");
 
 window.onresize = function(event){
 var innerWidth = window.innerWidth;
+/* console.log(innerWidth); */
 
 
-if (innerWidth < 800) {
+if (innerWidth < 700) {
 	$("#addBtn").css("display", "block");
 }else{
 	$("#addBtn").css("display", "none");
@@ -225,7 +236,7 @@ $("#xBtn").click(function() {
 		<div class="plan_tit" style="position: relative;" >
 			<p class="tit">서울지도</p>
 			<p class="dsc">원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다.
-			 <span id="xBtn" style="position: absolute; right: 20px; top:0px; color: white; font-size: 30pt">x</span></p>
+			 <span id="xBtn" style="position: absolute; right: 20px; bottom: 5px;"> <img src="dh_map_img/btn_close.png"> </span></p>
 			
 		</div> 
 		<!-- 텍스트 닫음 -->
@@ -570,7 +581,7 @@ $("#xBtn").click(function() {
   </script>
 	
 	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px;">
-		<span id="plusBtn" style="font-size: 30pt;">+</span>
+		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png"> </span>
 	</div>
 	
 	
