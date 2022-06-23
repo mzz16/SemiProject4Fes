@@ -473,6 +473,17 @@
 	});
   </script>
 	
-
+	
+	
+	
+	<!-- 게시판 노출 영역 -->
+	<div>
+		<h1>게시판</h1>
+	<table border="1" style="width: 500px">
+		<tr>
+			<td>게시판</td>
+		</tr>	
+	</table>
+	</div>
 </body>
 </html>

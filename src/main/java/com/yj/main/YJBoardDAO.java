@@ -3,12 +3,13 @@ package com.yj.main;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+import com.t4.main.DBManager_Main;
 
 public class YJBoardDAO {
 
@@ -21,7 +22,7 @@ public class YJBoardDAO {
 
 		try {
 			String sql = "select*from BOARD_DB order by B_DATE desc";
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 
@@ -42,7 +43,7 @@ public class YJBoardDAO {
 			// TODO: handle exception
 			e.printStackTrace();
 		} finally {
-			DBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 
 	}
@@ -55,7 +56,7 @@ public class YJBoardDAO {
 		try {
 			String sql = "INSERT INTO BOARD_DB VALUES(BOARD_SEQ.nextval,?,?,?,?,?,sysdate,?)";
 
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 
 			String saveDirectory = request.getServletContext().getRealPath("fileFolder");
@@ -88,7 +89,7 @@ public class YJBoardDAO {
 			e.printStackTrace();
 			System.out.println("등록실패");
 		} finally {
-			DBManager.close(con, pstmt, null);
+			DBManager_Main.close(con, pstmt, null);
 		}
 	}
 
@@ -100,7 +101,7 @@ public class YJBoardDAO {
 		ResultSet rs = null;
 
 		try {
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 
 			String sql = "select*from BOARD_DB where b_no = ?";
 			pstmt = con.prepareStatement(sql);
@@ -120,7 +121,7 @@ public class YJBoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			DBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 	}
 
@@ -132,7 +133,7 @@ public class YJBoardDAO {
 		try {
 			String sql = "DELETE BOARD_DB WHERE B_NO = ?";
 
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 
 			String no = request.getParameter("number");
@@ -148,7 +149,7 @@ public class YJBoardDAO {
 			e.printStackTrace();
 			System.out.println("삭제실패");
 		} finally {
-			DBManager.close(con, pstmt, null);
+			DBManager_Main.close(con, pstmt, null);
 		}
 
 	}
@@ -172,7 +173,7 @@ public class YJBoardDAO {
 				if (!mr.getFilesystemName("fName").isEmpty()) {
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_img=?,b_pw=? WHERE b_NO=?";
 
-					con = DBManager.connect();
+					con = DBManager_Main.connect();
 					pstmt = con.prepareStatement(sql);
 
 					String title = mr.getParameter("title");
@@ -195,7 +196,7 @@ public class YJBoardDAO {
 				} else if (mr.getFilesystemName("fName").isEmpty()) {
 
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_pw=? WHERE b_NO=?";
-					con = DBManager.connect();
+					con = DBManager_Main.connect();
 					pstmt = con.prepareStatement(sql);
 
 					String title = mr.getParameter("title");
@@ -230,7 +231,7 @@ public class YJBoardDAO {
 			e.printStackTrace();
 			System.out.println("등록실패");
 		} finally {
-			DBManager.close(con, pstmt, null);
+			DBManager_Main.close(con, pstmt, null);
 		}
 
 	}
@@ -248,7 +249,7 @@ public class YJBoardDAO {
 			String sql = "";
 			String cateSelect = "";
 
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 
 			if (userCate.equals("all")) {
 				sql = "select*from BOARD_DB order by B_DATE desc";
@@ -284,7 +285,7 @@ public class YJBoardDAO {
 			// TODO: handle exception
 			e.printStackTrace();
 		} finally {
-			DBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 
 	}
@@ -302,7 +303,7 @@ public class YJBoardDAO {
 		
 		//글이 몇 개인지 찾기
 		try {
-			con = DBManager.connect();
+			con = DBManager_Main.connect();
 			
 			// if문 처리
 			if (cate.equals("all")) {
@@ -330,7 +331,7 @@ public class YJBoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			DBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 
 	}
@@ -362,7 +363,7 @@ public class YJBoardDAO {
 				
 				
 				// 불러오기 시작
-				con = DBManager.connect();
+				con = DBManager_Main.connect();
 				
 				
 				String sql = "";
@@ -411,9 +412,46 @@ public class YJBoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			DBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 
 	}
+	
+	public static void showMainPage(HttpServletRequest request) {
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+	
+		try {
+			
+			String sql = "select * from BOARD_DB order by B_DATE desc limit 5";
+			con = DBManager_Main.connect();
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			ArrayList<Board> boards = new ArrayList<Board>();
+			
+			while (rs.next()) {
+				Board b = new Board();
+				
+				b.setTitle(rs.getString("b_title"));
+				
+				boards.add(b);
+			}
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager_Main.close(con, pstmt, rs);
+		}
+
+
+
+}
 
 }

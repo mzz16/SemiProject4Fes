@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONArray;
@@ -18,7 +17,7 @@ import org.json.simple.parser.JSONParser;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import com.mj.festival.FesDBManager;
+import com.t4.main.DBManager_Main;
 
 public class festivalDAO {
 	public static void work(HttpServletRequest request) {
@@ -192,7 +191,7 @@ public class festivalDAO {
 
 			String sql = "select * from festival_list where guname=?";
 
-			con = FesDBManager.connect();
+			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			
 			String kangnam = request.getParameter("Seoul");
@@ -220,7 +219,8 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
-			FesDBManager.close(con, pstmt, rs);
+
+			DBManager_Main.close(con, pstmt, rs);
 		}
 	}
 
@@ -233,7 +233,8 @@ public class festivalDAO {
 		try {
 			String sql = "select * from festival_list where m_no=?";
 
-			con = FesDBManager.connect();
+
+			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			String no = request.getParameter("m_no");
 			pstmt.setString(1, no);
@@ -261,7 +262,7 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
-			FesDBManager.close(con, pstmt, rs);
+			DBManager_Main.close(con, pstmt, rs);
 		}
 	}
 	
