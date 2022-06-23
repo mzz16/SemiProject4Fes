@@ -10,11 +10,11 @@ import java.sql.SQLException;
 public class FesDBManager {
 
 	public static Connection connect() throws SQLException{
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		return DriverManager.getConnection(url, "c##mj", "mj");
-		
+		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
+		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
 	}
-
+	
+	
 	public static void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
 		try {
 			if(rs != null) {
