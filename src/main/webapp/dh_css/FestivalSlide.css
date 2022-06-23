@@ -27,7 +27,7 @@
   /* margin: 20px auto; */
   border-radius: 5px;
   box-shadow: 0 0 100px gray;
-  position: absolute;
+  position: fixed;
  z-index: 3;
  opacity: 0.9;
  
