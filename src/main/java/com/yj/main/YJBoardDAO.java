@@ -50,6 +50,7 @@ public class YJBoardDAO {
 
 	// 게시판 글 등록하기
 	public static void regBoard(HttpServletRequest request) {
+		
 		Connection con = null;
 		PreparedStatement pstmt = null;
 
@@ -71,6 +72,7 @@ public class YJBoardDAO {
 			String name = mr.getParameter("name");
 			String img = mr.getFilesystemName("fName");
 			String txt = mr.getParameter("txt");
+				txt=txt.replace("\r\n","<br>");
 			String pw = mr.getParameter("password");
 
 			// 값 받고, ?에 셋팅.
@@ -180,6 +182,7 @@ public class YJBoardDAO {
 					String cate = mr.getParameter("boardType");
 					String name = mr.getParameter("name");
 					String txt = mr.getParameter("txt");
+						txt=txt.replace("\r\n","<br>");
 					String img = mr.getFilesystemName("fName");
 					String pw = mr.getParameter("password");
 					String number = mr.getParameter("number");
