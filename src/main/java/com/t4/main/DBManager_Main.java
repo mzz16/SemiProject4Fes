@@ -30,11 +30,7 @@ public class DBManager_Main {
 		// sw
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
 		// dh
-<<<<<<< HEAD
-		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707";
-		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
-=======
-		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707"; 
+		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707";
 		System.out.println("연결요청");
 		try {
 			return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
@@ -42,7 +38,6 @@ public class DBManager_Main {
 			e.printStackTrace();
 		}
 		return null;
->>>>>>> a4056891acf70b0ddfe2c418c15a12fbded66607
 	}
 	
 //	public static Connection connect() throws SQLException{
