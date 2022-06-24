@@ -21,7 +21,8 @@
  .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
-	box-shadow: none;
+	box-shadow: none; 
+	
 } 
 #addBtn{
 display: none;
@@ -168,7 +169,7 @@ $("#xBtn").click(function() {
 			<img src="dh_festival_slide_img/성북구.png">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/동대문구.jpeg">
+			<img src="dh_festival_slide_img/동대문.jpeg">
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/중랑구.jpeg">
@@ -344,6 +345,7 @@ $("#xBtn").click(function() {
 			stopAutoOnClick : false,
 			pager : false,
 			controls : false,
+			  adaptiveHeight: true
 		});
 	</script>
 
