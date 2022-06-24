@@ -29,12 +29,6 @@
 	
 </head>
 
-
-
-
-
-
-
 <body class="color-change-4x">
 
 <!--  -->
@@ -66,7 +60,7 @@
 	
 	
 	<!-- 날씨위젯-->
-	<div>
+	<div class="weather_wi">
 	<div class="tomorrow"
            data-location-id="065498"
            data-language="KO"
@@ -89,7 +83,7 @@
             />
           </a>
         </div>
-        </div>
+       </div>
         
         
 	<!-- 푸터 -->	

@@ -10,6 +10,12 @@ body {
 a{
 	 text-decoration-line: none;
 }
+
+.weather_wi{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
 /* 여기부터 배경 */
 .color-change-4x {
 	-webkit-animation: color-change-4x 10s linear infinite alternate both;
@@ -91,12 +97,14 @@ a{
 /* 콘텐트 영역 전체*/
 .ContentDiv {
 	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #contentSlide {
 	width: 100%;
-	margin: 10px;
-	margin: 15px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #content01 {
