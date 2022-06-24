@@ -52,6 +52,18 @@
 	height: 40%;
 	}
 	
+	#gotoFesInfo{
+	width: 40%;
+	}
+	
+	#showBoard{
+	width: 40%;
+	}
+	
+	#calendar{
+	width: 40%;
+	}
+	
 }
 
 
@@ -78,7 +90,17 @@
 	}
 	
 	
+	#gotoFesInfo{
+	width: 40%;
+	}
 	
+	#showBoard{
+	width: 40%;
+	}
+	
+	#calendar{
+	width: 40%;
+	}
 	
 }
 
@@ -99,6 +121,17 @@
 /* 	#contain{
 	height: 40%;
 	} !!!!!!오류나면 살리기 */
+	#gotoFesInfo{
+	width: 40%;
+	}
+	
+	#showBoard{
+	width: 40%;
+	}
+	
+	#calendar{
+	width: 40%;
+	}
 	
 }
 
@@ -756,10 +789,10 @@
 <body id="size">
 
 
-	<div style="position: relative; border: 1px solid blue; height: 100%; margin: 0px; padding: 0px;"
+	<div style="position: relative; height: 100%; ;"
 		id="contain">
 			<!-- 슬라이더 영역 -->
-	<div class="bxslider" id="slider" style="margin: 0px; padding: 0px;">
+	<div class="bxslider" id="slider">
 		<div>
 			<img src="dh_festival_slide_img/1.강북구.jpeg" >
 		</div>
@@ -773,17 +806,13 @@
 			<img src="dh_festival_slide_img/4.은평구.jpeg">
 		</div>
 		<div>
-			<!-- <img src="dh_festival_slide_img/서대문구.jpeg"> -->
-			<h1>서대문구</h1>
-			관련 축제 정보가 없습니다.
+			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/6.종로구.jpeg">
 		</div>
 		<div>
-			<!-- <img src="dh_festival_slide_img/성북구.png"> -->
-			<h1>성북구</h1>
-			관련 축제 정보가 없습니다.
+			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/8.동대문구.jpeg">
@@ -807,30 +836,22 @@
 			<img src="dh_festival_slide_img/14.광진구.jpeg">
 		</div>
 		<div>
-			<!-- <img src="dh_festival_slide_img/강서구.jpeg"> -->
-			<h1>강서구</h1>
-			관련 축제 정보가 없습니다.
+			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/16.양천구.png">
 		</div>
 		<div>
-		<!-- 	<img src="dh_festival_slide_img/구로구.jpeg"> -->
-		<h1>구로구</h1>
-		관련 축제 정보가 없습니다.
+			<img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
-			<!-- <img src="dh_festival_slide_img/영등포구.jpeg"> -->
-			<h1>영등포구</h1>
-		      관련 축제 정보가 없습니다.
+			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/19.금천구.png">
 		</div>
 		<div>
-			<!-- <img src="dh_festival_slide_img/동작구.jpeg"> -->
-			<h1>동작구</h1>
-		      관련 축제 정보가 없습니다.
+			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/21.관악구.jpeg">
