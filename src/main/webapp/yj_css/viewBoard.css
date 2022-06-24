@@ -1,24 +1,39 @@
 @charset "UTF-8";
+@media(max-width:1023px){
+	.allBoardView{
+		display: block;
+	};
+	
+	.ViewBoardMain {
+		display: block;
+	}
+	.BoardCateDiv div{
+		display: inline-flex;
+	}
+	
+}
+
+@media(max-width:800px){
+	
+}
+
+
+
 
 /* 글쓰기버튼 */
 .BoardInputDiv {
-	text-align: right;
-	margin-right: 10%;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	display:block;
 }
 
 .BoardInputDiv button{
 	font-family: 'Do Hyeon', sans-serif;
 	font-size: 13pt;
-	color: #514f4a;
 }
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain {
 	border-radius: 30px;
-	font-family: 'Noto Sans KR', sans-serif;
-	background-color: #FFFDFA;
+	font-family: 'Noto Sans KR', sans-serif;	background-color: #FFFDFA;
 	width: 100%;
 	display: flex;
 	margin: 10 auto;
