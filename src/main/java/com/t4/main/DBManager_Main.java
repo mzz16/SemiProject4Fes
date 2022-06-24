@@ -13,11 +13,19 @@ public class DBManager_Main {
 	// DB 작업 시에 어찌되었든 연결 해야됨.
 	public static Connection connect() throws SQLException {
 		// yj
+<<<<<<< HEAD
 		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
 		// mj
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
+=======
+		// String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
+		
+		// mj
+	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
+>>>>>>> 0877a9f56692e2c832611fd662277ce66c4a38df
 		// sw
-	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
+  //	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
+
 		// dh
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707";
 		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
