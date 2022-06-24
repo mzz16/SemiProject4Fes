@@ -61,22 +61,24 @@
 	</div>
 	
 	
-	<!-- 날씨위젯-->
-	<div class="weather_wi">
-	<div class="tomorrow"
+	    
+	    
+	    
+	    
+	 <!-- 날씨위젯-->
+		<div class="weather_wi">
+		<div class="tomorrow"
            data-location-id="065498"
            data-language="KO"
            data-unit-system="METRIC"
            data-skin="light"
            data-widget-type="upcoming"
-           style="padding-top:22px; padding-bottom:22px; position:relative;"
-        >
+           style="padding-top:22px; padding-bottom:22px; position:relative;">
           <a
             href="https://www.tomorrow.io/weather/"
             rel="nofollow noopener noreferrer"
             target="_blank"
-            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
-          >
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
             <img
               alt="Powered by Tomorrow.io"
               src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
@@ -85,9 +87,8 @@
             />
           </a>
         </div>
-       </div>
-        
-        
+	 
+	 </div>
 	<!-- 푸터 -->	
 		<div class="footerDiv">
 			<div id="footer">
@@ -134,7 +135,6 @@
             const js = d.createElement(s);
             js.id = id;
             js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'tomorrow-sdk');
 </script>
