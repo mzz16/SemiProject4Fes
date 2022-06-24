@@ -1,15 +1,25 @@
 @charset "UTF-8";
 
-/*#gotoFesInfo {
-	float: left;
-}*/
-
-.BoardTable {
-	float: left;
+#gotoFesInfo {
+	width: 40%;
 }
+
+#leftInformation{
+	float: left;
+	width: 40%;
+	margin-top: 50px;
+}
+
+
+/*#showBoard{
+	float: left;
+	width: 40%;
+}*/
 
 .showBoardTitle {
 	font-size: 25pt;
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 
 .gotoBoard {
@@ -21,18 +31,22 @@
 	text-align: center;
 }
 
+.showList{
+	background-color: white;
+}
+
 .showListNo {
-	width: 50px;
+	width: 10%;
 	text-align: center;
 }
 
 .showListCate {
-	width: 100px;
+	width: 30%;
 	text-align: center;
 }
 
 .showListTitle {
-	width: 200px;
+	width: 60%;
 	text-align: center;
 }
 
@@ -40,7 +54,7 @@
 #calendar {
 	/*max-width: 1100px;*/
 	/*margin: 0 auto;*/
-	margin-top: -300px;
-	width: 420px;
+
+	width: 50%;
 	float: right;
 }
