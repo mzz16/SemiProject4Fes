@@ -12,11 +12,12 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.t4.main.DBManager_Main;
 
 public class YJBoardDAO {
+	
 	private Connection con;
 	private static final YJBoardDAO YJDAO = new YJBoardDAO(DBManager_Main.getDbm().connect());
 	
 	private YJBoardDAO() {
-//		private Connection con = DBManager_Main.getDbm().connect();
+		//		private Connection con = DBManager_Main.getDbm().connect();
 	}
 	private YJBoardDAO(Connection con) {
 		super();
@@ -34,7 +35,8 @@ public class YJBoardDAO {
 
 		try {
 			String sql = "select*from BOARD_DB order by B_DATE desc";
-			System.out.println("=========" + con);
+			
+
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 

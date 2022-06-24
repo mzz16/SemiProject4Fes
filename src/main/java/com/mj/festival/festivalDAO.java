@@ -20,7 +20,23 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.t4.main.DBManager_Main;
 
 public class festivalDAO {
-	public static void work(HttpServletRequest request) {
+	//============================	
+	private Connection con;
+	private static final festivalDAO FesDAO = new festivalDAO(DBManager_Main.getDbm().connect());
+	
+	private festivalDAO() {
+		//	private Connection con = DBManager_Main.getDbm().connect();
+	}
+	private festivalDAO(Connection con) {
+		super();
+		this.con = con;
+	}
+	public static festivalDAO getFesdao() {
+		return FesDAO;
+	}
+	//============================	
+	
+	public void work(HttpServletRequest request) {
 
 		String result = "";
 		Scanner k = null;
@@ -181,9 +197,8 @@ public class festivalDAO {
 
 	}
 
-	public static void getFestival(HttpServletRequest request) {
+	public void getFestival(HttpServletRequest request) {
 
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
@@ -191,7 +206,6 @@ public class festivalDAO {
 
 			String sql = "select * from festival_list where guname=?";
 
-			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			
 			String kangnam = request.getParameter("Seoul");
@@ -220,21 +234,18 @@ public class festivalDAO {
 
 		} finally {
 
-			DBManager_Main.close(con, pstmt, rs);
+			DBManager_Main.getDbm().close(null, pstmt, rs);
 		}
 	}
 
-	public static void getFestivalInfo(HttpServletRequest request) {
+	public void getFestivalInfo(HttpServletRequest request) {
 
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
 		try {
 			String sql = "select * from festival_list where m_no=?";
 
-
-			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			String no = request.getParameter("m_no");
 			pstmt.setString(1, no);
@@ -262,10 +273,8 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
-			DBManager_Main.close(con, pstmt, rs);
+			DBManager_Main.getDbm().close(null, pstmt, rs);
 		}
 	}
-	
-	
-	
+
 }
