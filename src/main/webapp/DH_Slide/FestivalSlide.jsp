@@ -168,7 +168,7 @@ $("#xBtn").click(function() {
 			<img src="dh_festival_slide_img/성북구.png">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/동대문구.jpeg">
+			<img src="dh_festival_slide_img/동대문.jpeg">
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/중랑구.jpeg">
