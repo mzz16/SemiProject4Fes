@@ -11,8 +11,10 @@
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="mj_css/home.css">
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
@@ -145,18 +147,16 @@
 </script>
 
 <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialDate: '2022-06-12',
-      editable: true,
-      selectable: true,
-      businessHours: true, 
-      dayMaxEvents: true, // allow "more" link when too many events
-      events: [
-    	  {
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			initialDate : '2022-06-12',
+			editable : true,
+			selectable : true,
+			businessHours : true,
+			dayMaxEvents : true, // allow "more" link when too many events
+			events : [ {
 				title : '[서울문화재단] 6월 봄소풍 프로젝트 \'여름 마중\'',
 				start : '2022-06-25',
 				color : 'pink'
@@ -165,7 +165,7 @@
 				start : '2022-06-23',
 				end : '2022-06-26',
 				color : 'pink'
-				
+
 			}, {
 				title : '2022 나루 스트릿 댄스 페스티벌 [나루 브레이킹  배틀 2on2]',
 				start : '2022-06-18',
@@ -743,13 +743,11 @@
 				start : '2021-07-01',
 				end : '2021-08-29',
 				color : 'green'
-			}
-      ]
-    });
+			} ]
+		});
 
-    calendar.render();
-  });
-
+		calendar.render();
+	});
 </script>
 
 </head>
@@ -1223,36 +1221,45 @@
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>
-	
-	<!-- 축제정보 보러가기 영역 -->
-	<div id="gotoFesInfo">
-		<table border="1">
-			<tr onclick="location.href='festivalHC'">
-				<td><h1>축제정보 보러가기</h1></td>
-			</tr>
-		</table>		
-	</div>
-	<!-- 게시판 노출 영역 -->
-	<div id=showBoard>
-		<div class=showBoardTitle> 게시판  <button class="gotoBoard" onclick="location.href='BoardViewHC?cate=all'"> +MORE </button></div>
-		<table class="showTable" border="1">
-			<tr class="showTbTitle">
-				<td class="showListNo">글 번호</td>
-				<td class="showListCate">카테고리</td>
-				<td class="showListTitle">제목</td>
-			</tr>
-			<c:forEach items="${boards }" var="b">
-				<tr class="showList" onclick="location.href='BoardViewHC?number=${b.no}'">
-					<td class="showListNo">${b.no }</td>
-					<td class="showListCate">${b.cate }</td>
-					<td class="showListTitle">${b.title }</td>
+
+	<div id="leftInformation">
+		<!-- 축제정보 보러가기 영역 -->
+		<div id="gotoFesInfo">
+			<table border="1">
+				<tr onclick="location.href='festivalHC'">
+					<td><h1>축제정보 보러가기</h1></td>
 				</tr>
-			</c:forEach>
-		</table>
+			</table>
+		</div>
+
+		<!-- 게시판 노출 영역 -->
+		<div id=showBoard>
+			<div class=showBoardTitle>
+				게시판
+				<button class="gotoBoard"
+					onclick="location.href='BoardViewHC?cate=all'">+MORE</button>
+			</div>
+			<table class="showTable" border="1">
+				<tr class="showTbTitle">
+					<td class="showListNo">글 번호</td>
+					<td class="showListCate">카테고리</td>
+					<td class="showListTitle">제목</td>
+				</tr>
+				<c:forEach items="${boards }" var="b">
+					<tr class="showList"
+						onclick="location.href='BoardViewHC?number=${b.no}'">
+						<td class="showListNo">${b.no }</td>
+						<td class="showListCate">${b.cate }</td>
+						<td class="showListTitle">${b.title }</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</div>
 	</div>
-	
 	<!-- 캘린더 영역 -->
-	 <div id='calendar'><a onclick="location.href='fesCalendarCon'"> 더보기 </a></div>
+	<div id='calendar'>
+		<a onclick="location.href='fesCalendarCon'"> 더보기 </a>
+	</div>
 
 </body>
 </html>
