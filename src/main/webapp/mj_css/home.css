@@ -16,14 +16,21 @@
 	width: 40%;
 }*/
 
+.showTable {
+	margin-top: 39px;
+}
+
 .showBoardTitle {
 	font-size: 25pt;
-	margin-top: 150px;
-	margin-bottom: 50px;
+	margin-top: 35px;
+	margin-left: -390px;
+	text-align: left;
 }
 
 .gotoBoard {
-	margin-left: 220px;
+	text-align: right;
+	vertical-align: bottom;
+	font-size: 13pt;
 }
 
 .showTbTitle {

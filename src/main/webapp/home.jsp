@@ -33,7 +33,6 @@
 }
 
 @media ( max-width : 1023px ) {
-
 	#img_content {
 		position: fixed;
 		border: 5px solid #cd0028;
@@ -45,32 +44,24 @@
 		z-index: 3;
 		opacity: 0.9;
 	}
-	
 	#img_content .plan_tit {
 		font-size: 50%;
 	}
-	
-	#contain{
-	height: 40%;
+	#contain {
+		height: 40%;
 	}
-	
-	#gotoFesInfo{
-	width: 40%;
+	#gotoFesInfo {
+		width: 40%;
 	}
-	
-	#showBoard{
-	width: 40%;
+	#showBoard {
+		width: 40%;
 	}
-	
-	#calendar{
-	width: 40%;
+	#calendar {
+		width: 40%;
 	}
-	
 }
 
-
 @media ( max-width : 900px ) {
-
 	#img_content {
 		position: fixed;
 		border: 5px solid orange;
@@ -82,32 +73,24 @@
 		z-index: 3;
 		opacity: 0.9;
 	}
-	
 	#img_content .plan_tit {
 		font-size: 30%;
 	}
-	
-	#contain{
-	height: 40%;
+	#contain {
+		height: 40%;
 	}
-	
-	
-	#gotoFesInfo{
-	width: 40%;
+	#gotoFesInfo {
+		width: 40%;
 	}
-	
-	#showBoard{
-	width: 40%;
+	#showBoard {
+		width: 40%;
 	}
-	
-	#calendar{
-	width: 40%;
+	#calendar {
+		width: 40%;
 	}
-	
 }
 
 @media ( max-width : 800px ) {
-
 	#img_content {
 		position: fixed;
 		border: 5px solid blue;
@@ -119,22 +102,19 @@
 		z-index: 3;
 		opacity: 0.9;
 	}
-	
-/* 	#contain{
+
+	/* 	#contain{
 	height: 40%;
 	} !!!!!!오류나면 살리기 */
-	#gotoFesInfo{
-	width: 40%;
+	#gotoFesInfo {
+		width: 40%;
 	}
-	
-	#showBoard{
-	width: 40%;
+	#showBoard {
+		width: 40%;
 	}
-	
-	#calendar{
-	width: 40%;
+	#calendar {
+		width: 40%;
 	}
-	
 }
 
 @media ( max-width : 700px ) {
@@ -787,96 +767,95 @@
 <body id="size">
 
 
-	<div style="position: relative; height: 100%; ;"
-		id="contain">
-			<!-- 슬라이더 영역 -->
-	<div class="bxslider" id="slider">
-		<div>
-			<img src="dh_festival_slide_img/1.강북구.jpeg" >
+	<div style="position: relative; height: 100%;" id="contain">
+		<!-- 슬라이더 영역 -->
+		<div class="bxslider" id="slider">
+			<div>
+				<img src="dh_festival_slide_img/1.강북구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/2.도봉구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/3.노원구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/4.은평구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/6.종로구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/8.동대문구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/9.중랑구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/10.마포구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/11.용산구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/12.중구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/13.성동구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/14.광진구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/16.양천구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/19.금천구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/21.관악구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/22.서초구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/23.강남구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/24.송파구.jpeg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/25.강동구.jpeg">
+			</div>
 		</div>
-		<div>
-			<img src="dh_festival_slide_img/2.도봉구.png">
-		</div> 
-		<div>
-			<img src="dh_festival_slide_img/3.노원구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/4.은평구.jpeg">
-		</div>
-		<div>
-			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/6.종로구.jpeg">
-		</div>
-		<div>
-			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/8.동대문구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/9.중랑구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/10.마포구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/11.용산구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/12.중구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/13.성동구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/14.광진구.jpeg">
-		</div>
-		<div>
-			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/16.양천구.png">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/19.금천구.png">
-		</div>
-		<div>
-			 <img src="dh_festival_slide_img/slideBlanc.jpg"> 
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/21.관악구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/22.서초구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/23.강남구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/24.송파구.jpeg">
-		</div>
-		<div>
-			<img src="dh_festival_slide_img/25.강동구.jpeg">
-		</div>
-	</div>
-	<!-- bxslider 닫음 -->
+		<!-- bxslider 닫음 -->
 		<!-- 지도 영역 -->
 		<div id="img_content">
-	<!-- 텍스트 영역  -->
+			<!-- 텍스트 영역  -->
 			<div class="plan_tit" style="position: relative;">
 				<p class="tit">서울지도</p>
 				<p class="dsc">
 					원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다. <span id="xBtn"
-						style="position: absolute; right: 20px; bottom: 5px;"> 
-						<img src="dh_map_img/btn_close.png">
+						style="position: absolute; right: 20px; bottom: 5px;"> <img
+						src="dh_map_img/btn_close.png">
 					</span>
 				</p>
 			</div>
@@ -1011,7 +990,7 @@
 			stopAutoOnClick : false,
 			pager : false,
 			controls : false,
-			  adaptiveHeight: true,
+			adaptiveHeight : true,
 		});
 	</script>
 
@@ -1238,7 +1217,8 @@
 		});
 	</script>
 
-	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px; z-index: 3;" >
+	<div id="addBtn"
+		style="position: fixed; right: 20px; bottom: 20px; z-index: 3;">
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>
@@ -1246,30 +1226,33 @@
 	<div id="leftInformation">
 		<!-- 축제정보 보러가기 영역 -->
 		<div id="gotoFesInfo">
-			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakuraBanner2.jpg" style="width: 530px"></a>
+			<a href='festivalHC'><img alt="축제정보"
+				src="mj_img/sakuraBanner2.jpg" style="width: 530px"></a>
 		</div>
 
 		<!-- 게시판 노출 영역 -->
 		<div id=showBoard>
-			<div class=showBoardTitle>
-				게시판
-				<button class="gotoBoard"
-					onclick="location.href='BoardViewHC?cate=all'">+MORE</button>
-			</div>
-			<table class="showTable" border="1">
-				<tr class="showTbTitle">
-					<td class="showListNo">글 번호</td>
-					<td class="showListCate">카테고리</td>
-					<td class="showListTitle">제목</td>
+			<table class="showTable" style="width: 530px">
+				<tr>
+					<td class=showBoardTitle colspan="2">게시판</td>
+					<td class="gotoBoard" colspan="1"><a
+						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
 				</tr>
-				<c:forEach items="${boards }" var="b">
-					<tr class="showList"
-						onclick="location.href='BoardViewHC?number=${b.no}'">
-						<td class="showListNo">${b.no }</td>
-						<td class="showListCate">${b.cate }</td>
-						<td class="showListTitle">${b.title }</td>
+				</table>
+				<table style="border: 1px solid gray; width: 530px">
+					<tr class="showTbTitle">
+						<td class="showListNo">글 번호</td>
+						<td class="showListCate">카테고리</td>
+						<td class="showListTitle">제목</td>
 					</tr>
-				</c:forEach>
+					<c:forEach items="${boards }" var="b">
+						<tr class="showList"
+							onclick="location.href='BoardViewHC?number=${b.no}'">
+							<td class="showListNo">${b.no }</td>
+							<td class="showListCate">${b.cate }</td>
+							<td class="showListTitle">${b.title }</td>
+						</tr>
+					</c:forEach>
 			</table>
 		</div>
 	</div>
