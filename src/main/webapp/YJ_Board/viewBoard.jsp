@@ -60,8 +60,8 @@
 				<div id="pagingTriDiv" onclick="location.href='BoardViewHC?vPage=1&&lastPage${lastpage}&&cate=${param.cate}'"><a>◀ 처음으로</a></div>
 				<br> 
 				<c:forEach var="i" begin="1" end="${lastpage}">
-					<div id="pagingNumDiv">
-						<a onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'"><c:out value="${i}" /></a>
+					<div id="pagingNumDiv"  onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
+						<a><c:out value="${i}" /></a>
 					</div>
 				</c:forEach>
 				<div id="pagingTriDiv" onclick="location.href='BoardViewHC?vPage=${lastpage}&&lastPage${lastpage}&&cate=${param.cate}'"><a>마지막으로 ▶</a></div>
