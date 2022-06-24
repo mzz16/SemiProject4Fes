@@ -13,6 +13,7 @@ a{
 }
 
 .weather_wi{
+	margin-top: 20px;
 	margin-right: 10px;
 	margin-left: 10px;
 }
@@ -55,9 +56,19 @@ a{
 
 
 /* 홈 영역 전체*/
+.homeDivlogo{
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	background-color: white;
+}
+
+
 .homeDiv {
+	margin-top: auto;
+	margin-bottom:auto;
 	background-color:white;
-	opacity:90%;
+	opacity: 50%;
 	width: 100%; height: auto;
 	display: flex;
 	text-align: center;
@@ -82,19 +93,11 @@ a{
 	color:black;
 }
 
-/* #logoimg {
-	width:50%;
+#logoimg {
+	width:25%;
 	justify-content: center;
-	margin: 10px;
-} */
-
-#bannerImg {
-	width: 80%;
-}
-
-#bannerImg:hover {
-	opacity: 70%;
-}
+	padding-bottom: 7px;
+} 
 
 /* 콘텐트 영역 전체*/
 .ContentDiv {
@@ -104,20 +107,10 @@ a{
 }
 
 #contentSlide {
-	width: 100%;
+	margin-left:auto; margin-right:auto;
+	width: 95%;
 	text-align: center;
 	vertical-align: middle;
-}
-
-#content01 {
-	margin: 10px;
-/* 	height: auto; */
-}
-
-#content02 {
-	margin: 10px;
-	font-size: 17pt;
-	text-align: center;
 }
 
 /* 푸터 영역 */
