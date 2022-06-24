@@ -732,7 +732,7 @@
 <body id="size">
 
 
-	<div style="position: relative; border: 1px solid blue; height: 250px"
+	<div style="position: relative; border: 1px solid blue; height: 380px"
 		id="contain">
 
 		<!-- 슬라이더 영역 -->
@@ -1196,7 +1196,15 @@
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>
-
+	
+	<!-- 축제정보 보러가기 영역 -->
+	<div id="gotoFesInfo">
+		<table border="1">
+			<tr onclick="location.href='festivalHC'">
+				<td><h1>축제정보 보러가기</h1></td>
+			</tr>
+		</table>		
+	</div>
 	<!-- 게시판 노출 영역 -->
 	<div id=showBoard>
 		<div class=showBoardTitle> 게시판  <button class="gotoBoard" onclick="location.href='BoardViewHC?cate=all'"> +MORE </button></div>
