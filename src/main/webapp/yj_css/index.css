@@ -7,9 +7,7 @@ body {
 	padding: 0px;
 }
 
-a {
-	text-decoration: none;
-}
+
 
 /* 홈 영역 전체*/
 .homeDiv {
@@ -54,34 +52,29 @@ a {
 
 /* 콘텐트 영역 전체*/
 .ContentDiv {
-	display: flex;
-	padding: 10px;
+	padding: 20px;
 }
 
 #contentSlide {
-	width: 65%;
+	width: 100%;
 	margin: 10px;
 	margin: 15px;
 }
 
 #content01 {
 	margin: 10px;
-	width: 17%;
 /* 	height: auto; */
 }
 
 #content02 {
 	margin: 10px;
-	padding: inherit;
-	width: 17%;	
-	height: 63%;
-	background-color:#ADE628;
 	font-size: 17pt;
 	text-align: center;
 }
 
 /* 푸터 영역 */
 .footerDiv {
+background-color:aqua;
 	margin: auto;
 	padding-bottom:20px;
 	padding-top:15px;
@@ -93,8 +86,6 @@ a {
 
 #footer {
 	text-align: center;
-	margin-left: 50px;
-	margin-right: 50px;
 }
 
 #footerDetail {
