@@ -1,21 +1,9 @@
 @charset "UTF-8";
-@media(max-width:1023px){
-	.allBoardView{
-		display: block;
-	};
-	
-	.ViewBoardMain {
-		display: block;
-	}
-	.BoardCateDiv div{
-		display: inline-flex;
-	}
-	
-}
 
-@media(max-width:800px){
-	
-}
+
+
+
+
 /* 글쓰기버튼 */
 .BoardInputDiv {
 	text-align: right;
