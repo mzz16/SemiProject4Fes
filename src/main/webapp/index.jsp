@@ -35,8 +35,9 @@
 
 
 
-<body>
+<body class="color-change-4x">
 
+<!--  -->
 
 	<!--상단 홈 메뉴 영 -->
 	<div class="homeDiv">
@@ -62,27 +63,40 @@
 	<div class="ContentDiv">
 		<div id="contentSlide"><jsp:include page="${contentPage}" /></div>
 	</div>
-
-
-	<!-- 푸터 -->
-	<div class="footerDiv">
-		
-		
-		<div id="footer">
-			<div id="content02">
-			서울의 날씨<br>
-			<iframe width="100%" height="200"
-			src="https://forecast.io/embed/#lat=37.5049&lon=126.9804&name=서울&color=#F6A8A6&font=arial&units=si"
-			frameborder="0"></iframe>
+	
+	
+	<!-- 날씨위젯-->
+	<div>
+	<div class="tomorrow"
+           data-location-id="065498"
+           data-language="KO"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+          <a
+            href="https://www.tomorrow.io/weather/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+          >
+            <img
+              alt="Powered by Tomorrow.io"
+              src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
+              width="140"
+              height="15"
+            />
+          </a>
+        </div>
+        </div>
+        
+        
+	<!-- 푸터 -->	
+		<div class="footerDiv">
+			<div id="footer">
+			여기가어디지
 			</div>
-		</div>
-		<!-- -------------------------------------------- -->
-		<!-- <div id="footer">
-			<div id="content01">
-			
-			</div>
-		</div> -->
-		<!-- -------------------------------------------- -->
 	
 		<div id="footer">
 			도움이 되는 연결고리<br><br>
@@ -102,6 +116,7 @@
 			</div>
 		</div>
 	</div>
+<!--  -->
 
 </body>
 
@@ -111,15 +126,21 @@
 
 
 <!-- 날씨관련 -->
-<script type="text/javascript">
-	$(function() {
-		//30초 마다 새로고침
-		$(document).ready(function() {
-			setTimeout(function() {
-				window.location.reload(1);
-			}, 30000);
-		});
-	});
+<script>
+       (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
 </script>
 <script type="text/javascript" src="jQuery/jQuery.js"></script>
 </html>

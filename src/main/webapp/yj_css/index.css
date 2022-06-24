@@ -7,13 +7,51 @@ body {
 	padding: 0px;
 }
 
+a{
+	 text-decoration-line: none;
+}
+/* 여기부터 배경 */
+.color-change-4x {
+	-webkit-animation: color-change-4x 10s linear infinite alternate both;
+	        animation: color-change-4x 10s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-4x {
+  0% {
+    background: #FDAFAB;
+  }
+  33.3333% {
+    background: #D9F1F1;
+  }
+  66.666% {
+    background: #FAF1D6;
+  }
+  100% {
+    background: #FAD4AE;
+  }
+}
+@keyframes color-change-4x {
+   0% {
+    background: #FDAFAB;
+  }
+  33.3333% {
+    background: #D9F1F1;
+  }
+  66.666% {
+    background: #FAF1D6;
+  }
+  100% {
+    background: #FAD4AE;
+  }
+}
+/* 여기까지 배경 */
 
 
 /* 홈 영역 전체*/
 .homeDiv {
-	margin-left: auto; margin-right:auto;
-	width: 100%;
-	height: auto;
+	background-color:white;
+	opacity:90%;
+	width: 100%; height: auto;
 	display: flex;
 	text-align: center;
 	align-items: flex-end;
@@ -74,7 +112,7 @@ body {
 
 /* 푸터 영역 */
 .footerDiv {
-background-color:aqua;
+background-color:white;
 	margin: auto;
 	padding-bottom:20px;
 	padding-top:15px;
