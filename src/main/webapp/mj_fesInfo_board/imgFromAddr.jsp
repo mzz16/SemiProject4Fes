@@ -1,3 +1,4 @@
+<%@page import="com.t4.main.DBManager_Main"%>
 <%@page import="java.net.URLEncoder"%>
 <%@page import="java.util.Map"%>
 <%@page import="java.util.HashMap"%>
@@ -8,7 +9,6 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="com.mj.festival.festival"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="com.mj.festival.FesDBManager"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%
 Connection con = null;
@@ -19,7 +19,7 @@ try {
 	
 	String sql = "select * from festival_list where guname=?";
 	
-	con = FesDBManager.connect();
+	con = DBManager_Main.connect();
 	pstmt = con.prepareStatement(sql);
 	String guName = (String) request.getParameter("guname");
 	guName = URLDecoder.decode(guName, "UTF-8");
@@ -58,7 +58,7 @@ try {
 	System.out.println(e);
 	
 } finally {
-	FesDBManager.close(con, pstmt, rs);
+	DBManager_Main.close(con, pstmt, rs);
 }
 
 

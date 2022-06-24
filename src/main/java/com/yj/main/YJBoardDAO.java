@@ -50,6 +50,7 @@ public class YJBoardDAO {
 
 	// 게시판 글 등록하기
 	public static void regBoard(HttpServletRequest request) {
+		
 		Connection con = null;
 		PreparedStatement pstmt = null;
 
@@ -71,6 +72,7 @@ public class YJBoardDAO {
 			String name = mr.getParameter("name");
 			String img = mr.getFilesystemName("fName");
 			String txt = mr.getParameter("txt");
+				txt=txt.replace("\r\n","<br>");
 			String pw = mr.getParameter("password");
 
 			// 값 받고, ?에 셋팅.
@@ -180,6 +182,7 @@ public class YJBoardDAO {
 					String cate = mr.getParameter("boardType");
 					String name = mr.getParameter("name");
 					String txt = mr.getParameter("txt");
+						txt=txt.replace("\r\n","<br>");
 					String img = mr.getFilesystemName("fName");
 					String pw = mr.getParameter("password");
 					String number = mr.getParameter("number");
@@ -425,7 +428,7 @@ public class YJBoardDAO {
 	
 		try {
 			
-			String sql = "select * from BOARD_DB order by B_DATE desc limit 5";
+			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB order by B_DATE desc) where rownum <= 5";
 			con = DBManager_Main.connect();
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
@@ -434,13 +437,14 @@ public class YJBoardDAO {
 			
 			while (rs.next()) {
 				Board b = new Board();
-				
+				b.setNo(rs.getInt("b_no"));
+				b.setCate(rs.getString("b_cate"));
 				b.setTitle(rs.getString("b_title"));
 				
 				boards.add(b);
 			}
 			
-			
+			request.setAttribute("boards", boards);
 			
 			
 			
@@ -449,9 +453,6 @@ public class YJBoardDAO {
 		} finally {
 			DBManager_Main.close(con, pstmt, rs);
 		}
-
-
-
-}
+	}
 
 }

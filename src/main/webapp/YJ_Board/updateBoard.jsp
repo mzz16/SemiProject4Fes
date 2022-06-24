@@ -12,7 +12,7 @@
 <body>	
 
 	<!-- 게시판 영역(글쓰기용)-->
-		<form action="BoardUpdateC" name="makeBoard" method="post" enctype="multipart/form-data">
+		<form action="BoardUpdateC?cate=all" name="makeBoard" method="post" enctype="multipart/form-data">
 
 		<div class="mainBoard">
 		
@@ -39,7 +39,7 @@
 		</div>
 		
 		<!-- 내용(게시판) -->
-		<div id="BoardTxtDiv">
+		<div id="BoardTxtDiv" >
 			<div><textarea id="BoardTxtArea" name="txt">${board.txt}</textarea></div>
 		</div>
 		

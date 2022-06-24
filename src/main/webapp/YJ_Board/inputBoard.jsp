@@ -11,8 +11,7 @@
 </head>
 <body>
 	<!-- 게시판 영역(글쓰기용)-->
-	<form action="BoardInputHC" name="makeBoard" method="post"
-		enctype="multipart/form-data">
+	<form action="BoardInputHC?cate=all" name="makeBoard" method="post" enctype="multipart/form-data">
 
 		<div class="mainBoard">
 			
@@ -31,7 +30,7 @@
 			<div id="BoardCateDiv">
 				카테고리
 				<div>
-					<select name="boardType">
+					<select name="boardType"  >
 						<option value="자유게시판">자유게시판</option>
 						<option value="후기게시판">후기게시판</option>
 					</select>
@@ -48,7 +47,7 @@
 			<!-- 내용(게시판) -->
 			<div id="BoardTxtDiv">
 				<div>
-					<textarea id="BoardTxtArea" name="txt">(1000자내 입력)</textarea>
+					<textarea id="BoardTxtArea" name="txt">1000자내 입력</textarea>
 				</div>
 			</div>
 

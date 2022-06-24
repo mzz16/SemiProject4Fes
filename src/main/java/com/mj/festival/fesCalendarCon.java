@@ -1,4 +1,4 @@
-package com.t4.main;
+package com.mj.festival;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,19 +7,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.yj.main.YJBoardDAO;
-
-@WebServlet("/MainHC")
-public class MainHC extends HttpServlet {
-	
+@WebServlet("/fesCalendarCon")
+public class fesCalendarCon extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		YJBoardDAO.showMainPage(request);
-		request.setAttribute("contentPage", "home.jsp");
+
+request.setAttribute("contentPage", "mj_calendar/month_view.jsp");
+		
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
+	
 	}
 
 }

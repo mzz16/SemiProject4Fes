@@ -31,7 +31,7 @@
 	<!--상단 홈 메뉴 영 -->
 	<div class="homeDiv">
 		<div id="home">
-			<a href="MainHC"><img id="logoimg" src="yj_img/logo_kari.png"></a>
+			<a href="MainHC">서울축제</a>
 		</div>
 		<div id="menu">
 			<a href="festivalHC">축제정보일람</a>
