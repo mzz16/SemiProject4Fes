@@ -3,22 +3,27 @@
 #seoulGu {
 	font-size: 30pt;
 	font-weight: 500;
+	margin-top: 30px;
 }
 
-#pathMainDiv {
-	border: 1px;
-	background-color: blue;
+#festivalListDiv {
+	width: 1080px;
+	background-color: white;
+	padding-left: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 35px;
+}
+
+#festivalListTbl {
+	border-color: black;
+	border-collapse: collapse;
 }
 
 #fesImg {
 	float: left;
 	height: 200px;
 	width: 200px;
-}
-
-#fesTitle {
-	float: right;
-	background: yellow;
 }
 
 .fesInfoDetailButton {
