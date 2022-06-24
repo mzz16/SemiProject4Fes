@@ -14,6 +14,7 @@
 <meta name="keywords"
 	content="scattered polaroids, image gallery, javascript, random rotation, 3d, backface, flat design" />
 <meta name="author" content="Codrops" />
+
 <link rel="shortcut icon" href="../favicon.ico">
 <link rel="stylesheet" type="text/css"
 	href="mj_fesInfo_board/css/normalize.css" />
