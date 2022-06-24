@@ -17,7 +17,7 @@
 				<td><a href="festivalInfoCon?m_no=${f.no}"><img src="${f.mainImg }" style="max-width: 160px;"></a></td>
 
 			<tr style="height:90px;">
-				<td><a href="festivalInfoCon?m_no=${f.no}">${f.title}</a></td>
+				<td class="festivalListTitle"><a href="festivalInfoCon?m_no=${f.no}">${f.title}</a></td>
 			</tr>
 		</table>
 		</c:forEach>
