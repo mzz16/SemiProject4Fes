@@ -11,8 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class fesCalendarCon extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-request.setAttribute("contentPage", "mj_calendar/full_month.jsp");
-		
+		request.setAttribute("contentPage", "mj_calendar/full_month.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 

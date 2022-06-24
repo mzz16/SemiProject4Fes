@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/festivalListCon")
 public class festivalListCon extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		festivalDAO.getFestival(request);
+		festivalDAO.getFesdao().getFestival(request);
 		request.setAttribute("contentPage", "mj_fesInfo_board/festivalList.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
