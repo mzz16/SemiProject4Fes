@@ -3,7 +3,7 @@
 /* 글쓰기버튼 */
 .BoardInputDiv {
 	text-align: right;
-	margin-right: 20px;
+	margin-right: 10%;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -11,39 +11,50 @@
 .BoardInputDiv button{
 	font-family: 'Do Hyeon', sans-serif;
 	font-size: 13pt;
-	background-color:#dfdfdd ;
 	color: #514f4a;
 }
 
 /* 전체 테이블 배치용 */
 .ViewBoardMain {
+	border-radius: 30px;
 	font-family: 'Noto Sans KR', sans-serif;
 	background-color: #FFFDFA;
 	width: 100%;
 	display: flex;
+	margin: 10 auto;
 }
 /* 카테고리 선택 영역 */
 .BoardCateDiv {
 	font-family: 'Do Hyeon', sans-serif;
-	width: 35%;
+	width: 20%;
 }
 
-.BoardCateDiv div {
-	background-color: #688acb;
-	color: #dfdfdd;
-	width: 90%;
+.BoardCateDiv div {	
+	background-color: #FFDB9B;
+	color: white;
+	width: 80%;
 	text-align: right;
-	margin: 10px;
 	font-size: 20pt;
-	
-	padding-right: 10px
+	padding-right:10px;
+	margin-right: 5px;
+
+}
+
+#boardCate1{
+	margin: 10px;
+}
+#boardCate2{
+	margin: 10px;
+}
+#boardCate3{
+	margin: 10px;
 }
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv {
 	text-align: center;
 	margin-top: 15px;
-	width: 65%;
+	width: 78%;
 }
 
 #seeNoteTopTr {
