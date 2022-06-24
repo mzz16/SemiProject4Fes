@@ -1246,11 +1246,7 @@
 	<div id="leftInformation">
 		<!-- 축제정보 보러가기 영역 -->
 		<div id="gotoFesInfo">
-			<table border="1">
-				<tr onclick="location.href='festivalHC'">
-					<td><h1>축제정보 보러가기</h1></td>
-				</tr>
-			</table>
+			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakuraBanner2.jpg" style="width: 530px"></a>
 		</div>
 
 		<!-- 게시판 노출 영역 -->
@@ -1279,7 +1275,7 @@
 	</div>
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
-		<a onclick="location.href='fesCalendarCon'"> 더보기 </a>
+		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
 
 </body>
