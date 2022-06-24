@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,27 +8,30 @@
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
 <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialDate: '2022-06-12',
-      editable: true,
-      selectable: true,
-      businessHours: true, 
-      dayMaxEvents: true, // allow "more" link when too many events
-      events: [
-    	  {
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			height : '100%',
+			expandRows : true,
+			slotMinTime : '08:00',
+			slotMaxTime : '20:00',
+			headerToolbar : {
+				left : 'prev,next today',
+				center : 'title',
+				right : 'dayGridMonth,listWeek'
+			},
+			initialView : 'dayGridMonth',
+			initialDate : '2022-06-12',
+			navLinks : true, // can click day/week names to navigate views
+			editable : true,
+			selectable : true,
+			nowIndicator : true,
+			dayMaxEvents : true, // allow "more" link when too many events
+			events : [ {
 				title : '[서울문화재단] 6월 봄소풍 프로젝트 \'여름 마중\'',
 				start : '2022-06-25',
 				color : 'pink'
-			}, {
-				title : '[방방곡곡 문화공감사업] 은평에 반하다 HELLO! RHYTHM!',
-				start : '2022-06-23',
-				end : '2022-06-26',
-				color : 'pink'
-				
 			}, {
 				title : '2022 나루 스트릿 댄스 페스티벌 [나루 브레이킹  배틀 2on2]',
 				start : '2022-06-18',
@@ -73,7 +76,7 @@
 				title : '<2022 월간뮤지크>',
 				start : '2022-04-30',
 				end : '2022-11-30',
-				color : 'gray'
+				color : 'pink'
 			}, {
 				title : '[서울문화재단] 서서울예술교육센터 봄소풍 프로젝트 \'봄.봄.봄\'',
 				start : '2022-04-30',
@@ -96,11 +99,6 @@
 				title : '경춘선숲길 갤러리 음악회',
 				start : '2022-04-23',
 				color : 'yellow'
-			}, {
-				title : '도봉구민청 개른이날 <제 1회 견인해> 참여자 모집',
-				start : '2022-04-04',
-				end : '2022-05-03',
-				color : 'green'
 			}, {
 				title : '국가무형문화재 막걸리 challenge ',
 				start : '2022-03-19',
@@ -149,11 +147,6 @@
 				start : '2021-11-16',
 				end : '2021-11-19',
 				color : 'pink'
-			}, {
-				title : '<2021 DDP 디자인 마켓 판매자 모집>',
-				start : '2021-11-03',
-				end : '2021-11-28',
-				color : 'purple'
 			}, {
 				title : '2021 랜선 정동야행',
 				start : '2021-11-02',
@@ -269,11 +262,6 @@
 				title : '˝2021 제3회 마포국악페스티벌˝꼬레아 리듬터치 #2 <애오개 본산대놀이> ',
 				start : '2021-06-30'
 			}, {
-				title : '[종로문화재단] 2021 종로한복축제 <한복동아리-복동이> 참여자 모집',
-				start : '2021-06-21',
-				end : '2021-07-07',
-				color : 'orange'
-			}, {
 				title : '관악문화재단 \'GIG(Groove In Gwanak) FESTA\' 개최',
 				start : '2022-07-15',
 				end : '2022-07-31'
@@ -327,11 +315,6 @@
 				title : '2022 남산골 어린이마을 [행복 쥐의 남산 구경]',
 				start : '2022-05-05'
 			}, {
-				title : '2022 서울드럼페스티벌 드럼경연대회 (THE DRUMMER) 참가자 모집',
-				start : '2022-05-02',
-				end : '2022-05-20',
-				color : 'skyblue'
-			}, {
 				title : '[서울문화재단] 2022 거리예술 시즌 프로그램 <거리예술 캬라반 \'봄\'>',
 				start : '2022-04-23',
 				end : '2022-05-22',
@@ -345,12 +328,7 @@
 				title : '나루랑 버스킹',
 				start : '2022-04-07',
 				end : '2022-10-28',
-				color : 'green'
-			}, {
-				title : '성동문화재단 다양성동 청년기획단 6기 모집',
-				start : '2022-03-29',
-				end : '2022-11-29',
-				color : 'orange'
+				color : 'gold'
 			}, {
 				title : '국제 서울 음악 콩쿠르 시작 벨벳 같은 음악 주인공은?',
 				start : '2022-03-06',
@@ -418,11 +396,6 @@
 				start : '2021-10-19',
 				end : '2021-10-24',
 				color : 'yellow'
-			}, {
-				title : '2021 문화인력양성 교육프로그램 <나대기 프로젝트> 참여자 모집',
-				start : '2021-10-18',
-				end : '2021-12-06',
-				color : 'skyblue'
 			}, {
 				title : 'SIDance2021 제24회 서울세계무용축제',
 				start : '2021-10-16',
@@ -565,15 +538,16 @@
 				start : '2022-04-23',
 				color : 'yellow'
 			}, {
-				title : '종로한복 서포터즈 [한복홍보단] 모집 안내',
-				start : '2022-04-21',
-				end : '2022-05-11',
-				color : 'skyblue'
+				title : '[방방곡곡 문화공감사업] 은평에 반하다 HELLO! RHYTHM!',
+				start : '2022-06-23',
+				end : '2022-06-26',
+				color : 'pink'
+
 			}, {
 				title : '남산골 전통체험',
 				start : '2022-04-05',
 				end : '2022-11-13',
-				color : 'purple'
+				color : 'silver'
 			}, {
 				title : '2022 남산골 온라인 설축제 \'호기로운 설\'',
 				start : '2022-01-31',
@@ -606,33 +580,51 @@
 				start : '2021-07-01',
 				end : '2021-08-29',
 				color : 'green'
-			}
-      ]
-    });
+			} ]
+		});
 
-    calendar.render();
-  });
-
+		calendar.render();
+	});
 </script>
 <style>
+html, body {
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 14px;
+}
 
-  body {
-    margin: 40px 10px;
+#calendar-container {
+	height: 800px;
     padding: 0;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-size: 14px;
-  }
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.fc-header-toolbar {
+	
+    /*the calendar will be butting up against the edges,
+    but let's scoot in the header's buttons
+    */
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
 
   #calendar {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
 </style>
 </head>
 <body>
-	<h1>캘린더</h1>
-  <div id='calendar'></div>
+
+	<div id='calendar-container'>
+		<div id='calendar'></div>
+	</div>
 
 </body>
 </html>
