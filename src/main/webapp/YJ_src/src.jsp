@@ -12,9 +12,8 @@
 	<div class="srcMainDiv1">
 		<div  class="srcMainDiv2">
 			서울의 축제를 알리기 위해 탄생하였습니다.<br>	
-			<div><img id="logoImgSrc" alt="" src="yj_img/logo_kari.png"></div>
+			<div><img id="logoImgSrc" alt="서울축제로고" src="yj_img/logo_final2.png"></div>
 			<div>
-			<hr>
 			만든이들: soldesk 802호 4팀 세미프로젝트<br>
 			제작기간: 2022년 06월 03일 ~
 			</div>
