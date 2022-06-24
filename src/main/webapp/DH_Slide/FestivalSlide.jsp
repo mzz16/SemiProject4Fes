@@ -21,7 +21,8 @@
  .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
-	box-shadow: none;
+	box-shadow: none; 
+	
 } 
 #addBtn{
 display: none;
@@ -344,6 +345,7 @@ $("#xBtn").click(function() {
 			stopAutoOnClick : false,
 			pager : false,
 			controls : false,
+			  adaptiveHeight: true
 		});
 	</script>
 
