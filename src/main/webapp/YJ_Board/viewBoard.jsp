@@ -12,11 +12,13 @@
 </head>
 <body>
 
-	<div class="BoardInputDiv">
+	<div class="allBoardView">
+	
+		<div class="BoardInputDiv">
 		<button id="btn_write" onclick="location.href='BoardInputHC'">글쓰기</button>
-	</div>
+		</div>
 
-	<div class="ViewBoardMain">
+		<div class="ViewBoardMain">
 		<div class="BoardCateDiv">
 			<div id="boardCate1"
 				onclick="location.href='BoardCateViewC?cate=all'">전체 보기</div>
@@ -62,14 +64,9 @@
 				</c:forEach>
 				<div id="pagingTriDiv">▶</div>
 			</div>
-
-
-
-
 		</div>
-
 	</div>
 
-
+</div> 
 </body>
 </html>

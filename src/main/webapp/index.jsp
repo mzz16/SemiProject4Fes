@@ -32,11 +32,13 @@
 <body class="color-change-4x">
 
 <!--  -->
-
+	<div class="homeDivlogo">
+		<img id="logoimg" alt="" src="yj_img/logo_final2.png">
+	</div>
 	<!--상단 홈 메뉴 영 -->
 	<div class="homeDiv">
-		<div id="home">
-			<a href="MainHC">서울축제</a>
+		<div id="menu">
+			<a href="MainHC">홈으로</a>
 		</div>
 		<div id="menu">
 			<a href="festivalHC">축제정보일람</a>
