@@ -765,7 +765,7 @@
 		</div>
 		<div>
 			<img src="dh_festival_slide_img/2.도봉구.png">
-		</div>s
+		</div> 
 		<div>
 			<img src="dh_festival_slide_img/3.노원구.jpeg">
 		</div>
