@@ -22,7 +22,7 @@ public class DBManager_Main {
 	//	String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
 		
 		// dh
-		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707";
+		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/mitakeran/LDH/Wallet_DB202204301707";
 		return DriverManager.getConnection(url, "YJJ", "YJ802soldesk");
 	}
 	
