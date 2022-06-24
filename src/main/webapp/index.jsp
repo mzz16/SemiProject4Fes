@@ -33,7 +33,7 @@
 
 <!--  -->
 	<div class="homeDivlogo">
-		<img id="logoimg" alt="" src="yj_img/logo_final2.png">
+		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_final2.png"></a>
 	</div>
 	<!--상단 홈 메뉴 영 -->
 	<div class="homeDiv">
