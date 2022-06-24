@@ -5,6 +5,7 @@ body {
 	font-family: 'Do Hyeon', sans-serif;
 	margin: 0px;
 	padding: 0px;
+	z-index: 1;
 }
 
 a{
