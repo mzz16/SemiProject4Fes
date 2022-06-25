@@ -150,7 +150,7 @@ var iwContent = arr[i][0], // 인포윈도우에 표출될 내용으로 HTML 문
 /마커 클릭하면 인포윈도우/
  kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
 
-/marker click event/
+//marker click event/
 function makeClickListener(map, marker, infowindow) {
 return function() {
 infowindow.open(map, marker);
