@@ -9,12 +9,9 @@
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="mj_css/home.css">
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
@@ -50,15 +47,15 @@
 	#contain {
 		height: 40%;
 	}
-	#gotoFesInfo {
+	#leftInformation {
 		width: 40%;
+		font-size: 50%;
 	}
-	#showBoard {
-		width: 40%;
-	}
+	
 	#calendar {
 		width: 40%;
 	}
+	
 }
 
 @media ( max-width : 900px ) {
@@ -79,15 +76,16 @@
 	#contain {
 		height: 40%;
 	}
-	#gotoFesInfo {
+	
+	#leftInformation {
 		width: 40%;
+		font-size: 50%;
 	}
-	#showBoard {
-		width: 40%;
-	}
+
 	#calendar {
 		width: 40%;
 	}
+	
 }
 
 @media ( max-width : 800px ) {
@@ -106,15 +104,15 @@
 	/* 	#contain{
 	height: 40%;
 	} !!!!!!오류나면 살리기 */
-	#gotoFesInfo {
+	#leftInformation {
 		width: 40%;
-	}
-	#showBoard {
-		width: 40%;
+		font-size: 50%;
 	}
 	#calendar {
 		width: 40%;
 	}
+	
+	
 }
 
 @media ( max-width : 700px ) {
@@ -1226,20 +1224,20 @@
 	<div id="leftInformation">
 		<!-- 축제정보 보러가기 영역 -->
 		<div id="gotoFesInfo">
-			<a href='festivalHC'><img alt="축제정보"
-				src="mj_img/sakuraBanner2.jpg" style="width: 530px"></a>
+			<a href='festivalHC'><img alt="축제정보" 
+				src="mj_img/sakuraBanner2.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
 		</div>
 
 		<!-- 게시판 노출 영역 -->
-		<div id=showBoard>
-			<table class="showTable" style="width: 530px">
+		<div id=showBoard style="width: 100%;">
+			<table class="showTable" >
 				<tr>
 					<td class=showBoardTitle colspan="2">게시판</td>
 					<td class="gotoBoard" colspan="1"><a
 						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
 				</tr>
 				</table>
-				<table style="border: 1px solid gray; width: 530px">
+				<table style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
 						<td class="showListNo">글 번호</td>
 						<td class="showListCate">카테고리</td>
