@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="mj_css/home.css">
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
-
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <style>
 
 /* 슬라이드 테두리 제거 */
@@ -1223,9 +1223,12 @@
 
 	<div id="leftInformation">
 		<!-- 축제정보 보러가기 영역 -->
-		<div id="gotoFesInfo">
+		<div class="photo">
+			<span>축제정보<br> 보러가기</span>
 			<a href='festivalHC'><img alt="축제정보" 
-				src="mj_img/sakuraBanner2.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
+				src="mj_img/sakura.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
+			<div class="glow-wrap"><i class="glow"></i></div>
+			<p id="click">→ Click me!</p>
 		</div>
 
 		<!-- 게시판 노출 영역 -->
