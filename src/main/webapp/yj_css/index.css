@@ -1,21 +1,78 @@
 @charset "UTF-8";
-
 /* 기본 태그에 관한 css */
 body {
 	font-family: 'Do Hyeon', sans-serif;
 	margin: 0px;
 	padding: 0px;
+	z-index: 1;
+}
+a{
+	text-decoration-line: none;
+}
+ /* 날씨위젯 */
+.weather_wi{
+	margin-right: 10px;
+	margin-left: 10px;
+	 z-index: -1;
+}
+.tomorrow{
+	 z-index: -1;
 }
 
-a {
-	text-decoration: none;
+
+
+/* 여기부터 배경 */
+.color-change-4x {
+	-webkit-animation: color-change-4x 10s linear infinite alternate both;
+	        animation: color-change-4x 10s linear infinite alternate both;
 }
+
+@-webkit-keyframes color-change-4x {
+  0% {
+    background: #FDAFAB;
+  }
+  33.3333% {
+    background: #D9F1F1;
+  }
+  66.666% {
+    background: #FAF1D6;
+  }
+  100% {
+    background: #FAD4AE;
+  }
+}
+@keyframes color-change-4x {
+   0% {
+    background: #FDAFAB;
+  }
+  33.3333% {
+    background: #D9F1F1;
+  }
+  66.666% {
+    background: #FAF1D6;
+  }
+  100% {
+    background: #FAD4AE;
+  }
+}
+/* 여기까지 배경 */
+
 
 /* 홈 영역 전체*/
+.homeDivlogo{
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	background-color: white;
+}
+
+
 .homeDiv {
-	margin-left: auto; margin-right:auto;
-	width: 100%;
-	height: auto;
+	margin-top: auto;
+	margin-bottom:auto;
+	background-color:white;
+	opacity: 50%;
+	width: 100%; height: auto;
 	display: flex;
 	text-align: center;
 	align-items: flex-end;
@@ -27,61 +84,41 @@ a {
 	height: auto;
 	font-size: 30pt;
 	color:black;
+	margin-right: 10px;
 }
 
 #menu > a {
-	width: 15%;
+	width: 100%;
 	height: auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	font-size: 23pt;
+/* 	font-size: 23pt; */
 	color:black;
 }
 
-/* #logoimg {
-	width:50%;
+#logoimg {
+	width:25%;
 	justify-content: center;
-	margin: 10px;
-} */
-
-#bannerImg {
-	width: 80%;
-}
-
-#bannerImg:hover {
-	opacity: 70%;
-}
+	padding-bottom: 7px;
+} 
 
 /* 콘텐트 영역 전체*/
 .ContentDiv {
-	display: flex;
-	padding: 10px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #contentSlide {
-	width: 65%;
-	margin: 10px;
-	margin: 15px;
-}
-
-#content01 {
-	margin: 10px;
-	width: 17%;
-/* 	height: auto; */
-}
-
-#content02 {
-	margin: 10px;
-	padding: inherit;
-	width: 17%;	
-	height: 63%;
-	background-color:#ADE628;
-	font-size: 17pt;
+	margin-left:auto; margin-right:auto;
+	width: 95%;
 	text-align: center;
+	vertical-align: middle;
 }
 
 /* 푸터 영역 */
 .footerDiv {
+background-color:white;
 	margin: auto;
 	padding-bottom:20px;
 	padding-top:15px;
@@ -93,8 +130,6 @@ a {
 
 #footer {
 	text-align: center;
-	margin-left: 50px;
-	margin-right: 50px;
 }
 
 #footerDetail {

@@ -12,24 +12,28 @@
 </head>
 <body>
 
-	<div class="BoardInputDiv">
-		<button id="btn_write" onclick="location.href='BoardInputHC'">글쓰기</button>
-	</div>
-
+	<div class="allBoardView">
+	
+	
 	<div class="ViewBoardMain">
 		<div class="BoardCateDiv">
 			<div id="boardCate1"
-				onclick="location.href='BoardCateViewC?cate=all'">전체 보기</div>
+				onclick="location.href='BoardCateViewC?cate=all'">▶ 전체 보기</div>
 			<div id="boardCate2"
-				onclick="location.href='BoardCateViewC?cate=free'">자유게시판으로</div>
+				onclick="location.href='BoardCateViewC?cate=free'">▶ 자유게시판</div>
 			<div id="boardCate3"
-				onclick="location.href='BoardCateViewC?cate=review'">후기게시판으로</div>
+				onclick="location.href='BoardCateViewC?cate=review'">▶ 후기게시판</div>
 		</div>
 
 		<div class="BoardSeeNoteDiv">
+			<!-- 글쓰기버튼! -->
+			<div class="BoardInputDiv">
+				<button id="btn_write" onclick="location.href='BoardInputHC'">글쓰기</button>
+			</div>
+		
 			<div id="boardSeeNote">
 				<!-- 글 목록 출력 -->
-				<table id="seeNoteTable">
+				<table id="seeNoteTable" border="1">
 					<tr id="seeNoteTopTr">
 						<td>게시판 분류</td>
 						<td>글 제목</td>
@@ -53,23 +57,18 @@
 
 			<!-- 페이징 관련 -->
 			<div	class="pagingDivMain">		
-				<div id="pagingTriDiv">◀</div>
-				<br>
+				<div id="pagingTriDiv" onclick="location.href='BoardViewHC?vPage=1&&lastPage${lastpage}&&cate=${param.cate}'"><a>◀ 처음으로</a></div>
+				<br> 
 				<c:forEach var="i" begin="1" end="${lastpage}">
-					<div id="pagingNumDiv" onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
-						<c:out value="${i}" />
+					<div id="pagingNumDiv"  onclick="location.href='BoardViewHC?vPage=${i}&&lastPage${lastpage}&&cate=${param.cate}'">
+						<a><c:out value="${i}" /></a>
 					</div>
 				</c:forEach>
-				<div id="pagingTriDiv">▶</div>
+				<div id="pagingTriDiv" onclick="location.href='BoardViewHC?vPage=${lastpage}&&lastPage${lastpage}&&cate=${param.cate}'"><a>마지막으로 ▶</a></div>
 			</div>
-
-
-
-
 		</div>
-
 	</div>
 
-
+</div>
 </body>
 </html>

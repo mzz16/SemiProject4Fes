@@ -21,7 +21,8 @@
  .bx-wrapper {
 	border: 0;
 	background: #fbfbfb;
-	box-shadow: none;
+	box-shadow: none; 
+	
 } 
 #addBtn{
 display: none;
@@ -110,7 +111,7 @@ var size = document.getElementById("size");
 
 window.onresize = function(event){
 var innerWidth = window.innerWidth;
-/* console.log(innerWidth); */
+ console.log(innerWidth); 
 
 
 if (innerWidth < 700) {
@@ -145,86 +146,96 @@ $("#xBtn").click(function() {
   
 	<!-- 슬라이더 영역 -->
 	<div class="bxslider" id="slider">
-		
 		<div>
-			<img src="dh_festival_slide_img/강북구.jpeg" >
+			<img src="dh_festival_slide_img/1.강북구.jpeg" >
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/도봉구.jpeg">
+			<img src="dh_festival_slide_img/2.도봉구.png">
+		</div>s
+		<div>
+			<img src="dh_festival_slide_img/3.노원구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/노원구.jpeg">
+			<img src="dh_festival_slide_img/4.은평구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/은평구.jpeg">
+			<!-- <img src="dh_festival_slide_img/서대문구.jpeg"> -->
+			<h1>서대문구</h1>
+			관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/서대문구.jpeg">
+			<img src="dh_festival_slide_img/6.종로구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/종로구.png">
+			<!-- <img src="dh_festival_slide_img/성북구.png"> -->
+			<h1>성북구</h1>
+			관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/성북구.png">
+			<img src="dh_festival_slide_img/8.동대문구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/동대문구.jpeg">
+			<img src="dh_festival_slide_img/9.중랑구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/중랑구.jpeg">
+			<img src="dh_festival_slide_img/10.마포구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/마포구.jpeg">
+			<img src="dh_festival_slide_img/11.용산구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/용산구.jpeg">
+			<img src="dh_festival_slide_img/12.중구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/중구.jpeg">
+			<img src="dh_festival_slide_img/13.성동구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/성동구.jpeg">
+			<img src="dh_festival_slide_img/14.광진구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/광진구.jpeg">
+			<!-- <img src="dh_festival_slide_img/강서구.jpeg"> -->
+			<h1>강서구</h1>
+			관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/강서구.jpeg">
+			<img src="dh_festival_slide_img/16.양천구.png">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/양천구.jpeg">
+		<!-- 	<img src="dh_festival_slide_img/구로구.jpeg"> -->
+		<h1>구로구</h1>
+		관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/구로구.jpeg">
+			<!-- <img src="dh_festival_slide_img/영등포구.jpeg"> -->
+			<h1>영등포구</h1>
+		      관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/영등포구.jpeg">
+			<img src="dh_festival_slide_img/19.금천구.png">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/금천구.jpeg">
+			<!-- <img src="dh_festival_slide_img/동작구.jpeg"> -->
+			<h1>동작구</h1>
+		      관련 축제 정보가 없습니다.
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/동작구.jpeg">
+			<img src="dh_festival_slide_img/21.관악구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/관악구.jpeg">
+			<img src="dh_festival_slide_img/22.서초구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/서초구2.jpeg">
+			<img src="dh_festival_slide_img/23.강남구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/강남구.jpeg">
+			<img src="dh_festival_slide_img/24.송파구.jpeg">
 		</div>
 		<div>
-			<img src="dh_festival_slide_img/송파구2.jpeg">
+			<img src="dh_festival_slide_img/25.강동구.jpeg">
 		</div>
-		<div>
-			<img src="dh_festival_slide_img/강동구.jpeg">
-		</div>
-</div>
-
-
-
+	</div>
+	<!-- bxslider 닫음 -->
+	
 
 <!-- 지도 영역 -->
 	<div id="img_content" >
@@ -344,6 +355,7 @@ $("#xBtn").click(function() {
 			stopAutoOnClick : false,
 			pager : false,
 			controls : false,
+			 /*  adaptiveHeight: true */
 		});
 	</script>
 

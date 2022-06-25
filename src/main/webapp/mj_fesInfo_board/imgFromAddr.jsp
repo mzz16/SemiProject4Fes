@@ -11,7 +11,6 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="org.json.simple.JSONObject"%>
 <%
-Connection con = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
 	
@@ -19,7 +18,7 @@ try {
 	
 	String sql = "select * from festival_list where guname=?";
 	
-	con = DBManager_Main.connect();
+	Connection con = DBManager_Main.getDbm().connect();
 	pstmt = con.prepareStatement(sql);
 	String guName = (String) request.getParameter("guname");
 	guName = URLDecoder.decode(guName, "UTF-8");
@@ -47,8 +46,6 @@ try {
 	    JSONObject jobj = new JSONObject();   //{}
 		jobj.put("result", arr);
 		
-		
-		
 	    // 응답시 json 타입이라는 걸 명시 ( 안해주면 json 타입으로 인식하지 못함 )
 	    response.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
@@ -58,7 +55,7 @@ try {
 	System.out.println(e);
 	
 } finally {
-	DBManager_Main.close(con, pstmt, rs);
+	DBManager_Main.getDbm().close(null, pstmt, rs);
 }
 
 

@@ -13,7 +13,7 @@ import com.mj.festival.festivalDAO;
 public class festivalCon extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		festivalDAO.work(request);
+		festivalDAO.getFesdao().work(request);
 		request.setAttribute("contentPage", "output.jsp");
 		request.getRequestDispatcher("festival/index.jsp").forward(request, response);
 	}

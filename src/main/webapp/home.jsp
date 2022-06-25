@@ -9,12 +9,9 @@
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="mj_css/home.css">
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
@@ -47,6 +44,18 @@
 	#img_content .plan_tit {
 		font-size: 50%;
 	}
+	#contain {
+		height: 40%;
+	}
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+	}
+	
+	#calendar {
+		width: 40%;
+	}
+	
 }
 
 @media ( max-width : 900px ) {
@@ -64,6 +73,19 @@
 	#img_content .plan_tit {
 		font-size: 30%;
 	}
+	#contain {
+		height: 40%;
+	}
+	
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+	}
+
+	#calendar {
+		width: 40%;
+	}
+	
 }
 
 @media ( max-width : 800px ) {
@@ -78,6 +100,19 @@
 		z-index: 3;
 		opacity: 0.9;
 	}
+
+	/* 	#contain{
+	height: 40%;
+	} !!!!!!오류나면 살리기 */
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+	}
+	#calendar {
+		width: 40%;
+	}
+	
+	
 }
 
 @media ( max-width : 700px ) {
@@ -123,18 +158,16 @@
 </script>
 
 <script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialDate: '2022-06-12',
-      editable: true,
-      selectable: true,
-      businessHours: true, 
-      dayMaxEvents: true, // allow "more" link when too many events
-      events: [
-    	  {
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			initialDate : '2022-06-12',
+			editable : true,
+			selectable : true,
+			businessHours : true,
+			dayMaxEvents : true, // allow "more" link when too many events
+			events : [ {
 				title : '[서울문화재단] 6월 봄소풍 프로젝트 \'여름 마중\'',
 				start : '2022-06-25',
 				color : 'pink'
@@ -143,7 +176,7 @@
 				start : '2022-06-23',
 				end : '2022-06-26',
 				color : 'pink'
-				
+
 			}, {
 				title : '2022 나루 스트릿 댄스 페스티벌 [나루 브레이킹  배틀 2on2]',
 				start : '2022-06-18',
@@ -721,111 +754,99 @@
 				start : '2021-07-01',
 				end : '2021-08-29',
 				color : 'green'
-			}
-      ]
-    });
+			} ]
+		});
 
-    calendar.render();
-  });
-
+		calendar.render();
+	});
 </script>
 
 </head>
 <body id="size">
 
 
-	<div style="position: relative; border: 1px solid blue; height: 250px"
-		id="contain">
-
+	<div style="position: relative; height: 100%;" id="contain">
 		<!-- 슬라이더 영역 -->
 		<div class="bxslider" id="slider">
-
 			<div>
-				<img src="dh_festival_slide_img/강북구.jpeg">
+				<img src="dh_festival_slide_img/1.강북구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/도봉구.jpeg">
+				<img src="dh_festival_slide_img/2.도봉구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/노원구.jpeg">
+				<img src="dh_festival_slide_img/3.노원구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/은평구.jpeg">
+				<img src="dh_festival_slide_img/4.은평구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/서대문구.jpeg">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/종로구.png">
+				<img src="dh_festival_slide_img/6.종로구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/성북구.png">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/동대문구.jpeg">
+				<img src="dh_festival_slide_img/8.동대문구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/중랑구.jpeg">
+				<img src="dh_festival_slide_img/9.중랑구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/마포구.jpeg">
+				<img src="dh_festival_slide_img/10.마포구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/용산구.jpeg">
+				<img src="dh_festival_slide_img/11.용산구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/중구.jpeg">
+				<img src="dh_festival_slide_img/12.중구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/성동구.jpeg">
+				<img src="dh_festival_slide_img/13.성동구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/광진구.jpeg">
+				<img src="dh_festival_slide_img/14.광진구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/강서구.jpeg">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/양천구.jpeg">
+				<img src="dh_festival_slide_img/16.양천구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/구로구.jpeg">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/영등포구.jpeg">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/금천구.jpeg">
+				<img src="dh_festival_slide_img/19.금천구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/동작구.jpeg">
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/관악구.jpeg">
+				<img src="dh_festival_slide_img/21.관악구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/서초구2.jpeg">
+				<img src="dh_festival_slide_img/22.서초구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/강남구.jpeg">
+				<img src="dh_festival_slide_img/23.강남구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/송파구2.jpeg">
+				<img src="dh_festival_slide_img/24.송파구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/강동구.jpeg">
+				<img src="dh_festival_slide_img/25.강동구.jpeg">
 			</div>
 		</div>
-
-
-
-
+		<!-- bxslider 닫음 -->
 		<!-- 지도 영역 -->
 		<div id="img_content">
-
-
-
-
 			<!-- 텍스트 영역  -->
 			<div class="plan_tit" style="position: relative;">
 				<p class="tit">서울지도</p>
@@ -835,7 +856,6 @@
 						src="dh_map_img/btn_close.png">
 					</span>
 				</p>
-
 			</div>
 			<!-- 텍스트 닫음 -->
 
@@ -968,6 +988,7 @@
 			stopAutoOnClick : false,
 			pager : false,
 			controls : false,
+			adaptiveHeight : true,
 		});
 	</script>
 
@@ -1194,32 +1215,49 @@
 		});
 	</script>
 
-	<div id="addBtn" style="position: fixed; right: 20px; bottom: 20px;">
+	<div id="addBtn"
+		style="position: fixed; right: 20px; bottom: 20px; z-index: 3;">
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>
 
-	<!-- 게시판 노출 영역 -->
-	<div id=showBoard>
-		<div class=showBoardTitle> 게시판  <button class="gotoBoard" onclick="location.href='BoardViewHC?cate=all'"> +MORE </button></div>
-		<table class="showTable" border="1">
-			<tr class="showTbTitle">
-				<td class="showListNo">글 번호</td>
-				<td class="showListCate">카테고리</td>
-				<td class="showListTitle">제목</td>
-			</tr>
-			<c:forEach items="${boards }" var="b">
-				<tr class="showList" onclick="location.href='BoardViewHC?number=${b.no}'">
-					<td class="showListNo">${b.no }</td>
-					<td class="showListCate">${b.cate }</td>
-					<td class="showListTitle">${b.title }</td>
+	<div id="leftInformation">
+		<!-- 축제정보 보러가기 영역 -->
+		<div id="gotoFesInfo">
+			<a href='festivalHC'><img alt="축제정보" 
+				src="mj_img/sakuraBanner2.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
+		</div>
+
+		<!-- 게시판 노출 영역 -->
+		<div id=showBoard style="width: 100%;">
+			<table class="showTable" >
+				<tr>
+					<td class=showBoardTitle colspan="2">게시판</td>
+					<td class="gotoBoard" colspan="1"><a
+						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
 				</tr>
-			</c:forEach>
-		</table>
+				</table>
+				<table style="border: 1px solid gray; width: 100%;">
+					<tr class="showTbTitle">
+						<td class="showListNo">글 번호</td>
+						<td class="showListCate">카테고리</td>
+						<td class="showListTitle">제목</td>
+					</tr>
+					<c:forEach items="${boards }" var="b">
+						<tr class="showList"
+							onclick="location.href='BoardViewHC?number=${b.no}'">
+							<td class="showListNo">${b.no }</td>
+							<td class="showListCate">${b.cate }</td>
+							<td class="showListTitle">${b.title }</td>
+						</tr>
+					</c:forEach>
+			</table>
+		</div>
 	</div>
-	
 	<!-- 캘린더 영역 -->
-	 <div id='calendar'><a onclick="location.href='fesCalendarCon'"> 더보기 </a></div>
+	<div id='calendar'>
+		<a href='fesCalendarCon'> 더보기 </a>
+	</div>
 
 </body>
 </html>
