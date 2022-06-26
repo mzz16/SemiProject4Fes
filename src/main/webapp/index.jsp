@@ -27,9 +27,9 @@
 	
 	
 	<style type="text/css">
-	@media( min-width : 1023px ) {
+	@media( min-width : 1024px ) {
 	#menu {
-		font-size: 23pt;
+		font-size: 20pt;
 	}
 	}
 	
@@ -37,7 +37,7 @@
 	@media ( max-width : 1023px ) {
 	
 	#menu {
-	font-size: 20%;
+			font-size: 16pt;
 	}
 	
 }
@@ -45,7 +45,7 @@
 @media ( max-width : 900px ) {
 
 	#menu {
-		font-size: 20%;
+			font-size: 12pt;
 	}
 	
 }
@@ -53,7 +53,7 @@
 @media ( max-width : 800px ) {
 
 	#menu {
-		font-size: 20%;
+			font-size: 8pt;
 	}
 	
 }
