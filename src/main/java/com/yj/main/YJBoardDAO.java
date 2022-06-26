@@ -419,13 +419,13 @@ public class YJBoardDAO {
 
 	}
 	
+	// mj - 메인페이지에 게시판 5개씩 보여주기
 	public void showMainPage(HttpServletRequest request) {
 		
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 	
 		try {
-			
 			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB order by B_DATE desc) where rownum <= 5";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
@@ -451,5 +451,70 @@ public class YJBoardDAO {
 			DBManager_Main.getDbm().close(null, pstmt, rs);
 		}
 	}
+	
+public void showMainFreeBoardPage(HttpServletRequest request) {
+		
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+	
+		try {
+			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '자유게시판' order by B_DATE desc) where rownum <= 5";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			ArrayList<Board> boards = new ArrayList<Board>();
+			
+			while (rs.next()) {
+				Board b = new Board();
+				b.setNo(rs.getInt("b_no"));
+				b.setCate(rs.getString("b_cate"));
+				b.setTitle(rs.getString("b_title"));
+				
+				boards.add(b);
+			}
+			
+			request.setAttribute("freeBoards", boards);
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager_Main.getDbm().close(null, pstmt, rs);
+		}
+	}
+
+
+public void showMainReviewBoardPage(HttpServletRequest request) {
+	
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+
+	try {
+		String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '후기게시판' order by B_DATE desc) where rownum <= 5";
+		pstmt = con.prepareStatement(sql);
+		rs = pstmt.executeQuery();
+		
+		ArrayList<Board> boards = new ArrayList<Board>();
+		
+		while (rs.next()) {
+			Board b = new Board();
+			b.setNo(rs.getInt("b_no"));
+			b.setCate(rs.getString("b_cate"));
+			b.setTitle(rs.getString("b_title"));
+			
+			boards.add(b);
+		}
+		
+		request.setAttribute("reviewBoards", boards);
+		
+		
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+	} finally {
+		DBManager_Main.getDbm().close(null, pstmt, rs);
+	}
+}
 
 }
