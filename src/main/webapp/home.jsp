@@ -1226,8 +1226,8 @@
 		<div class="photo">
 			<span>축제정보<br> 보러가기</span>
 			<a href='festivalHC'><img alt="축제정보" 
-				src="mj_img/sakura.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
-			<div class="glow-wrap"><i class="glow"></i></div>
+				src="mj_img/sakura.jpg" style="width: 100%;" id="gotoFesInfoImg">
+			<div class="glow-wrap"><i class="glow"></i></div></a>
 			<p id="click">→ Click me!</p>
 		</div>
 
