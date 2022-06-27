@@ -23,9 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 
-	
-	
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 	
 <style type="text/css">
 @media(min-width : 1111px){
 	#menu > a {
@@ -64,6 +62,22 @@
 </head>
 
 <body class="color-change-4x" >
+
+
+<!-- Google 번역 -->
+<div id="google_translate_element" class="hd_lang"></div>
+<script>
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+			pageLanguage: 'ko',
+			includedLanguages: 'ko,zh-CN,zh-TW,ja,vi,th,tl,km,my,mn,ru,en,fr,ar',
+			layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+			autoDisplay: false
+		}, 'google_translate_element');
+	}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- //Google 번역 -->
 
 <!--  -->
 	<div class="homeDivlogo">
