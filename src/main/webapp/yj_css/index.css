@@ -20,6 +20,11 @@ a{
 }
 
 
+/*번역관련*/
+#google_translate_element{
+	text-align: right;
+	background-color: white;
+}
 
 /* 여기부터 배경 */
 .color-change-4x {
