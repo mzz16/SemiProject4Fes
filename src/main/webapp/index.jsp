@@ -73,20 +73,20 @@
 		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_final2.png"></a>
 	</div>
 	<!--상단 홈 메뉴 영역 -->
-	<div class="homeDiv" id="homeDivID" style="border: 3px solid gray;">
-		<div id="menu" style="border: 3px solid gray; width: 100%;" >
+	<div class="homeDiv" id="homeDivID" >
+		<div id="menu" style="width: 100%;" >
 			<a href="MainHC">홈으로</a>
 		</div>
-		<div id="menu" style="border: 3px solid gray; width: 100%;">
+		<div id="menu" style="width: 100%;">
 			<a href="festivalHC">축제정보일람</a>
 		</div>
-		<div id="menu" style="border: 3px solid gray; width: 100%;">
+		<div id="menu" style="width: 100%;">
 			<a href="searchMapHC">지도보기</a>
 		</div>
-		<div id="menu" style="border: 3px solid gray; width: 100%;">
+		<div id="menu" style="width: 100%;">
 			<a href="BoardViewHC?cate=all">게시판</a>
 		</div>
-		<div id="menu" style="border: 3px solid gray; width: 100%;">
+		<div id="menu" style="width: 100%;">
 			<a href="indexSrcC">사이트정보</a>
 		</div>
 	</div>
@@ -128,9 +128,6 @@
 	 </div>
 	<!-- 푸터 -->	
 		<div class="footerDiv">
-			<div id="footer">
-			여기가어디지
-			</div>
 	
 		<div id="footer">
 			도움이 되는 연결고리<br><br>
