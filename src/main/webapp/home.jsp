@@ -33,6 +33,64 @@
 	display: none;
 }
 
+
+@media ( max-width : 1300px ) {
+
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
+.photo span {
+	font-size: 32pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 220px;
+	width: 90%;
+	height: 50%;
+	
+	}
+ .menu__tabs li {
+	font-size: 1.0em;
+	width: 70%;
+	}
+	 
+	
+	
+	}
+@media ( max-width : 1150px ) {
+
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
+.photo span {
+	font-size: 32pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 200px;
+	width: 80%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
+	
+	}
+
+
 @media ( max-width : 1023px ) {
 	#img_content {
 		position: fixed;
@@ -54,10 +112,31 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 27pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 180px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
 }
 
 @media ( max-width : 900px ) {
@@ -81,10 +160,30 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 22pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 160px;
+	width: 60%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 0.8em;
+	
+	}
+	 
 }
 
 @media ( max-width : 800px ) {
@@ -106,16 +205,54 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 140px;
+	width: 50%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 0.5em;
+	
+	}
+	 
 }
 
 @media ( max-width : 700px ) {
 	#img_content {
 		display: none;
 	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 200px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
 }
 </style>
 <script type="text/javascript">
@@ -130,7 +267,7 @@
 
 		window.onresize = function(event) {
 			var innerWidth = window.innerWidth;
-			/* console.log(innerWidth); */
+			 console.log(innerWidth); 
 
 			if (innerWidth < 700) {
 				$("#addBtn").css("display", "block");
@@ -1234,14 +1371,15 @@
 		</span>
 	</div>
 
+
 	<div id="leftInformation">
-	
+
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
-			<span>축제정보<br> 보러가기
-			</span> <a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
+			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
+			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
-				<div class="glow-wrap">
+				<div class="glow-wrap" >
 					<i class="glow"></i>
 				</div></a>
 			<p id="click">→ Click me!</p>
@@ -1278,12 +1416,13 @@
 		<!-- 게시판 노출 영역 -->
 		<div class="menu">
 			<ul class="menu__tabs">
-				<li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>
-						전체보기</a></li>
-				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i> 자유게시판</a></li>
-				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i> 후기게시판</a></li>
+				<li><a class="active item1" href="#item-1"><i
+						class="fa fa-star"></i>전체보기</a></li>
+				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>자유게시판</a></li>
+				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
 			</ul>
 			<section class="menu__wrapper">
+
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
@@ -1291,12 +1430,12 @@
 						<td class="showListCate">카테고리</td>
 						<td class="showListTitle">제목</td>
 					</tr>
-					<c:forEach items="${boards }" var="b">
+					<c:forEach items="${boards}" var="b">
 						<tr class="showList"
 							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
+							<td class="showListNo">${b.no}</td>
+							<td class="showListCate">${b.cate}</td>
+							<td class="showListTitle">${b.title}</td>
 						</tr>
 					</c:forEach>
 				</table>
@@ -1325,6 +1464,7 @@
 						<td class="showListCate">카테고리</td>
 						<td class="showListTitle">제목</td>
 					</tr>
+
 					<c:forEach items="${reviewBoards }" var="b">
 						<tr class="showList"
 							onclick="location.href='BoardViewHC?number=${b.no}'">
@@ -1334,26 +1474,31 @@
 						</tr>
 					</c:forEach>
 				</table>
-			<a class="btnClickBoard" onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
+				<a class="btnClickBoard"
+					onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
 			</section>
-			
+
 			<div class="menu--shadow"></div>
+			
 		</div>
 
 
 
 	</div>
+	
+	
+	
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
-	
+
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
 	<table style="width: 100%; height: 30px;">
 		<tr>
 			<td></td>
 		</tr>
 	</table>
-	
+
 </body>
 </html>
