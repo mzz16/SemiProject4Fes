@@ -39,12 +39,6 @@ public class DBManager_Main {
 		}
 		return null;
 	}
-	
-//	public static Connection connect() throws SQLException{
-//		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-//		return DriverManager.getConnection(url, "c##mj", "mj");
-//		
-//	}
 
 	// 매 작업 후 닫는 것.
 	public void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
