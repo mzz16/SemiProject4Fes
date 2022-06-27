@@ -26,11 +26,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 
 	
 	
-	<style type="text/css">
+<style type="text/css">
+@media(min-width : 1111px){
+	#menu > a {
+			font-size: 23pt;
+	}
+}
+
 	
-	
-	
-	@media ( max-width : 1110px ) {
+@media ( max-width : 1110px ) {
 	
 	#menu > a {
 			font-size: 18pt;
@@ -52,15 +56,8 @@
 			font-size: 8pt;
 	}
 	
-	
-@
-	
-	
-	
 }
-	
-	
-	</style>
+</style>
 	
 	
 
@@ -137,7 +134,6 @@
 				<a href="https://www.mcst.go.kr/kor/main.jsp">문화체육관광부</a><br>
 				<a href="https://www.discoverseoulpass.com/app/main">Discover Seoul Pass</a><br>
 				<a href="https://www.120dasan.or.kr/dsnc/main/main.do">다산120콜센터</a>
-
 			</div>
 		</div>
 		<div id="footer">
