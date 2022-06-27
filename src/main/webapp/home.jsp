@@ -32,8 +32,7 @@
 #addBtn {
 	display: none;
 }
-
-
+  
 @media ( max-width : 1200px ) {
 
 	#leftInformation {
@@ -47,22 +46,44 @@
 	top: 20px;
 	left: 20px;
 	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 250px;
+	bottom: 5px;
+	font-size: 13pt;
+	
+	}
+	
+	
 	.menu {
 	position: absolute;
 	top: 220px;
+	/* width: 90%;
+	height: 50%; */
+	
+	}
+	/* .menu__tabs {
 	width: 90%;
-	height: 50%;
+	} */
 	
-	}
+	
  .menu__tabs li {
-	font-size: 1.0em;
-	width: 70%;
+	/* width: 70%; */
+	float: left;
+	margin-right: 2px;
 	}
-	 
+	
+	/*  .menu__wrapper {
+	 width: 90%;
+	 } */
+
+	
+	}
 	
 	
-	}
-@media ( max-width : 1150px ) {
+/* @media ( max-width : 1150px ) {
 
 	#leftInformation {
 		width: 40%;
@@ -78,17 +99,28 @@
 	.menu {
 	position: absolute;
 	top: 200px;
+	/* width: 80%; */
+	/* height: 50%; */
+	
+/* 	} */
+/* 	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	
+	}
+	
+	
+	
+	 .menu__tabs {
 	width: 80%;
-	height: 50%;
+	} 
 	
-	}
-	.menu__tabs li {
-	font-size: 1.0em;
+	  .menu__wrapper {
+	 width: 80%;
+	 } 
 	
-	}
-	 
 	
-	}
+	} */
 
 
 @media ( max-width : 1023px ) {
@@ -125,18 +157,35 @@
 	left: 20px;
 	}
 	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 215px;
+	bottom: 5px;
+	font-size: 11pt;
+	
+	}
+	
+	
 	.menu {
 	position: absolute;
 	top: 180px;
-	width: 70%;
-	height: 50%;
+	/* width: 70%;
+	height: 50%; */
 	
 	}
 	.menu__tabs li {
-	font-size: 1.0em;
-	
+	float: left;
+	margin-right: 2px;
 	}
-	 
+	
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	 /*   .menu__wrapper {
+	 width: 70%;
+	 } */
 }
 
 @media ( max-width : 900px ) {
@@ -172,18 +221,36 @@
 	top: 20px;
 	left: 20px;
 	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 195px;
+	bottom: 5px;
+	font-size: 9pt;
+	
+	}
+	
+	
 	.menu {
 	position: absolute;
 	top: 160px;
-	width: 60%;
-	height: 50%;
+	
 	
 	}
 	.menu__tabs li {
-	font-size: 0.8em;
+	float: left;
+	margin-right: 2px;
 	
 	}
-	 
+	
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	 /* .menu__wrapper {
+	 width: 70%;
+	 } */
 }
 
 @media ( max-width : 800px ) {
@@ -217,18 +284,35 @@
 	top: 20px;
 	left: 20px;
 	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 175px;
+	bottom: 5px;
+	font-size: 7pt;
+	
+	}
+	
 	.menu {
 	position: absolute;
 	top: 140px;
-	width: 50%;
-	height: 50%;
+	/* width: 50%;
+	height: 50%; */
 	
 	}
 	.menu__tabs li {
-	font-size: 0.5em;
-	
+	float: left;
+	margin-right: 2px;
 	}
-	 
+	
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	/*  .menu__wrapper {
+	 width: 70%;
+	 } */
 }
 
 @media ( max-width : 700px ) {
@@ -240,20 +324,241 @@
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	color: red;
 	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 145px;
+	bottom: 5px;
+	font-size: 5pt;
+	
+	}
+	
 	.menu {
 	position: absolute;
-	top: 200px;
-	width: 70%;
-	height: 50%;
+	top: 120px;
+/* 	width: 70%;
+	height: 50%; */
 	
 	}
 	.menu__tabs li {
-	font-size: 1.0em;
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 150%;
 	
 	}
-	 
+	
+	
+	  .menu__wrapper {
+	 width: 120%;
+	 } 
 }
+
+
+
+@media ( max-width : 600px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: orange;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 115px;
+	bottom: 5px;
+	font-size: 5pt;
+	
+	}
+	
+	
+	.menu {
+	position: absolute;
+	top: 110px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 125%;
+	 } 
+}
+
+
+@media ( max-width : 500px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 7pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: blue;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 85px;
+	bottom: 5px;
+	font-size: 5pt;
+	
+	}
+	
+	
+	.menu {
+	position: absolute;
+	top: 100px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 130%;
+	 } 
+}
+
+@media ( max-width : 400px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 90px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 135%;
+	 } 
+}
+
+
+@media ( max-width : 300px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 80px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 140%;
+	 } 
+}
+
+
+@media ( max-width : 200px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 70px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 145%;
+	 } 
+}
+
+
+
+
 </style>
 <script type="text/javascript">
 	// 현재 창 width를 구하기
@@ -1401,13 +1706,14 @@
 
 		<!-- 게시판 노출 영역 -->
 		<div class="menu">
-			<ul class="menu__tabs">
-				<li><a class="active item1" href="#item-1"><i
-						class="fa fa-star"></i>전체보기</a></li>
+		
+			<ul class="menu__tabs" >
+			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>전체보기</a></li>
 				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>자유게시판</a></li>
 				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
 			</ul>
-			<section class="menu__wrapper">
+			
+			<section class="menu__wrapper" >
 
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
