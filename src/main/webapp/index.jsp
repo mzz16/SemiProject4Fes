@@ -67,7 +67,7 @@
 
 <!--  -->
 	<div class="homeDivlogo">
-		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_final2.png"></a>
+		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_kr.png"></a>
 	</div>
 	<!--상단 홈 메뉴 영역 -->
 	<div class="homeDiv" id="homeDivID" >
