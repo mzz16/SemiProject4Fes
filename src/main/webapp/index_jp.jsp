@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>서울축제</title>
+<title>祭りのソウル</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="yj_css/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="yj_css/index.css">
 <link rel="stylesheet" href="yj_css/inputBoard.css">
@@ -19,55 +20,51 @@
 <!-- 폰트영역 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+	rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 	
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+	rel="stylesheet">
 <style type="text/css">
-@media(min-width : 1111px){
-	#menu > a {
-			font-size: 23pt;
+@media ( min-width : 1111px) {
+	#menu>a {
+		font-size: 23pt;
 	}
 }
 
-	
 @media ( max-width : 1110px ) {
-	
-	#menu > a {
-			font-size: 18pt;
+	#menu>a {
+		font-size: 18pt;
 	}
-	
 }
 
 @media ( max-width : 900px ) {
-
-	#menu > a {
-			font-size: 13pt;
+	#menu>a {
+		font-size: 13pt;
 	}
-	
 }
 
 @media ( max-width : 800px ) {
-
-	#menu > a {
-			font-size: 8pt;
+	#menu>a {
+		font-size: 8pt;
 	}
-	
 }
 </style>
-	
-	
+
+
 
 </head>
 
-<body class="color-change-4x" >
-
+<body class="color-change-4x">
 <div class="header_index" >
 <!-- Google 번역 -->
 <div id="google_translate_element" class="hd_lang"></div>
 <!-- 사이트 언어변경 -->
-<div><button onclick="location.href='MainHC_jp'">日本語サイトへ</button></div>
+<div><button onclick="location.href='MainHC'">한국어 사이트로</button></div>
 </div>
 <script>
 	function googleTranslateElementInit() {
@@ -79,94 +76,87 @@
 		}, 'google_translate_element');
 	}
 </script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- //Google 번역 -->
+	<script
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<!-- //Google 번역 -->
 
-<!--  -->
+	<!--  -->
 	<div class="homeDivlogo">
-		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_kr.png"></a>
+		<a href="MainHC_jp"><img id="logoimg" alt=""
+			src="yj_img/logo_jp.png"></a>
 	</div>
 	<!--상단 홈 메뉴 영역 -->
-	<div class="homeDiv" id="homeDivID" >
-		<div id="menu" style="width: 100%;" >
-			<a href="MainHC">홈으로</a>
+	<div class="homeDiv" id="homeDivID">
+		<div id="menu" style="width: 100%;">
+			<a href="MainHC_jp">ホーム</a>
 		</div>
 		<div id="menu" style="width: 100%;">
-			<a href="festivalHC">축제정보일람</a>
+			<a href="festivalHC_jp">祭り情報一覧</a>
 		</div>
 		<div id="menu" style="width: 100%;">
-			<a href="searchMapHC">지도보기</a>
+			<a href="searchMapHC_jp">地図を見る</a>
 		</div>
 		<div id="menu" style="width: 100%;">
-			<a href="BoardViewHC?cate=all">게시판</a>
+			<a href="BoardViewHC_jp?cate=all">掲示板</a>
 		</div>
 		<div id="menu" style="width: 100%;">
-			<a href="indexSrcC">사이트정보</a>
+			<a href="indexSrcC_jp">サイト情報</a>
 		</div>
 	</div>
 
 
 	<!-- 기타 슬라이드 영역 -->
 	<div class="ContentDiv">
-		<div id="contentSlide"><jsp:include page="${contentPage}" /></div>
+		<div id="contentSlide">
+			<jsp:include page="${contentPage}" />
+		</div>
 	</div>
-	
-	 <!-- 날씨위젯-->
-		<div class="weather_wi">
-		<div class="tomorrow"
-           data-location-id="065498"
-           data-language="KO"
-           data-unit-system="METRIC"
-           data-skin="light"
-           data-widget-type="upcoming"
-           style="padding-top:22px; padding-bottom:22px; position:relative;">
-          <a
-            href="https://www.tomorrow.io/weather/"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
-            <img
-              alt="Powered by Tomorrow.io"
-              src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
-              width="140"
-              height="15"
-            />
-          </a>
-        </div>
-	 
-	 </div>
-	<!-- 푸터 -->	
-		<div class="footerDiv">
-	
+
+	<!-- 날씨위젯-->
+	<div class="weather_wi">
+		<div class="tomorrow" data-location-id="065566" data-language="JA"
+			data-unit-system="METRIC" data-skin="light"
+			data-widget-type="upcoming"
+			style="padding-bottom: 22px; position: relative;">
+			<a href="https://www.tomorrow.io/weather/"
+				rel="nofollow noopener noreferrer" target="_blank"
+				style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+				<img alt="Powered by Tomorrow.io"
+				src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
+				width="140" height="15" />
+			</a>
+		</div>
+	</div>
+	<!-- 푸터 -->
+	<div class="footerDiv">
+
 		<div id="footer">
-			도움이 되는 연결고리<br><br>
+			役に立つサイト<br>
+			<br>
 			<div id="footerDetail">
-				<a href="https://korean.visitseoul.net/index">VisitSeoulNet</a><br>
-				<a href="https://kto.visitkorea.or.kr/kor.kto">한국관광공사</a><br> 
-				<a href="https://www.mcst.go.kr/kor/main.jsp">문화체육관광부</a><br>
-				<a href="https://www.discoverseoulpass.com/app/main">Discover Seoul Pass</a><br>
-				<a href="https://www.120dasan.or.kr/dsnc/main/main.do">다산120콜센터</a>
+				<a href="https://japanese.visitseoul.net/index">VisitSeoulNet</a><br>
+				<a href="https://kto.visitkorea.or.kr/jpn.kto">韓国観光公社</a><br> <a
+					href="https://www.mcst.go.kr/japanese/index.jsp">文化体育観光部</a><br>
+				<a href="https://www.discoverseoulpass.com/app/main">Discover
+					Seoul Pass</a><br> <a
+					href="https://www.120dasan.or.kr/static/lang/lang3.html">タサンコールセンター１２０</a>
 			</div>
 		</div>
 		<div id="footer">
-			제작자정보<br><br>
+			製作者<br>
+			<br>
 			<div id="footerDetail">
 				soldesk 802 <br> Semi-Project team4 with MZ.
 			</div>
 		</div>
 	</div>
-<!--  -->
+	<!--  -->
 
 </body>
 
-
-
-
-
-
 <!-- 날씨관련 -->
 <script>
-       (function(d, s, id) {
+        (function(d, s, id) {
             if (d.getElementById(id)) {
                 if (window.__TOMORROW__) {
                     window.__TOMORROW__.renderWidget();
@@ -177,8 +167,9 @@
             const js = d.createElement(s);
             js.id = id;
             js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
             fjs.parentNode.insertBefore(js, fjs);
         })(document, 'script', 'tomorrow-sdk');
-</script>
+        </script>
 <script type="text/javascript" src="jQuery/jQuery.js"></script>
 </html>
