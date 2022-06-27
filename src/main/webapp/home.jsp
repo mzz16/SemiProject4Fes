@@ -34,12 +34,7 @@
 }
 
 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> fe0b7982b368f351d9fb03544cb61c209da23e07
 @media ( max-width : 1200px ) {
 
 	#leftInformation {
@@ -1284,7 +1279,7 @@
 				<p class="tit">서울지도</p>
 				<p class="dsc">
 					원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다. <span id="xBtn"
-						style="position: absolute; right: 20px; bottom: 5px;"> <img
+						style="position: absolute; right: 20px; bottom: 5px; cursor:pointer;"> <img
 						src="dh_map_img/btn_close.png">
 					</span>
 				</p>
@@ -1664,7 +1659,7 @@
 	</script>
 
 	<div id="addBtn"
-		style="position: fixed; right: 20px; bottom: 20px; z-index: 3;">
+		style="position: fixed; right: 20px; bottom: 20px; z-index: 3; cursor:pointer;">
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>

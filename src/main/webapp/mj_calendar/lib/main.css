@@ -1,4 +1,76 @@
+@media ( max-width : 1200px ) {
 
+	.fc {
+  /* layout of immediate children */
+  display: flex;
+  flex-direction: column;
+color: red;
+  font-size: 10pt;
+}
+	.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 10pt;
+    color: purple;
+  }
+	}
+	
+	@media ( max-width : 1023px ) {
+	
+	.fc {
+  /* layout of immediate children */
+  display: flex;
+  flex-direction: column;
+color: orange;
+  font-size: 8pt;
+}
+	.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 8pt;
+    color: pink;
+  }
+}
+	
+@media ( max-width : 900px ) {
+	
+		.fc {
+  /* layout of immediate children */
+  display: flex;
+  flex-direction: column;
+color: yellow;
+  font-size: 6pt;
+}
+	.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 6pt;
+    color: aqua;
+  }
+}	
+	
+	
+	@media ( max-width : 800px ) {
+	.fc {
+  /* layout of immediate children */
+  display: flex;
+  flex-direction: column;
+color: blue;
+  font-size: 4pt;
+}
+	.fc table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 4pt;
+    color: gray;
+  }
+}
+	
+	
+	
+	
+	
+	
 /* classes attached to <body> */
 /* TODO: make fc-event selector work when calender in shadow DOM */
 .fc-not-allowed,
@@ -19,8 +91,7 @@
   /* layout of immediate children */
   display: flex;
   flex-direction: column;
-
-  font-size: 1em
+ /*  font-size: 1em;  */
 }
 .fc,
   .fc *,
@@ -31,7 +102,7 @@
 .fc table {
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 1em; /* normalize cross-browser */
+   /*  font-size: 1em;  */    /* normalize cross-browser */
   }
 .fc th {
     text-align: center;
@@ -293,7 +364,8 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     margin-top: 1.5em;
   }
 .fc .fc-toolbar-title {
-    font-size: 1.75em;
+   
+     font-size: 1.75em; 
     margin: 0;
   }
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
