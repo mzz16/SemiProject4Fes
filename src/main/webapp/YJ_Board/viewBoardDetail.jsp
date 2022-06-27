@@ -50,16 +50,20 @@
 			<div id="viewBoardName">작성자: ${board.name}</div>
 		</div>
 		
-		
+		<div id="viewBoardTxt">
+		<div id="viewBoardImgDiv">
 		<c:if test="${board.fName ne null}">
 			<div id="viewBoardImg">
 			<img style="max-width: 100%; height: auto;"
 				src="fileFolder/${board.fName}">
 			</div>
 		</c:if>
+		</div>
+		<div>${board.txt}</div>
+		</div>
 		
 		
-		<div id="viewBoardTxt">${board.txt}</div>
+		
 		<br>
 		<div>
 			<button onclick="location.href='BoardViewHC'">목록으로</button>
