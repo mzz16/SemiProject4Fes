@@ -90,10 +90,10 @@ a{
 #menu > a {
 	width: 100%;
 	height: auto;
-	padding-left: 30px;
-	padding-right: 30px;
-/* 	font-size: 23pt; */
-	color:black;
+	/* padding-left: 30px;
+	padding-right: 30px; */
+ 	font-size: 23pt; 
+	  color: black; 
 }
 
 #logoimg {

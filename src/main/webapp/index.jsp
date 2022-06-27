@@ -27,34 +27,35 @@
 	
 	
 	<style type="text/css">
-	@media( min-width : 1024px ) {
-	#menu {
-		font-size: 20pt;
-	}
-	}
 	
 	
-	@media ( max-width : 1023px ) {
 	
-	#menu {
-			font-size: 16pt;
+	@media ( max-width : 1110px ) {
+	
+	#menu > a {
+			font-size: 18pt;
 	}
 	
 }
 
 @media ( max-width : 900px ) {
 
-	#menu {
-			font-size: 12pt;
+	#menu > a {
+			font-size: 13pt;
 	}
 	
 }
 
 @media ( max-width : 800px ) {
 
-	#menu {
-			font-size: 6pt;
+	#menu > a {
+			font-size: 8pt;
 	}
+	
+	
+@
+	
+	
 	
 }
 	
@@ -62,10 +63,10 @@
 	</style>
 	
 	
-	
+
 </head>
 
-<body class="color-change-4x">
+<body class="color-change-4x" >
 
 <!--  -->
 	<div class="homeDivlogo">
