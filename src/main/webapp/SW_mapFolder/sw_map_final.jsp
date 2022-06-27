@@ -32,7 +32,7 @@
 <script type="text/javascript" src="jQuery.js"></script>
 <body>
 
-<div id="map" style="width:100%;height:100vh;"></div>
+<div id="map" style="width:100%;height:95vh;"></div>
 <script type="text/javascript" src="jQuery.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05&libraries=services,clusterer,drawing"></script>
 <script src="kakaoMapsJavaScriptAPIwrapper.js"></script>
