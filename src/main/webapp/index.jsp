@@ -53,7 +53,7 @@
 @media ( max-width : 800px ) {
 
 	#menu {
-			font-size: 8pt;
+			font-size: 6pt;
 	}
 	
 }
