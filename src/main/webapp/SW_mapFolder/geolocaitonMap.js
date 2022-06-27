@@ -31,6 +31,7 @@ function getmap() {
         var map_url = "http://maps.google.com/maps/api/staticmap" 
             + "?center=" + latitude + "," + longitude + "&size=640x640&sensor=true";
  
+ 		var map_url2 = ""
         // 대략적으로 지도 줌 레벨을 계산하여 설정한다.
         var zoomlevel = 20; // 대부분 최대한 확대하여 시작한다.
         if (accuracy > 80)  // 위치가 부정확할 경우 축소한다.
@@ -44,7 +45,7 @@ function getmap() {
         // 이제 이미지 객체에 지도를 출력한다.
         image.src = map_url;
         
-        s
+        alert(map_url);
     }
     
     // geolocation 요청이 실패하면 호출되는 콜백 함수 :
