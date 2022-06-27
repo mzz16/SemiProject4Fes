@@ -47,7 +47,7 @@
 <script>
     var map = new kakao.maps.Map(document.getElementById('map'), { // 지도를 표시할 div
         center : new kakao.maps.LatLng(37.542223,126.9803401), // 지도의 중심좌표
-        level : 10 // 지도의 확대 레벨
+        level : 9 // 지도의 확대 레벨
     });
 
     // 마커 클러스터러를 생성합니다
@@ -115,10 +115,7 @@
             
             // 마커에 클릭이벤트를 등록합니다
        
-				
-			
-    
-	
+
                 var detailAddr;
                 // HTML5의 geolocaiton으로 사용할 수 있는지 확인합니다.
                 if (navigator.geolocation) {
@@ -146,10 +143,12 @@
                     });
                 }      
             	
-	
-            
+			overlay=null;
+			clickedOverlay=null;
+		
+		
             kakao.maps.event.addListener(marker, 'click', function () {
-   			
+            	
             detailAddr = detailAddr.replace(/ /g,"");
             var content = "<div class='wrap'>"+"<div class='info'>"+"<div class='title'>"+ position.title + "<div onclick='closeOverlay()' title='닫기'>"+"</div>"+"</div>"
             +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
@@ -160,10 +159,9 @@
             +"<span class='span2'>"+"<a href=https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place+">"+"길찾기"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
            
-           
-            		
+	
           //  alert(detailAddr);
-          //	alert(position.place);
+          //  alert(position.place);
                          
 
 		// 마커 위에 커스텀오버레이를 표시합니다
@@ -177,10 +175,15 @@
     			disableClickZoom: true,
 			});
 
-            //alert('ㅁㄴㄴㅇㅁㄴㄴㅁㅇㄴㅇ나온나');
   	 	
-            overlay.setMap(map);
-  	 		
+             if (clickedOverlay) {
+   				 clickedOverlay.setMap(null);
+   				
+   		    }
+            // 클릭된 마커 객체가 null이 아니면
+            // 클릭된 마커의 이미지를 기본 이미지로 변경하고
+   		 	overlay.setMap(map);
+   	    	clickedOverlay = overlay;
   	 		
 			//location.href = "https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place    
 			
@@ -189,7 +192,6 @@
             
         	});
     
-            //overlay.setMap(null);
 
        	// 클러스터러에 마커들을 추가합니다
        		clusterer.addMarkers(markers);
@@ -198,8 +200,6 @@
     		});
     
 	
-    
-    	
    	 	// 마커 클러스터러에 클릭이벤트를 등록합니다
     	// 마커 클러스터러를 생성할 때 disableClickZoom을 true로 설정하지 않은 경우
     	// 이벤트 헨들러로 cluster 객체가 넘어오지 않을 수도 있습니다
@@ -219,7 +219,17 @@
         geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
    		 }  
 
- 
+    	// 지도 타입 변경 컨트롤을 생성한다
+  	  var mapTypeControl = new kakao.maps.MapTypeControl();
+  	   
+  	  // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+  	  map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);    
+  	   
+  	  // 지도에 확대 축소 컨트롤을 생성한다
+  	  var zoomControl = new kakao.maps.ZoomControl();
+  	   
+  	  // 지도의 우측에 확대 축소 컨트롤을 추가한다
+  	  map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
    
 
 </script>
