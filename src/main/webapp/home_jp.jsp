@@ -32,8 +32,7 @@
 #addBtn {
 	display: none;
 }
-
-
+  
 @media ( max-width : 1200px ) {
 
 	#leftInformation {
@@ -1396,10 +1395,10 @@
 		<div id="img_content">
 			<!-- 텍스트 영역  -->
 			<div class="plan_tit" style="position: relative;">
-				<p class="tit">서울지도</p>
+				<p class="tit">ソウル地図</p>
 				<p class="dsc">
-					원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다. <span id="xBtn"
-						style="position: absolute; right: 20px; bottom: 5px; cursor:pointer;"> <img
+					地図をクリックするとその地域の祭り情報をご覧になれます。<span id="xBtn"
+						style="position: absolute; right: 20px; bottom: 5px;"> <img
 						src="dh_map_img/btn_close.png">
 					</span>
 				</p>
@@ -1779,7 +1778,7 @@
 	</script>
 
 	<div id="addBtn"
-		style="position: fixed; right: 20px; bottom: 20px; z-index: 3; cursor:pointer;">
+		style="position: fixed; right: 20px; bottom: 20px; z-index: 3;">
 		<span id="plusBtn"> <img src="dh_map_img/info_map_btn.png">
 		</span>
 	</div>
@@ -1789,60 +1788,38 @@
 
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
-			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
+			<span id="FestivalTxt">祭り情報を<br>見にいく</span> 
 			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
 				<div class="glow-wrap" >
 					<i class="glow"></i>
 				</div></a>
-			<p id="click">→ Click me!</p>
+			<p id="click">→　クリック!</p>
 		</div>
-
-		<!-- 게시판 노출 영역 -->
-		<%-- <div id=showBoard style="width: 100%;">
-			<table class="showTable" >
-				<tr>
-					<td class=showBoardTitle colspan="2">게시판</td>
-					<td class="gotoBoard" colspan="1"><a
-						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
-				</tr>
-				</table>
-				<table style="border: 1px solid gray; width: 100%;">
-					<tr class="showTbTitle">
-						<td class="showListNo">글 번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
-					</tr>
-					<c:forEach items="${boards }" var="b">
-						<tr class="showList"
-							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
-						</tr>
-					</c:forEach>
-			</table>
-		</div> --%>
-
-
-
 		<!-- 게시판 노출 영역 -->
 		<div class="menu">
 		
 			<ul class="menu__tabs" >
-			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>전체보기</a></li>
-				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>자유게시판</a></li>
-				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
+			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>全体</a></li>
+				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>フリー</a></li>
+				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>レビュー</a></li>
 			</ul>
 			
 			<section class="menu__wrapper" >
-
+				<!-- 案内 -->
+					<table>
+						<tr>
+							<td colspan="3">サイト上部にある翻訳機能をオンにして下さい。</td>
+						</tr>
+					</table>
+					<br>
+				<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
-						<td class="showListNo">글번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
+						<td class="showListNo">番号</td>
+						<td class="showListCate">カテゴリー</td>
+						<td class="showListTitle">タイトル</td>
 					</tr>
 					<c:forEach items="${boards}" var="b">
 						<tr class="showList"
@@ -1857,9 +1834,9 @@
 				<table id="item-2" class="menu__item"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
-						<td class="showListNo">글번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
+						<td class="showListNo">番号</td>
+						<td class="showListCate">カテゴリー</td>
+						<td class="showListTitle">タイトル</td>
 					</tr>
 					<c:forEach items="${freeBoards }" var="b">
 						<tr class="showList"
@@ -1874,11 +1851,10 @@
 				<table id="item-3" class="menu__item"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
-						<td class="showListNo">글번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
+						<td class="showListNo">番号</td>
+						<td class="showListCate">カテゴリー</td>
+						<td class="showListTitle">タイトル</td>
 					</tr>
-
 					<c:forEach items="${reviewBoards }" var="b">
 						<tr class="showList"
 							onclick="location.href='BoardViewHC?number=${b.no}'">
@@ -1893,7 +1869,6 @@
 			</section>
 
 			<div class="menu--shadow"></div>
-			
 		</div>
 
 
@@ -1904,11 +1879,11 @@
 	
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
-		<a href='fesCalendarCon'> 더보기 </a>
+		<a href='fesCalendarCon'> もっと見る </a>
 	</div>
 
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
-	<table style="width: 100%; height: 30px;">
+	<table style="width: 100%; height: 100px;">
 		<tr>
 			<td></td>
 		</tr>

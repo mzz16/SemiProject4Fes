@@ -19,7 +19,25 @@ a{
 	 z-index: -1;
 }
 
+/*번역관련*/
+.header_index{
+	display:flex;
+	background-color: white;
+}
+.header_index button{
+	width: 150px;
+	height: 20px;
+	margin: 7px; 
+}
+.header_index button:hover {
+	color: white;
+	background-color: black;
+}
 
+.header_index div{
+	text-align: right;	
+	margin-right: 10px; margin-left:5px;
+}
 
 /* 여기부터 배경 */
 .color-change-4x {
@@ -90,10 +108,10 @@ a{
 #menu > a {
 	width: 100%;
 	height: auto;
-	padding-left: 30px;
-	padding-right: 30px;
-/* 	font-size: 23pt; */
-	color:black;
+	/* padding-left: 30px;
+	padding-right: 30px; */
+ 	font-size: 23pt; 
+	  color: black; 
 }
 
 #logoimg {
