@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -124,10 +125,23 @@ public class YJBoardDAO {
 
 			Board b = null;
 			if (rs.next()) {
-				b = new Board(rs.getInt("b_no"), rs.getString("b_cate"), rs.getString("b_title"),
-						rs.getString("b_name"), rs.getString("b_txt"), rs.getString("b_img"), rs.getDate("b_date"),
-						rs.getString("b_pw"));
+				b = new Board(
+						rs.getInt("b_no"), 
+						rs.getString("b_cate"), 
+						rs.getString("b_title"),
+						rs.getString("b_name"), 
+						rs.getString("b_txt"), 
+						rs.getString("b_img"), 
+						rs.getDate("b_date"),
+						rs.getString("b_pw")
+						);
+				
+				String txt = b.getTxt();
+					txt=txt.replace("\r\n","<br>");
+				b.setTxt(txt);
+				
 				request.setAttribute("board", b);
+				
 			}
 
 		} catch (Exception e) {
@@ -137,6 +151,51 @@ public class YJBoardDAO {
 		}
 	}
 
+	
+	public void getOneBoardForUpdate(HttpServletRequest request) {
+
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		try {
+
+			String sql = "select*from BOARD_DB where b_no = ?";
+			pstmt = con.prepareStatement(sql);
+
+			pstmt.setInt(1, Integer.parseInt(request.getParameter("number")));
+
+			rs = pstmt.executeQuery();
+
+			Board b = null;
+			if (rs.next()) {
+				b = new Board(
+						rs.getInt("b_no"), 
+						rs.getString("b_cate"), 
+						rs.getString("b_title"),
+						rs.getString("b_name"), 
+						rs.getString("b_txt"), 
+						rs.getString("b_img"), 
+						rs.getDate("b_date"),
+						rs.getString("b_pw")
+						);
+//			줄바꿈처리
+				String txt = b.getTxt();
+					txt=txt.replace("<br>","\r\n");
+				b.setTxt(txt);
+
+				request.setAttribute("board", b);
+				
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager_Main.getDbm().close(null, pstmt, rs);
+		}
+	}
+	
+	
+	
 	// 게시글 삭제
 	public  void deleteBoard(HttpServletRequest request) {
 		PreparedStatement pstmt = null;
@@ -166,42 +225,39 @@ public class YJBoardDAO {
 
 	// 글 업데이트하기.
 	public  void updateBoard(HttpServletRequest request) {
+		
 		PreparedStatement pstmt = null;
 
 		try {
-
 			String saveDirectory = request.getServletContext().getRealPath("fileFolder");
-
 			System.out.println(saveDirectory);
 
 			MultipartRequest mr = new MultipartRequest(request, saveDirectory, 31457280, "UTF-8",
 					new DefaultFileRenamePolicy());
 
 			try {
-
 				if (!mr.getFilesystemName("fName").isEmpty()) {
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_img=?,b_pw=? WHERE b_NO=?";
-
 					pstmt = con.prepareStatement(sql);
 
 					String title = mr.getParameter("title");
 					String cate = mr.getParameter("boardType");
 					String name = mr.getParameter("name");
 					String txt = mr.getParameter("txt");
-						txt=txt.replace("\r\n","<br>");
+						txt=txt.replace("<br>","\r\n");
 					String img = mr.getFilesystemName("fName");
 					String pw = mr.getParameter("password");
 					String number = mr.getParameter("number");
 
 					// 값 받고, ?에 셋팅.
-					pstmt.setString(2, cate);
 					pstmt.setString(1, title);
+					pstmt.setString(2, cate);
 					pstmt.setString(3, name);
 					pstmt.setString(4, txt);
 					pstmt.setString(5, img);
 					pstmt.setString(6, pw);
 					pstmt.setString(7, number);
-
+					
 				} else if (mr.getFilesystemName("fName").isEmpty()) {
 
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_pw=? WHERE b_NO=?";
@@ -211,6 +267,7 @@ public class YJBoardDAO {
 					String cate = mr.getParameter("boardType");
 					String name = mr.getParameter("name");
 					String txt = mr.getParameter("txt");
+						txt=txt.replace("<br>","\r\n");
 					String pw = mr.getParameter("password");
 					String number = mr.getParameter("number");
 
@@ -221,18 +278,23 @@ public class YJBoardDAO {
 					pstmt.setString(4, txt);
 					pstmt.setString(5, pw);
 					pstmt.setString(6, number);
+
+				}
+				
+
+				if (pstmt.executeUpdate() == 1) {
+					System.out.println("등록성공");
 				}
 
 				String number = mr.getParameter("number");
 				request.setAttribute("number", number);
-
+				
+				String cate = mr.getParameter("boardType");
+					request.setAttribute("cate", cate);
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println("등록실패");
-			}
-
-			if (pstmt.executeUpdate() == 1) {
-				System.out.println("등록성공");
 			}
 
 		} catch (Exception e) {
@@ -323,7 +385,6 @@ public class YJBoardDAO {
 				pstmt = con.prepareStatement(sql);
 				pstmt.setString(1, cate);
 			}
-		
 		//sql문 실행하기
 		rs = pstmt.executeQuery();
 		
