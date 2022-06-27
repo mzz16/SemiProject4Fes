@@ -24,7 +24,6 @@
 				data-text="이전으로" style="float: right;">
 				<span>이전으로</span>
 			</button>
-			<ul class="programLink">${fes.orgLink }</ul>
 
 		</div>
 
@@ -32,6 +31,16 @@
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
 	</div>
+	<div>
+		<ul class="programLink">${fes.orgLink }</ul>
+	</div>
 
+
+	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
+	<table style="width: 100%; height: 20px;">
+		<tr>
+			<td></td>
+		</tr>
+	</table>
 </body>
 </html>
