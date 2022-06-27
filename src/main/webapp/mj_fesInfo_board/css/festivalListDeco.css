@@ -20,17 +20,27 @@
 	border-collapse: collapse;
 }
 
-#fesImg {
+.a img {
+	transition: all 0.2s linear;
+}
+
+.a:hover img {
+	transform: scale(1.4);
+}
+
+/*#fesImg {
 	float: left;
 	height: 200px;
 	width: 200px;
 }
+
+
 
 .fesInfoDetailButton {
 	margin: auto;
 	display: block;
 }
 
-.festivalListTitle{
+.festivalListTitle {
 	color: black;
-}
+}*/

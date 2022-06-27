@@ -1371,10 +1371,9 @@
 		</span>
 	</div>
 
-	<div id="leftInformation" style="border: 1px solid black;">
-	
-	
-	
+
+	<div id="leftInformation">
+
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
 			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
@@ -1417,12 +1416,13 @@
 		<!-- 게시판 노출 영역 -->
 		<div class="menu">
 			<ul class="menu__tabs">
-				<li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>
-						전체보기</a></li>
-				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i> 자유게시판</a></li>
-				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i> 후기게시판</a></li>
+				<li><a class="active item1" href="#item-1"><i
+						class="fa fa-star"></i>전체보기</a></li>
+				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>자유게시판</a></li>
+				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
 			</ul>
 			<section class="menu__wrapper">
+
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
@@ -1430,12 +1430,12 @@
 						<td class="showListCate">카테고리</td>
 						<td class="showListTitle">제목</td>
 					</tr>
-					<c:forEach items="${boards }" var="b">
+					<c:forEach items="${boards}" var="b">
 						<tr class="showList"
 							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
+							<td class="showListNo">${b.no}</td>
+							<td class="showListCate">${b.cate}</td>
+							<td class="showListTitle">${b.title}</td>
 						</tr>
 					</c:forEach>
 				</table>
@@ -1464,6 +1464,7 @@
 						<td class="showListCate">카테고리</td>
 						<td class="showListTitle">제목</td>
 					</tr>
+
 					<c:forEach items="${reviewBoards }" var="b">
 						<tr class="showList"
 							onclick="location.href='BoardViewHC?number=${b.no}'">
@@ -1473,9 +1474,10 @@
 						</tr>
 					</c:forEach>
 				</table>
-			<a class="btnClickBoard" onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
+				<a class="btnClickBoard"
+					onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
 			</section>
-			
+
 			<div class="menu--shadow"></div>
 			
 		</div>
@@ -1490,13 +1492,13 @@
 	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
-	
+
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
 	<table style="width: 100%; height: 30px;">
 		<tr>
 			<td></td>
 		</tr>
 	</table>
-	
+
 </body>
 </html>
