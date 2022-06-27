@@ -20,6 +20,8 @@ public class MainHC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		YJBoardDAO.getYjdao().showMainPage(request);
+		YJBoardDAO.getYjdao().showMainFreeBoardPage(request);
+		YJBoardDAO.getYjdao().showMainReviewBoardPage(request);
 		request.setAttribute("contentPage", "home.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}

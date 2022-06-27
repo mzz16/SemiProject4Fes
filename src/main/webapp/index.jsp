@@ -5,8 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="yj_css/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 <link rel="stylesheet" href="yj_css/index.css">
 <link rel="stylesheet" href="yj_css/inputBoard.css">
 <link rel="stylesheet" href="yj_css/viewBoard.css">
@@ -17,15 +19,49 @@
 <!-- 폰트영역 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
-	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
-	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 
+	
+	
+	<style type="text/css">
+	@media( min-width : 1024px ) {
+	#menu {
+		font-size: 20pt;
+	}
+	}
+	
+	
+	@media ( max-width : 1023px ) {
+	
+	#menu {
+			font-size: 16pt;
+	}
+	
+}
+
+@media ( max-width : 900px ) {
+
+	#menu {
+			font-size: 12pt;
+	}
+	
+}
+
+@media ( max-width : 800px ) {
+
+	#menu {
+			font-size: 8pt;
+	}
+	
+}
+	
+	
+	</style>
+	
+	
 	
 </head>
 
@@ -35,21 +71,21 @@
 	<div class="homeDivlogo">
 		<a href="MainHC"><img id="logoimg" alt="" src="yj_img/logo_final2.png"></a>
 	</div>
-	<!--상단 홈 메뉴 영 -->
-	<div class="homeDiv">
-		<div id="menu">
+	<!--상단 홈 메뉴 영역 -->
+	<div class="homeDiv" id="homeDivID" style="border: 3px solid gray;">
+		<div id="menu" style="border: 3px solid gray; width: 100%;" >
 			<a href="MainHC">홈으로</a>
 		</div>
-		<div id="menu">
+		<div id="menu" style="border: 3px solid gray; width: 100%;">
 			<a href="festivalHC">축제정보일람</a>
 		</div>
-		<div id="menu">
+		<div id="menu" style="border: 3px solid gray; width: 100%;">
 			<a href="searchMapHC">지도보기</a>
 		</div>
-		<div id="menu">
+		<div id="menu" style="border: 3px solid gray; width: 100%;">
 			<a href="BoardViewHC?cate=all">게시판</a>
 		</div>
-		<div id="menu">
+		<div id="menu" style="border: 3px solid gray; width: 100%;">
 			<a href="indexSrcC">사이트정보</a>
 		</div>
 	</div>

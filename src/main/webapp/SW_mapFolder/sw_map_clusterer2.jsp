@@ -15,7 +15,7 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8937aa77ae89b7653202e90fcc96c05&libraries=clusterer"></script>
 <script>
     var map = new kakao.maps.Map(document.getElementById('map'), { // 지도를 표시할 div
-        center : new kakao.maps.LatLng(36.2683, 127.6358), // 지도의 중심좌표
+        center : new kakao.maps.LatLng(37.542223,126.9803401), // 지도의 중심좌표
         level : 14 // 지도의 확대 레벨
     });
 

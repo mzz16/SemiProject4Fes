@@ -362,7 +362,7 @@
                                         if (status === kakao.maps.services.Status.OK) {
                                             detailAddr = !!result[0].road_address ? result[0].road_address.address_name : result[0].address.address_name;
 
-
+alert(detailAddr);
                                             location.href = "https://map.kakao.com/?sName="+detailAddr+"&eName="+title                                            
                                         }   
                                     });                                        
