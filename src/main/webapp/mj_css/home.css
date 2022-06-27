@@ -1,10 +1,20 @@
 @charset "UTF-8";
 
-#leftInformation {
+/* #leftInformation {
 	position: relative;
 	top: -50px;
-	height: 100px;
+	height: 570px;
+
+} */
+#leftInformation {
+	float: left;
+	width: 40%;
+	margin-top: 50px;
+	position: relative;
+	top: -50px;
+	height: 100%;
 }
+
 
 /*축제정보 바로가기 배너*/
 .photo {
@@ -38,7 +48,8 @@
 
 .photo .glow {
 	display: block;
-	position: absolute;
+	 position: absolute; 
+	/* position: relative; */
 	width: 40%;
 	height: 200%;
 	background: rgba(255, 255, 255, .2);
@@ -58,15 +69,20 @@
 }
 
 .photo span {
-	top: 110px;
-	left: 65px;
+	/* top: 110px;
+	left: 65px; */
+	top: 20px;
+	left: 20px;
 	font-size: 42pt;
-	color: white;/*  position : absolute; */
+	color: white;
+	position : absolute;
 	z-index: 1;
-	transform: translate(-25%, -65%);
+	/* transform: translate(-25%, -65%);  */
 	margin: 0;
 	position: absolute;
 }
+
+
 
 #click {
 	position: absolute;
@@ -80,11 +96,6 @@
 	opacity: 1;
 }
 
-#leftInformation {
-	float: left;
-	width: 40%;
-	margin-top: 50px;
-}
 
 
 /*테이블*/
@@ -156,15 +167,28 @@ html {
 /*--------------------------
 * MENU TABS
 ---------------------------*/
+.menu{
+	
+	top: 260px;
+	width: 100%;
+	height: 100%;
+	/*margin: 55px auto;*/
+	/* margin-top: 200px; */
+	/*width: 80%;*/
+	/*max-width: 600px;*/
+	/*     position: relative; */
+	position: absolute;
+}
 .menu__tabs {
 	list-style: none;
 	overflow: hidden;
 }
 .menu__tabs li {
-	height: 55px;
+	/* height: 55px; */
 	float: left;
 	margin-right: 2px;
 	font-size: 1.3em;
+	
 }
 .item1 {
 	padding: 1em;
@@ -239,16 +263,17 @@ html {
 /*--------------------------
 * MENU WRAPPER
 ---------------------------*/
-.menu {
-	/*margin: 55px auto;*/
+/* .menu {
+	margin: 55px auto;
 	margin-top: 200px;
-	/*width: 80%;*/
-	/*max-width: 600px;*/
+	width: 80%;
+	max-width: 600px;
 	position: relative;
-}
+} */
 .menu__wrapper {
 	padding: 2em;
-	position: relative;
+/*     position: relative; */
+    position: absolute;
 	z-index: 400;
 	background: #FFF;
 	min-height: 180px;

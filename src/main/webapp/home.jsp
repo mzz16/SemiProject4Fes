@@ -33,14 +33,60 @@
 	display: none;
 }
 
-@media ( max-width : 1200px ) {
 
+@media ( max-width : 1300px ) {
+
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
 .photo span {
 	font-size: 32pt;
 	position: absolute;
-		top: 100px;
-	left: 55px;
+	top: 20px;
+	left: 20px;
 	}
+	.menu {
+	position: absolute;
+	top: 220px;
+	width: 90%;
+	height: 50%;
+	
+	}
+ .menu__tabs li {
+	font-size: 1.0em;
+	width: 70%;
+	}
+	 
+	
+	
+	}
+@media ( max-width : 1150px ) {
+
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
+.photo span {
+	font-size: 32pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 200px;
+	width: 80%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
 	
 	}
 
@@ -75,10 +121,22 @@
 	.photo span {
 	font-size: 27pt;
 	position: absolute;
-		top: 90px;
-	left: 45px;
+	top: 20px;
+	left: 20px;
 	}
 	
+	.menu {
+	position: absolute;
+	top: 180px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
 }
 
 @media ( max-width : 900px ) {
@@ -107,6 +165,25 @@
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 22pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 160px;
+	width: 60%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 0.8em;
+	
+	}
+	 
 }
 
 @media ( max-width : 800px ) {
@@ -133,12 +210,49 @@
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 140px;
+	width: 50%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 0.5em;
+	
+	}
+	 
 }
 
 @media ( max-width : 700px ) {
 	#img_content {
 		display: none;
 	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 200px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	font-size: 1.0em;
+	
+	}
+	 
 }
 </style>
 <script type="text/javascript">
@@ -1259,9 +1373,11 @@
 
 	<div id="leftInformation" style="border: 1px solid black;">
 	
+	
+	
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
-			<span>축제정보<br> 보러가기</span> 
+			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
 			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
 				<div class="glow-wrap" >
@@ -1361,13 +1477,17 @@
 			</section>
 			
 			<div class="menu--shadow"></div>
+			
 		</div>
 
 
 
 	</div>
+	
+	
+	
 	<!-- 캘린더 영역 -->
-	<div id='calendar' style="border: 1px solid black;">
+	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
 	
