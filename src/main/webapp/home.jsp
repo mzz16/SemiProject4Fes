@@ -34,10 +34,6 @@
 }
 
 
-
-=======
-  
->>>>>>> 1fb0b167e59521e6d9bdbbf9c9700a3d05bcb6a1
 @media ( max-width : 1200px ) {
 
 	#leftInformation {
