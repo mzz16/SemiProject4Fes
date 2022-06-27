@@ -16,8 +16,11 @@
 }
 
 #viewBoardImg img {
-	width: 80%;
+	width: 50%;
 }
+#viewBoardImgDiv{
+	text-align: center;
+}	
 
 /* 제목 */
 #viewBoardTitle {
