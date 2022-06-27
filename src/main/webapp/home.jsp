@@ -1235,6 +1235,7 @@
 	</div>
 
 	<div id="leftInformation">
+	
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
 			<span>축제정보<br> 보러가기
@@ -1274,7 +1275,7 @@
 
 
 
-		<!-- Contenedor principal -->
+		<!-- 게시판 노출 영역 -->
 		<div class="menu">
 			<ul class="menu__tabs">
 				<li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>
@@ -1341,12 +1342,18 @@
 
 
 
-
 	</div>
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
-
+	
+	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
+	<table style="width: 100%; height: 30px;">
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+	
 </body>
 </html>
