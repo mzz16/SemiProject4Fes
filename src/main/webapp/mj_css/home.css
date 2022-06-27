@@ -86,10 +86,6 @@
 
 
 /*테이블*/
-/*#showBoard{
-	float: left;
-	width: 40%;
-}*/
 .showTable {
 	margin-top: 220px;
 }
@@ -245,7 +241,7 @@ html {
 	/*margin: 55px auto;*/
 	margin-top: 200px;
 	/*width: 80%;*/
-	max-width: 600px;
+	/*max-width: 600px;*/
 	position: relative;
 }
 .menu__wrapper {
@@ -258,11 +254,11 @@ html {
 	-moz-border-radius: 0 4px 4px 4px;
 	border-radius: 0 4px 4px 4px;
 }
-.menu--shadow {
+/*.menu--shadow {
 	position: absolute;
 	z-index: 300;
 	bottom: -5px;
-	height: 25px;
+	height: 30px;
 	width: 100%;
 }
 .menu--shadow:after,
@@ -270,7 +266,7 @@ html {
 	content: '';
 	display: block;
 	width: 50%;
-	height: 25px;
+	height: 30px;
 	position: absolute;
 	left: 0;
 	background: rgba(0,0,0,0.2);
@@ -292,7 +288,7 @@ html {
 	-ms-transform: scale(0.8) rotate(4deg);
 	-o-transform: scale(0.8) rotate(4deg);
 	transform: scale(0.8) rotate(4deg);
-}
+}*/
 .menu__wrapper .menu__item {
 	line-height: 1.3;
 	color: #76716f;
