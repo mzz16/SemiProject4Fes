@@ -9,13 +9,17 @@
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <link rel="stylesheet" href="mj_css/home.css">
 <link href='mj_calendar/lib/main.css' rel='stylesheet' />
 <script src='mj_calendar/lib/main.js'></script>
-
+<link href="https://fonts.googleapis.com/css?family=Montserrat"
+	rel="stylesheet">
 <style>
 
 /* 슬라이드 테두리 제거 */
@@ -51,11 +55,9 @@
 		width: 40%;
 		font-size: 50%;
 	}
-	
 	#calendar {
 		width: 40%;
 	}
-	
 }
 
 @media ( max-width : 900px ) {
@@ -76,16 +78,13 @@
 	#contain {
 		height: 40%;
 	}
-	
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
 	}
-
 	#calendar {
 		width: 40%;
 	}
-	
 }
 
 @media ( max-width : 800px ) {
@@ -111,8 +110,6 @@
 	#calendar {
 		width: 40%;
 	}
-	
-	
 }
 
 @media ( max-width : 700px ) {
@@ -1214,6 +1211,22 @@
 
 		});
 	</script>
+	<script type="text/javascript">
+		$(function() {
+
+			// Menu Tabular
+			var $menu_tabs = $('.menu__tabs li a');
+			$menu_tabs.on('click', function(e) {
+				e.preventDefault();
+				$menu_tabs.removeClass('active');
+				$(this).addClass('active');
+
+				$('.menu__item').fadeOut(300);
+				$(this.hash).delay(300).fadeIn();
+			});
+
+		});
+	</script>
 
 	<div id="addBtn"
 		style="position: fixed; right: 20px; bottom: 20px; z-index: 3;">
@@ -1223,13 +1236,18 @@
 
 	<div id="leftInformation">
 		<!-- 축제정보 보러가기 영역 -->
-		<div id="gotoFesInfo">
-			<a href='festivalHC'><img alt="축제정보" 
-				src="mj_img/sakuraBanner2.jpg" style="width: 100%;" id="gotoFesInfoImg"></a>
+		<div class="photo">
+			<span>축제정보<br> 보러가기
+			</span> <a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
+				style="width: 100%;" id="gotoFesInfoImg">
+				<div class="glow-wrap">
+					<i class="glow"></i>
+				</div></a>
+			<p id="click">→ Click me!</p>
 		</div>
 
 		<!-- 게시판 노출 영역 -->
-		<div id=showBoard style="width: 100%;">
+		<%-- <div id=showBoard style="width: 100%;">
 			<table class="showTable" >
 				<tr>
 					<td class=showBoardTitle colspan="2">게시판</td>
@@ -1252,7 +1270,78 @@
 						</tr>
 					</c:forEach>
 			</table>
+		</div> --%>
+
+
+
+		<!-- Contenedor principal -->
+		<div class="menu">
+			<ul class="menu__tabs">
+				<li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>
+						전체보기</a></li>
+				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i> 자유게시판</a></li>
+				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i> 후기게시판</a></li>
+			</ul>
+			<section class="menu__wrapper">
+				<table id="item-1" class="menu__item item-active"
+					style="border: 1px solid gray; width: 100%;">
+					<tr class="showTbTitle">
+						<td class="showListNo">글번호</td>
+						<td class="showListCate">카테고리</td>
+						<td class="showListTitle">제목</td>
+					</tr>
+					<c:forEach items="${boards }" var="b">
+						<tr class="showList"
+							onclick="location.href='BoardViewHC?number=${b.no}'">
+							<td class="showListNo">${b.no }</td>
+							<td class="showListCate">${b.cate }</td>
+							<td class="showListTitle">${b.title }</td>
+						</tr>
+					</c:forEach>
+				</table>
+
+				<table id="item-2" class="menu__item"
+					style="border: 1px solid gray; width: 100%;">
+					<tr class="showTbTitle">
+						<td class="showListNo">글번호</td>
+						<td class="showListCate">카테고리</td>
+						<td class="showListTitle">제목</td>
+					</tr>
+					<c:forEach items="${freeBoards }" var="b">
+						<tr class="showList"
+							onclick="location.href='BoardViewHC?number=${b.no}'">
+							<td class="showListNo">${b.no }</td>
+							<td class="showListCate">${b.cate }</td>
+							<td class="showListTitle">${b.title }</td>
+						</tr>
+					</c:forEach>
+				</table>
+
+				<table id="item-3" class="menu__item"
+					style="border: 1px solid gray; width: 100%;">
+					<tr class="showTbTitle">
+						<td class="showListNo">글번호</td>
+						<td class="showListCate">카테고리</td>
+						<td class="showListTitle">제목</td>
+					</tr>
+					<c:forEach items="${reviewBoards }" var="b">
+						<tr class="showList"
+							onclick="location.href='BoardViewHC?number=${b.no}'">
+							<td class="showListNo">${b.no }</td>
+							<td class="showListCate">${b.cate }</td>
+							<td class="showListTitle">${b.title }</td>
+						</tr>
+					</c:forEach>
+				</table>
+			<a class="btnClickBoard" onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
+			</section>
+			
+			<div class="menu--shadow"></div>
 		</div>
+
+
+
+
 	</div>
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
