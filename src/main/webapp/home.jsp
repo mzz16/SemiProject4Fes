@@ -33,6 +33,18 @@
 	display: none;
 }
 
+@media ( max-width : 1200px ) {
+
+.photo span {
+	font-size: 32pt;
+	position: absolute;
+		top: 100px;
+	left: 55px;
+	}
+	
+	}
+
+
 @media ( max-width : 1023px ) {
 	#img_content {
 		position: fixed;
@@ -54,10 +66,19 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
 	}
+	
+	.photo span {
+	font-size: 27pt;
+	position: absolute;
+		top: 90px;
+	left: 45px;
+	}
+	
 }
 
 @media ( max-width : 900px ) {
@@ -81,6 +102,7 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
@@ -106,6 +128,7 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
+		position: relative;
 	}
 	#calendar {
 		width: 40%;
@@ -130,7 +153,7 @@
 
 		window.onresize = function(event) {
 			var innerWidth = window.innerWidth;
-			/* console.log(innerWidth); */
+			 console.log(innerWidth); 
 
 			if (innerWidth < 700) {
 				$("#addBtn").css("display", "block");
@@ -1234,14 +1257,14 @@
 		</span>
 	</div>
 
-	<div id="leftInformation">
+	<div id="leftInformation" style="border: 1px solid black;">
 	
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
-			<span>축제정보<br> 보러가기
-			</span> <a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
+			<span>축제정보<br> 보러가기</span> 
+			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
-				<div class="glow-wrap">
+				<div class="glow-wrap" >
 					<i class="glow"></i>
 				</div></a>
 			<p id="click">→ Click me!</p>
@@ -1344,7 +1367,7 @@
 
 	</div>
 	<!-- 캘린더 영역 -->
-	<div id='calendar'>
+	<div id='calendar' style="border: 1px solid black;">
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
 	

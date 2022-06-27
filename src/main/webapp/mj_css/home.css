@@ -2,11 +2,13 @@
 
 #leftInformation {
 	position: relative;
+	top: -50px;
+	height: 100px;
 }
 
 /*축제정보 바로가기 배너*/
 .photo {
-	margin-top: -40px;
+	/* margin-top: -40px; */
 	position: absolute;
 	/*top: 50%;
   left: 50%;
@@ -59,7 +61,7 @@
 	top: 110px;
 	left: 65px;
 	font-size: 42pt;
-	color: white; position : absolute;
+	color: white;/*  position : absolute; */
 	z-index: 1;
 	transform: translate(-25%, -65%);
 	margin: 0;
