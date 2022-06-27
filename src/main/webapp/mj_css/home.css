@@ -182,6 +182,7 @@ html {
 .menu__tabs {
 	list-style: none;
 	overflow: hidden;
+	width: 100%;
 }
 .menu__tabs li {
 	/* height: 55px; */
@@ -189,8 +190,10 @@ html {
 	margin-right: 2px;
 	font-size: 1.3em;
 	
+	
 }
 .item1 {
+	
 	padding: 1em;
 	background: #FDAFAB;
 	display: inline-block;
@@ -272,6 +275,7 @@ html {
 } */
 .menu__wrapper {
 	padding: 2em;
+	width: 100%;
 /*     position: relative; */
     position: absolute;
 	z-index: 400;
@@ -332,4 +336,6 @@ html {
 	/*margin: 0 auto;*/
 	width: 50%;
 	float: right;
+	height: 100%;
+
 }
