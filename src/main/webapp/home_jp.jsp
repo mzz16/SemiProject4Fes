@@ -1327,13 +1327,13 @@
 				<img src="dh_festival_slide_img/4.은평구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/6.종로구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/8.동대문구.jpeg">
@@ -1357,22 +1357,22 @@
 				<img src="dh_festival_slide_img/14.광진구.jpeg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/16.양천구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/19.금천구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
+				<img src="dh_festival_slide_img/slideBlanc_jp.jpg">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/21.관악구.jpeg">

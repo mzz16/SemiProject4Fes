@@ -4,13 +4,11 @@
 font-family: 'Noto Sans KR', sans-serif;
 }
 .srcMainDiv2{
-	
 	width: 100%;
 	text-align: center;
-	font-size: 15pt;
+	font-size: 13pt;
 }
 
 #logoImgSrc{
-	border: 1px solid gray;
-	width: 30%;
+	width: 25%;
 }
