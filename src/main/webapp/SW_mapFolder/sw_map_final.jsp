@@ -127,7 +127,6 @@
                             lon = position.coords.longitude; // 경도
                             
                         var locPostion = new kakao.maps.LatLng(lat, lon), //마커가 표시될 위치를 geolocation 좌표로 생성합니다.
-                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다.
                             
                         // 주소-좌표 변환 객체를 생성합니다
                         
@@ -149,7 +148,7 @@
 		
             kakao.maps.event.addListener(marker, 'click', function () {
             	
-            detailAddr = detailAddr.replace(/ /g,"");
+            detailAddr = detailAddr.replace(/ /g,""); //공백제거함수
             var content = "<div class='wrap'>"+"<div class='info'>"+"<div class='title'>"+ position.title + "<div onclick='closeOverlay()' title='닫기'>"+"</div>"+"</div>"
             +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
             +"<div class='desc'>"+"<div class='ellipsis'>"+position.place+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"홈페이지"+"</a>"+"</span>"+"</div>"
@@ -185,7 +184,6 @@
    		 	overlay.setMap(map);
    	    	clickedOverlay = overlay;
   	 		
-			//location.href = "https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place    
 			
             });
             return marker;
