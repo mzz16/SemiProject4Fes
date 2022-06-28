@@ -1524,8 +1524,6 @@
 
 	<!-- bxslider 닫음 -->
 
-
-
 	<!-- bxslider설정 -->
 	<script>
 		let slider = $('.bxslider').bxSlider({
@@ -1537,11 +1535,6 @@
 			adaptiveHeight : true,
 		});
 	</script>
-
-
-
-
-
 
 	<script>
 		function custom_function(index) {

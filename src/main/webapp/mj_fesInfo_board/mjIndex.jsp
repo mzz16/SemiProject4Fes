@@ -270,7 +270,7 @@
 
 
 			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
-					id="numberOfFes"></span> 개
+					id="numberOfFes"></span> 건
 			</span>
 				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
 				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
