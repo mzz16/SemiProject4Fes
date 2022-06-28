@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>서울축제</title>
+<!-- <link rel="icon" href="yj_img/logo_kr.png"> -->
+ <link rel="shortcut icon" type="image/x-icon" href="yj_img/logo_kr.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="yj_css/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
