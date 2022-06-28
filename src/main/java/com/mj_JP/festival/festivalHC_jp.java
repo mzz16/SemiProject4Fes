@@ -1,4 +1,4 @@
-package com.mj.festival;
+package com.mj_JP.festival;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

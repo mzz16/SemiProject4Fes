@@ -38,7 +38,7 @@
 		$.ajax({
 			type : "GET", // HTTP method type(GET, POST) 형식이다.
 			dataType : "text",
-			url : "mj_fesInfo_board/imgFromAddr.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
+			url : "mj_fesInfo_board/imgFromAddr_JP.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
 			data : {
 				guname : selectText
 			},// Json 형식의 데이터이다.
@@ -218,7 +218,7 @@
 			//따라서 val1, val2, val3...의 값을 가져온다.
 			var kkk = $("select option:selected").val();
 			alert(kkk);
-			location.href = "festivalListCon?Seoul=" + kkk;
+			location.href = "festivalListCon_jp?Seoul=" + kkk;
 		});
 
 		/*	$("#fesList").on("click", function(){
