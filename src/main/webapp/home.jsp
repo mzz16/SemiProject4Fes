@@ -56,7 +56,10 @@
 	font-size: 13pt;
 	
 	}
+	#calendar{
+	font-size: 13pt;
 	
+	}
 	
 	.menu {
 	position: absolute;
@@ -149,6 +152,9 @@
 	}
 	#calendar {
 		width: 40%;
+	font-size: 11pt;
+	
+	
 	}
 	
 	.photo span {
@@ -214,6 +220,7 @@
 	}
 	#calendar {
 		width: 40%;
+		font-size: 9pt;
 	}
 	
 	.photo span {
@@ -277,6 +284,7 @@
 	}
 	#calendar {
 		width: 40%;
+		font-size: 7pt;
 	}
 	
 	.photo span {
@@ -337,6 +345,13 @@
 	
 	}
 	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	 
+	
+	
 	.menu {
 	position: absolute;
 	top: 120px;
@@ -381,6 +396,10 @@
 	bottom: 5px;
 	font-size: 5pt;
 	
+	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
 	}
 	
 	
@@ -429,6 +448,10 @@
 	
 	}
 	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
 	
 	.menu {
 	position: absolute;
@@ -457,6 +480,12 @@
 	#img_content {
 		display: none;
 	}
+	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -492,6 +521,11 @@
 	#img_content {
 		display: none;
 	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -527,6 +561,11 @@
 	#img_content {
 		display: none;
 	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -1903,7 +1942,7 @@
 	
 	
 	<!-- 캘린더 영역 -->
-	<div id='calendar'>
+	<div id='calendar' style="border: 3px solid #cd0028;">
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
 

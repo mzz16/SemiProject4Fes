@@ -17,7 +17,7 @@ public class BoardViewHC extends HttpServlet {
 			YJBoardDAO.getYjdao().getOneBoard(request);
 			request.setAttribute("contentPage", "YJ_Board/viewBoardDetail.jsp");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
-		} else {
+		} else if (request.getParameter("cate") != null) {
 			// 게시판 글 불러오기
 			YJBoardDAO.getYjdao().getAllBoard(request);
 

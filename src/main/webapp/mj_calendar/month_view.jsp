@@ -732,6 +732,7 @@
   }
 
   #calendar {
+  
     max-width: 1100px;
     margin: 0 auto;
   }
@@ -740,7 +741,7 @@
 </head>
 <body>
 	<h1>캘린더</h1>
-  <div id='calendar'></div>
+  <div id='calendar' ></div>
 
 </body>
 </html>

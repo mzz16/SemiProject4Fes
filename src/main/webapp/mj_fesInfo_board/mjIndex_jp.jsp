@@ -230,29 +230,13 @@
 			});*/
 	})
 </script>
-
-<style type="text/css">
-
-@media ( max-width : 1200px ) {
-
-#festivalTab {
-width: 400px;
-
-}
-
-
-
-}
-
-</style>
 </head>
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	<div style="">
-	<table border="1" style="width: 500px;" id = "festivalTab" >
+	<table border="1" width="500px";>
 		<tr>
-			<td>주소</td>
+			<td>住所</td>
 			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
 			<td><select name="festival" id="selectbox"
 				onchange="setImgFromAddr();">
@@ -261,38 +245,37 @@ width: 400px;
 					<!-- 배열로 잡으면 작동이 안됨. -->
 
 
-					<option value="">---선택---</option>
-					<option value="강남구">강남구</option>
-					<option value="강동구">강동구</option>
-					<option value="강북구">강북구</option>
-					<option value="관악구">관악구</option>
-					<option value="광진구">광진구</option>
-					<option value="금천구">금천구</option>
-					<option value="노원구">노원구</option>
-					<option value="도봉구">도봉구</option>
-					<option value="동대문구">동대문구</option>
-					<option value="마포구">마포구</option>
-					<option value="서초구">서초구</option>
-					<option value="성동구">성동구</option>
-					<option value="성북구">성북구</option>
-					<option value="송파구">송파구</option>
-					<option value="양천구">양천구</option>
-					<option value="용산구">용산구</option>
-					<option value="은평구">은평구</option>
-					<option value="종로구">종로구</option>
-					<option value="중구">중구</option>
-					<option value="중랑구">중랑구</option>
+					<option value="">---選択---</option>
+					<option value="カンナム区">カンナム区</option>
+					<option value="カンドン区">カンドン区</option>
+					<option value="カンブック区">カンブック区</option>
+					<option value="クァナク区">クァナク区</option>
+					<option value="グァンジン区">グァンジン区</option>
+					<option value="クムチョン区">クムチョン区</option>
+					<option value="ノウォン区">ノウォン区</option>
+					<option value="ドボン区">ドボン区</option>
+					<option value="トンデムン区">トンデムン区</option>
+					<option value="マポ区">マポ区</option>
+					<option value="ソチョ区">ソチョ区</option>
+					<option value="ソンドン区">ソンドン区</option>
+					<option value="ソンブク区">ソンブク区</option>
+					<option value="ソンパ区">ソンパ区</option>
+					<option value="ヤンチョン区">ヤンチョン区</option>
+					<option value="ヨンサン区">ヨンサン区</option>
+					<option value="ウンピョン区">ウンピョン区</option>
+					<option value="チョンノ区">チョンノ区</option>
+					<option value="チュン区">チュン区</option>
+					<option value="チュンナン区">チュンナン区</option>
 			</select></td>
 
 
-			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
-					id="numberOfFes"></span> 건
+			<td><span style="color: red;">見つかった祭り &nbsp;&nbsp;&nbsp; <span
+					id="numberOfFes"></span> 件
 			</span>
 				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
 				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>
-	</div>
 	<!-- </form> -->
 	<!-- <div id='my_div'>
 		<table border="1">

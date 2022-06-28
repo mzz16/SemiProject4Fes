@@ -15,9 +15,9 @@ public class BoardViewHC_jp extends HttpServlet {
 		if (request.getParameter("cate") == null) {
 			// 게시판 글 하나 불러오기
 			YJBoardDAO.getYjdao().getOneBoard(request);
-			request.setAttribute("contentPage", "YJ_Board/viewBoardDetail.jsp");
+			request.setAttribute("contentPage", "YJ_Board/viewBoardDetail_jp.jsp");
 			request.getRequestDispatcher("index_jp.jsp").forward(request, response);
-		} else {
+		} else if (request.getParameter("cate") != null){
 			// 게시판 글 불러오기
 			YJBoardDAO.getYjdao().getAllBoard(request);
 
