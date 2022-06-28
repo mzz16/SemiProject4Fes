@@ -24,41 +24,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 	
-<style type="text/css">
-@media(min-width : 1111px){
-	#menu > a {
-			font-size: 23pt;
-	}
-}
-
-	
-@media ( max-width : 1110px ) {
-	
-	#menu > a {
-			font-size: 18pt;
-	}
-	
-}
-
-@media ( max-width : 900px ) {
-
-	#menu > a {
-			font-size: 13pt;
-	}
-	
-}
-
-@media ( max-width : 800px ) {
-
-	#menu > a {
-			font-size: 8pt;
-	}
-	
-}
-</style>
-	
-	
-
 </head>
 
 <body class="color-change-4x" >
