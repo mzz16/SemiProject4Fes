@@ -6,25 +6,125 @@ body {
 	padding: 0px;
 	z-index: 1;
 }
-a{
+
+a {
 	text-decoration-line: none;
 }
- /* 날씨위젯 */
-.weather_wi{
+
+/*한국어 사이트로 넘어가는 버튼(mj)*/
+.button_container {
+	position: absolute;
+	margin-left: 120px;
+}
+
+#krBtn {
+	width: 150px;
+	height: 23px;
+	margin: 7px;
+	border: none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 11px;
+	background-color: #222;
+	/* padding: 17px 60px; */
+	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+#krBtn span {
+	position: relative;
+	z-index: 1;
+}
+
+#krBtn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 490%;
+	width: 140%;
+	background: #78c7d2;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+#krBtn:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/*일본으로 가는 사이트 버튼*/
+#jpBtn {
+	width: 150px;
+	height: 23px;
+	margin: 7px;
+	border: none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 11px;
+	background-color: #222;
+	/* padding: 17px 60px; */
+	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+#jpBtn span {
+	position: relative;
+	z-index: 1;
+}
+
+#jpBtn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 490%;
+	width: 140%;
+	background: #f4acb7;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+#jpBtn:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/* 날씨위젯 */
+.weather_wi {
 	margin-right: 10px;
 	margin-left: 10px;
-	 z-index: -1;
+	z-index: -1;
 }
-.tomorrow{
-	 z-index: -1;
+
+.tomorrow {
+	z-index: -1;
 }
 
 /*번역관련*/
-.header_index{
-	display:flex;
+.header_index {
+	display: flex;
 	background-color: white;
 }
-.header_index button{
+/* .header_index button{
 	width: 150px;
 	height: 20px;
 	margin: 7px; 
@@ -37,88 +137,135 @@ a{
 .header_index div{
 	text-align: right;	
 	margin-right: 10px; margin-left:5px;
-}
+} */
 
 /* 여기부터 배경 */
 .color-change-4x {
 	-webkit-animation: color-change-4x 10s linear infinite alternate both;
-	        animation: color-change-4x 10s linear infinite alternate both;
+	animation: color-change-4x 10s linear infinite alternate both;
 }
 
-@-webkit-keyframes color-change-4x {
-  0% {
-    background: #FDAFAB;
-  }
-  33.3333% {
-    background: #D9F1F1;
-  }
-  66.666% {
-    background: #FAF1D6;
-  }
-  100% {
-    background: #FAD4AE;
-  }
+@-webkit-keyframes color-change-4x { 0% {
+	background: #FDAFAB;
 }
-@keyframes color-change-4x {
-   0% {
-    background: #FDAFAB;
-  }
-  33.3333% {
-    background: #D9F1F1;
-  }
-  66.666% {
-    background: #FAF1D6;
-  }
-  100% {
-    background: #FAD4AE;
-  }
+
+33.3333%
+{
+background
+:
+ 
+#D9F1F1
+;
+
+
+}
+66.666%
+{
+background
+:
+ 
+#FAF1D6
+;
+
+
+}
+100%
+{
+background
+
+
+:
+
+
+#FAD4AE
+;
+
+
+}
+}
+@keyframes color-change-4x { 0% {
+	background: #FDAFAB;
+}
+
+33.3333%
+{
+background
+:
+ 
+#D9F1F1
+;
+
+
+}
+66.666%
+{
+background
+:
+ 
+#FAF1D6
+;
+
+
+}
+100%
+{
+background
+
+
+:
+
+
+#FAD4AE
+;
+
+
+}
 }
 /* 여기까지 배경 */
 
-
 /* 홈 영역 전체*/
-.homeDivlogo{
-	display:inline-block;
-	text-align:center;
-	width:100%;
+.homeDivlogo {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 	background-color: white;
 }
 
-
 .homeDiv {
 	margin-top: auto;
-	margin-bottom:auto;
-	background-color:white;
+	margin-bottom: auto;
+	background-color: white;
 	opacity: 50%;
-	width: 100%; height: auto;
+	width: 100%;
+	height: auto;
 	display: flex;
 	text-align: center;
 	align-items: flex-end;
 	justify-content: center;
 }
 
-#home > a{
+#home>a {
 	width: 30%;
 	height: auto;
 	font-size: 30pt;
-	color:black;
+	color: black;
 	margin-right: 10px;
 }
 
-#menu > a {
+#menu>a {
 	width: 100%;
 	height: auto;
 	/* padding-left: 30px;
 	padding-right: 30px; */
- 	font-size: 23pt; 
-	  color: black; 
+	font-size: 23pt;
+	color: black;
 }
 
 #logoimg {
-	width:25%;
+	width: 25%;
 	justify-content: center;
 	padding-bottom: 7px;
-} 
+}
 
 /* 콘텐트 영역 전체*/
 .ContentDiv {
@@ -128,7 +275,8 @@ a{
 }
 
 #contentSlide {
-	margin-left:auto; margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 	width: 95%;
 	text-align: center;
 	vertical-align: middle;
@@ -136,10 +284,10 @@ a{
 
 /* 푸터 영역 */
 .footerDiv {
-background-color:white;
+	background-color: white;
 	margin: auto;
-	padding-bottom:20px;
-	padding-top:15px;
+	padding-bottom: 20px;
+	padding-top: 15px;
 	height: auto;
 	width: 100%;
 	display: flex;

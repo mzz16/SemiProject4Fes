@@ -66,8 +66,13 @@
 <div class="header_index" >
 <!-- Google 번역 -->
 <div id="google_translate_element" class="hd_lang"></div>
+
 <!-- 사이트 언어변경 -->
-<div><button onclick="location.href='MainHC_jp'">日本語サイトへ</button></div>
+<div class="button_container">
+  <button id="jpBtn" onclick="location.href='MainHC_jp'"><span>日本語サイトへ</span></button>
+ </div>
+<!-- <div><button onclick="location.href='MainHC_jp'">日本語サイトへ</button></div> -->
+
 </div>
 <script>
 	function googleTranslateElementInit() {
