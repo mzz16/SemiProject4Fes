@@ -18,17 +18,17 @@
 	<div class="ViewBoardMain">
 		<div class="BoardCateDiv">
 			<div id="boardCate1"
-				onclick="location.href='BoardCateViewC?cate=all'">▶全てのボードー</div>
+				onclick="location.href='BoardCateViewC_jp?cate=all'">▶全てのボードー</div>
 			<div id="boardCate2"
-				onclick="location.href='BoardCateViewC?cate=free'">▶フリーボードー</div>
+				onclick="location.href='BoardCateViewC_jp?cate=free'">▶フリーボードー</div>
 			<div id="boardCate3"
-				onclick="location.href='BoardCateViewC?cate=review'">▶レビューボードー</div>
+				onclick="location.href='BoardCateViewC_jp?cate=review'">▶レビューボードー</div>
 		</div>
 
 		<div class="BoardSeeNoteDiv">
 			<!-- 글쓰기버튼! -->
 			<div class="BoardInputDiv">
-				<button id="btn_write" onclick="location.href='BoardInputHC'">書く</button>
+				<button id="btn_write" onclick="location.href='BoardInputHC_jp'">書く</button>
 			</div>
 		
 			<div id="boardSeeNote">
