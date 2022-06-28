@@ -16,6 +16,7 @@
 	
 	
 	<div class="ViewBoardMain">
+	
 		<div class="BoardCateDiv">
 			<div id="boardCate1"
 				onclick="location.href='BoardCateViewC?cate=all'">▶ 전체 보기</div>
@@ -25,7 +26,9 @@
 				onclick="location.href='BoardCateViewC?cate=review'">▶ 후기게시판</div>
 		</div>
 
+
 		<div class="BoardSeeNoteDiv">
+		
 			<!-- 글쓰기버튼! -->
 			<div class="BoardInputDiv">
 				<button id="btn_write" onclick="location.href='BoardInputHC'">글쓰기</button>
@@ -53,7 +56,7 @@
 					</c:forEach>
 
 				</table>
-			</div>
+			</div>   <!-- boardSeeNote닫음 -->
 
 			<!-- 페이징 관련 -->
 			<div	class="pagingDivMain">		
@@ -65,10 +68,12 @@
 					</div>
 				</c:forEach>
 				<div id="pagingTriDiv" onclick="location.href='BoardViewHC?vPage=${lastpage}&&lastPage${lastpage}&&cate=${param.cate}'"><a>마지막으로 ▶</a></div>
-			</div>
-		</div>
-	</div>
+			</div>   <!-- pagingDivMain닫음 -->
+		
+		
+	</div>   <!-- BoardSeeNoteDiv닫음 -->
 
+</div>
 </div>
 </body>
 </html>

@@ -230,11 +230,27 @@
 			});*/
 	})
 </script>
+
+<style type="text/css">
+
+@media ( max-width : 1200px ) {
+
+#festivalTab {
+width: 400px;
+
+}
+
+
+
+}
+
+</style>
 </head>
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	<table border="1" width="500px";>
+	<div style="">
+	<table border="1" style="width: 500px;" id = "festivalTab" >
 		<tr>
 			<td>주소</td>
 			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
@@ -276,6 +292,7 @@
 				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>
+	</div>
 	<!-- </form> -->
 	<!-- <div id='my_div'>
 		<table border="1">

@@ -749,6 +749,7 @@ html, body {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	
 }
 
 .fc-header-toolbar {
