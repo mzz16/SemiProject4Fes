@@ -498,22 +498,20 @@
 	width: 100%;
 	height: 108px;
 	top: 0;
-	
-	
 	/*margin-top: -10px;*/
 }
 
 .photo .glow {
 	display: block;
-	 position: absolute; 
-	/* position: relative; */
+	position: absolute;
 	width: 40%;
 	height: 150px;
 	background: rgba(255, 255, 255, .2);
 	top: 0;
-	filter: blur(5px);
-	transform: rotate(45deg) translate(-450%, 0);
-	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	filter: blur(5px);		/*가우시안 블러 효과*/
+	transform: rotate(45deg)translate(-450%, 0);		
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);	
+				/*3차 베지어 곡선(애니메이션 움직임 조절)*/
 }
 }
 
@@ -859,19 +857,15 @@ position:relative;
 }
 
 .photo span {
-	/* top: 110px;
-	left: 65px; */
 	top: 20px;
 	left: 20px;
 	font-size: 42pt;
 	color: white;
-	position : absolute;
+	position: absolute;
 	z-index: 1;
-	/* transform: translate(-25%, -65%);  */
 	margin: 0;
 	/* position: absolute; */
 }
-
 
 /* #click {
 	position: absolute;
@@ -884,8 +878,6 @@ position:relative;
 .photo:hover #click {
 	opacity: 1;
 }
-
-
 
 /*테이블*/
 .showTable {
@@ -930,7 +922,7 @@ position:relative;
 }
 
 /*게시판 탭 메뉴*/
-.btnClickBoard{
+.btnClickBoard {
 	text-align: right;
 }
 
@@ -943,9 +935,7 @@ html {
 	box-sizing: border-box;
 }
 
-*, 
-*:before, 
-*:after {
+*, *:before, *:after {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: inherit;
@@ -956,26 +946,32 @@ html {
 /*--------------------------
 * MENU TABS
 ---------------------------*/
-
-	
+.menu {
+	top: 285px;
+	width: 100%;
+	height: 100%;
 	/*margin: 55px auto;*/
 	/*width: 80%;*/
 	/*max-width: 600px;*/
 	/*     position: relative; */
+	position: absolute;
+}
+
 .menu__tabs {
 	list-style: none;
 	overflow: hidden;
 	width: 100%;
 	border: 3px solid #cd0028;
 }
+
 .menu__tabs li {
 	/* height: 55px; */
 	float: left;
 	margin-right: 2px;
 	font-size: 1.0em;
 }
+
 .item1 {
-	
 	padding: 1em;
 	background: #FDAFAB;
 	display: inline-block;
@@ -987,10 +983,11 @@ html {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	-moz-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .item2 {
 	padding: 1em;
 	background: #B6E3E9;
@@ -1003,10 +1000,11 @@ html {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	-moz-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .item3 {
 	padding: 1em;
 	background: #C3E2DD;
@@ -1019,19 +1017,23 @@ html {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	-webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	-moz-box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
-	box-shadow: inset 0 -2px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .item1:hover {
 	background: #fc8781;
 }
+
 .item2:hover {
 	background: #73c9d5;
 }
+
 .item3:hover {
 	background: #70baaf;
 }
+
 .menu__tabs a.active {
 	color: #333b48;
 	background: #FFF;
@@ -1039,7 +1041,11 @@ html {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-.menu__tabs a.active i {color: #80cbb7;}
+
+.menu__tabs a.active i {
+	color: #80cbb7;
+}
+
 .menu__tabs a i {
 	margin-right: 3px;
 	color: #aaaaaa;
@@ -1058,8 +1064,8 @@ html {
 .menu__wrapper {
 	padding: 2em;
 	width: 100%;
-/*     position: relative; */
-    position: absolute;
+	/*     position: relative; */
+	position: absolute;
 	z-index: 400;
 	background: #FFF;
 	min-height: 180px;
@@ -1112,12 +1118,15 @@ html {
 	display: block;
 }
 
-
 /* #calendar {
 	max-width: 1100px;
 	margin: 0 auto;
 	position : absolute;
+#calendar {
+	/*max-width: 1100px;*/
+	/*margin: 0 auto;*/
 	width: 50%;
 	height: 100%;
 	right: 0px;
 } */
+
