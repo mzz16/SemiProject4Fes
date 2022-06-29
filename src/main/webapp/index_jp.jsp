@@ -96,7 +96,7 @@
 			<a href="festivalHC_jp">祭り情報一覧</a>
 		</div>
 		<div id="menu" style="width: 100%;">
-			<a href="searchMapHC_jp">地図を見る</a>
+			<a href="searchMapHC_jp">マップ</a>
 		</div>
 		<div id="menu" style="width: 100%;">
 			<a href="BoardViewHC_jp?cate=all">掲示板</a>
