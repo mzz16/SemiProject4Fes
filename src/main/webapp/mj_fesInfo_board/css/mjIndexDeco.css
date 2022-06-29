@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#fesList {
+	width:50px;
+	height: 23px;
+	color:#fff;
+	background: #78c7d2;
+	font-size: 16px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(125,120,117,0.3);
+	transition:0.3s;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	margin-left: 30px;
+	margin-top: 11px;
+}
+#fesList:focus {
+	outline:0;
+}
+#fesList:hover{
+	background: rgba(125,120,117,0.9);
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(125,120,117,0.6);
+}
+
+#fesListJp {
+	width:90px;
+	height: 23px;
+	color:#fff;
+	background: #f4acb7;
+	font-size: 14px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 4px 16px rgba(234,184,168,0.3);
+	transition:0.3s;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	margin-left: 50px;
+	margin-top: 7px;
+}
+#fesListJp:focus {
+	outline:0;
+}
+#fesListJp:hover{
+	background: rgba(234,184,168,0.9);
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(234,184,168,0.6);
+}
