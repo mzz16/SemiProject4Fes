@@ -23,9 +23,9 @@
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #fff;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-    .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;}
-    .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;}
-    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;}
+    .span1{font-size:13pt;margin-left: 17px; text-decoration: none;margin-top:10px; color: #5085BB;}
+    .span2{font-size:13pt; margin-left: 14px; text-decoration: none; margin-top:10px; color: #5085BB;}
+    .span3{font-size:10pt; margin-left: 10px; text-decoration: none; color: gray;}
     .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px;font-weight: 600; text-align: center;}
    
    
@@ -156,7 +156,7 @@
             +"<div class='jibun ellipsis'>"+"</div>"
             +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
             +"詳細情報"+"</a>"+"</span>"
-            +"<span class='span2'>"+"<a href=https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place+">"+"ルート検索"+"</a>"+"</span>"
+            +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.place+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
            
 	
