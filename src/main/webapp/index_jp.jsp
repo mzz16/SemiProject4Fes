@@ -64,7 +64,9 @@
 <!-- Google 번역 -->
 <div id="google_translate_element" class="hd_lang"></div>
 <!-- 사이트 언어변경 -->
-<div><button onclick="location.href='MainHC'">한국어 사이트로</button></div>
+<div class="button_container">
+  <button id="krBtn" onclick="location.href='MainHC'"><span>한국어 사이트로</span></button>
+ </div>
 </div>
 <script>
 	function googleTranslateElementInit() {

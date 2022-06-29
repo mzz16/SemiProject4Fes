@@ -1,4 +1,4 @@
-package com.mj.festival;
+package com.mj_JP.festival;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -17,25 +17,31 @@ import org.json.simple.parser.JSONParser;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
 import com.t4.main.DBManager_Main;
+
 
 public class festivalDAO_JP {
 	//============================	
+	
 	private Connection con;
 	private static final festivalDAO_JP FesDAO = new festivalDAO_JP(DBManager_Main.getDbm().connect());
 	
 	private festivalDAO_JP() {
-		//	private Connection con = DBManager_Main.getDbm().connect();
+		// TODO Auto-generated constructor stub
 	}
+	
 	private festivalDAO_JP(Connection con) {
 		super();
 		this.con = con;
 	}
+	
 	public static festivalDAO_JP getFesdao() {
 		return FesDAO;
 	}
-	//============================	
 	
+//	--------------------------------------------------------
+
 	public void work(HttpServletRequest request) {
 
 		String result = "";

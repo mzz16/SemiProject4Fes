@@ -607,698 +607,698 @@
 			businessHours : true,
 			dayMaxEvents : true, // allow "more" link when too many events
 			events : [{
-				title : '[서울문화재단] 6월 봄소풍 프로젝트 \'여름 마중\'',
+				title : '[ソウル文化財団］6月春散歩プロジェクト「夏迎え」',
 				start : '2022-06-25',
-				url : 'festivalInfoCon?m_no=1',
+				url : 'festivalInfoCon_jp?m_no=1',
 				color : '#ff99c8'
 			}, {
-				title : '[방방곡곡 문화공감사업] 은평에 반하다 HELLO! RHYTHM!',
+				title : '[所々方々 文化共感事業] ウンピョンにほれるHELLO! RHYTHM!',
 				start : '2022-06-23',
 				end : '2022-06-26',
-				url : 'festivalInfoCon?m_no=2',
+				url : 'festivalInfoCon_jp?m_no=2',
 				color : '#ff99c8'
 
 			}, {
-				title : '2022 나루 스트릿 댄스 페스티벌 [나루 브레이킹  배틀 2on2]',
+				title : '2022 ナルストリートダンスフェスティバル[ナルブレーキングバトル2on2]',
 				start : '2022-06-18',
-				url : 'festivalInfoCon?m_no=3',
+				url : 'festivalInfoCon_jp?m_no=3',
 				color : '#ff99c8'
 			}, {
-				title : '아트플리마켓 (06/14 ~ 06/16)',
+				title : 'アート手作りマーケット (06/14 ~ 06/16)',
 				start : '2022-06-14',
 				end : '2022-06-16',
-				url : 'festivalInfoCon?m_no=4',
+				url : 'festivalInfoCon_jp?m_no=4',
 				color : '#ff99c8'
 			}, {
-				title : '디저트 콘서트 (06/14 ~ 06/16)',
+				title : 'デザートコンサート (06/14 ~ 06/16)',
 				start : '2022-06-14',
 				end : '2022-06-16',
-				url : 'festivalInfoCon?m_no=5',
+				url : 'festivalInfoCon_jp?m_no=5',
 				color : '#a2d2ff'
 			}, {
-				title : '소문난 운현궁',
+				title : '名物の雲峴宮',
 				start : '2022-06-11',
 				end : '2022-07-30',
-				url : 'festivalInfoCon?m_no=6',
+				url : 'festivalInfoCon_jp?m_no=6',
 				color : '#fcf6bd'
 			}, {
-				title : '다알랴줌 [또봉마켓]',
+				title : '教えちゃる！[トボンマーケット]',
 				start : '22022-05-27',
 				end : '2022-05-28',
-				url : 'festivalInfoCon?m_no=8',
+				url : 'festivalInfoCon_jp?m_no=8',
 				color : '#ff99c8'
 			}, {
-				title : '[행사] 2022 돈의문박물관마을의 첫 번째 플리마켓 \'돈의문마켓\'',
+				title : '2022 敦義門マーケット',
 				start : '2022-05-05',
 				end : '2022-05-08',
-				url : 'festivalInfoCon?m_no=9',
+				url : 'festivalInfoCon_jp?m_no=9',
 				color : '#ff99c8'
 			}, {
-				title : '2022 둘리뮤지엄 어린이날 행사',
+				title : '2022 ドゥーリーミュージアム こどもの日 行事',
 				start : '2022-05-05',
-				url : 'festivalInfoCon?m_no=10',
+				url : 'festivalInfoCon_jp?m_no=10',
 				color : '#ff99c8'
 			}, {
-				title : '2022 어린이날 박물관 축제 한마당',
+				title : '2022 こどもの日 博物館 祭り',
 				start : '2022-05-05',
-				url : 'festivalInfoCon?m_no=11',
+				url : 'festivalInfoCon_jp?m_no=11',
 				color : '#a2d2ff'
 			}, {
-				title : '2022 서울장미축제',
+				title : '2022 ソウルバラ祭り',
 				start : '2022-05-02',
 				end : '2022-05-15',
-				url : 'festivalInfoCon?m_no=12',
+				url : 'festivalInfoCon_jp?m_no=12',
 				color : '#fcf6bd'
 			}, {
-				title : '<2022 월간뮤지크>',
+				title : '2022 月刊ミュージック',
 				start : '2022-04-30',
 				end : '2022-11-30',
-				url : 'festivalInfoCon?m_no=13',
+				url : 'festivalInfoCon_jp?m_no=13',
 				color : 'cbc0d3'
 			}, {
-				title : '[서울문화재단] 서서울예술교육센터 봄소풍 프로젝트 \'봄.봄.봄\'',
+				title : '[ソウル文化財団] 西ソウル芸術教育センター春散歩プロジェクト「春・春・春」',
 				start : '2022-04-30',
 				end : '2022-05-28',
-				url : 'festivalInfoCon?m_no=14',
+				url : 'festivalInfoCon_jp?m_no=14',
 				color : '#ff99c8'
 			}, {
-				title : '한성백제박물관 개관 10주년 기념 음악회',
+				title : 'ハンソン百済博物館開館10周年記念音楽会',
 				start : '2022-04-30',
-				url : 'festivalInfoCon?m_no=15',
+				url : 'festivalInfoCon_jp?m_no=15',
 				color : '#ff99c8'
 			}, {
-				title : '문화가 있는 날 <풋풋한 성동 - 눈>',
+				title : '文化がある日「みずみずしいソンドンー目」',
 				start : '2022-04-27',
-				url : 'festivalInfoCon?m_no=16',
+				url : 'festivalInfoCon_jp?m_no=16',
 				color : '#ff99c8'
 			}, {
-				title : '2022 세빛섬 봄꽃 축제 <세빛 블루밍 가든>',
+				title : '2022 セビッ島 春花祭り セビッ ブルーミング ガーデン',
 				start : '2022-04-25',
 				end : '2022-05-29',
-				url : 'festivalInfoCon?m_no=17',
+				url : 'festivalInfoCon_jp?m_no=17',
 				color : '#ff99c8'
 			}, {
-				title : '경춘선숲길 갤러리 음악회',
+				title : 'キョンチュン線の森路ギャラリー音楽会',
 				start : '2022-04-23',
-				url : 'festivalInfoCon?m_no=18',
+				url : 'festivalInfoCon_jp?m_no=18',
 				color : '#fcf6bd'
 			},{
-				title : '국가무형문화재 막걸리 challenge ',
+				title : '国家指定無形文化財マッコリchallenge',
 				start : '2022-03-19',
 				end : '2022-03-26',
-				url : 'festivalInfoCon?m_no=20',
+				url : 'festivalInfoCon_jp?m_no=20',
 				color : '#ff99c8'
 			}, {
-				title : '생황으로 보는 소리 공간소리',
+				title : '笙でみる音ー空間音',
 				start : '2022-03-10',
-				url : 'festivalInfoCon?m_no=21',
+				url : 'festivalInfoCon_jp?m_no=21',
 				color : '#ff99c8'
 			}, {
-				title : '[MBN Y FORUM] 2030 청년 멘토링 축제 MBN Y 포럼 2022',
+				title : '[MBN Y FORUM] 2030 青年メンタリングフェスティバルMBN Y フォーラム 2022',
 				start : '2022-02-16',
-				url : 'festivalInfoCon?m_no=22',
+				url : 'festivalInfoCon_jp?m_no=22',
 				color : '#ff99c8'
 			}, {
-				title : '빅무브 with Lia KIM',
+				title : 'ビックムーブ with Lia KIM',
 				start : '2022-01-08',
 				end : '2022-02-20',
-				url : 'festivalInfoCon?m_no=23',
+				url : 'festivalInfoCon_jp?m_no=23',
 				color : '#fcf6bd'
 			}, {
-				title : '강남 콩콩 랜선 축제 : 강남구 생활문화 활성화 사업',
+				title : 'カンナムネットフェスティバル : カンナム区生活文化活性化事業',
 				start : '2022-01-03',
 				end : '2022-01-28',
-				url : 'festivalInfoCon?m_no=24',
+				url : 'festivalInfoCon_jp?m_no=24',
 				color : '#ff99c8'
 			}, {
-				title : ' [서울애니메이션센터] 도심 속 문화체험공간! 만화도서관 & 애니소풍',
+				title : ' [ソウルアニメーションセンター] 都会の文化体験空間！漫画図書館＆アニメ散歩',
 				start : '2022-01-01',
 				end : '2022-01-30',
-				url : 'festivalInfoCon?m_no=25',
+				url : 'festivalInfoCon_jp?m_no=25',
 				color : '#d0f4de'
 			}, {
-				title : '[DDP] <집합 이론>展',
+				title : '[DDP] 集合理論展',
 				start : '2021-12-23',
 				end : '2022-02-27',
-				url : 'festivalInfoCon?m_no=26',
+				url : 'festivalInfoCon_jp?m_no=26',
 				color : '#ff99c8'
 			}, {
-				title : '2021 서교 생활문화 페스타 : 활활',
+				title : '2021 ソギョ生活文化フェスタ：活活',
 				start : '2021-12-17',
 				end : '2021-12-19',
-				url : 'festivalInfoCon?m_no=27',
+				url : 'festivalInfoCon_jp?m_no=27',
 				color : '#ff99c8'
 			}, {
-				title : '2021 서울빛초롱축제',
+				title : '2021 ソウル光灯籠祭り',
 				start : '2021-11-26',
 				end : '2021-12-05',
-				url : 'festivalInfoCon?m_no=28',
+				url : 'festivalInfoCon_jp?m_no=28',
 				color : '#fec89a'
 			}, {
-				title : '11월 불조심 강조의 달 시민참여 안전문화 행사 \'불조심 게임\'',
+				title : '11月火の用心強調の月市民参与安全文化行事「火の用心ゲーム」',
 				start : '2021-11-16',
 				end : '2021-11-19',
-				url : 'festivalInfoCon?m_no=29',
+				url : 'festivalInfoCon_jp?m_no=29',
 				color : '#ff99c8'
 			},{
-				title : '2021 랜선 정동야행',
+				title : '2021ネットでチョンドン夜行',
 				start : '2021-11-02',
 				end : '2021-11-07',
-				url : 'festivalInfoCon?m_no=31',
+				url : 'festivalInfoCon_jp?m_no=31',
 				color : '#fcf6bd'
 			}, {
-				title : '제6회 마포 M 클래식 축제 \'클래식 on Live #5\'',
+				title : '第6回マポ M クラシックフェスティバル「クラシックon Live #5」',
 				start : '2021-10-28',
-				url : 'festivalInfoCon?m_no=32',
+				url : 'festivalInfoCon_jp?m_no=32',
 				color : '#ff99c8'
 			}, {
-				title : '제6회 마포 M 클래식 축제 \'클래식 on Live #4\'',
+				title : '第6回マポ M クラシックフェスティバル「クラシックon Live #4」',
 				start : '2021-10-27',
-				url : 'festivalInfoCon?m_no=33',
+				url : 'festivalInfoCon_jp?m_no=33',
 				color : '#a2d2ff'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル「クラシック',
 				start : '2021-10-26',
-				url : 'festivalInfoCon?m_no=34',
+				url : 'festivalInfoCon_jp?m_no=34',
 				color : '#fcf6bd'
 			}, {
-				title : '제6회 마포 M 클래식 축제스페셜 - with 새우젓축제 폐막',
+				title : '第6回マポ M クラシックフェスティバルスペシャル- with アミの塩辛閉幕',
 				start : '2021-10-24',
-				url : 'festivalInfoCon?m_no=35',
+				url : 'festivalInfoCon_jp?m_no=35',
 				color : '#d0f4de'
 			}, {
-				title : '제6회 마포 M 클래식 축제 스페셜- 마리오네트 앙상블M',
+				title : '第6回マポ M クラシックフェスティバルスペシャル-マリオネット アンサンブルM',
 				start : '2021-10-23',
 				end : '2021-10-30',
-				url : 'festivalInfoCon?m_no=36',
+				url : 'festivalInfoCon_jp?m_no=36',
 				color : '#fec89a'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル',
 				start : '2021-10-21',
-				url : 'festivalInfoCon?m_no=37',
+				url : 'festivalInfoCon_jp?m_no=37',
 				color : '#c8b6ff'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル',
 				start : '2021-10-19',
-				url : 'festivalInfoCon?m_no=38',
+				url : 'festivalInfoCon_jp?m_no=38',
 				color : '#ff99c8'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル',
 				start : '2021-10-15',
-				url : 'festivalInfoCon?m_no=39',
+				url : 'festivalInfoCon_jp?m_no=39',
 				color : '#fcf6bd'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル',
 				start : '2021-10-12',
-				url : 'festivalInfoCon?m_no=40',
+				url : 'festivalInfoCon_jp?m_no=40',
 				color : '#fec89a'
 			}, {
-				title : '2021 도봉산페스티벌',
+				title : '2021 トボン山フェスティバル',
 				start : '2021-10-11',
 				end : '2021-10-17',
-				url : 'festivalInfoCon?m_no=41',
+				url : 'festivalInfoCon_jp?m_no=41',
 				color : '#ffadad'
 			}, {
-				title : '제6회 마포 M 클래식 축제 ',
+				title : '第6回マポ M クラシックフェスティバル',
 				start : '2021-10-09',
-				url : 'festivalInfoCon?m_no=42',
+				url : 'festivalInfoCon_jp?m_no=42',
 				color : '#d0f4de'
 			}, {
-				title : '제26회 강동선사문화축제',
+				title : '第26回カンドン先史文化祭り',
 				start : '2021-10-08',
 				end : '2021-10-10',
-				url : 'festivalInfoCon?m_no=43',
+				url : 'festivalInfoCon_jp?m_no=43',
 				color : '#ff99c8'
 			}, {
-				title : '제6회 마포 M 클래식 축제클래식 on Live #1',
+				title : '第6回マポ M クラシックフェスティバルクラシック on Live #1',
 				start : '2021-10-07',
-				url : 'festivalInfoCon?m_no=44',
+				url : 'festivalInfoCon_jp?m_no=44',
 				color : '#ffadad'
 			}, {
-				title : '제6회 마포 M 클래식 축제 \'마포사계 \' <겨울>',
+				title : '第6回マポ M クラシックフェスティバル\'マポ四季 \' <冬>',
 				start : '2021-10-05',
-				url : 'festivalInfoCon?m_no=45',
+				url : 'festivalInfoCon_jp?m_no=45',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 창신마을축제',
+				title : '2021 チャンシン町祭り',
 				start : '2021-10-01',
 				end : '2021-11-07',
-				url : 'festivalInfoCon?m_no=46',
+				url : 'festivalInfoCon_jp?m_no=46',
 				color : '#e4c1f9'
 			}, {
-				title : '운현궁 \'한가위 민속 한마당\'',
+				title : '雲峴宮「チュソク民族ハンマダン」',
 				start : '2021-09-20',
 				end : '2021-09-22',
-				url : 'festivalInfoCon?m_no=47',
+				url : 'festivalInfoCon_jp?m_no=47',
 				color : '#ff99c8'
 			}, {
-				title : '[2021 금천가족예술축제] 빛의 바다 : 빛을 품은 금천',
+				title : '[2021クムチョン家族芸術フェスティバル]光の海 : 光を抱きしめたクムチョン',
 				start : '2021-09-01',
 				end : '2021-09-15',
-				url : 'festivalInfoCon?m_no=48',
+				url : 'festivalInfoCon_jp?m_no=48',
 				color : '#e4c1f9'
 			}, {
-				title : ' [서울애니메이션센터] 도심 속 문화체험공간! 만화도서관 & 애니소풍',
+				title : ' [ソウルアニメーションセンター] 都会の文化体験空間！漫画図書館＆アニメ散歩',
 				start : '2021-08-01',
 				end : '2021-08-31',
-				url : 'festivalInfoCon?m_no=49',
+				url : 'festivalInfoCon_jp?m_no=49',
 				color : '#fcf6bd'
 			}, {
-				title : '제5회 대한민국 애완곤충경진대회',
+				title : '第5回韓国昆虫コンテスト',
 				start : '2021-07-29',
 				end : '2021-08-01',
-				url : 'festivalInfoCon?m_no=50',
+				url : 'festivalInfoCon_jp?m_no=50',
 				color : '#d0f4de'
 			}, {
-				title : '제3회 서울 탭댄스 페스티벌 <블랙댄스버라이어티 >',
+				title : '第3回ソウルタップダンスフェスティバル「ブラックダンスバラエティー」',
 				start : '2021-07-20',
 				end : '2021-07-21',
-				url : 'festivalInfoCon?m_no=51',
+				url : 'festivalInfoCon_jp?m_no=51',
 				color : '#ff99c8'
 			}, {
-				title : '제3회 서울 탭댄스 페스티벌 < 탭댄스클럽 스윙46>',
+				title : '第3回ソウルタップダンスフェスティバル-タップダンススウィング46',
 				start : '2021-07-13',
 				end : '2021-07-14',
-				url : 'festivalInfoCon?m_no=52',
+				url : 'festivalInfoCon_jp?m_no=52',
 				color : '#a2d2ff'
 			}, {
-				title : '서울 밤도깨비 야시장 2021',
+				title : 'ソウル夜お化け夜市場2021',
 				start : '2021-07-09',
 				end : '2021-09-25',
-				url : 'festivalInfoCon?m_no=54',
+				url : 'festivalInfoCon_jp?m_no=54',
 				color : '#a0c4ff'
 			}, {
-				title : '[서울애니메이션센터] 도심 속 문화체험공간! 만화도서관 & 애니소풍',
+				title : ' [ソウルアニメーションセンター] 都会の文化体験空間！漫画図書館＆アニメ散歩',
 				start : '2021-07-01',
 				end : '2021-07-31',
-				url : 'festivalInfoCon?m_no=55',
+				url : 'festivalInfoCon_jp?m_no=55',
 				color : '#fcf6bd'
 			}, {
-				title : '[서울애니메이션센터] 토이플래닛 페이퍼토이',
+				title : '[ソウルアニメーションセンター] トイプラネットペーパトイ',
 				start : '2021-07-01',
 				end : '2021-07-31',
-				url : 'festivalInfoCon?m_no=56',
+				url : 'festivalInfoCon_jp?m_no=56',
 				color : '#d0f4de'
 			}, {
-				title : '˝2021 제3회 마포국악페스티벌˝꼬레아 리듬터치 #2 <애오개 본산대놀이> ',
+				title : '2021 第3回 マポ国楽フェスティバル　韓国リズムタッチ#2 -エオゲボンサン大遊び',
 				start : '2021-06-30',
-				url : 'festivalInfoCon?m_no=57',
+				url : 'festivalInfoCon_jp?m_no=57',
 				color : '#a2d2ff'
 			}, {
-				title : '관악문화재단 \'GIG(Groove In Gwanak) FESTA\' 개최',
+				title : 'クァナク文化財団「GIG(Groove In Gwanak) FESTA」開催',
 				start : '2022-07-15',
 				end : '2022-07-31',
-				url : 'festivalInfoCon?m_no=59',
+				url : 'festivalInfoCon_jp?m_no=59',
 				color : '#a2d2ff'
 			}, {
-				title : '관악문화재단 [인문학 청년과 놀다] 토크콘서트',
+				title : 'クァナク文化財団[人文学青年と遊ぶ]トークコンサート',
 				start : '2022-06-18',
-				url : 'festivalInfoCon?m_no=60',
+				url : 'festivalInfoCon_jp?m_no=60',
 				color : '#feeafa'
 			}, {
-				title : '2022 서울드럼페스티벌 (Seoul Drum Festival)',
+				title : '2022 Seoul Drum Festival',
 				start : '2022-06-17',
 				end : '2022-06-18',
-				url : 'festivalInfoCon?m_no=61',
+				url : 'festivalInfoCon_jp?m_no=61',
 				color : '#fcf6bd'
 			}, {
-				title : '[서울생활사박물관] 어린이체험실 연계 교육 \'우리는 동네 탐험대\'',
+				title : '[ソウル生活歴史博物館]子供体験室連携教育「私たちは町冒険隊」',
 				start : '2022-06-10',
 				end : '2022-09-17',
-				url : 'festivalInfoCon?m_no=62',
+				url : 'festivalInfoCon_jp?m_no=62',
 				color : '#e4c1f9'
 			}, {
-				title : '[미디어센터 관악] 6월 미디어센터 관악 오리엔테이션',
+				title : '[メディアセンタークァナク] 6月メディアセンタークァナクオリエンテーション',
 				start : '2022-06-10',
 				end : '2022-06-22',
-				url : 'festivalInfoCon?m_no=63',
+				url : 'festivalInfoCon_jp?m_no=63',
 				color : '#a2d2ff'
 			}, {
 				title : 'STAF (START TRACK ART FESTIVAL)',
 				start : '2022-05-26',
 				end : '2022-06-10',
-				url : 'festivalInfoCon?m_no=64',
+				url : 'festivalInfoCon_jp?m_no=64',
 				color : '#c8b6ff'
 			}, {
-				title : '[2022 세계문화예술교육주간] 꿈의 오케스트라 공연 및 원데이 클래스 참여 신청',
+				title : '[2022 世界文化芸術教育週間] 夢のオケストラ公演およびワンデークラス参与申し込み',
 				start : '2022-05-23',
 				end : '2022-05-29',
-				url : 'festivalInfoCon?m_no=65',
+				url : 'festivalInfoCon_jp?m_no=65',
 				color : '#ffadad'
 			}, {
-				title : '2022 세계문화예술교육 주간 국제 심포지엄',
+				title : '2022世界文化芸術教育週間国際シンポジウム',
 				start : '2022-05-23',
-				url : 'festivalInfoCon?m_no=66',
+				url : 'festivalInfoCon_jp?m_no=66',
 				color : '#a2d2ff'
 			}, {
-				title : '2022 남산골 콘서트 \'춘월가(春.越.家)\'',
+				title : '2022 ナンサンコルハンオクコンサート「春.越.家」',
 				start : '2022-05-06',
 				end : '2022-07-08',
-				url : 'festivalInfoCon?m_no=67',
+				url : 'festivalInfoCon_jp?m_no=67',
 				color : '#fec89a'
 			}, {
-				title : '관천로 문화플랫폼 S1472 [2022 S1472 어린이 주간] 개최 갤러리 음악회',
+				title : 'カンセン路文化プラットホーム S1472 [2022 S1472 子供週間]開催',
 				start : '2022-05-05',
 				end : '2022-05-08',
-				url : 'festivalInfoCon?m_no=68',
+				url : 'festivalInfoCon_jp?m_no=68',
 				color : '#fcf6bd'
 			}, {
-				title : '[서울문화재단] 2022 서커스 시즌 프로그램 <서커스 캬라반 \'봄\'>',
+				title : '[ソウル文化財団] 2022 サーカスシーズンプログラム サーカスキャラバン「春」',
 				start : '2022-05-05',
 				end : '2022-05-08',
-				url : 'festivalInfoCon?m_no=69',
+				url : 'festivalInfoCon_jp?m_no=69',
 				color : '#d0f4de'
 			}, {
-				title : '2022 남산골 어린이마을 [행복 쥐의 남산 구경]',
+				title : '2022 南山コル子供の町「幸せなネズミの南山見回り」',
 				start : '2022-05-05',
-				url : 'festivalInfoCon?m_no=70',
+				url : 'festivalInfoCon_jp?m_no=70',
 				color : '#a2d2ff'
 			},{
-				title : '[서울문화재단] 2022 거리예술 시즌 프로그램 <거리예술 캬라반 \'봄\'>',
+				title : '[ソウル文化財団] 2022 街芸術シーズンプログラム「街芸術キャラバン「春」',
 				start : '2022-04-23',
 				end : '2022-05-22',
-				url : 'festivalInfoCon?m_no=72',
+				url : 'festivalInfoCon_jp?m_no=72',
 				color : '#e4c1f9'
 			}, {
-				title : '서울에너지드림센터 2022 가족환경그림대회',
+				title : 'ソウルエネルギー夢センター 2022家族環境描き大会',
 				start : '2022-04-22',
 				end : '2022-05-22',
-				url : 'festivalInfoCon?m_no=73',
+				url : 'festivalInfoCon_jp?m_no=73',
 				color : '#ff99c8'
 			}, {
-				title : '나루랑 버스킹',
+				title : 'ナルとバスキング',
 				start : '2022-04-07',
 				end : '2022-10-28',
-				url : 'festivalInfoCon?m_no=74',
+				url : 'festivalInfoCon_jp?m_no=74',
 				color : '#d0f4de'
 			},{
-				title : '국제 서울 음악 콩쿠르 시작 벨벳 같은 음악 주인공은?',
+				title : '国際ソウル音楽コンクール',
 				start : '2022-03-06',
 				end : '2022-05-14',
-				url : 'festivalInfoCon?m_no=76',
+				url : 'festivalInfoCon_jp?m_no=76',
 				color : '#fcf6bd'
 			}, {
-				title : '2022 임인년 운현궁 설날 큰잔치',
+				title : '2022 寅年雲峴宮旧正月大宴会',
 				start : '2022-01-31',
 				end : '2022-02-02',
-				url : 'festivalInfoCon?m_no=77',
+				url : 'festivalInfoCon_jp?m_no=77',
 				color : '#ff99c8'
 			}, {
-				title : '[서울문화재단 후원] 2022 서울 아시테지 겨울축제',
+				title : '[ソウル文化財団後援] 2022ソウルアシテジ冬祭り',
 				start : '2022-01-04',
 				end : '2022-01-16',
-				url : 'festivalInfoCon?m_no=78',
+				url : 'festivalInfoCon_jp?m_no=78',
 				color : '#ffadad'
 			}, {
-				title : '2021 올데이 뮤직 페스티벌',
+				title : '2021 オールデーミュージックフェスティバル',
 				start : '2021-12-29',
-				url : 'festivalInfoCon?m_no=79',
+				url : 'festivalInfoCon_jp?m_no=79',
 				color : '#a0c4ff'
 			}, {
-				title : '2021 경의선 책거리 겨울빛축제',
+				title : '2021 京義線本街冬光祭り',
 				start : '2021-12-17',
 				end : '2022-02-28',
-				url : 'festivalInfoCon?m_no=80',
+				url : 'festivalInfoCon_jp?m_no=80',
 				color : '#e4c1f9'
 			}, {
-				title : '2021 서울라이트',
+				title : '2021 ソウルライト',
 				start : '2021-12-17',
 				end : '2022-01-02',
-				url : 'festivalInfoCon?m_no=81',
+				url : 'festivalInfoCon_jp?m_no=81',
 				color : '#ff99c8'
 			}, {
-				title : '청년제안사업 방방굿굿페스티벌',
+				title : '青年提案事業 バンバングッグッフェスティバル',
 				start : '2021-12-17',
 				end : '2021-12-22',
-				url : 'festivalInfoCon?m_no=82',
+				url : 'festivalInfoCon_jp?m_no=82',
 				color : '#d0f4de'
 			}, {
-				title : '12월 문화가 흐르는 청계천의 밤 - 청계천과 문화공간 ',
+				title : '12月文化が流れるチョンゲチョンの夜ーチョンゲチョンと文化空間',
 				start : '2021-12-08',
-				url : 'festivalInfoCon?m_no=83',
+				url : 'festivalInfoCon_jp?m_no=83',
 				color : '#fcf6bd'
 			}, {
-				title : '관악 별빛축제',
+				title : 'クァナク星の光祭り',
 				start : '2021-11-23',
 				end : '2021-12-14',
-				url : 'festivalInfoCon?m_no=84',
+				url : 'festivalInfoCon_jp?m_no=84',
 				color : '#fcf6bd'
 			}, {
-				title : '‘청춘 빛나는 무대 위로’<2021 청춘마이크 페스티벌> 개최',
+				title : '「青春光る舞台上へ」2021 青春マイクフェスティバル開催',
 				start : '2021-11-20',
 				end : '2021-11-20',
-				url : 'festivalInfoCon?m_no=85',
+				url : 'festivalInfoCon_jp?m_no=85',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 금천하모니축제',
+				title : '2021 クムチョンハモニフェスティバル',
 				start : '2021-11-10',
 				end : '2021-11-14',
-				url : 'festivalInfoCon?m_no=86',
+				url : 'festivalInfoCon_jp?m_no=86',
 				color : '#ff99c8'
 			}, {
-				title : '[서울애니메이션센터] 도심 속 문화체험공간! 만화도서관 & 애니소풍',
+				title : ' [ソウルアニメーションセンター] 都会の文化体験空間！漫画図書館＆アニメ散歩',
 				start : '2021-11-01',
 				end : '2021-11-30',
-				url : 'festivalInfoCon?m_no=87',
+				url : 'festivalInfoCon_jp?m_no=87',
 				color : '#fec89a'
 			}, {
-				title : ' <2021 서울지식이음축제?포럼> 개최',
+				title : ' 2021 ソウル知識つなぎフェスティバルフォーラム開催',
 				start : '2021-10-22',
 				end : '2021-10-29',
-				url : 'festivalInfoCon?m_no=88',
+				url : 'festivalInfoCon_jp?m_no=88',
 				color : '#d0f4de'
 			}, {
-				title : '경의선 책거리 5주년 기념 저자데이 책축제  ',
+				title : '京義線本街5周年記念著者デー本フェスティバル',
 				start : '2021-10-19',
 				end : '2021-10-24',
-				url : 'festivalInfoCon?m_no=89',
+				url : 'festivalInfoCon_jp?m_no=89',
 				color : '#fcf6bd'
 			},{
-				title : 'SIDance2021 제24회 서울세계무용축제',
+				title : 'SIDance2021第24回ソウル世界舞踊祭り',
 				start : '2021-10-16',
 				end : '2021-11-14',
-				url : 'festivalInfoCon?m_no=91',
+				url : 'festivalInfoCon_jp?m_no=91',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 \'서울은 미술관\' 공공미술축제 - \'노들 바람보다\'',
+				title : '2021「ソウルは美術館」公共美術フェスティバルー 「ノドゥル風が吹く」',
 				start : '2021-10-15',
 				end : '2021-11-30',
-				url : 'festivalInfoCon?m_no=92',
+				url : 'festivalInfoCon_jp?m_no=92',
 				color : '#e4c1f9'
 			}, {
-				title : '2021 관악강감찬축제',
+				title : '2021 クァナクカン・ガムチャン祭り',
 				start : '2021-10-14',
 				end : '2021-10-17',
-				url : 'festivalInfoCon?m_no=93',
+				url : 'festivalInfoCon_jp?m_no=93',
 				color : '#ff99c8'
 			}, {
-				title : '2021 서울무형문화축제',
+				title : '2021 ソウル無形文化祭り',
 				start : '2021-10-11',
 				end : '2021-10-16',
-				url : 'festivalInfoCon?m_no=94',
+				url : 'festivalInfoCon_jp?m_no=94',
 				color : '#c8b6ff'
 			}, {
-				title : '2021 종로한복축제',
+				title : '2021 チョンノハンボク祭り',
 				start : '2021-10-09',
 				end : '2021-10-24',
-				url : 'festivalInfoCon?m_no=95',
+				url : 'festivalInfoCon_jp?m_no=95',
 				color : '#fec89a'
 			}, {
-				title : '2021 제1회 광진 예술제',
+				title : '2021 第1回クァンジン芸術祭',
 				start : '2021-10-08',
 				end : '2021-11-03',
-				url : 'festivalInfoCon?m_no=96',
+				url : 'festivalInfoCon_jp?m_no=96',
 				color : '#fcf6bd'
 			}, {
-				title : '[서울문화재단] 2021 서울국제작가축제',
+				title : '[ソウル文化財団] 2021 ソウル国際作家フェスティバル',
 				start : '2021-10-08',
 				end : '2021-10-24',
-				url : 'festivalInfoCon?m_no=97',
+				url : 'festivalInfoCon_jp?m_no=97',
 				color : '#a0c4ff'
 			}, {
-				title : '제21회 한성백제문화제 대백제전',
+				title : '第21回ハンソン百済文化祭「大百済展」',
 				start : '2021-10-08',
 				end : '2021-10-10',
-				url : 'festivalInfoCon?m_no=98',
+				url : 'festivalInfoCon_jp?m_no=98',
 				color : '#ff99c8'
 			}, {
-				title : '아트숨비 2021 미술주간<은평의 얼굴>',
+				title : 'アートスンビ 2021 美術週間「ウンピョンの顔」',
 				start : '2021-10-07',
 				end : '2021-10-17',
-				url : 'festivalInfoCon?m_no=99',
+				url : 'festivalInfoCon_jp?m_no=99',
 				color : '#d0f4de'
 			}, {
-				title : '워터 서울 2021 : 기후변화 메가시티 그리고 물',
+				title : 'Water Seoul 2021 : 気候変動メガシティ、そして水',
 				start : '2021-10-07',
 				end : '2021-10-09',
-				url : 'festivalInfoCon?m_no=100',
+				url : 'festivalInfoCon_jp?m_no=100',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 서울세계도시문화축제(Seoul Friendship Festival)',
+				title : '2021 ソウル世界都市文化フェスティバル(Seoul Friendship Festival)',
 				start : '2022-10-01',
 				end : '2021-10-10',
-				url : 'festivalInfoCon?m_no=101',
+				url : 'festivalInfoCon_jp?m_no=101',
 				color : '#c8b6ff'
 			}, {
-				title : '제25회 서울국제만화애니메이션페스티벌(SICAF2021)',
+				title : '第25回ソウル国際漫画アニメーションフェスティバル(SICAF2021)',
 				start : '2021-10-01',
 				end : '2021-10-04',
-				url : 'festivalInfoCon?m_no=102',
+				url : 'festivalInfoCon_jp?m_no=102',
 				color : '#cbc0d3'
 			}, {
-				title : '제17회 서울와우북페스티벌',
+				title : '第17回ソウルワウ本フェスティバル',
 				start : '2021-09-27',
 				end : '2021-10-03',
-				url : 'festivalInfoCon?m_no=103',
+				url : 'festivalInfoCon_jp?m_no=103',
 				color : '#fec89a'
 			}, {
-				title : '돈의문 추석 특별프로그램 운영',
+				title : '敦義門チュソク特別プログラム運営',
 				start : '2021-09-18',
 				end : '2021-09-22',
-				url : 'festivalInfoCon?m_no=104',
+				url : 'festivalInfoCon_jp?m_no=104',
 				color : '#c8b6ff'
 			}, {
-				title : '2021 서울도시건축비엔날레 [크로스로드 어떤 도시에 살 것인가]',
+				title : '2021 ソウル都市建築ビエンナーレ「クロスロード、どんな都市に住むべきか」',
 				start : '2021-09-16',
 				end : '2021-10-31',
-				url : 'festivalInfoCon?m_no=105',
+				url : 'festivalInfoCon_jp?m_no=105',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 거리예술 시즌 프로그램(캬라반)',
+				title : '2021 距離芸術シーズンプログラム（キャラバン）',
 				start : '2021-09-11',
 				end : '2021-10-10',
-				url : 'festivalInfoCon?m_no=106',
+				url : 'festivalInfoCon_jp?m_no=106',
 				color : '#fec89a'
 			}, {
-				title : '2021 서울 서커스 페스티벌 및 시즌 프로그램',
+				title : '2021 ソウルサーカスフェスティバルおよびシーズンプログラム',
 				start : '2021-09-03',
 				end : '2021-09-26',
-				url : 'festivalInfoCon?m_no=107',
+				url : 'festivalInfoCon_jp?m_no=107',
 				color : '#c8b6ff'
 			}, {
-				title : '서울일러스트레이션페어 V.11',
+				title : 'ソウルイラストレーションフェア- V.11',
 				start : '2021-08-25',
 				end : '2021-08-28',
-				url : 'festivalInfoCon?m_no=108',
+				url : 'festivalInfoCon_jp?m_no=108',
 				color : '#ffadad'
 			}, {
-				title : '문화가 있는 날 - 님을 기억하는 슬기로운 문화생활',
+				title : '文化がある日 - あなたを覚える賢い文化生活',
 				start : '2021-07-28',
 				end : '2021-09-25',
-				url : 'festivalInfoCon?m_no=109',
+				url : 'festivalInfoCon_jp?m_no=109',
 				color : '#fcf6bd'
 			}, {
-				title : '2021서울블루스페스티벌 [SOUL CITY LIMITS]',
+				title : '202ソウルブールフェスティバル[SOUL CITY LIMITS]',
 				start : '2021-07-15',
 				end : '2021-07-18',
-				url : 'festivalInfoCon?m_no=110',
+				url : 'festivalInfoCon_jp?m_no=110',
 				color : '#fec89a'
 			}, {
-				title : '돈의문박물관마을 특별행사 <돈의문구락부 낭만축제>',
+				title : '敦義門博物館村特別行事「敦義門倶楽部浪漫祭」',
 				start : '2021-06-26',
-				url : 'festivalInfoCon?m_no=111',
+				url : 'festivalInfoCon_jp?m_no=111',
 				color : '#d0f4de'
 			}, {
-				title : '서울문화재단 2020 예술창작지원활동 다원예술 선정작 POTENT CITY',
+				title : 'ソウル文化財団2020芸術創作支援活動多元芸術選定作 POTENT CITY',
 				start : '2021-10-01',
 				end : '2021-10-04',
-				url : 'festivalInfoCon?m_no=112',
+				url : 'festivalInfoCon_jp?m_no=112',
 				color : '#a0c4ff'
 			}, {
-				title : '[관악구민과 생활예술가가 함께하는 \'2021 기분 좋은 기부위크\']',
+				title : '[クァナク区民と生活芸術家が一緒にする「2021気分良い寄付ウィーク」',
 				start : '2021-12-10',
 				end : '2021-12-11',
-				url : 'festivalInfoCon?m_no=113',
+				url : 'festivalInfoCon_jp?m_no=113',
 				color : '#a0c4ff'
 			}, {
-				title : '방배골 1080 다어울림 축제 \'방배골(Goal)인(In)걷기축제\'',
+				title : 'バンベゴル1080ダアウリム祭り「バンベゴル(Goal)イン(In)歩き祭り」',
 				start : '2021-10-30',
-				url : 'festivalInfoCon?m_no=114',
+				url : 'festivalInfoCon_jp?m_no=114',
 				color : '#e4c1f9'
 			}, {
-				title : '[서울문화재단]  열린지역축제 <같이만남 : 함께 예술하기>',
+				title : '[ソウル文化財団]地域祭り「緒に出会い　一緒に芸術する」',
 				start : '2021-10-22',
 				end : '2021-10-24',
-				url : 'festivalInfoCon?m_no=115',
+				url : 'festivalInfoCon_jp?m_no=115',
 				color : '#a2d2ff'
 			}, {
-				title : '2021 NEXTAR COMPETITION VOL.3  [케이팝 댄스 경연대회]',
+				title : '2021 NEXTAR COMPETITION VOL.3  [K-POP ダンスコンテスト]',
 				start : '2021-09-04',
-				url : 'festivalInfoCon?m_no=116',
+				url : 'festivalInfoCon_jp?m_no=116',
 				color : '#ff99c8'
 			}, {
-				title : '제76주년 광복절 기념행사 [해방의 기쁨]',
+				title : '第76周年光復節記念行事「解放の喜び」',
 				start : '2021-08-14',
 				end : '2021-08-16',
-				url : 'festivalInfoCon?m_no=117',
+				url : 'festivalInfoCon_jp?m_no=117',
 				color : '#ffadad'
 			}, {
-				title : '< 단풍 밟고 소풍 가자!> 홍릉단풍길 스탬프투어 ',
+				title : '紅葉踏みに散歩行こう！ホンノン紅葉道スタンプツーア',
 				start : '2021-11-06',
 				end : '2021-11-14',
-				url : 'festivalInfoCon?m_no=118',
+				url : 'festivalInfoCon_jp?m_no=118',
 				color : '#d0f4de'
 			}, {
-				title : '근현대사 추리여행 사라진 열쇠를 찾아라',
+				title : '近現代史推理旅行消えた鍵を探せ',
 				start : '2021-09-01',
 				end : '2021-12-31',
-				url : 'festivalInfoCon?m_no=119',
+				url : 'festivalInfoCon_jp?m_no=119',
 				color : '#fec89a'
 			}, {
-				title : 'TikTok:나래한바퀴-교과서 속 세계민요 여행',
+				title : 'TikTok:ナレ一周-教科書の中の世界民謡旅行',
 				start : '2022-05-27',
-				url : 'festivalInfoCon?m_no=120',
+				url : 'festivalInfoCon_jp?m_no=120',
 				color : '#fec89a'
 			}, {
-				title : '2022 선농대제 개최',
+				title : '2022 センノンダン祭開催',
 				start : '2022-04-23',
-				url : 'festivalInfoCon?m_no=121',
+				url : 'festivalInfoCon_jp?m_no=121',
 				color : '#fcf6bd'
 			},{
-				title : '남산골 전통체험',
+				title : 'ナンサンコル伝統体験',
 				start : '2022-04-05',
 				end : '2022-11-13',
-				url : 'festivalInfoCon?m_no=123',
+				url : 'festivalInfoCon_jp?m_no=123',
 				color : '#e4c1f9'
 			}, {
-				title : '2022 남산골 온라인 설축제 \'호기로운 설\'',
+				title : '2022 ナンサンコルオンライン旧正月祭り「豪気の旧正月」',
 				start : '2022-01-31',
 				end : '2022-02-13',
-				url : 'festivalInfoCon?m_no=124',
+				url : 'festivalInfoCon_jp?m_no=124',
 				color : '#d0f4de'
 			}, {
-				title : '2021 \'동지_虎婚\'',
+				title : '2021 「冬至_虎婚」',
 				start : '2021-12-22',
-				url : 'festivalInfoCon?m_no=125',
+				url : 'festivalInfoCon_jp?m_no=125',
 				color : '#c8b6ff'
 			}, {
-				title : '[2021관악강감찬축제] 이익주 교수와 함께하는 마스터클래스 고려',
+				title : '[2021クァナクカン・カムチャン祭り] イ・イクジュ教授とともにするマスタークラス高麗',
 				start : '2021-10-15',
-				url : 'festivalInfoCon?m_no=126',
+				url : 'festivalInfoCon_jp?m_no=126',
 				color : '#fec89a'
 			}, {
-				title : '2021 훈련도감 무예 재현행사 <한양도성 전통무예와 만나다>',
+				title : '2021 訓練図鑑武芸再現イベント漢陽都城伝統武芸と出会う',
 				start : '2021-10-02',
 				end : '2021-10-03',
-				url : 'festivalInfoCon?m_no=127',
+				url : 'festivalInfoCon_jp?m_no=127',
 				color : '#ff99c8'
 			}, {
-				title : '제9회 한양도성문화제',
+				title : '第9回漢陽都城文化祭',
 				start : '2021-10-01',
 				end : '2021-10-10',
-				url : 'festivalInfoCon?m_no=128',
+				url : 'festivalInfoCon_jp?m_no=128',
 				color : '#a2d2ff'
 			}, {
-				title : '시대별전통복식한복패션쇼',
+				title : '時代別伝統複式ハンボクファッションショー',
 				start : '2021-09-27',
 				end : '2021-11-13',
-				url : 'festivalInfoCon?m_no=129',
+				url : 'festivalInfoCon_jp?m_no=129',
 				color : '#fcf6bd'
 			}, {
-				title : '남산골 한옥마을 전통체험(78월)프로그램 OPEN!',
+				title : 'ナンサンコル韓屋村の伝統体験(7~8月)プログラムOPEN!',
 				start : '2021-07-01',
 				end : '2021-08-29',
-				url : 'festivalInfoCon?m_no=130',
+				url : 'festivalInfoCon_jp?m_no=130',
 				color : '#d0f4de'
 			} ]
 		});
@@ -1781,7 +1781,7 @@
 
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo">
-			<span id="FestivalTxt">祭り情報を<br>見にいく</span> 
+			<span id="FestivalTxt">祭り情報を<br>見に行く　</span> 
 			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
 				<div class="glow-wrap" >
@@ -1791,22 +1791,12 @@
 		</div>
 		<!-- 게시판 노출 영역 -->
 		<div class="menu">
-		
 			<ul class="menu__tabs" >
 			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>全体</a></li>
 				<li><a class="item2" href="#item-2"><i class="fa fa-link"></i>フリー</a></li>
 				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>レビュー</a></li>
 			</ul>
-			
 			<section class="menu__wrapper" >
-				<!-- 案内 -->
-					<table>
-						<tr>
-							<td colspan="3">サイト上部にある翻訳機能をオンにして下さい。</td>
-						</tr>
-					</table>
-					<br>
-				<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
@@ -1823,7 +1813,6 @@
 						</tr>
 					</c:forEach>
 				</table>
-
 				<table id="item-2" class="menu__item"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
@@ -1840,7 +1829,6 @@
 						</tr>
 					</c:forEach>
 				</table>
-
 				<table id="item-3" class="menu__item"
 					style="border: 1px solid gray; width: 100%;">
 					<tr class="showTbTitle">
@@ -1860,7 +1848,6 @@
 				<a class="btnClickBoard"
 					onclick="location.href='BoardViewHC?cate=all'">▶ +MORE</a>
 			</section>
-
 			<div class="menu--shadow"></div>
 		</div>
 
@@ -1872,11 +1859,10 @@
 	
 	<!-- 캘린더 영역 -->
 	<div id='calendar'>
-		<a href='fesCalendarCon'> もっと見る </a>
+		<a href='fesCalendarCon_jp'> もっと見る </a>
 	</div>
-
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
-	<table style="width: 100%; height: 100px;">
+	<table style="width: 100%; height: 30px;">
 		<tr>
 			<td></td>
 		</tr>

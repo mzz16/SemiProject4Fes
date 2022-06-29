@@ -38,7 +38,7 @@
 		$.ajax({
 			type : "GET", // HTTP method type(GET, POST) 형식이다.
 			dataType : "text",
-			url : "mj_fesInfo_board/imgFromAddr.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
+			url : "mj_fesInfo_board/imgFromAddr_JP.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
 			data : {
 				guname : selectText
 			},// Json 형식의 데이터이다.
@@ -70,7 +70,7 @@
 					mimg = obj.result[j].mainImg;
 
 					let pkpk = stackpk[i];
-					let m_no = "festivalInfoCon?m_no=" + ppk;
+					let m_no = "festivalInfoCon_jp?m_no=" + ppk;
 
 					$(pkpk).attr("href", m_no);
 					let simg = stackimg[i];
@@ -218,7 +218,7 @@
 			//따라서 val1, val2, val3...의 값을 가져온다.
 			var kkk = $("select option:selected").val();
 			alert(kkk);
-			location.href = "festivalListCon?Seoul=" + kkk;
+			location.href = "festivalListCon_jp?Seoul=" + kkk;
 		});
 
 		/*	$("#fesList").on("click", function(){
@@ -272,7 +272,7 @@
 			<td><span style="color: red;">見つかった祭り &nbsp;&nbsp;&nbsp; <span
 					id="numberOfFes"></span> 件
 			</span>
-				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
+				<button id="fesList">もっと見る</button> <!-- <input type='button' id='select_btn' value='더보기'
 				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>
@@ -302,7 +302,7 @@
 		<section id="photostack-1" class="photostack photostack-start">
 			<div>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
@@ -313,14 +313,14 @@
 
 
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
@@ -329,21 +329,21 @@
 
 
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
