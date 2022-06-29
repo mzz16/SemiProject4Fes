@@ -249,6 +249,10 @@
 	 } */
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 @media ( max-width : 900px ) {
 	#img_content {
 		position: fixed;
@@ -321,6 +325,14 @@
 }
 
 .photo .glow {
+<<<<<<< HEAD
+=======
+/*축제정보 바로가기 배너*/
+.photo {
+	position: absolute;
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 	display: block;
 	 position: absolute; 
 	/* position: relative; */
@@ -498,7 +510,16 @@
 	width: 100%;
 	height: 108px;
 	top: 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+	
+	
 	/*margin-top: -10px;*/
+=======
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+	/*margin-top: -10px;*/
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 }
 
 .photo .glow {
@@ -867,7 +888,16 @@ position:relative;
 	/* position: absolute; */
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
 /* #click {
+=======
+#click {
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+/* #click {
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 	position: absolute;
 	opacity: 0;
 	left: 330px;
@@ -946,17 +976,37 @@ html {
 /*--------------------------
 * MENU TABS
 ---------------------------*/
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+	
+=======
+=======
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 .menu {
 	top: 285px;
 	width: 100%;
 	height: 100%;
+<<<<<<< HEAD
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 	/*margin: 55px auto;*/
 	/*width: 80%;*/
 	/*max-width: 600px;*/
 	/*     position: relative; */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 	position: absolute;
 }
 
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+	position: absolute;
+}
+
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 .menu__tabs {
 	list-style: none;
 	overflow: hidden;
@@ -968,7 +1018,15 @@ html {
 	/* height: 55px; */
 	float: left;
 	margin-right: 2px;
+<<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 1.0em;
+=======
+	font-size: 1.3em;
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
+	font-size: 1.0em;
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 }
 
 .item1 {
@@ -1118,10 +1176,30 @@ html {
 	display: block;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
 /* #calendar {
 	max-width: 1100px;
 	margin: 0 auto;
 	position : absolute;
+<<<<<<< HEAD
+=======
+#calendar {
+	/*max-width: 1100px;*/
+	/*margin: 0 auto;*/
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+	width: 50%;
+	height: 100%;
+<<<<<<< HEAD
+	right: 0px;
+} */
+=======
+}
+>>>>>>> 8dec0b5003cd813bb3efaeabee6b8d89c94266ec
+=======
 #calendar {
 	/*max-width: 1100px;*/
 	/*margin: 0 auto;*/
@@ -1130,3 +1208,4 @@ html {
 	right: 0px;
 } */
 
+>>>>>>> e14edd85b1b7e7b77a42e69577f2c1e0fa6706fe
