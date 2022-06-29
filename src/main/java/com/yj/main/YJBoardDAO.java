@@ -487,7 +487,8 @@ public class YJBoardDAO {
 		ResultSet rs = null;
 	
 		try {
-			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB order by B_DATE desc) where rownum <= 5";
+			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB order by B_DATE desc) "
+					+ "where rownum <= 5";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			
@@ -519,7 +520,8 @@ public void showMainFreeBoardPage(HttpServletRequest request) {
 		ResultSet rs = null;
 	
 		try {
-			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '자유게시판' order by B_DATE desc) where rownum <= 5";
+			String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '자유게시판' "
+					+ "order by B_DATE desc) where rownum <= 5";
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			
@@ -552,7 +554,8 @@ public void showMainReviewBoardPage(HttpServletRequest request) {
 	ResultSet rs = null;
 
 	try {
-		String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '후기게시판' order by B_DATE desc) where rownum <= 5";
+		String sql = "select B_NO, B_CATE, B_TITLE from (select * from BOARD_DB where B_CATE like '후기게시판'"
+				+ " order by B_DATE desc) where rownum <= 5";
 		pstmt = con.prepareStatement(sql);
 		rs = pstmt.executeQuery();
 		

@@ -1435,7 +1435,7 @@
 		<div id="img_content">
 			<!-- 텍스트 영역  -->
 			<div class="plan_tit" style="position: relative;">
-				<p class="tit">서울지도지렁이</p>
+				<p class="tit">서울지도</p>
 				<p class="dsc">
 					원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다. <span id="xBtn"
 						style="position: absolute; right: 20px; bottom: 5px; cursor:pointer;"> <img
@@ -1836,33 +1836,6 @@
 				</div></a>
 			<p id="click">→ Click me!</p>
 		</div>
-
-		<!-- 게시판 노출 영역 -->
-		<%-- <div id=showBoard style="width: 100%;">
-			<table class="showTable" >
-				<tr>
-					<td class=showBoardTitle colspan="2">게시판</td>
-					<td class="gotoBoard" colspan="1"><a
-						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
-				</tr>
-				</table>
-				<table style="border: 1px solid gray; width: 100%;">
-					<tr class="showTbTitle">
-						<td class="showListNo">글 번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
-					</tr>
-					<c:forEach items="${boards }" var="b">
-						<tr class="showList"
-							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
-						</tr>
-					</c:forEach>
-			</table>
-		</div> --%>
-
 
 
 		<!-- 게시판 노출 영역 -->
