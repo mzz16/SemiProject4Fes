@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1, width=100">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script
