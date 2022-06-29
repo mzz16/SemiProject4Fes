@@ -22,6 +22,8 @@
 	href="mj_fesInfo_board/css/demo.css" />
 <link rel="stylesheet" type="text/css"
 	href="mj_fesInfo_board/css/component.css" />
+<link rel="stylesheet" type="text/css"
+	href="mj_fesInfo_board/css/mjIndexDeco.css">
 <script src="mj_fesInfo_board/js/modernizr.min.js"></script>
 <script type="text/javascript" src="mj_fesInfo_board/js/jquery.js"></script>
 <script type="text/javascript">
@@ -212,7 +214,7 @@
 	 */
 
 	$(document).ready(function() {
-		$("#fesList").on("click", function() {
+		$("#fesListJp").on("click", function() {
 			//select라는 태그 이름을 이용해서 select 박스를 선택한 후
 			// .val()함수로 값을 가져오면 option의 value 값을 가져온다. 
 			//따라서 val1, val2, val3...의 값을 가져온다.
@@ -234,7 +236,7 @@
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	<table border="1" width="500px";>
+	<table width="500px";>
 		<tr>
 			<td>住所</td>
 			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
@@ -272,7 +274,7 @@
 			<td><span style="color: red;">見つかった祭り &nbsp;&nbsp;&nbsp; <span
 					id="numberOfFes"></span> 件
 			</span>
-				<button id="fesList">もっと見る</button> <!-- <input type='button' id='select_btn' value='더보기'
+				<button id="fesListJp">もっと見る</button> <!-- <input type='button' id='select_btn' value='더보기'
 				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>

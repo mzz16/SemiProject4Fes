@@ -19,17 +19,19 @@
 				<li>이용요금 : ${fes.useFee }</li>
 				<li>${fes.program }</li>
 			</ul>
-			<button onclick="history.back(-1)"
+			<!-- <button onclick="history.back(-1)"
 				class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
 				data-text="이전으로" style="float: right;">
 				<span>이전으로</span>
-			</button>
+			</button> -->
+			
 
 		</div>
 
 	</div>
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
+	 <button onclick="history.back(-1)" title="Button push lightblue" class="buttonKR btnPush btnLightBlue">이전으로!</button>
 	</div>
 	<div>
 		<ul class="programLink">${fes.orgLink }</ul>

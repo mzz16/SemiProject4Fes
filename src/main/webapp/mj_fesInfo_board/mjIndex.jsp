@@ -22,6 +22,8 @@
 	href="mj_fesInfo_board/css/demo.css" />
 <link rel="stylesheet" type="text/css"
 	href="mj_fesInfo_board/css/component.css" />
+<link rel="stylesheet" type="text/css"
+	href="mj_fesInfo_board/css/mjIndexDeco.css">
 <script src="mj_fesInfo_board/js/modernizr.min.js"></script>
 <script type="text/javascript" src="mj_fesInfo_board/js/jquery.js"></script>
 <script type="text/javascript">
@@ -275,7 +277,10 @@
 					id="numberOfFes"></span> 건
 			</span>
 				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
-				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
+				onclick='setSelectedFestival()' onclick="festivalListCon"> -->
+				
+				
+			</td>
 		</tr>
 	</table>
 	
