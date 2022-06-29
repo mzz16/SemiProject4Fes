@@ -30,10 +30,12 @@
 	</div>
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
-		<button onclick="history.back(-1)" class="buttonJP btnPush btnLightRose">以前に</button>
 	</div>
-	<div>
-		<ul class="programLink">${fes.orgLink }</ul>
+	<div class="buttonAndLinkDiv">
+		<div>
+			<div><ul class="programLink"> <a href=" ${fes.orgLink }">${fes.orgLink }</a></ul></div>
+			<div><button onclick="history.back(-1)" class="buttonJP btnPush btnLightRose">以前に</button></div>
+		</div>
 	</div>
 
 
