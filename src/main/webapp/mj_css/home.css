@@ -1,25 +1,835 @@
 @charset "UTF-8";
 
+
+
+/* 슬라이드 테두리 제거 */
+.bx-wrapper {
+	border: 0;
+	background: #fbfbfb;
+	box-shadow: none;
+}
+
+/* 버튼 안 보이게 */
+#addBtn {
+	display: none;
+}
+
+
+ 
+ /* 반응형 코드 시작 */
+
+@media ( min-width : 1024px ) {
+
+	#leftInformation {
+	border : 5px solid red;
+	width: 40%;
+	/* margin-top: 50px; */
+	/* top: -50px; */
+	height: 600px;
+	display: flex; 
+	flex-direction: column;  
+	position: relative;
+}
+	
+	#calendar {
+	/*max-width: 1100px;*/
+	/*margin: 0 auto;*/
+	font-size: 13pt;
+	position : absolute;
+	width: 50%;
+	height:97%;
+	right: 0px;
+}
+	
+.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	top: 0;
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 250px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+	
+.photo #FestivalTxt{
+	font-size: 42pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 300px;
+	top: 200px;
+	font-size: 15pt;
+	}
+	
+	
+	.menu {
+	position: relative;
+	margin-top: 50px;
+	/* width: 90%;
+	height: 50%; */
+	
+	}
+	/* .menu__tabs {
+	width: 90%;
+	} */
+	
+	
+  .menu__tabs li {
+	/* width: 70%; */
+	float: left;
+	margin-right: 2px;
+	
+	}
+	
+	
+
+	
+	}
+	
+	
+/* @media ( max-width : 1150px ) {
+
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
+.photo span {
+	font-size: 32pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	.menu {
+	position: absolute;
+	top: 200px;
+	/* width: 80%; */
+	/* height: 50%; */
+	
+/* 	} */
+/* 	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	
+	}
+	
+	
+	
+	 .menu__tabs {
+	width: 80%;
+	} 
+	
+	  .menu__wrapper {
+	 width: 80%;
+	 } 
+	
+	
+	} */
+
+
+@media ( max-width : 1023px ) {
+	
+
+	
+	#img_content {
+		position: fixed;
+		border: 5px solid #cd0028;
+		background: #cd0028;
+		width: 40%;
+		bottom: 0px;
+		right: 0px;
+		border-radius: 5px;
+		z-index: 3;
+		opacity: 0.9;
+	}
+.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 160px;
+	top: 0;
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 150px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+	#img_content .plan_tit {
+		font-size: 50%;
+	}
+	#contain {
+		height: 40%;
+	}
+	#leftInformation {
+		width: 40%;
+		height: 600px;
+		font-size: 80%;
+		position: relative;
+	}
+	
+
+	#calendar {
+	font-size: 11pt;
+	position : absolute;
+	width: 50%;
+	height: 79%;
+	right: 0px;
+	}
+	
+	.photo #FestivalTxt{
+	font-size: 32pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 200px;
+	top: 130px;
+	font-size: 13pt;
+	
+	}
+	
+	
+	
+	.menu{
+	position: relative;
+    margin-top: 50px;
+    
+		
+	}
+/* .menu__tabs {
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	border: 3px solid #cd0028;
+}
+.menu__tabs li {
+	height: 55px;
+	float: left;
+	margin-right: 2px;
+	font-size: 2.0em;
+} */
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	 /*   .menu__wrapper {
+	 width: 70%;
+	 } */
+}
+
+@media ( max-width : 900px ) {
+	#img_content {
+		position: fixed;
+		border: 5px solid orange;
+		background: orange;
+		width: 40%;
+		bottom: 0px;
+		right: 0px;
+		border-radius: 5px;
+		z-index: 3;
+		opacity: 0.9;
+	}
+	#img_content .plan_tit {
+		font-size: 30%;
+	}
+	#contain {
+		height: 40%;
+	}
+	#leftInformation {
+		width: 40%;
+		font-size: 60%;
+		position: relative;
+	}
+	#calendar {
+	font-size: 9pt;
+	position : absolute;
+	width: 50%;
+	height: 70%;
+	right: 0px;
+	}
+	
+	.photo #FestivalTxt{
+	font-size: 22pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	font-size: 11pt;
+	position: absolute;
+	opacity: 0;
+	left: 180px;
+	top: 115px;
+	
+	}
+
+	
+
+	
+	.menu {
+	position:relative;
+	margin-top: 50px;
+	
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	
+	}
+	.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 140px;
+	top: 0;
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 150px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	 /* .menu__wrapper {
+	 width: 70%;
+	 } */
+}
+
+@media ( max-width : 800px ) {
+	#img_content {
+		position: fixed;
+		border: 5px solid blue;
+		background: blue;
+		width: 40%;
+		bottom: 0px;
+		right: 0px;
+		border-radius: 5px;
+		z-index: 3;
+		opacity: 0.9;
+	}
+
+	/* 	#contain{
+	height: 40%;
+	} !!!!!!오류나면 살리기 */
+	#leftInformation {
+		width: 40%;
+		font-size: 50%;
+		position: relative;
+	}
+/* 	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	} */
+		#calendar {
+	font-size: 7pt;
+	position : absolute;
+	width: 50%;
+	height: 66%;
+	right: 0px;
+	}
+	
+	.photo #FestivalTxt{
+	font-size: 12pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	font-size: 9pt;
+	position: absolute;
+	opacity: 0;
+	left: 160px;
+	top: 102px;
+	
+	}
+	
+	
+	.menu {
+		position:relative;
+	margin-top: 50px;
+	/* width: 50%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+		.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 124px;
+	top: 0;
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 150px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+	/* .menu__tabs {
+	width: 70%;
+	} */
+	
+	/*  .menu__wrapper {
+	 width: 70%;
+	 } */
+}
+
+@media ( max-width : 700px ) {
+	#img_content {
+		display: none;
+	}
+	
+	#leftInformation {
+		min-height: 250px;
+		min-width: 250px;
+		position: relative;
+	}
+	
+	#calendar{
+	position: absolute;
+	right: 0px;
+	min-width: 300px;
+	min-height: 300px;
+	height: 64%;
+}
+	
+	.photo #FestivalTxt{
+	font-size: 12pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	font-size: 9pt;
+	position: absolute;
+	opacity: 0;
+	left: 140px;
+	top: 90px;
+	
+	}
+	
+	
+
+	
+	.menu {
+	position:relative;
+	margin-top: 50px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+/* 	
+	.menu__tabs {
+	width: 150%;
+	
+	}
+	 */
+	
+	/*   .menu__wrapper {
+	 width: 120%;
+	 }  */
+	 	.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 108px;
+	top: 0;
+	
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 150px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+}
+
+@media ( max-width : 650px ) {
+	#MainContainer{
+	
+	display: flex; 
+	flex-direction: column; 
+	
+	}
+	#img_content {
+		display: none;
+	}
+	
+	#leftInformation {
+		min-height: 250px;
+		min-width: 250px;
+		position: relative;
+	}
+	
+	#calendar{
+	position: absolute;
+	right: 0px;
+	min-width: 300px;
+	min-height: 300px;
+	height: 64%;
+}
+	
+	.photo #FestivalTxt{
+	font-size: 12pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	#click{
+	font-size: 9pt;
+	position: absolute;
+	opacity: 0;
+	left: 140px;
+	top: 90px;
+	
+	}
+	
+	
+
+	
+	.menu {
+	position:relative;
+	margin-top: 50px;
+/* 	width: 70%;
+	height: 50%; */
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+/* 	
+	.menu__tabs {
+	width: 150%;
+	
+	}
+	 */
+	
+	/*   .menu__wrapper {
+	 width: 120%;
+	 }  */
+	 	.photo .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 108px;
+	top: 0;
+	
+	
+	/*margin-top: -10px;*/
+}
+
+.photo .glow {
+	display: block;
+	 position: absolute; 
+	/* position: relative; */
+	width: 40%;
+	height: 150px;
+	background: rgba(255, 255, 255, .2);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+}
+
+/* @media ( max-width : 600px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: orange;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 115px;
+	bottom: 5px;
+	font-size: 5pt;
+	
+	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
+	
+	.menu {
+position:relative;
+	margin-top: 50px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 125%;
+	 } 
+}
+
+
+@media ( max-width : 500px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 7pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: blue;
+	}
+	
+	#click{
+	position: absolute;
+	opacity: 0;
+	left: 85px;
+	bottom: 5px;
+	font-size: 5pt;
+	
+	}
+	
+
+	.menu {
+	position: absolute;
+	top: 100px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 130%;
+	 } 
+}
+
+@media ( max-width : 400px ) {
+	#img_content {
+		display: none;
+	}
+	
+
+	
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 90px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 135%;
+	 } 
+}
+
+
+@media ( max-width : 300px ) {
+	#img_content {
+		display: none;
+	}
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 80px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 140%;
+	 } 
+}
+
+
+@media ( max-width : 200px ) {
+	#img_content {
+		display: none;
+	}
+
+	
+	.photo span {
+	font-size: 10pt;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	}
+	
+	.menu {
+	position: absolute;
+	top: 70px;
+	width: 70%;
+	height: 50%;
+	
+	}
+	.menu__tabs li {
+	float: left;
+	margin-right: 2px;
+	}
+	
+	.menu__tabs {
+	width: 200%;
+	
+	}
+	
+	
+	  .menu__wrapper {
+	 width: 145%;
+	 } 
+}
+
+ */
+
 /* #leftInformation {
 	position: relative;
 	top: -50px;
 	height: 570px;
 
 } */
-#leftInformation {
-	float: left;
-	width: 40%;
-	margin-top: 50px;
-	position: relative;
-	top: -50px;
-	height: 100%;
+
+.glow-wrap{
+	height: 230px;
 }
 
 
 /*축제정보 바로가기 배너*/
 .photo {
+	border : 1px solid blue;
 	/* margin-top: -40px; */
-	position: absolute;
+	position: static;
 	/*top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);*/
@@ -37,27 +847,7 @@
 	box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
 }
 
-.photo .glow-wrap {
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	/*margin-top: -10px;*/
-}
 
-.photo .glow {
-	display: block;
-	 position: absolute; 
-	/* position: relative; */
-	width: 40%;
-	height: 200%;
-	background: rgba(255, 255, 255, .2);
-	top: 0;
-	filter: blur(5px);
-	transform: rotate(45deg) translate(-450%, 0);
-	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
 
 .photo:hover .glow {
 	transform: rotate(45deg) translate(450%, 0);
@@ -79,18 +869,17 @@
 	z-index: 1;
 	/* transform: translate(-25%, -65%);  */
 	margin: 0;
-	position: absolute;
+	/* position: absolute; */
 }
 
 
-
-#click {
+/* #click {
 	position: absolute;
 	opacity: 0;
 	left: 330px;
 	bottom: 5px;
 	font-size: 15pt;
-}
+} */
 
 .photo:hover #click {
 	opacity: 1;
@@ -167,30 +956,23 @@ html {
 /*--------------------------
 * MENU TABS
 ---------------------------*/
-.menu{
+
 	
-	top: 285px;
-	width: 100%;
-	height: 100%;
 	/*margin: 55px auto;*/
-	/* margin-top: 200px; */
 	/*width: 80%;*/
 	/*max-width: 600px;*/
 	/*     position: relative; */
-	position: absolute;
-}
 .menu__tabs {
 	list-style: none;
 	overflow: hidden;
 	width: 100%;
+	border: 3px solid #cd0028;
 }
 .menu__tabs li {
 	/* height: 55px; */
 	float: left;
 	margin-right: 2px;
-	font-size: 1.3em;
-	
-	
+	font-size: 1.0em;
 }
 .item1 {
 	
@@ -331,11 +1113,11 @@ html {
 }
 
 
-#calendar {
-	/*max-width: 1100px;*/
-	/*margin: 0 auto;*/
+/* #calendar {
+	max-width: 1100px;
+	margin: 0 auto;
+	position : absolute;
 	width: 50%;
-	float: right;
 	height: 100%;
-
-}
+	right: 0px;
+} */
