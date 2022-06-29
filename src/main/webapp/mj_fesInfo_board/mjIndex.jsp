@@ -107,7 +107,6 @@
 
 			}
 		});
-
 	})
 </script>
 
@@ -121,6 +120,7 @@
 			<td>주소</td>
 			<td><select name="festival" id="selectbox"
 				style="text-align: center;" onchange="setImgFromAddr();">
+
 
 					<option value="">---선택---</option>
 					<option value="강남구">강남구</option>
