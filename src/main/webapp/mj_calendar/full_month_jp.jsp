@@ -100,7 +100,7 @@
 				url : 'festivalInfoCon_jp?m_no=12',
 				color : '#fcf6bd'
 			}, {
-				title : '<2022 月刊ミュージック>',
+				title : '2022 月刊ミュージック',
 				start : '2022-04-30',
 				end : '2022-11-30',
 				url : 'festivalInfoCon_jp?m_no=13',
@@ -122,7 +122,7 @@
 				url : 'festivalInfoCon_jp?m_no=16',
 				color : '#ff99c8'
 			}, {
-				title : '2022 セビッ島 春花祭り <セビッ ブルーミング ガーデン>',
+				title : '2022 セビッ島 春花祭り セビッ ブルーミング ガーデン',
 				start : '2022-04-25',
 				end : '2022-05-29',
 				url : 'festivalInfoCon_jp?m_no=17',
@@ -167,7 +167,7 @@
 				url : 'festivalInfoCon_jp?m_no=25',
 				color : '#d0f4de'
 			}, {
-				title : '[DDP] <集合理論>展',
+				title : '[DDP] 集合理論展',
 				start : '2021-12-23',
 				end : '2022-02-27',
 				url : 'festivalInfoCon_jp?m_no=26',
@@ -306,7 +306,7 @@
 				url : 'festivalInfoCon_jp?m_no=51',
 				color : '#ff99c8'
 			}, {
-				title : '第3回ソウルタップダンスフェスティバル< タップダンススウィング46>',
+				title : '第3回ソウルタップダンスフェスティバル-タップダンススウィング46',
 				start : '2021-07-13',
 				end : '2021-07-14',
 				url : 'festivalInfoCon_jp?m_no=52',
@@ -330,7 +330,7 @@
 				url : 'festivalInfoCon_jp?m_no=56',
 				color : '#d0f4de'
 			}, {
-				title : '2021 第3回 マポ国楽フェスティバル　韓国リズムタッチ#2 <エオゲボンサン大遊び> ',
+				title : '2021 第3回 マポ国楽フェスティバル　韓国リズムタッチ#2 -エオゲボンサン大遊び',
 				start : '2021-06-30',
 				url : 'festivalInfoCon_jp?m_no=57',
 				color : '#a2d2ff'
@@ -474,7 +474,7 @@
 				url : 'festivalInfoCon_jp?m_no=84',
 				color : '#fcf6bd'
 			}, {
-				title : '「青春光る舞台上へ」<2021 青春マイクフェスティバル>開催',
+				title : '「青春光る舞台上へ」2021 青春マイクフェスティバル開催',
 				start : '2021-11-20',
 				end : '2021-11-20',
 				url : 'festivalInfoCon_jp?m_no=85',
@@ -492,7 +492,7 @@
 				url : 'festivalInfoCon_jp?m_no=87',
 				color : '#fec89a'
 			}, {
-				title : ' <2021 ソウル知識つなぎフェスティバルフォーラム>開催',
+				title : ' 2021 ソウル知識つなぎフェスティバルフォーラム開催',
 				start : '2021-10-22',
 				end : '2021-10-29',
 				url : 'festivalInfoCon_jp?m_no=88',
@@ -646,7 +646,7 @@
 				url : 'festivalInfoCon_jp?m_no=114',
 				color : '#e4c1f9'
 			}, {
-				title : '[ソウル文化財団]地域祭り<一緒に出会い:一緒に芸術する>',
+				title : '[ソウル文化財団]地域祭り「緒に出会い　一緒に芸術する」',
 				start : '2021-10-22',
 				end : '2021-10-24',
 				url : 'festivalInfoCon_jp?m_no=115',
@@ -663,7 +663,7 @@
 				url : 'festivalInfoCon_jp?m_no=117',
 				color : '#ffadad'
 			}, {
-				title : '< 紅葉踏みに散歩行こう！>ホンノン紅葉道スタンプツーア',
+				title : '紅葉踏みに散歩行こう！ホンノン紅葉道スタンプツーア',
 				start : '2021-11-06',
 				end : '2021-11-14',
 				url : 'festivalInfoCon_jp?m_no=118',
@@ -707,7 +707,7 @@
 				url : 'festivalInfoCon_jp?m_no=126',
 				color : '#fec89a'
 			}, {
-				title : '2021 訓練図鑑武芸再現イベント<漢陽都城伝統武芸と出会う>',
+				title : '2021 訓練図鑑武芸再現イベント漢陽都城伝統武芸と出会う',
 				start : '2021-10-02',
 				end : '2021-10-03',
 				url : 'festivalInfoCon_jp?m_no=127',
@@ -730,7 +730,7 @@
 				end : '2021-08-29',
 				url : 'festivalInfoCon_jp?m_no=130',
 				color : '#d0f4de'
-			} ]
+			}]
 		});
 
 		calendar.render();
