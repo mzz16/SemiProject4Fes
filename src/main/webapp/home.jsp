@@ -1435,7 +1435,7 @@
 		<div id="img_content">
 			<!-- 텍스트 영역  -->
 			<div class="plan_tit" style="position: relative;">
-				<p class="tit">서울지도</p>
+				<p class="tit">서울지도지렁이</p>
 				<p class="dsc">
 					원하시는 영역을 클릭하시면 해당 지역의 축제정보를 보실 수 있습니다. <span id="xBtn"
 						style="position: absolute; right: 20px; bottom: 5px; cursor:pointer;"> <img
