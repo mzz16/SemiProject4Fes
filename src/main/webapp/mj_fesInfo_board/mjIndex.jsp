@@ -22,6 +22,8 @@
 	href="mj_fesInfo_board/css/demo.css" />
 <link rel="stylesheet" type="text/css"
 	href="mj_fesInfo_board/css/component.css" />
+<link rel="stylesheet" type="text/css"
+	href="mj_fesInfo_board/css/mjIndexDeco.css">
 <script src="mj_fesInfo_board/js/modernizr.min.js"></script>
 <script type="text/javascript" src="mj_fesInfo_board/js/jquery.js"></script>
 <script type="text/javascript">
@@ -59,10 +61,8 @@
 				let stitle;
 				let mimg;
 				let j = 0;
-				//				for (var i = obj.result.length-1; i >= 0; i--) {
-				for (var i = 0; i < 16; i++) {
 
-					//console.log(obj.result[i]);
+				for (var i = 0; i < 16; i++) {
 
 					j = i % objLength;
 					ppk = obj.result[j].m_no;
@@ -78,14 +78,6 @@
 					let settitle = stacktitle[i];
 					$(settitle).text(stitle);
 
-					/*
-					// 더미 성공
-					let simg2 = stackimg2[i];
-					$(simg2).attr("src", mimg);
-					let settitle2 = stacktitle2[i];
-					$(settitle).text(stitle);
-					 */
-
 				}
 
 			},
@@ -99,135 +91,22 @@
 	}
 </script>
 <script type="text/javascript">
-	/* function setSelectedFestival() {
-		const div = document.getElementById('my_div');
-
-		if (div.style.display == 'none') {
-			div.style.display = 'block';
-		} else {
-			div.style.display = 'hidden';
-		}
-	} */
-
-	/* $(document).ready(function(){
-		$("select_btn").con('click', function(){
-			setSelectedFestival();
-		});	
-	});
-	
-	
-	function setSelectedFestival() {
-		var langSelect = document.getElementById("selectbox");
-		
-		
-		
-		
-
-		//		div.innerHTML = document.getElementById('my_div').innerHTML;
-		//		document.getElementById('my_div').appendChild(div);
-
-		// select element에서 선택된 option의 value가 저장된다.
-		var selectValue = langSelect.options[langSelect.selectedIndex].value;
-
-		// select element에서 선택된 option의 text가 저장된다.
-		var selectText = langSelect.options[langSelect.selectedIndex].text;
-		selectText = encodeURI(selectText);
-		// ajax 통신
-		$.ajax({
-			type : "GET", // HTTP method type(GET, POST) 형식이다.
-			dataType : "text",
-			url : "mj_fesInfo_board/selectedFestival.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
-			data : {
-				guname : selectText
-			},// Json 형식의 데이터이다.
-			success : function(data) { // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
-				
-				if($("#selectbox").value == "selecttt"){
-					alert("값을 선택해주세요.");
-					return;
-				}
-			
-				const obj = JSON.parse(data);
-				let stackpk = $(".phtostack-pk");
-				let stackimg = $(".photostack-img").children();
-				let stacktitle = $(".photostack-title");
-				
-				
-				let pk;
-				let stitle;
-				let mimg;
-				let j = 0;
-
-				//for (var i = 0; i < obj.result.length; i++) {
-					//var newDiv = document.createElement('div');
-					
-					//newDiv = obj.result.length[i];
-					
-					
-					for (var i = 0; i < obj.result.length; i++) {
-						//console.log(obj.result[i]);
-
-						j = i % obj.result.length;
-						ppk = obj.result[j].m_no;
-						
-						
-						stitle = obj.result[j].title;
-						mimg = obj.result[j].mainImg;
-
-						let pkpk = stackpk[i];
-						let m_no = "festivalInfoCon?m_no=" + ppk;
-						
-						var tag = "<div>"
-									"<div>" + stitle + "<div>" +
-								  	"<div>" + mimg + "<div>" +
-								  "<div>"
-
-						$(pkpk).attr("href", m_no);
-						let simg = stackimg[i];
-						$(simg).attr("src", mimg);
-						let settitle = stacktitle[i];
-						$(settitle).text(stitle);
-						$('#my_div_festival').append(tag);
-						/*
-						// 더미 성공
-						let simg2 = stackimg2[i];
-						$(simg2).attr("src", mimg);
-						let settitle2 = stacktitle2[i];
-						$(settitle).text(stitle);
-	 */
-
-	/*	}
-
-	//}
-
-	},
-	error : function(XMLHttpRequest, textStatus, errorThrown) { // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
-	alert("통신 실패.")
-	console.log(textStatus);
-	console.log(errorThrown);
-	}
-	});
-
-	}
-	 */
-
 	$(document).ready(function() {
 		$("#fesList").on("click", function() {
 			//select라는 태그 이름을 이용해서 select 박스를 선택한 후
 			// .val()함수로 값을 가져오면 option의 value 값을 가져온다. 
 			//따라서 val1, val2, val3...의 값을 가져온다.
-			var kkk = $("select option:selected").val();
-			alert(kkk);
-			location.href = "festivalListCon?Seoul=" + kkk;
-		});
 
-		/*	$("#fesList").on("click", function(){
-				//select라는 태그 이름을 이용해서 select 박스를 선택한 후
-				// .text()함수로 값을 가져오면 option의 text 값을 가져온다. 
-				//따라서 txtVal1, txtVal2, txtVal3...의 값을 가져온다.
-				var kkk = $("select option:selected").text();
+			if ($("select option:selected").val() == "") {
+				alert('구를 선택하지 않으셨습니다.');
+				location.href = "festivalHC";
+			} else {
+				var kkk = $("select option:selected").val();
 				alert(kkk);
-			});*/
+				location.href = "festivalListCon?Seoul=" + kkk;
+
+			}
+		});
 	})
 </script>
 
@@ -235,16 +114,12 @@
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	
-	<table  id="festivalTab" style="width: 50%; text-align: left;" >
+
+	<table id="festivalTab" style="width: 50%; text-align: left;">
 		<tr>
 			<td>주소</td>
-			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
-			<td><select name="festival" id="selectbox" style=" text-align: center;"
-				onchange="setImgFromAddr();">
-
-
-					<!-- 배열로 잡으면 작동이 안됨. -->
+			<td><select name="festival" id="selectbox"
+				style="text-align: center;" onchange="setImgFromAddr();">
 
 
 					<option value="">---선택---</option>
@@ -270,32 +145,13 @@
 					<option value="중랑구">중랑구</option>
 			</select></td>
 
-
 			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
 					id="numberOfFes"></span> 건
 			</span>
-				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
-				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
+				<button id="fesList">더보기</button></td>
 		</tr>
 	</table>
-	
-	<!-- </form> -->
-	<!-- <div id='my_div'>
-		<table border="1">
-			<tr>
-				<th>이미지</th>
-				<th>축제 명</th>
-			</tr>
-		</table>
-		<div id='my_div_festival'>
-			<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
-				src="" /></a>
-		</div>
-		<div>
-			<h2 class="photostack-title"></h2>
-		</div>
 
-	</div> -->
 
 	<div class="container">
 		<!-- Top Navigation -->

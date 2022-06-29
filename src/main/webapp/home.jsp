@@ -1261,33 +1261,6 @@
 			<p id="click">→ Click me!</p>
 		</div>
 
-		<!-- 게시판 노출 영역 -->
-		<%-- <div id=showBoard style="width: 100%;">
-			<table class="showTable" >
-				<tr>
-					<td class=showBoardTitle colspan="2">게시판</td>
-					<td class="gotoBoard" colspan="1"><a
-						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
-				</tr>
-				</table>
-				<table style="border: 1px solid gray; width: 100%;">
-					<tr class="showTbTitle">
-						<td class="showListNo">글 번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
-					</tr>
-					<c:forEach items="${boards }" var="b">
-						<tr class="showList"
-							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
-						</tr>
-					</c:forEach>
-			</table>
-		</div> --%>
-
-
 
 		<!-- 게시판 노출 영역 -->
 		<div class="menu" style="border: 5px solid yellow; width: 100%; height: 100%;">
