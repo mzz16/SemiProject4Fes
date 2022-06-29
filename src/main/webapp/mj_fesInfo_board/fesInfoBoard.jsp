@@ -31,7 +31,7 @@
 	</div>
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
-	 <button onclick="history.back(-1)" title="Button push lightblue" class="buttonKR btnPush btnLightBlue">이전으로!</button>
+	 <button onclick="history.back(-1)" class="buttonKR btnPush btnLightBlue">이전으로!</button>
 	</div>
 	<div>
 		<ul class="programLink">${fes.orgLink }</ul>

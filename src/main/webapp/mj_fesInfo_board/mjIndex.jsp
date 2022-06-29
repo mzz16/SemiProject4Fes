@@ -91,18 +91,22 @@
 	}
 </script>
 <script type="text/javascript">
-
 	$(document).ready(function() {
 		$("#fesList").on("click", function() {
 			//select라는 태그 이름을 이용해서 select 박스를 선택한 후
 			// .val()함수로 값을 가져오면 option의 value 값을 가져온다. 
 			//따라서 val1, val2, val3...의 값을 가져온다.
-			var kkk = $("select option:selected").val();
-			alert(kkk);
-			location.href = "festivalListCon?Seoul=" + kkk;
-		});
 
-		
+			if ($("select option:selected").val() == "") {
+				alert('구를 선택하지 않으셨습니다.');
+				location.href = "festivalHC";
+			} else {
+				var kkk = $("select option:selected").val();
+				alert(kkk);
+				location.href = "festivalListCon?Seoul=" + kkk;
+
+			}
+		});
 	})
 </script>
 
@@ -110,12 +114,13 @@
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	
-	<table  id="festivalTab" style="width: 50%; text-align: left;" >
+
+	<table id="festivalTab" style="width: 50%; text-align: left;">
 		<tr>
 			<td>주소</td>
-			<td><select name="festival" id="selectbox" style=" text-align: center;"
-				onchange="setImgFromAddr();">
+			<td><select name="festival" id="selectbox"
+				style="text-align: center;" onchange="setImgFromAddr();">
+
 
 					<option value="">---선택---</option>
 					<option value="강남구">강남구</option>
@@ -143,11 +148,10 @@
 			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
 					id="numberOfFes"></span> 건
 			</span>
-				<button id="fesList">더보기</button>
-			</td>
+				<button id="fesList">더보기</button></td>
 		</tr>
 	</table>
-	
+
 
 	<div class="container">
 		<!-- Top Navigation -->
