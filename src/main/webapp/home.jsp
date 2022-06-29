@@ -56,7 +56,10 @@
 	font-size: 13pt;
 	
 	}
+	#calendar{
+	font-size: 13pt;
 	
+	}
 	
 	.menu {
 	position: absolute;
@@ -149,6 +152,9 @@
 	}
 	#calendar {
 		width: 40%;
+	font-size: 11pt;
+	
+	
 	}
 	
 	.photo span {
@@ -214,6 +220,7 @@
 	}
 	#calendar {
 		width: 40%;
+		font-size: 9pt;
 	}
 	
 	.photo span {
@@ -277,6 +284,7 @@
 	}
 	#calendar {
 		width: 40%;
+		font-size: 7pt;
 	}
 	
 	.photo span {
@@ -337,6 +345,13 @@
 	
 	}
 	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	 
+	
+	
 	.menu {
 	position: absolute;
 	top: 120px;
@@ -381,6 +396,10 @@
 	bottom: 5px;
 	font-size: 5pt;
 	
+	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
 	}
 	
 	
@@ -429,6 +448,10 @@
 	
 	}
 	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
 	
 	.menu {
 	position: absolute;
@@ -457,6 +480,12 @@
 	#img_content {
 		display: none;
 	}
+	
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -492,6 +521,11 @@
 	#img_content {
 		display: none;
 	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -527,6 +561,11 @@
 	#img_content {
 		display: none;
 	}
+	#calendar {
+		width: 40%;
+		font-size: 7pt;
+	}
+	
 	.photo span {
 	font-size: 10pt;
 	position: absolute;
@@ -1316,52 +1355,52 @@
 		<!-- 슬라이더 영역 -->
 		<div class="bxslider" id="slider">
 			<div>
-				<img src="dh_festival_slide_img/1.강북구.jpeg">
+				<img src="dh_festival_slide_img/강북구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/2.도봉구.png">
+				<img src="dh_festival_slide_img/도봉구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/3.노원구.jpeg">
+				<img src="dh_festival_slide_img/노원구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/4.은평구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/6.종로구.jpeg">
+				<img src="dh_festival_slide_img/은평구.png">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/8.동대문구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/9.중랑구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/10.마포구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/11.용산구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/12.중구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/13.성동구.jpeg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/14.광진구.jpeg">
+				<img src="dh_festival_slide_img/종로구.png">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/16.양천구.png">
+				<img src="dh_festival_slide_img/동대문구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/중랑구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/마포구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/용산구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/중구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/성동구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/광진구.png">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/양천구.png">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
@@ -1370,25 +1409,25 @@
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/19.금천구.png">
+				<img src="dh_festival_slide_img/금천구.png">
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/21.관악구.jpeg">
+				<img src="dh_festival_slide_img/관악구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/22.서초구.jpeg">
+				<img src="dh_festival_slide_img/서초구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/23.강남구.jpeg">
+				<img src="dh_festival_slide_img/강남구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/24.송파구.jpeg">
+				<img src="dh_festival_slide_img/송파구.png">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/25.강동구.jpeg">
+				<img src="dh_festival_slide_img/강동구.png">
 			</div>
 		</div>
 		<!-- bxslider 닫음 -->
@@ -1903,7 +1942,7 @@
 	
 	
 	<!-- 캘린더 영역 -->
-	<div id='calendar'>
+	<div id='calendar' style="border: 3px solid #cd0028;">
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
 

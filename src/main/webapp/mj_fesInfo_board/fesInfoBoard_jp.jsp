@@ -13,25 +13,24 @@
 		<div class="fesInfoTitle">
 			${fes.title }
 			<ul>
-				<li>장소 : ${fes.place }</li>
-				<li>일시 : ${fes.fdate }</li>
-				<li>이용대상 : ${fes.useTarget }</li>
-				<li>이용요금 : ${fes.useFee }</li>
+				<li>場所 : ${fes.place }</li>
+				<li>期間 : ${fes.fdate }</li>
+				<li>利用対象 : ${fes.useTarget }</li>
+				<li>利用料金 : ${fes.useFee }</li>
 				<li>${fes.program }</li>
 			</ul>
 			<!-- <button onclick="history.back(-1)"
 				class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
-				data-text="이전으로" style="float: right;">
+				data-text="以前に" style="float: right;">
 				<span>이전으로</span>
 			</button> -->
-			
 
 		</div>
 
 	</div>
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
-	 <button onclick="history.back(-1)" title="Button push lightblue" class="buttonKR btnPush btnLightBlue">이전으로!</button>
+		<button onclick="history.back(-1)" title="Button push lightRose" class="buttonJP btnPush btnLightRose">以前に</button>
 	</div>
 	<div>
 		<ul class="programLink">${fes.orgLink }</ul>

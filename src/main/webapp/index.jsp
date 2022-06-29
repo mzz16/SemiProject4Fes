@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>서울축제</title>
+<!-- <link rel="icon" href="yj_img/logo_kr.png"> -->
+ <link rel="shortcut icon" type="image/x-icon" href="yj_img/logo_kr.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="yj_css/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,41 +26,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> 	
-<style type="text/css">
-@media(min-width : 1111px){
-	#menu > a {
-			font-size: 23pt;
-	}
-}
-
-	
-@media ( max-width : 1110px ) {
-	
-	#menu > a {
-			font-size: 18pt;
-	}
-	
-}
-
-@media ( max-width : 900px ) {
-
-	#menu > a {
-			font-size: 13pt;
-	}
-	
-}
-
-@media ( max-width : 800px ) {
-
-	#menu > a {
-			font-size: 8pt;
-	}
-	
-}
-</style>
-	
-	
-
 </head>
 
 <body class="color-change-4x" >
@@ -66,8 +33,13 @@
 <div class="header_index" >
 <!-- Google 번역 -->
 <div id="google_translate_element" class="hd_lang"></div>
+
 <!-- 사이트 언어변경 -->
-<div><button onclick="location.href='MainHC_jp'">日本語サイトへ</button></div>
+<div class="button_container">
+  <button id="jpBtn" onclick="location.href='MainHC_jp'"><span>日本語サイトへ</span></button>
+ </div>
+<!-- <div><button onclick="location.href='MainHC_jp'">日本語サイトへ</button></div> -->
+
 </div>
 <script>
 	function googleTranslateElementInit() {

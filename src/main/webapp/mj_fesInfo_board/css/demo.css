@@ -16,7 +16,7 @@ body {
 	background: #fff;
 	color: #a7a0a2;
 	font-weight: 400;
-	font-size: 1em;
+	/* font-size: 10pt */;
 /* 	font-family: 'Lato', Arial, sans-serif; */
 	font-family: 'Do Hyeon', sans-serif;
 	/* --------------- */
@@ -222,6 +222,146 @@ svg.polaroid rect {
 	text-align: left;
 }
 
+
+
+
+ @media ( min-width : 1201px ) {
+ 
+	body{
+	font-size: 13px;
+	}
+	
+	#festivalTab{
+	font-size: 13pt;
+	
+	}
+}
+
+ @media ( max-width : 1200px ) {
+ 
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.9em;
+	}
+	
+	
+}
+ 
+ @media ( max-width : 1023px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.8em;
+	}
+	
+}
+
+ @media ( max-width : 900px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.7em;
+	}
+	
+}
+
+ @media ( max-width : 800px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.6em;
+	}
+	
+}
+
+ @media ( max-width : 700px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.5em;
+	}
+	
+}
+
+ @media ( max-width : 600px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.4em;
+	}
+	
+}
+
+ @media ( max-width : 500px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.3em;
+	}
+	
+}
+
+ @media ( max-width : 400px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.2em;
+	}
+	
+}
+
+ @media ( max-width : 300px ) {
+	
+body{
+	font-size: 13px;
+	}
+	
+#festivalTab{
+	font-size: 0.1em;
+	}
+	
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 60em) {
 	.columns {
 		-moz-column-count: 2;
@@ -238,6 +378,9 @@ svg.polaroid rect {
 		-webkit-column-gap: 2em;
 		column-gap: 2em;
 	}
+	
+	
+	
 }
 
 
@@ -254,6 +397,7 @@ svg.polaroid rect {
 	.codrops-header svg.polaroid {
 		height: 200px;
 	}
+	
 }
 
 
@@ -267,5 +411,4 @@ svg.polaroid rect {
 		font-size: 160%;
 		line-height: 2;
 	}
-
 }

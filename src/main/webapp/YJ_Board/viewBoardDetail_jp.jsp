@@ -11,28 +11,28 @@
 <script type="text/javascript">
 <!-- 게시글 삭제 -->
 	function deleteBoard(n, pw) {
-		let ok = confirm('정말로 게시물을 삭제할까요?');
+		let ok = confirm('本当に削除しますか？');
 		console.log(ok);
 		if (ok) {
-			let password = prompt('게시글 작성 시 입력한 비밀번호를 입력해주세요.')
+			let password = prompt('ボードを作成する時に設定したパスワードを入力して下さい。')
 			if (pw == password) {
-				location.href = 'BoardDeleteC?number=' + n + '&&code=' + pw + '&&cate=all';
+				location.href = 'BoardDeleteC_jp?number=' + n + '&&code=' + pw + '&&cate=all';
 			} else if (pw != password) {
-				alert('비밀번호가 일치하지 않습니다.');
+				alert('パスワードが一致していません。');
 			}
 		}
 	}
 	
 <!-- 게시글 수정 -->
 	function updateBoard(no, pw){
-		let ok = confirm('정말로 게시물을 수정할까요?');
+		let ok = confirm('本当に修正しますか？');
 		console.log(ok);
 		if (ok) {
-			let password = prompt('게시글 작성 시 입력한 비밀번호를 입력해주세요.')
+			let password = prompt('ボードを作成する時に設定したパスワードを入力して下さい。')
 			if (pw == password) {
-				location.href = 'BoardUpdateC?number=' + no + '&&code=' + pw;
+				location.href = 'BoardUpdateC_jp?number=' + no + '&&code=' + pw;
 			} else if (pw != password) {
-				alert('비밀번호가 일치하지 않습니다.');
+				alert('パスワードが一致していません。');
 			}
 		}
 	}
@@ -66,9 +66,9 @@
 		
 		<br>
 		<div>
-			<button onclick="history.back();">목록으로</button>
-			<button onclick="updateBoard('${board.no}','${board.password}')">수정하기</button>
-			<button onclick="deleteBoard('${board.no}','${board.password}')">삭제하기</button>
+			<button onclick="history.back();">目録へ</button>
+			<button onclick="updateBoard('${board.no}','${board.password}')">修正する</button>
+			<button onclick="deleteBoard('${board.no}','${board.password}')">削除する</button>
 		</div>
 		<br>
 	</div>

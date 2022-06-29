@@ -40,7 +40,7 @@
 		$.ajax({
 			type : "GET", // HTTP method type(GET, POST) 형식이다.
 			dataType : "text",
-			url : "mj_fesInfo_board/imgFromAddr.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
+			url : "mj_fesInfo_board/imgFromAddr_JP.jsp", // 컨트롤러에서 대기중인 URL 주소이다.
 			data : {
 				guname : selectText
 			},// Json 형식의 데이터이다.
@@ -72,7 +72,7 @@
 					mimg = obj.result[j].mainImg;
 
 					let pkpk = stackpk[i];
-					let m_no = "festivalInfoCon?m_no=" + ppk;
+					let m_no = "festivalInfoCon_jp?m_no=" + ppk;
 
 					$(pkpk).attr("href", m_no);
 					let simg = stackimg[i];
@@ -214,13 +214,13 @@
 	 */
 
 	$(document).ready(function() {
-		$("#fesList").on("click", function() {
+		$("#fesListJp").on("click", function() {
 			//select라는 태그 이름을 이용해서 select 박스를 선택한 후
 			// .val()함수로 값을 가져오면 option의 value 값을 가져온다. 
 			//따라서 val1, val2, val3...의 값을 가져온다.
 			var kkk = $("select option:selected").val();
 			alert(kkk);
-			location.href = "festivalListCon?Seoul=" + kkk;
+			location.href = "festivalListCon_jp?Seoul=" + kkk;
 		});
 
 		/*	$("#fesList").on("click", function(){
@@ -232,58 +232,52 @@
 			});*/
 	})
 </script>
-
 </head>
 
 <body>
 	<!-- <form action="festivalListCon"> -->
-	
-	<table  id="festivalTab" style="width: 50%; text-align: left;" >
+	<table width="500px";>
 		<tr>
-			<td>주소</td>
+			<td>住所</td>
 			<!-- <td><input type="hidden" name="kangnam" value="강남구"></td> -->
-			<td><select name="festival" id="selectbox" style=" text-align: center;"
+			<td><select name="festival" id="selectbox"
 				onchange="setImgFromAddr();">
 
 
 					<!-- 배열로 잡으면 작동이 안됨. -->
 
 
-					<option value="">---선택---</option>
-					<option value="강남구">강남구</option>
-					<option value="강동구">강동구</option>
-					<option value="강북구">강북구</option>
-					<option value="관악구">관악구</option>
-					<option value="광진구">광진구</option>
-					<option value="금천구">금천구</option>
-					<option value="노원구">노원구</option>
-					<option value="도봉구">도봉구</option>
-					<option value="동대문구">동대문구</option>
-					<option value="마포구">마포구</option>
-					<option value="서초구">서초구</option>
-					<option value="성동구">성동구</option>
-					<option value="성북구">성북구</option>
-					<option value="송파구">송파구</option>
-					<option value="양천구">양천구</option>
-					<option value="용산구">용산구</option>
-					<option value="은평구">은평구</option>
-					<option value="종로구">종로구</option>
-					<option value="중구">중구</option>
-					<option value="중랑구">중랑구</option>
+					<option value="">---選択---</option>
+					<option value="カンナム区">カンナム区</option>
+					<option value="カンドン区">カンドン区</option>
+					<option value="カンブック区">カンブック区</option>
+					<option value="クァナク区">クァナク区</option>
+					<option value="グァンジン区">グァンジン区</option>
+					<option value="クムチョン区">クムチョン区</option>
+					<option value="ノウォン区">ノウォン区</option>
+					<option value="ドボン区">ドボン区</option>
+					<option value="トンデムン区">トンデムン区</option>
+					<option value="マポ区">マポ区</option>
+					<option value="ソチョ区">ソチョ区</option>
+					<option value="ソンドン区">ソンドン区</option>
+					<option value="ソンブク区">ソンブク区</option>
+					<option value="ソンパ区">ソンパ区</option>
+					<option value="ヤンチョン区">ヤンチョン区</option>
+					<option value="ヨンサン区">ヨンサン区</option>
+					<option value="ウンピョン区">ウンピョン区</option>
+					<option value="チョンノ区">チョンノ区</option>
+					<option value="チュン区">チュン区</option>
+					<option value="チュンナン区">チュンナン区</option>
 			</select></td>
 
 
-			<td><span style="color: red;">발견된 축제 &nbsp;&nbsp;&nbsp; <span
-					id="numberOfFes"></span> 건
+			<td><span style="color: red;">見つかった祭り &nbsp;&nbsp;&nbsp; <span
+					id="numberOfFes"></span> 件
 			</span>
-				<button id="fesList">더보기</button> <!-- <input type='button' id='select_btn' value='더보기'
-				onclick='setSelectedFestival()' onclick="festivalListCon"> -->
-				
-				
-			</td>
+				<button id="fesListJp">もっと見る</button> <!-- <input type='button' id='select_btn' value='더보기'
+				onclick='setSelectedFestival()' onclick="festivalListCon"> --></td>
 		</tr>
 	</table>
-	
 	<!-- </form> -->
 	<!-- <div id='my_div'>
 		<table border="1">
@@ -310,7 +304,7 @@
 		<section id="photostack-1" class="photostack photostack-start">
 			<div>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
@@ -321,14 +315,14 @@
 
 
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
@@ -337,21 +331,21 @@
 
 
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>
 					</figcaption>
 				</figure>
 				<figure>
-					<a href="festivalInfoCon" class="phtostack-pk photostack-img"><img
+					<a href="festivalInfoCon_jp" class="phtostack-pk photostack-img"><img
 						src="" /></a>
 					<figcaption>
 						<h2 class="photostack-title"></h2>

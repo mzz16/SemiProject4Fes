@@ -1,4 +1,176 @@
 @charset "UTF-8";
+ 
+ @media ( min-width :1201px ) {
+	.BoardCateDiv {
+	width: 25%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 18pt;
+	}
+	.BoardInputDiv button{
+	font-size: 13pt;
+	
+	}
+	
+	 .BoardSeeNoteDiv{
+	width: 72%;
+	}
+	 
+}
+
+ 
+
+@media ( max-width :1200px ) {
+	
+	.BoardCateDiv {
+	width: 23%;
+	
+	}
+	
+	.BoardCateDiv div{
+	font-size: 15pt;
+	
+	}
+	.BoardSeeNoteDiv{
+	font-size: 14px;
+	/* margin-right: 30px; */
+	/* width: 90%; */
+	width: 72%;
+	position : relative;
+	right: -20px;  
+	
+	}
+	
+	
+	.BoardInputDiv button{
+	font-size: 11pt;
+	}
+}
+
+@media ( max-width : 1023px ) {
+	.BoardCateDiv {
+	width: 21%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 13pt;
+	
+	}
+	.BoardSeeNoteDiv{
+	font-size: 12px;
+	/* margin-right: 30px; */
+	width: 72%;
+	position : relative;
+	right: -30px;  
+	
+	}
+	.BoardInputDiv button{
+	font-size: 9pt;
+	}
+}
+
+@media ( max-width : 900px ) {
+	.BoardCateDiv {
+	width: 19%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 11pt;
+	
+	}
+	.BoardSeeNoteDiv{
+	font-size: 10px;
+	/* margin-right: 30px; */
+	width: 72%;
+	position : relative;
+	right: -40px; 
+	}
+	.BoardInputDiv button{
+	font-size: 7pt;
+	}
+}
+
+
+@media ( max-width : 800px ) {
+	.BoardCateDiv {
+	width: 17%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 9pt;
+	
+	}
+	
+	.BoardSeeNoteDiv{
+	font-size: 8px;
+	/* margin-right: 30px; */
+	width: 72%;
+	}
+	.BoardInputDiv button{
+	font-size: 5pt;
+	}
+}
+@media ( max-width : 700px ) {
+	.BoardCateDiv {
+	width: 15%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 7pt;
+	
+	}
+.BoardSeeNoteDiv{
+	font-size: 6px;
+	/* margin-right: 30px; */
+	width: 72%;
+	}
+	.BoardInputDiv button{
+	font-size: 3pt;
+	}
+}
+
+@media ( max-width : 600px ) {
+	.BoardCateDiv {
+	width: 13%;
+	
+	}
+	.BoardCateDiv div{
+	font-size: 5pt;
+	
+	}
+	.BoardSeeNoteDiv{
+	font-size: 4px;
+	/* margin-right: 30px; */
+	width: 72%;
+	}
+	.BoardInputDiv button{
+	font-size: 3pt;
+	}
+}
+
+@media ( max-width : 500px ) {
+	.BoardCateDiv {
+	width: 13%;
+	
+	
+	}
+	.BoardCateDiv div{
+	font-size: 3pt;
+	}
+	.BoardSeeNoteDiv{
+	font-size: 2px;
+	/* margin-right: 30px; */
+	width: 72%;
+	}
+	.BoardInputDiv button{
+	font-size: 3pt;
+	}
+}
+
+
+
+
 
 
 
@@ -13,7 +185,7 @@
 
 .BoardInputDiv button{
 	font-family: 'Do Hyeon', sans-serif;
-	font-size: 13pt;
+	/* font-size: 13pt; */
 }
 
 /* 전체 테이블 배치용 */
@@ -22,20 +194,20 @@
 	font-family: 'Noto Sans KR', sans-serif;	background-color: #FFFDFA;
 	width: 100%;
 	display: flex;
-	margin: 10 auto;
+	/* margin: 10 auto; */
 }
 /* 카테고리 선택 영역 */
 .BoardCateDiv {
 	margin-top: 3%;
 	font-family: 'Do Hyeon', sans-serif;
-	width: 25%;
+	/* width: 25%; */
 }
 
 .BoardCateDiv div {	
-	color: white;
+	 color: white; 
 	width: 90%;
 	text-align: right;
-	font-size: 18pt;
+	/*  font-size: 18pt;  */
 	padding-right:5px;
 	margin-right: 20px;
 
@@ -58,9 +230,8 @@
 
 /* 글 목록 출력 영역 */
 .BoardSeeNoteDiv {
-	text-align: center;
 	margin-top: 15px;
-	width: 72%;
+	/* width: 72%; */
 }
 
 #seeNoteTopTr {

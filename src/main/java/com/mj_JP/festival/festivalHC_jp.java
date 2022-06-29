@@ -1,4 +1,4 @@
-package com.mj.festival;
+package com.mj_JP.festival;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class festivalHC_jp extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		request.setAttribute("contentPage", "mj_fesInfo_board/mjIndex.jsp");
+		request.setAttribute("contentPage", "mj_fesInfo_board/mjIndex_jp.jsp");
 		request.getRequestDispatcher("index_jp.jsp").forward(request, response);
 	}
 

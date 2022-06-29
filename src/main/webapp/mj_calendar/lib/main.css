@@ -1,25 +1,38 @@
 
 .fc {
-	
-	 border: 1px solid black;
+	position: relative;
+/* 	 border: 1px solid black; */
 	  /* font-size: 5pt;  */
 }
 
-@media ( max-width : 1200px ) {
 
-	.fc {
-  /* layout of immediate children */
-  /* display: flex;
-  flex-direction: column; */
-color: red;
-  /* font-size: 10pt; */
-  
+  @media ( min-width : 1201px ) {
+	#calendar{
+	font-size: 13pt;
+	}
+
+}  
+@media ( max-width : 1200px ) {
+	
+	.fc .fc-daygrid-more-link {
+	font-size: 0.9em;
+	color: purple;
 }
 
-.fc .fc-daygrid-more-link {
-	font-size: 30pt;
+}
+/* 	.fc {
+  layout of immediate children
+  display: flex;
+  flex-direction: column;
+color: red;
+  font-size: 10pt;
+  
+} */
+
+/* .fc .fc-daygrid-more-link {
+	font-size: 3pt;
 	color: purple;
-	}
+	} */
 	
 	/* .fc table {
     border-collapse: collapse;
@@ -34,52 +47,26 @@ color: red;
   } */
   
   
-	}
+	
 	
 	@media ( max-width : 1023px ) {
 	
-	.fc {
-  /* layout of immediate children */
-  /* display: flex;
-  flex-direction: column; */
-color: orange;
-  font-size: 8pt;
+	.fc .fc-daygrid-more-link {
+	font-size: 0.8em;
+	color: aqua;
 }
-	/* .fc table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: 8pt;
-    color: pink;
-  }
-  
 .fc .fc-daygrid-day-bottom {
-  font-size: 6pt;
-  color: fuchsia;
-  } */
-  
+  bottom: -10px;
+   position: absolute;
   
 }
-	
+	}
+		
 @media ( max-width : 900px ) {
-	
-		.fc {
-  /* layout of immediate children */
- /*  display: flex;
-  flex-direction: column; */
-color: yellow;
-  font-size: 6pt;
+		.fc .fc-daygrid-more-link {
+	font-size: 0.1em;
+	color: lime;
 }
-	/* .fc table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: 6pt;
-    color: aqua;
-  }
-  .fc .fc-daygrid-day-bottom {
-  font-size: 4pt;
-  color: maroon;
-  }
-   */
   
 }	
 	
@@ -928,8 +915,9 @@ A HORIZONTAL event
 
 }
 .fc .fc-daygrid-day-bottom {
-     /* font-size: 10pt;  */
-    padding: 2px 3px 0
+      font-size: 10pt;  
+    padding: 2px 3px 0;
+    /* border: 1px solid; */
   }
 .fc .fc-daygrid-day-bottom:before {
   content: "";
