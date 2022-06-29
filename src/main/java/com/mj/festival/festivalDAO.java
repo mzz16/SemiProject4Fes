@@ -121,75 +121,10 @@ public class festivalDAO {
 
 				}
 
-//				if (codeName.equals("����-��ȭ/����")) {
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-�ڿ�/���")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-����/����")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-�ù�ȭ��")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-��Ÿ")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//				}
 
 			}
 			request.setAttribute("festivals", festivals);
 
-			// JSONObject row = (JSONObject) culturalEventInfo.get("row"); //
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -197,6 +132,8 @@ public class festivalDAO {
 
 	}
 
+	
+	
 	public void getFestival(HttpServletRequest request) {
 
 		PreparedStatement pstmt = null;
@@ -224,7 +161,6 @@ public class festivalDAO {
 				f.setTitle(rs.getString("title"));
 				f.setMainImg(rs.getString("mainimg"));
 
-//				System.out.println(rs.getString("guname"));
 				festivals.add(f);
 			}
 				request.setAttribute("fes", festivals);
@@ -238,6 +174,9 @@ public class festivalDAO {
 		}
 	}
 
+	
+	
+	
 	public void getFestivalInfo(HttpServletRequest request) {
 
 		PreparedStatement pstmt = null;
