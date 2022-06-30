@@ -1248,10 +1248,10 @@
 <div id="MainContainer">
 
 
-	<div id="leftInformation" style="border: 5px solid #cd0028;">
+	<div id="leftInformation">
 
 		<!-- 축제정보 보러가기 영역 -->
-		<div class="photo" style="border: 1px solid blue;">
+		<div class="photo">
 			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
 			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
@@ -1263,7 +1263,7 @@
 
 
 		<!-- 게시판 노출 영역 -->
-		<div class="menu" style="border: 5px solid yellow; width: 100%;">
+		<div class="menu" style="width: 100%;">
 		
 			<ul class="menu__tabs" >
 			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>전체보기</a></li>
@@ -1271,7 +1271,7 @@
 				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
 			</ul>
 			
-			<section class="menu__wrapper" style="border: 3px solid black;">
+			<section class="menu__wrapper">
 
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
