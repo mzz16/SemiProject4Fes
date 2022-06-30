@@ -24,9 +24,8 @@ public class BoardUpdateC extends HttpServlet {
 		//게시글 수정하기
 			YJBoardDAO.getYjdao().updateBoard(request);
 		//수정한 게시글 불러오기.
-			
-			
 			YJBoardDAO.getYjdao().getAllBoard(request);
+			
 			YJBoardDAO.getYjdao().lastPage(request);
 			YJBoardDAO.getYjdao().showPage(request);
 			request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");

@@ -229,14 +229,14 @@ public class YJBoardDAO {
 		PreparedStatement pstmt = null;
 
 		try {
+			
 			String saveDirectory = request.getServletContext().getRealPath("fileFolder");
 			System.out.println(saveDirectory);
 
 			MultipartRequest mr = new MultipartRequest(request, saveDirectory, 31457280, "UTF-8",
 					new DefaultFileRenamePolicy());
 
-			try {
-				if (!mr.getFilesystemName("fName").isEmpty()) {
+				if (mr.getFilesystemName("fName")!=null) {
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_img=?,b_pw=? WHERE b_NO=?";
 					pstmt = con.prepareStatement(sql);
 
@@ -258,7 +258,7 @@ public class YJBoardDAO {
 					pstmt.setString(6, pw);
 					pstmt.setString(7, number);
 					
-				} else if (mr.getFilesystemName("fName").isEmpty()) {
+				} else {
 
 					String sql = "UPDATE BOARD_DB SET b_title= ?, b_cate=?,b_name=?,b_txt=?,b_pw=? WHERE b_NO=?";
 					pstmt = con.prepareStatement(sql);
@@ -291,11 +291,6 @@ public class YJBoardDAO {
 				
 				String cate = mr.getParameter("boardType");
 					request.setAttribute("cate", cate);
-				
-			} catch (Exception e) {
-				e.printStackTrace();
-				System.out.println("등록실패");
-			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
