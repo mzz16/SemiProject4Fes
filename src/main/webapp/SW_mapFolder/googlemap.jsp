@@ -41,8 +41,7 @@ let markerCluster;
 let markersAmount;
 //let geo=[];
 // 마커 좌표 리스트
-let lat;
-let lon;
+
       let detailAddr; // 위치 검색 후 받을 변수 설정
                 // HTML5의 geolocaiton으로 사용할 수 있는지 확인
                 if (navigator.geolocation) {
@@ -148,10 +147,6 @@ function createMarkers() {
  
     for (let i = 0; i < latlng_list.length; i++) {
   
-    	
-
-			
-
         let marker = new google.maps.Marker({
             position: new google.maps.LatLng(latlng_list[i][1],latlng_list[i][2]),
             map,
@@ -165,18 +160,15 @@ function createMarkers() {
         markers.push(marker);
        // content = '<div>'+locations[i][3]+'</div>';
      
-           
-        	
+	
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
             	
-            	   
               infowindow.setContent('<div>'+latlng_list[i][0]+'</div>'+'<div>'+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon_jp?m_no='+latlng_list[i][4]+">"+"상세정보"+"</a>"+'</div>');
               infowindow.open(map, marker);
           
-          
+          	alert(detailAddr);
         	}
-         
 
            
           })(marker, i));
@@ -220,11 +212,7 @@ function refreshMap() {
     markers = [];
     createMarkers();
 }
-	var geocoder = new google.maps.services.Geocoder();
-	function searchDetailAddrFromCoords(coords, callback) {              
-    // 좌표로 법정동 상세 주소 정보를 요청합니다
-    geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
-		 } 
+	
 
 </script>
 </body>
