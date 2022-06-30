@@ -19,19 +19,34 @@
 				<li>이용요금 : ${fes.useFee }</li>
 				<li>${fes.program }</li>
 			</ul>
-			<button onclick="history.back(-1)"
+			<!-- <button onclick="history.back(-1)"
 				class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
 				data-text="이전으로" style="float: right;">
 				<span>이전으로</span>
-			</button>
-			<ul class="programLink">${fes.orgLink }</ul>
-
+			</button> -->
 		</div>
-
 	</div>
+	
+	
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
+	 	
 	</div>
 
+	<div class="buttonAndLinkDiv">
+		<div>
+			<div><ul class="programLink"> <a href=" ${fes.orgLink }">${fes.orgLink }</a></ul></div>
+			<div><button onclick="history.back(-1)" class="buttonKR btnPush btnLightBlue">이전으로!</button></div>
+		</div>
+	</div>
+		
+
+
+	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
+	<table style="width: 100%; height: 20px;">
+		<tr>
+			<td></td>
+		</tr>
+	</table>
 </body>
 </html>

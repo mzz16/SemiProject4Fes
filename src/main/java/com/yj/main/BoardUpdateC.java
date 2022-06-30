@@ -12,9 +12,9 @@ public class BoardUpdateC extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//수정할 게시글의 정보를불러오는 일		
-		YJBoardDAO.getOneBoard(request);
+		YJBoardDAO.getYjdao().getOneBoardForUpdate(request);
 		//게시글수정페이지로이동		
-		YJBoardDAO.getAllBoard(request);
+		YJBoardDAO.getYjdao().getAllBoard(request);
 		request.setAttribute("contentPage", "YJ_Board/updateBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
@@ -22,9 +22,12 @@ public class BoardUpdateC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//게시글 수정하기
-			YJBoardDAO.updateBoard(request);
+			YJBoardDAO.getYjdao().updateBoard(request);
 		//수정한 게시글 불러오기.
-			YJBoardDAO.getAllBoard(request);
+			YJBoardDAO.getYjdao().getAllBoard(request);
+			
+			YJBoardDAO.getYjdao().lastPage(request);
+			YJBoardDAO.getYjdao().showPage(request);
 			request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 	}

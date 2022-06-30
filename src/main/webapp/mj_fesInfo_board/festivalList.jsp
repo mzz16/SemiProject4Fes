@@ -10,19 +10,20 @@
 </head>
 <body>
 	<div id="seoulGu">${param.Seoul}축제</div>
-	${f.no}
+	<div id="festivalListDiv" style="display:inline-table;">
 		<c:forEach items="${fes}" var="f">
-		<table border="1" width="170px" height="250px;" style="float: left">
+		<table id="festivalListTbl" border="1" width="170px" height="250px;" style="float: left; border: 1px solid gray">
 			<tr>
 				<td><a href="festivalInfoCon?m_no=${f.no}"><img src="${f.mainImg }" style="max-width: 160px;"></a></td>
-
+			</tr>
 			<tr style="height:90px;">
-				<td><a href="festivalInfoCon?m_no=${f.no}">${f.title}</a></td>
+				<td class="festivalListTitle"><a href="festivalInfoCon?m_no=${f.no}">${f.title}</a></td>
 			</tr>
 		</table>
 		</c:forEach>
 	 
 	 
+	</div>
 	 
 	 
 

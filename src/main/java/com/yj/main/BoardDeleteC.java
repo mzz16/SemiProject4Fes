@@ -12,9 +12,13 @@ public class BoardDeleteC extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//게시글 삭제하는 일
-		YJBoardDAO.deleteBoard(request);
+		YJBoardDAO.getYjdao().deleteBoard(request);
 		//게시글 목록으로 돌아가기
-		YJBoardDAO.getAllBoard(request);
+		YJBoardDAO.getYjdao().getAllBoard(request);
+		
+		YJBoardDAO.getYjdao().lastPage(request);
+		YJBoardDAO.getYjdao().showPage(request);
+		
 		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}

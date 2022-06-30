@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 public class BoardInputHC extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
 		request.setAttribute("contentPage", "YJ_Board/inputBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
@@ -19,10 +21,13 @@ public class BoardInputHC extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 게시글 작성하기(입력)
-		YJBoardDAO.regBoard(request);
-	
+		YJBoardDAO.getYjdao().regBoard(request);
 		//전체목록 보여주기
-		YJBoardDAO.getAllBoard(request);
+		YJBoardDAO.getYjdao().getAllBoard(request);
+				
+		YJBoardDAO.getYjdao().lastPage(request);
+		YJBoardDAO.getYjdao().showPage(request);
+		
 		request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}

@@ -14,15 +14,15 @@ public class BoardViewHC extends HttpServlet {
 			throws ServletException, IOException {
 		if (request.getParameter("cate") == null) {
 			// 게시판 글 하나 불러오기
-			YJBoardDAO.getOneBoard(request);
+			YJBoardDAO.getYjdao().getOneBoard(request);
 			request.setAttribute("contentPage", "YJ_Board/viewBoardDetail.jsp");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
-		} else {
+		} else if (request.getParameter("cate") != null) {
 			// 게시판 글 불러오기
-			YJBoardDAO.getAllBoard(request);
+			YJBoardDAO.getYjdao().getAllBoard(request);
 
-			YJBoardDAO.lastPage(request);
-			YJBoardDAO.showPage(request);
+			YJBoardDAO.getYjdao().lastPage(request);
+			YJBoardDAO.getYjdao().showPage(request);
 
 			request.setAttribute("contentPage", "YJ_Board/viewBoard.jsp");
 			request.getRequestDispatcher("index.jsp").forward(request, response);

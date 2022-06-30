@@ -9,7 +9,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONArray;
@@ -18,10 +17,26 @@ import org.json.simple.parser.JSONParser;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-import com.mj.festival.FesDBManager;
+import com.t4.main.DBManager_Main;
 
 public class festivalDAO {
-	public static void work(HttpServletRequest request) {
+	//============================	
+	private Connection con;
+	private static final festivalDAO FesDAO = new festivalDAO(DBManager_Main.getDbm().connect());
+	
+	private festivalDAO() {
+		//	private Connection con = DBManager_Main.getDbm().connect();
+	}
+	private festivalDAO(Connection con) {
+		super();
+		this.con = con;
+	}
+	public static festivalDAO getFesdao() {
+		return FesDAO;
+	}
+	//============================	
+	
+	public void work(HttpServletRequest request) {
 
 		String result = "";
 		Scanner k = null;
@@ -106,75 +121,10 @@ public class festivalDAO {
 
 				}
 
-//				if (codeName.equals("����-��ȭ/����")) {
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-�ڿ�/���")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-����/����")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-�ù�ȭ��")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//
-//				} else if (codeName.equals("����-��Ÿ")) {
-//
-//					System.out.println("--------------------");
-//					System.out.println("�з��ڵ� : " + codeName);
-//					System.out.println("������ġ�� : " + guName);
-//					System.out.println("����Ÿ��Ʋ : " + title);
-//					System.out.println("�Ͻ� : " + fdate);
-//					System.out.println("��� : " + place);
-//					System.out.println("Ȩ������ : " + orgLink);
-//					System.out.println("�������� : " + useTarget);
-//					System.out.println("���� : " + useFee);
-//					System.out.println("\n");
-//				}
 
 			}
 			request.setAttribute("festivals", festivals);
 
-			// JSONObject row = (JSONObject) culturalEventInfo.get("row"); //
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -182,9 +132,10 @@ public class festivalDAO {
 
 	}
 
-	public static void getFestival(HttpServletRequest request) {
+	
+	
+	public void getFestival(HttpServletRequest request) {
 
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
@@ -192,7 +143,6 @@ public class festivalDAO {
 
 			String sql = "select * from festival_list where guname=?";
 
-			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			
 			String kangnam = request.getParameter("Seoul");
@@ -211,7 +161,6 @@ public class festivalDAO {
 				f.setTitle(rs.getString("title"));
 				f.setMainImg(rs.getString("mainimg"));
 
-//				System.out.println(rs.getString("guname"));
 				festivals.add(f);
 			}
 				request.setAttribute("fes", festivals);
@@ -220,20 +169,22 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
-			FesDBManager.close(con, pstmt, rs);
+
+			DBManager_Main.getDbm().close(null, pstmt, rs);
 		}
 	}
 
-	public static void getFestivalInfo(HttpServletRequest request) {
+	
+	
+	
+	public void getFestivalInfo(HttpServletRequest request) {
 
-		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
 		try {
 			String sql = "select * from festival_list where m_no=?";
 
-			con = FesDBManager.connect();
 			pstmt = con.prepareStatement(sql);
 			String no = request.getParameter("m_no");
 			pstmt.setString(1, no);
@@ -261,10 +212,8 @@ public class festivalDAO {
 			System.out.println(e);
 
 		} finally {
-			FesDBManager.close(con, pstmt, rs);
+			DBManager_Main.getDbm().close(null, pstmt, rs);
 		}
 	}
-	
-	
-	
+
 }

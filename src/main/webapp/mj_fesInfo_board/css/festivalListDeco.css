@@ -3,25 +3,44 @@
 #seoulGu {
 	font-size: 30pt;
 	font-weight: 500;
+	margin-top: 30px;
 }
 
-#pathMainDiv {
-	border: 1px;
-	background-color: blue;
+#festivalListDiv {
+	width: 1080px;
+	background-color: white;
+	padding-left: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 35px;
 }
 
-#fesImg {
+#festivalListTbl {
+	border-color: black;
+	border-collapse: collapse;
+}
+
+.a img {
+	transition: all 0.2s linear;
+}
+
+.a:hover img {
+	transform: scale(1.4);
+}
+
+/*#fesImg {
 	float: left;
 	height: 200px;
 	width: 200px;
 }
 
-#fesTitle {
-	float: right;
-	background: yellow;
-}
+
 
 .fesInfoDetailButton {
 	margin: auto;
 	display: block;
 }
+
+.festivalListTitle {
+	color: black;
+}*/

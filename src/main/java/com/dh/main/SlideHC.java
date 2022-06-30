@@ -7,10 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.yj.main.YJBoardDAO;
+
 @WebServlet("/SlideHC")
 public class SlideHC extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("contentPage", "DH_Slide/home.jsp");
+		request.setAttribute("contentPage", "DH_Slide/FestivalSlide.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 

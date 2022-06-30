@@ -16,7 +16,7 @@
 		if (ok) {
 			let password = prompt('게시글 작성 시 입력한 비밀번호를 입력해주세요.')
 			if (pw == password) {
-				location.href = 'BoardDeleteC?number=' + n + '&&code=' + pw;
+				location.href = 'BoardDeleteC?number=' + n + '&&code=' + pw + '&&cate=all';
 			} else if (pw != password) {
 				alert('비밀번호가 일치하지 않습니다.');
 			}
@@ -50,19 +50,23 @@
 			<div id="viewBoardName">작성자: ${board.name}</div>
 		</div>
 		
-		
+		<div id="viewBoardTxt">
+		<div id="viewBoardImgDiv">
 		<c:if test="${board.fName ne null}">
 			<div id="viewBoardImg">
 			<img style="max-width: 100%; height: auto;"
 				src="fileFolder/${board.fName}">
 			</div>
 		</c:if>
+		</div>
+		<div>${board.txt}</div>
+		</div>
 		
 		
-		<div id="viewBoardTxt">${board.txt}</div>
+		
 		<br>
 		<div>
-			<button onclick="location.href='BoardViewHC'">목록으로</button>
+			<button onclick="history.back();">목록으로</button>
 			<button onclick="updateBoard('${board.no}','${board.password}')">수정하기</button>
 			<button onclick="deleteBoard('${board.no}','${board.password}')">삭제하기</button>
 		</div>
