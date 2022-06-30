@@ -165,7 +165,7 @@
             +"<div class='jibun ellipsis'>"+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"ホームページ"+"</a>"+"</span>"+"</div>"
             +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
             +"詳細情報"+"</a>"+"</span>"
-            +"<span class='span2'>"+"<a href=https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place+">"+"ルート検索"+"</a>"+"</span>"
+            +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.addr+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
           //  alert(detailAddr);
           //  alert(position.place);
