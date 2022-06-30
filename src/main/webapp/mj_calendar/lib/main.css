@@ -1,13 +1,13 @@
 
 .fc {
-	position: relative;
+	/* position: relative; */
 /* 	 border: 1px solid black; */
 	  /* font-size: 5pt;  */
 }
 
 
 
-
+/* 
 @media ( max-width : 800px ) {
 	
 	.fc .fc-daygrid-more-link {
@@ -15,7 +15,7 @@
 	color: purple;
 }
 
-}
+} */
 /* 	.fc {
   layout of immediate children
   display: flex;

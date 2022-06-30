@@ -22,7 +22,6 @@
 #MainContainer{
 	
 	display: flex;  
-	flex-direction: column;
 	position: relative; 
 	width: 100%; 
 	height: 600px; 
@@ -61,6 +60,10 @@
 	
 	/*margin-top: -10px;*/
 }
+.showListTitle {
+	width: 20%;
+	text-align: center;
+}
 
 .photo .glow {
 	display: block;
@@ -94,6 +97,7 @@
 	.menu {
 	position: absolute;
 	margin-top: 288px;
+	height: 100%;
 
 	}
 	
@@ -142,7 +146,7 @@
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	height: 160px;
+	height: 157px;
 	top: 0;
 	
 	/*margin-top: -10px;*/
@@ -178,7 +182,7 @@
 	}
 	
 	.photo #FestivalTxt{
-	font-size: 32pt;
+	font-size: 25pt;
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -187,7 +191,7 @@
 	#click{
 	position: absolute;
 	opacity: 0;
-	left: 200px;
+	left: 180px;
 	top: 130px;
 	font-size: 13pt;
 	
@@ -198,6 +202,7 @@
 	.menu {
 	position: absolute;
 	margin-top: 200px;
+	height: 100%;
 	}
 /* .menu__tabs {
 	list-style: none;
@@ -261,7 +266,7 @@
 	}
 	
 	.photo #FestivalTxt{
-	font-size: 22pt;
+	font-size: 19pt;
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -271,7 +276,7 @@
 	font-size: 11pt;
 	position: absolute;
 	opacity: 0;
-	left: 180px;
+	left: 170px;
 	top: 115px;
 	
 	}
@@ -282,6 +287,7 @@
 	.menu {
 	position: absolute;
 	margin-top: 180px;
+	height: 100%;
 	
 	
 	}
@@ -294,9 +300,9 @@
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	height: 140px;
+	height: 134px;
 	top: 0;
-	
+	/* border: 3px solid black; */
 	/*margin-top: -10px;*/
 }
 
@@ -364,7 +370,7 @@
 	}
 	
 	.photo #FestivalTxt{
-	font-size: 12pt;
+	font-size: 15pt;
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -374,7 +380,7 @@
 	font-size: 9pt;
 	position: absolute;
 	opacity: 0;
-	left: 160px;
+	left: 150px;
 	top: 102px;
 	
 	}
@@ -383,6 +389,7 @@
 	.menu {
 		position: absolute;
 	margin-top: 150px;
+	height: 100%;
 	/* width: 50%;
 	height: 50%; */
 	
@@ -395,8 +402,9 @@
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	height: 124px;
+	height: 120px;
 	top: 0;
+/* 	border: 3px solid black; */
 	
 	/*margin-top: -10px;*/
 }
@@ -425,11 +433,15 @@
 @media ( max-width : 700px ) {
 	
 	#MainContainer{
-	display: flex; 
-	position: relative; 
-	width: 100%; 
-	height: 389px; 
+	/* float:left; */
+	top: -50px;
+	 position: relative;  
+	 min-width: 300px; 
+	/* width: 100%; */
+	height: 1000px;  
 	border: 5px solid blue;
+	margin-left: auto;
+	margin-right: auto;
 }
 	
 	#img_content {
@@ -437,41 +449,52 @@
 	}
 	
 	#leftInformation {
-		min-height: 250px;
-		min-width: 250px;
+	/* 	 min-height: 50%;
+		min-width: 600px;  */
+		height: 50%;
+		width: 100%;
+		font-size: 80%;
 		position: absolute;
 	}
 	
 	#calendar{
+	top: 550px;
+ 		/*  min-height: 50%;
+		min-width: 600px; */
+	height: 50%;
+	width: 100%;
+	border: 3px solid red;
+	/* margin-left: auto; */
 	position: absolute;
-	right: 0px;
-	min-width: 300px;
-	min-height: 300px;
-	height: 100%;
 }
 	
 	.photo #FestivalTxt{
-	font-size: 12pt;
+	font-size: 37pt;
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	}
 	
 	#click{
-	font-size: 9pt;
 	position: absolute;
 	opacity: 0;
-	left: 140px;
-	top: 90px;
+	left: 300px;
+	top: 200px;
+	font-size: 15pt;
 	
 	}
+	.showListTitle {
+	width: 10%;
+	text-align: center;
+}
 	
 	
 
 	
 	.menu {
 	position: absolute;
-	margin-top: 150px;
+	margin-top: 280px;
+	height: 50%;
 /* 	width: 70%;
 	height: 50%; */
 	
@@ -494,9 +517,8 @@
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	height: 108px;
+	height: 237px;
 	top: 0;
-	
 	
 	/*margin-top: -10px;*/
 }
@@ -515,59 +537,71 @@
 }
 }
 
-@media ( max-width : 650px ) {
-	
+@media ( max-width : 600px ) {
 	
 	#MainContainer{
-	 display: flex; 
-	flex-direction: column;  
-	 /* position: relative;   */
-	 width: 100%; 
-	height: 378px;  
+	/* float:left; */
+	top: -50px;
+	 position: relative;  
+	 min-width: 300px; 
+	/* width: 100%; */
+	height: 1000px;  
 	border: 5px solid blue;
-}
-	
-	#leftInformation {
-		min-height: 250px;
-		min-width: 250px;
-	/* 	position: absolute;  */
-		
-	}
-	
-	#calendar{
-	/*  position: absolute;  */
-	right: 0px;
-	min-width: 300px;
-	min-height: 300px;
-	height: 100%;
-	
+	margin-left: auto;
+	margin-right: auto;
 }
 	
 	#img_content {
 		display: none;
 	}
+	
+	#leftInformation {
+	/* 	 min-height: 50%;
+		min-width: 600px;  */
+		height: 50%;
+		width: 100%;
+		font-size: 50%;
+		position: absolute;
+	}
+	
+	#calendar{
+	top: 520px;
+ 		/*  min-height: 50%;
+		min-width: 600px; */
+	height: 50%;
+	width: 100%;
+	border: 3px solid red;
+	/* margin-left: auto; */
+	position: absolute;
+}
+	
 	.photo #FestivalTxt{
-	font-size: 12pt;
+	font-size: 25pt;
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	}
 	
 	#click{
-	font-size: 9pt;
 	position: absolute;
 	opacity: 0;
-	left: 140px;
-	top: 90px;
+	left: 250px;
+	top: 150px;
+	font-size: 15pt;
 	
 	}
+	.showListTitle {
+	width: 10%;
+	text-align: center;
+}
 	
 	
 
 	
 	.menu {
 	position: absolute;
-	margin-top: 140px;
+	margin-top: 230px;
+	height: 50%;
 /* 	width: 70%;
 	height: 50%; */
 	
@@ -590,10 +624,8 @@
 	overflow: hidden;
 	position: absolute;
 	width: 100%;
-	height: 108px;
+	height: 180px;
 	top: 0;
-	
-	
 	/*margin-top: -10px;*/
 }
 
@@ -610,6 +642,7 @@
 	transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 }
+
 
 /* @media ( max-width : 600px ) {
 	#img_content {
@@ -929,10 +962,10 @@ position:relative;
 	text-align: center;
 }
 
-.showListTitle {
+/* .showListTitle {
 	width: 20%;
 	text-align: center;
-}
+} */
 
 /*게시판 탭 메뉴*/
 .btnClickBoard{

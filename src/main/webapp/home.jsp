@@ -1248,7 +1248,7 @@
 <div id="MainContainer">
 
 
-	<div id="leftInformation" style="border : 5px solid red;">
+	<div id="leftInformation" style="border: 5px solid #cd0028;">
 
 		<!-- 축제정보 보러가기 영역 -->
 		<div class="photo" style="border: 1px solid blue;">
@@ -1263,7 +1263,7 @@
 
 
 		<!-- 게시판 노출 영역 -->
-		<div class="menu" style="border: 5px solid yellow; width: 100%; height: 100%;">
+		<div class="menu" style="border: 5px solid yellow; width: 100%;">
 		
 			<ul class="menu__tabs" >
 			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>전체보기</a></li>
@@ -1339,9 +1339,10 @@
 	
 	
 	<!-- 캘린더 영역 -->
-	<div id='calendar' style="border: 3px solid #cd0028;">
+	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
+	
 </div>
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
  	<table style="width: 100%; height: 30px;">
