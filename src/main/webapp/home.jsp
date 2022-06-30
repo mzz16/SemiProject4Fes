@@ -7,10 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
@@ -20,586 +19,7 @@
 <script src='mj_calendar/lib/main.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat"
 	rel="stylesheet">
-<style>
 
-/* 슬라이드 테두리 제거 */
-.bx-wrapper {
-	border: 0;
-	background: #fbfbfb;
-	box-shadow: none;
-}
-
-#addBtn {
-	display: none;
-}
-
-
-@media ( max-width : 1200px ) {
-
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-.photo span {
-	font-size: 32pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 250px;
-	bottom: 5px;
-	font-size: 13pt;
-	
-	}
-	#calendar{
-	font-size: 13pt;
-	
-	}
-	
-	.menu {
-	position: absolute;
-	top: 220px;
-	/* width: 90%;
-	height: 50%; */
-	
-	}
-	/* .menu__tabs {
-	width: 90%;
-	} */
-	
-	
- .menu__tabs li {
-	/* width: 70%; */
-	float: left;
-	margin-right: 2px;
-	}
-	
-	/*  .menu__wrapper {
-	 width: 90%;
-	 } */
-
-	
-	}
-	
-	
-/* @media ( max-width : 1150px ) {
-
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-.photo span {
-	font-size: 32pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	.menu {
-	position: absolute;
-	top: 200px;
-	/* width: 80%; */
-	/* height: 50%; */
-	
-/* 	} */
-/* 	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	
-	}
-	
-	
-	
-	 .menu__tabs {
-	width: 80%;
-	} 
-	
-	  .menu__wrapper {
-	 width: 80%;
-	 } 
-	
-	
-	} */
-
-
-@media ( max-width : 1023px ) {
-	#img_content {
-		position: fixed;
-		border: 5px solid #cd0028;
-		background: #cd0028;
-		width: 40%;
-		bottom: 0px;
-		right: 0px;
-		border-radius: 5px;
-		z-index: 3;
-		opacity: 0.9;
-	}
-	#img_content .plan_tit {
-		font-size: 50%;
-	}
-	#contain {
-		height: 40%;
-	}
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-	#calendar {
-		width: 40%;
-	font-size: 11pt;
-	
-	
-	}
-	
-	.photo span {
-	font-size: 27pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 215px;
-	bottom: 5px;
-	font-size: 11pt;
-	
-	}
-	
-	
-	.menu {
-	position: absolute;
-	top: 180px;
-	/* width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	/* .menu__tabs {
-	width: 70%;
-	} */
-	
-	 /*   .menu__wrapper {
-	 width: 70%;
-	 } */
-}
-
-@media ( max-width : 900px ) {
-	#img_content {
-		position: fixed;
-		border: 5px solid orange;
-		background: orange;
-		width: 40%;
-		bottom: 0px;
-		right: 0px;
-		border-radius: 5px;
-		z-index: 3;
-		opacity: 0.9;
-	}
-	#img_content .plan_tit {
-		font-size: 30%;
-	}
-	#contain {
-		height: 40%;
-	}
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-	#calendar {
-		width: 40%;
-		font-size: 9pt;
-	}
-	
-	.photo span {
-	font-size: 22pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 195px;
-	bottom: 5px;
-	font-size: 9pt;
-	
-	}
-	
-	
-	.menu {
-	position: absolute;
-	top: 160px;
-	
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	
-	}
-	
-	/* .menu__tabs {
-	width: 70%;
-	} */
-	
-	 /* .menu__wrapper {
-	 width: 70%;
-	 } */
-}
-
-@media ( max-width : 800px ) {
-	#img_content {
-		position: fixed;
-		border: 5px solid blue;
-		background: blue;
-		width: 40%;
-		bottom: 0px;
-		right: 0px;
-		border-radius: 5px;
-		z-index: 3;
-		opacity: 0.9;
-	}
-
-	/* 	#contain{
-	height: 40%;
-	} !!!!!!오류나면 살리기 */
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 175px;
-	bottom: 5px;
-	font-size: 7pt;
-	
-	}
-	
-	.menu {
-	position: absolute;
-	top: 140px;
-	/* width: 50%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	/* .menu__tabs {
-	width: 70%;
-	} */
-	
-	/*  .menu__wrapper {
-	 width: 70%;
-	 } */
-}
-
-@media ( max-width : 700px ) {
-	#img_content {
-		display: none;
-	}
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: red;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 145px;
-	bottom: 5px;
-	font-size: 5pt;
-	
-	}
-	
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	 
-	
-	
-	.menu {
-	position: absolute;
-	top: 120px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 150%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 120%;
-	 } 
-}
-
-
-
-@media ( max-width : 600px ) {
-	#img_content {
-		display: none;
-	}
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: orange;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 115px;
-	bottom: 5px;
-	font-size: 5pt;
-	
-	}
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	
-	.menu {
-	position: absolute;
-	top: 110px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 200%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 125%;
-	 } 
-}
-
-
-@media ( max-width : 500px ) {
-	#img_content {
-		display: none;
-	}
-	.photo span {
-	font-size: 7pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: blue;
-	}
-	
-	#click{
-	position: absolute;
-	opacity: 0;
-	left: 85px;
-	bottom: 5px;
-	font-size: 5pt;
-	
-	}
-	
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	.menu {
-	position: absolute;
-	top: 100px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 200%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 130%;
-	 } 
-}
-
-@media ( max-width : 400px ) {
-	#img_content {
-		display: none;
-	}
-	
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	.menu {
-	position: absolute;
-	top: 90px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 200%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 135%;
-	 } 
-}
-
-
-@media ( max-width : 300px ) {
-	#img_content {
-		display: none;
-	}
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	.menu {
-	position: absolute;
-	top: 80px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 200%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 140%;
-	 } 
-}
-
-
-@media ( max-width : 200px ) {
-	#img_content {
-		display: none;
-	}
-	#calendar {
-		width: 40%;
-		font-size: 7pt;
-	}
-	
-	.photo span {
-	font-size: 10pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	
-	.menu {
-	position: absolute;
-	top: 70px;
-/* 	width: 70%;
-	height: 50%; */
-	
-	}
-	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	}
-	
-	.menu__tabs {
-	width: 200%;
-	
-	}
-	
-	
-	  .menu__wrapper {
-	 width: 145%;
-	 } 
-}
-
-
-
-
-</style>
 <script type="text/javascript">
 	// 현재 창 width를 구하기
 
@@ -1355,52 +775,52 @@
 		<!-- 슬라이더 영역 -->
 		<div class="bxslider" id="slider">
 			<div>
-				<img src="dh_festival_slide_img/강북구.png">
+			<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=117"><img src="dh_festival_slide_img/강북구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/도봉구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=8"><img src="dh_festival_slide_img/도봉구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/노원구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=18"><img src="dh_festival_slide_img/노원구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/은평구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/slideBlanc.jpg">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/종로구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=2"><img src="dh_festival_slide_img/은평구.png"></a>
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/동대문구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/중랑구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/마포구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/용산구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/중구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/성동구.png">
-			</div>
-			<div>
-				<img src="dh_festival_slide_img/광진구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=77"><img src="dh_festival_slide_img/종로구.png"></a>
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/양천구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=72"><img src="dh_festival_slide_img/동대문구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=12"><img src="dh_festival_slide_img/중랑구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=73"><img src="dh_festival_slide_img/마포구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=61"><img src="dh_festival_slide_img/용산구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=22"><img src="dh_festival_slide_img/중구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=75"><img src="dh_festival_slide_img/성동구.png"></a>
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=74"><img src="dh_festival_slide_img/광진구.png"></a>
+			</div>
+			<div>
+				<img src="dh_festival_slide_img/slideBlanc.jpg">
+			</div>
+			<div>
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=1"><img src="dh_festival_slide_img/양천구.png"></a>
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
@@ -1409,28 +829,29 @@
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/금천구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=120"><img src="dh_festival_slide_img/금천구.png"></a>
 			</div>
 			<div>
 				<img src="dh_festival_slide_img/slideBlanc.jpg">
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/관악구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=59"><img src="dh_festival_slide_img/관악구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/서초구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=4"><img src="dh_festival_slide_img/서초구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/강남구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=76"><img src="dh_festival_slide_img/강남구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/송파구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=11"><img src="dh_festival_slide_img/송파구.png"></a>
 			</div>
 			<div>
-				<img src="dh_festival_slide_img/강동구.png">
+				<a href="http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no=43"><img src="dh_festival_slide_img/강동구.png"></a>
 			</div>
 		</div>
 		<!-- bxslider 닫음 -->
+		
 		<!-- 지도 영역 -->
 		<div id="img_content">
 			<!-- 텍스트 영역  -->
@@ -1575,6 +996,7 @@
 			pager : false,
 			controls : false,
 			adaptiveHeight : true,
+		    touchEnabled :false 
 		});
 	</script>
 
@@ -1823,6 +1245,8 @@
 		</span>
 	</div>
 
+<div id="MainContainer">
+
 
 	<div id="leftInformation">
 
@@ -1831,42 +1255,15 @@
 			<span id="FestivalTxt">축제정보<br> 보러가기</span> 
 			<a href='festivalHC'><img alt="축제정보" src="mj_img/sakura.jpg"
 				style="width: 100%;" id="gotoFesInfoImg">
-				<div class="glow-wrap" >
+				<div class="glow-wrap">
 					<i class="glow"></i>
 				</div></a>
 			<p id="click">→ Click me!</p>
 		</div>
 
-		<!-- 게시판 노출 영역 -->
-		<%-- <div id=showBoard style="width: 100%;">
-			<table class="showTable" >
-				<tr>
-					<td class=showBoardTitle colspan="2">게시판</td>
-					<td class="gotoBoard" colspan="1"><a
-						onclick="location.href='BoardViewHC?cate=all'">+ MORE</a></td>
-				</tr>
-				</table>
-				<table style="border: 1px solid gray; width: 100%;">
-					<tr class="showTbTitle">
-						<td class="showListNo">글 번호</td>
-						<td class="showListCate">카테고리</td>
-						<td class="showListTitle">제목</td>
-					</tr>
-					<c:forEach items="${boards }" var="b">
-						<tr class="showList"
-							onclick="location.href='BoardViewHC?number=${b.no}'">
-							<td class="showListNo">${b.no }</td>
-							<td class="showListCate">${b.cate }</td>
-							<td class="showListTitle">${b.title }</td>
-						</tr>
-					</c:forEach>
-			</table>
-		</div> --%>
-
-
 
 		<!-- 게시판 노출 영역 -->
-		<div class="menu">
+		<div class="menu" style="width: 100%;">
 		
 			<ul class="menu__tabs" >
 			    <li><a class="active item1" href="#item-1"><i class="fa fa-star"></i>전체보기</a></li>
@@ -1874,7 +1271,7 @@
 				<li><a class="item3" href="#item-3"><i class="fa fa-photo"></i>후기게시판</a></li>
 			</ul>
 			
-			<section class="menu__wrapper" >
+			<section class="menu__wrapper">
 
 				<table id="item-1" class="menu__item item-active"
 					style="border: 1px solid gray; width: 100%;">
@@ -1942,16 +1339,17 @@
 	
 	
 	<!-- 캘린더 영역 -->
-	<div id='calendar' style="border: 3px solid #cd0028;">
+	<div id='calendar'>
 		<a href='fesCalendarCon'> 더보기 </a>
 	</div>
-
+	
+</div>
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
-	<table style="width: 100%; height: 30px;">
+ 	<table style="width: 100%; height: 30px;">
 		<tr>
 			<td></td>
 		</tr>
-	</table>
+	</table> 
 
 </body>
 </html>

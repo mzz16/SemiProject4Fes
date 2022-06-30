@@ -105,7 +105,6 @@
             />
           </a>
         </div>
-	 
 	 </div>
 	<!-- 푸터 -->	
 		<div class="footerDiv">

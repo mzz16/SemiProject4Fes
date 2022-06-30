@@ -25,7 +25,7 @@ public class DBManager_Main {
 		// yj
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
 		//mj
-		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
+		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
 		// sw
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
 		// dh
@@ -46,9 +46,10 @@ public class DBManager_Main {
 				rs.close();
 			}
 			pstmt.close();
-		if(con != null) {
+			
+			if(con != null) {
 			con.close();
-		}
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

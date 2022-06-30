@@ -24,18 +24,22 @@
 				data-text="이전으로" style="float: right;">
 				<span>이전으로</span>
 			</button> -->
-			
-
 		</div>
-
 	</div>
+	
+	
 	<div>
 		<img class="fesInfoImg" src="${fes.mainImg }">
-	 <button onclick="history.back(-1)" title="Button push lightblue" class="buttonKR btnPush btnLightBlue">이전으로!</button>
+	 	
 	</div>
-	<div>
-		<ul class="programLink">${fes.orgLink }</ul>
+
+	<div class="buttonAndLinkDiv">
+		<div>
+			<div><ul class="programLink"> <a href=" ${fes.orgLink }">${fes.orgLink }</a></ul></div>
+			<div><button onclick="history.back(-1)" class="buttonKR btnPush btnLightBlue">이전으로!</button></div>
+		</div>
 	</div>
+		
 
 
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
