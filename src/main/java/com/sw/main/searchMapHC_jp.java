@@ -13,7 +13,7 @@ public class searchMapHC_jp extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		request.setAttribute("contentPage", "SW_mapFolder/sw_map_final.jsp");
+		request.setAttribute("contentPage", "SW_mapFolder/sw_map_final_jp.jsp");
 		
 		request.getRequestDispatcher("index_jp.jsp").forward(request, response);
 	}

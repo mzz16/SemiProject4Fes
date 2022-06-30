@@ -23,9 +23,9 @@
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #fff;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-    .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;}
-    .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;}
-    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;}
+    .span1{font-size:13pt;margin-left: 17px; text-decoration: none;margin-top:10px; color: #5085BB;}
+    .span2{font-size:13pt; margin-left: 14px; text-decoration: none; margin-top:10px; color: #5085BB;}
+    .span3{font-size:10pt; margin-left: 10px; text-decoration: none; color: gray;}
     .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px;font-weight: 600; text-align: center;}
    
    
@@ -73,7 +73,7 @@
 	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
     	markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
     
-    $.get("SW_mapFolder/mapdata.json", function(data) {
+    $.get("SW_mapFolder/mapdata_jp.json", function(data) {
         // 데이터에서 좌표 값을 가지고 마커를 표시합니다
         // 마커 클러스터러로 관리할 마커 객체는 생성할 때 지도 객체를 설정하지 않습니다
         
@@ -152,11 +152,11 @@
             detailAddr = detailAddr.replace(/ /g,"");
             var content = "<div class='wrap'>"+"<div class='info'>"+"<div class='title'>"+ position.title + "<div onclick='closeOverlay()' title='닫기'>"+"</div>"+"</div>"
             +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
-            +"<div class='desc'>"+"<div class='ellipsis'>"+position.place+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"홈페이지"+"</a>"+"</span>"+"</div>"
-            +"<div class='jibun ellipsis'>"+position.addr+"</div>"
+            +"<div class='desc'>"+"<div class='ellipsis'>"+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"ホームページ"+"</a>"+"</span>"+"</div>"
+            +"<div class='jibun ellipsis'>"+"</div>"
             +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
-            +"상세정보"+"</a>"+"</span>"
-            +"<span class='span2'>"+"<a href=https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place+">"+"길찾기"+"</a>"+"</span>"
+            +"詳細情報"+"</a>"+"</span>"
+            +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.place+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
            
 	
