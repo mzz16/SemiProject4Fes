@@ -30,7 +30,6 @@
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmV-XrdagKPY9a4DCGWgoFd28dH7su2Lg&language=ja&callback=initMap"></script>
 <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-<script src="geolocaitonMap.js"></script>
 <script type="text/javascript" src="jQuery.js"></script>
 <script type="text/javascript">
 
@@ -39,23 +38,20 @@ let map;
 let markers = [];
 let markerCluster;
 let markersAmount;
-//let geo=[];
-// 마커 좌표 리스트
 
-      let detailAddr; // 위치 검색 후 받을 변수 설정
-                // HTML5의 geolocaiton으로 사용할 수 있는지 확인
+
                 if (navigator.geolocation) {
-                    // GeoLocation을 이용해서 접속 위치를 얻어온다.
                     navigator.geolocation.getCurrentPosition(function(position){
                         let lat = position.coords.latitude, // 위도
                             lon = position.coords.longitude; // 경도
                             
-                        let detailAddr =lat+","+lon ; //마커가 표시될 위치를 geolocation 좌표로 생성
-                        alert(detailAddr);
-                                  
+                    
+							let myPosition =lat+","+lon;
+                            alert(myPosition);
                     });
                 }  
-/* let detailAddr2 =detailAddr; */
+       		
+
 
  let latlng_list =  [
 	['「街芸術キャラバン「春」', 37.54438781, 127.0374424,'서울숲',72],
@@ -141,9 +137,6 @@ function createMarkers() {
     var marker, i;
     
 
-  
-   
- 
  
     for (let i = 0; i < latlng_list.length; i++) {
   
@@ -154,12 +147,11 @@ function createMarkers() {
             maxzoom:13,
             averageCenter: true,
             
-            //minLevel: 10
+            
         })
 	
         markers.push(marker);
-       // content = '<div>'+locations[i][3]+'</div>';
-     
+    
 	
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
@@ -167,7 +159,7 @@ function createMarkers() {
               infowindow.setContent('<div>'+latlng_list[i][0]+'</div>'+'<div>'+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon_jp?m_no='+latlng_list[i][4]+">"+"상세정보"+"</a>"+'</div>');
               infowindow.open(map, marker);
           
-          	alert(detailAddr);
+          
         	}
 
            
@@ -176,9 +168,7 @@ function createMarkers() {
    
                  
     }
-    // console.log('markers')
-    // console.log(markers);
-    // Add a marker clusterer to manage the markers.
+  
     // 클러스터링
     markerCluster = new MarkerClusterer(map, markers,{
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
@@ -189,17 +179,7 @@ function createMarkers() {
         
         
     });
-    
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
 

@@ -9,24 +9,24 @@
     <style type="text/css">
     a {text-decoration:none;}
     a:visited {text-decoration: none;}
-    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Do Hyeon', sans-serif;line-height: 1.5;}
     .wrap * {padding: 0;margin: 0;}
     .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #fff;border-right: 1px solid #fff;overflow: hidden;background: #fff;}
     .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #fff;}
-    .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #fff;font-size: 18px;font-weight: bold;}
+    .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #fff;font-size: 18px;}
     .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
     .info .close:hover {cursor: pointer;}
-    .info .body {position: relative;overflow: hidden; font-weight: 600;}
+    .info .body {position: relative;overflow: hidden; }
     .info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
     .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
     .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #fff;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-    .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;}
-    .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;}
-    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;}
-    .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px;font-weight: 600; text-align: center;}
+    .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
+    .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
+    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;font-family: 'Do Hyeon', sans-serif;}
+    .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px; text-align: center;}
    
    
    
