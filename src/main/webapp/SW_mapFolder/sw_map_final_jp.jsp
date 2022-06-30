@@ -154,7 +154,7 @@
             +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
             +"<div class='desc'>"+"<div class='ellipsis'>"+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"ホームページ"+"</a>"+"</span>"+"</div>"
             +"<div class='jibun ellipsis'>"+"</div>"
-            +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
+            +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon_jp?m_no='+position.m_no+">"
             +"詳細情報"+"</a>"+"</span>"
             +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.place+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
