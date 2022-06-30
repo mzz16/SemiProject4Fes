@@ -225,9 +225,7 @@ public class YJBoardDAO {
 
 	// 글 업데이트하기.
 	public  void updateBoard(HttpServletRequest request) {
-		
 		PreparedStatement pstmt = null;
-
 		try {
 			
 			String saveDirectory = request.getServletContext().getRealPath("fileFolder");
