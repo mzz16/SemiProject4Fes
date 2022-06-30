@@ -19,16 +19,27 @@
  /* 반응형 코드 시작 */
 
 @media ( min-width : 1024px ) {
-
+#MainContainer{
+	
+	display: flex;  
+	flex-direction: column;
+	position: relative; 
+	width: 100%; 
+	height: 600px; 
+	border: 5px solid blue;
+}
+	
+	
+	
+	
+	
 	#leftInformation {
 	border : 5px solid red;
 	width: 40%;
-	/* margin-top: 50px; */
-	/* top: -50px; */
-	height: 600px;
+	height: 100%;
 	display: flex; 
     flex-direction: column;  
-	position: relative;
+	position: absolute;
 }
 	
 	#calendar {
@@ -37,7 +48,7 @@
 	font-size: 13pt;
 	position : absolute;
 	width: 50%;
-	height:97%;
+	height:100%;
 	right: 0px;
 }
 	
@@ -81,73 +92,40 @@
 	
 	
 	.menu {
-	position: relative;
-	margin-top: 50px;
-	/* width: 90%;
-	height: 50%; */
-	
+	position: absolute;
+	margin-top: 288px;
+
 	}
-	/* .menu__tabs {
-	width: 90%;
-	} */
 	
 	
   .menu__tabs li {
-	/* width: 70%; */
+	
 	float: left;
 	margin-right: 2px;
 	
 	}
 	
 	
-
-	
 	}
 	
 	
-/* @media ( max-width : 1150px ) {
-
-	#leftInformation {
-		width: 40%;
-		font-size: 50%;
-		position: relative;
-	}
-.photo span {
-	font-size: 32pt;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	}
-	.menu {
-	position: absolute;
-	top: 200px;
-	/* width: 80%; */
-	/* height: 50%; */
-	
-/* 	} */
-/* 	.menu__tabs li {
-	float: left;
-	margin-right: 2px;
-	
-	}
-	
-	
-	
-	 .menu__tabs {
-	width: 80%;
-	} 
-	
-	  .menu__wrapper {
-	 width: 80%;
-	 } 
-	
-	
-	} */
-
 
 @media ( max-width : 1023px ) {
+	#MainContainer{
 	
-
+	display: flex; 
+	position: relative; 
+	width: 100%; 
+	height: 460px; 
+	border: 5px solid blue;
+}
+	
+#leftInformation {
+		width: 40%;
+		height: 100%;
+		font-size: 80%;
+		position: absolute;
+	}
 	
 	#img_content {
 		position: fixed;
@@ -188,20 +166,14 @@
 	#contain {
 		height: 40%;
 	}
-	#leftInformation {
-		width: 40%;
-		height: 600px;
-		font-size: 80%;
-		position: relative;
-		
-	}
+	
 	
 
 	#calendar {
 	font-size: 11pt;
 	position : absolute;
 	width: 50%;
-	height: 79%;
+	height: 100%;
 	right: 0px;
 	}
 	
@@ -223,11 +195,9 @@
 	
 	
 	
-	.menu{
-	position: relative;
-    margin-top: 50px;
-    
-		
+	.menu {
+	position: absolute;
+	margin-top: 200px;
 	}
 /* .menu__tabs {
 	list-style: none;
@@ -251,6 +221,15 @@
 }
 
 @media ( max-width : 900px ) {
+	
+	#MainContainer{
+	display: flex; 
+	position: relative; 
+	width: 100%; 
+	height: 422px; 
+	border: 5px solid blue;
+}
+	
 	#img_content {
 		position: fixed;
 		border: 5px solid orange;
@@ -271,13 +250,13 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 60%;
-		position: relative;
+		position: absolute;
 	}
 	#calendar {
 	font-size: 9pt;
 	position : absolute;
 	width: 50%;
-	height: 70%;
+	height: 100%;
 	right: 0px;
 	}
 	
@@ -301,8 +280,8 @@
 
 	
 	.menu {
-	position:relative;
-	margin-top: 50px;
+	position: absolute;
+	margin-top: 180px;
 	
 	
 	}
@@ -343,6 +322,15 @@
 }
 
 @media ( max-width : 800px ) {
+	
+   #MainContainer{
+	display: flex; 
+	position: relative; 
+	width: 100%; 
+	height: 389px; 
+	border: 5px solid blue;
+}
+	
 	#img_content {
 		position: fixed;
 		border: 5px solid blue;
@@ -361,7 +349,7 @@
 	#leftInformation {
 		width: 40%;
 		font-size: 50%;
-		position: relative;
+		position: absolute;
 	}
 /* 	#calendar {
 		width: 40%;
@@ -371,7 +359,7 @@
 	font-size: 7pt;
 	position : absolute;
 	width: 50%;
-	height: 66%;
+	height: 100%;
 	right: 0px;
 	}
 	
@@ -393,8 +381,8 @@
 	
 	
 	.menu {
-		position:relative;
-	margin-top: 50px;
+		position: absolute;
+	margin-top: 150px;
 	/* width: 50%;
 	height: 50%; */
 	
@@ -435,6 +423,15 @@
 }
 
 @media ( max-width : 700px ) {
+	
+	#MainContainer{
+	display: flex; 
+	position: relative; 
+	width: 100%; 
+	height: 389px; 
+	border: 5px solid blue;
+}
+	
 	#img_content {
 		display: none;
 	}
@@ -442,7 +439,7 @@
 	#leftInformation {
 		min-height: 250px;
 		min-width: 250px;
-		position: relative;
+		position: absolute;
 	}
 	
 	#calendar{
@@ -450,7 +447,7 @@
 	right: 0px;
 	min-width: 300px;
 	min-height: 300px;
-	height: 64%;
+	height: 100%;
 }
 	
 	.photo #FestivalTxt{
@@ -473,8 +470,8 @@
 
 	
 	.menu {
-	position:relative;
-	margin-top: 50px;
+	position: absolute;
+	margin-top: 150px;
 /* 	width: 70%;
 	height: 50%; */
 	
@@ -519,30 +516,36 @@
 }
 
 @media ( max-width : 650px ) {
+	
+	
 	#MainContainer{
-	
-	display: flex; 
-	flex-direction: column; 
-	
-	}
-	#img_content {
-		display: none;
-	}
+	 display: flex; 
+	flex-direction: column;  
+	 /* position: relative;   */
+	 width: 100%; 
+	height: 378px;  
+	border: 5px solid blue;
+}
 	
 	#leftInformation {
 		min-height: 250px;
 		min-width: 250px;
-		position: relative;
+	/* 	position: absolute;  */
+		
 	}
 	
 	#calendar{
-	position: absolute;
+	/*  position: absolute;  */
 	right: 0px;
 	min-width: 300px;
 	min-height: 300px;
-	height: 64%;
+	height: 100%;
+	
 }
 	
+	#img_content {
+		display: none;
+	}
 	.photo #FestivalTxt{
 	font-size: 12pt;
 	position: absolute;
@@ -563,8 +566,8 @@
 
 	
 	.menu {
-	position:relative;
-	margin-top: 50px;
+	position: absolute;
+	margin-top: 140px;
 /* 	width: 70%;
 	height: 50%; */
 	
@@ -830,7 +833,7 @@ position:relative;
 .photo {
 	border : 1px solid blue;
 	/* margin-top: -40px; */
-	position: static;
+	position: absolute;
 	/*top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);*/
@@ -909,6 +912,7 @@ position:relative;
 .showTbTitle {
 	background-color: #dfdfdd;
 	text-align: center;
+	border: 3px solid #cd0028;
 }
 
 .showList {
@@ -926,7 +930,7 @@ position:relative;
 }
 
 .showListTitle {
-	width: 60%;
+	width: 20%;
 	text-align: center;
 }
 
@@ -1111,8 +1115,11 @@ html {
 
 .menu__wrapper .menu__item.item-active {
 	display: block;
+	width: 100%;
 }
-
+/* .menu__item .item-active{
+	width: 100%;
+} */
 
 /* #calendar {
 	max-width: 1100px;

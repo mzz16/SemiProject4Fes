@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, height=100">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="dh_css/FestivalSlide.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script
@@ -1245,7 +1245,7 @@
 		</span>
 	</div>
 
-<div style="display: flex; position: relative; width: 100%; height: 100%; border: 5px solid blue;" id="MainContainer">
+<div id="MainContainer">
 
 
 	<div id="leftInformation" style="border : 5px solid red;">
