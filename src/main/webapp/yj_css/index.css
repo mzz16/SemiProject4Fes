@@ -4,12 +4,17 @@
 	#menu>a {
 		font-size: 23pt;
 	}
+
+
+
+
 }
 
 @media ( max-width : 1023px ) {
 	#menu>a {
 		font-size: 22pt;
 	}
+
 }
 
 @media ( max-width : 900px ) {
