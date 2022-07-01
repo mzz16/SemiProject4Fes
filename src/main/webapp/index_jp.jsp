@@ -29,7 +29,7 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
 	rel="stylesheet">
-<style type="text/css">
+<!-- <style type="text/css">
 @media ( min-width : 1111px) {
 	#menu>a {
 		font-size: 23pt;
@@ -54,7 +54,7 @@
 	}
 }
 </style>
-
+ -->
 
 
 </head>
