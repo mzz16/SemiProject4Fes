@@ -7,26 +7,26 @@
     <meta charset="utf-8">
     
     <style type="text/css">
-    a {text-decoration:none;}
+   a {text-decoration:none;}
     a:visited {text-decoration: none;}
-    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 15px; font-weight:600; font-family: 'Do Hyeon', sans-serif;line-height: 1.5;}
     .wrap * {padding: 0;margin: 0;}
     .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #fff;border-right: 1px solid #fff;overflow: hidden;background: #fff;}
     .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #fff;}
-    .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #fff;font-size: 18px;font-weight: bold;}
+    .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #fff;font-size: 18px;}
     .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
     .info .close:hover {cursor: pointer;}
-    .info .body {position: relative;overflow: hidden; font-weight: 600;}
+    .info .body {position: relative;overflow: hidden; }
     .info .desc {position: relative;margin: 13px 0 0 90px;height: 75px;}
     .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
     .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #fff;color: #888;overflow: hidden;}
     .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
-    .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;}
-    .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;}
-    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;}
-    .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px;font-weight: 600; text-align: center;}
+    .span1{font-size:13pt;margin-left: 6px; text-decoration: none; color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
+    .span2{font-size:13pt; margin-left: 14px; text-decoration: none;color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
+    .span3{font-size:9pt; margin-left: 10px; text-decoration: none; color: gray;font-family: 'Do Hyeon', sans-serif;}
+    .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px; text-align: center;}
    
    
    
@@ -73,7 +73,7 @@
 	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
     	markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
     
-    $.get("SW_mapFolder/mapdata.json", function(data) {
+    $.get("SW_mapFolder/mapdata_jp.json", function(data) {
         // 데이터에서 좌표 값을 가지고 마커를 표시합니다
         // 마커 클러스터러로 관리할 마커 객체는 생성할 때 지도 객체를 설정하지 않습니다
         
@@ -127,7 +127,7 @@
                             lon = position.coords.longitude; // 경도
                             
                         var locPostion = new kakao.maps.LatLng(lat, lon), //마커가 표시될 위치를 geolocation 좌표로 생성합니다.
-                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다.
+                            message = '<div style="padding:5px;">この位置にいらっしゃいますか?!</div>'; // 인포윈도우에 표시될 내용입니다.
                             
                         // 주소-좌표 변환 객체를 생성합니다
                         
@@ -150,16 +150,23 @@
             kakao.maps.event.addListener(marker, 'click', function () {
             	
             detailAddr = detailAddr.replace(/ /g,"");
+            /* var content = "<div class='wrap'>"+"<div class='info'>"+"<div class='title'>"+ position.title + "<div onclick='closeOverlay()' title='닫기'>"+"</div>"+"</div>"
+            +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
+            +"<div class='desc'>"+"<div class='ellipsis'>"+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"ホームページ"+"</a>"+"</span>"+"</div>"
+            +"<div class='jibun ellipsis'>"+"</div>"
+            +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon_jp?m_no='+position.m_no+">"
+            +"詳細情報"+"</a>"+"</span>"
+            +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.addr+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
+            +"</div>"+"</div>"+"</div>"+"</div>"+"</div>"; */
+           
             var content = "<div class='wrap'>"+"<div class='info'>"+"<div class='title'>"+ position.title + "<div onclick='closeOverlay()' title='닫기'>"+"</div>"+"</div>"
             +"<div class='body'>"+"<div class='img'>"+"<img src="+position.img+" width='73' height='70'>"+"</div>"
-            +"<div class='desc'>"+"<div class='ellipsis'>"+position.place+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"홈페이지"+"</a>"+"</span>"+"</div>"
-            +"<div class='jibun ellipsis'>"+position.addr+"</div>"
-            +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
-            +"상세정보"+"</a>"+"</span>"
-            +"<span class='span2'>"+"<a href=https://map.kakao.com/?sName="+detailAddr+"&eName="+position.place+">"+"길찾기"+"</a>"+"</span>"
+            +"<div class='desc'>"+"<div class='ellipsis'>"+position.place+"</div>"
+            +"<div class='jibun ellipsis'>"+"<span class='span3'>"+"<a href="+position.hp +" target ='_blank'>"+"ホームページ"+"</a>"+"</span>"+"</div>"
+            +"<div>"+"<span class='span1'>"+"<a href="+'http://localhost:8080/semiPro_Team4/festivalInfoCon?m_no='+position.m_no+">"
+            +"詳細情報"+"</a>"+"</span>"
+            +"<span class='span2'>"+"<a href="+"https://www.google.com/maps/dir/"+detailAddr+"/"+position.addr+"?hl=ja"+">"+"ルート検索"+"</a>"+"</span>"
             +"</div>"+"</div>"+"</div>"+"</div>"+"</div>";
-           
-	
           //  alert(detailAddr);
           //  alert(position.place);
                          

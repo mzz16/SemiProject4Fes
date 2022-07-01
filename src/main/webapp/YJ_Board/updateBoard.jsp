@@ -45,8 +45,8 @@
 		
 		<!-- 사진첨부(게시판) -->
 		<div id="BoardImageDiv">
-			<div>사진첨부 <input name="fName" type="file"></div>
-			<div>갱신이 없을 시, 기존 이미지가 적용됩니다.</div>
+			<div>사진첨부<input name="fName" type="file"></div>
+			<div> 갱신이 없을 시, 기존 이미지가 적용됩니다.</div>
 		</div>	
 		
 		<!-- 비밀번호 입력 -->

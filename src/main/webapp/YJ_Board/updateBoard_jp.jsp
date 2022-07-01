@@ -46,7 +46,7 @@
 		<!-- 사진첨부(게시판) -->
 		<div id="BoardImageDiv">
 			<div>イメージ添付 <input name="fName" type="file"></div>
-			<div>更新がない場合、既存の画像が適用されます。</div>
+			<div> 更新がない場合、既存の画像が適用されます。</div>
 		</div>	
 		
 		<!-- 비밀번호 입력 -->
@@ -61,16 +61,6 @@
 		</div>
 	</div>
 </form>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
