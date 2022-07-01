@@ -1194,18 +1194,14 @@
 				attributeFilter : [ 'style' ]
 			});
 
-		}); // function 닫음
-
-		/* let ss = $("#slider");
-		$(ss).csschange(function() {
-		let child = $(ss).children();
-		$(child).each(function () {
-			console.log($(child).attr("aria-hidden"));
-		});
-			
+		}); 
 		
 		
-		}); */
+		
+		
+		
+		
+		
 	</script>
 	<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   
