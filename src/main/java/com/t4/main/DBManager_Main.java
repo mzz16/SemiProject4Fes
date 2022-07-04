@@ -24,7 +24,11 @@ public class DBManager_Main {
 	public Connection connect() {
 		// yj
 		// String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=/Users/allmight/eclipse-workspace/OracleWallet/Wallet_DB202204301707";
+<<<<<<< HEAD
 		//mj
+=======
+		// mj
+>>>>>>> 6202afa862fa863dbee1cb851e254455aefe7e31
 		String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/mj/Wallet_DB202204301707";
 		// sw
 		//String url = "jdbc:oracle:thin:@db202204301707_medium?TNS_ADMIN=C:/siwonjava/Wallet_DB202204301707";
