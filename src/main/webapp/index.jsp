@@ -30,9 +30,9 @@
 
 <body class="color-change-4x" >
 
-<div class="header_index" >
+<div class="header_index">
 <!-- Google 번역 -->
-<div id="google_translate_element" class="hd_lang"></div>
+<div id="google_translate_element" class="hd_lang" ></div>
 
 <!-- 사이트 언어변경 -->
 <div class="button_container">

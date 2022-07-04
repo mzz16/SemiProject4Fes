@@ -1,94 +1,560 @@
 @charset "UTF-8";
 
-#fesInfo {
-	width: 750px;
-	height: 330px;
-	background-color: white;
-	float: left;
-	border: 1px;
-	margin-top: 20px;
-	margin-left: 20px;
-	border-radius: 35px;
-}
+@media ( min-width : 1201px ) {
+	
+	#container {
+		position: relative;
+		/* border: 5px solid black; */
+		width: 100%;
+		height: 500px;
+		margin-top: 3%;
+	}
+	#fesInfo {
+	/* 	border: 3px solid #cd0028; */
+		position: absolute;
+		width: auto;
+		height: auto;
+		background-color: white;
+		/* float: left; */
+		/* 	border: 1px; */
+		margin-top: 20px;
+		margin-left: 20px;
+		padding-right: 100px;
+		padding-bottom: 32px;
+		border-radius: 35px;
+	}
+	.fesInfoTitle {
+		text-align: left;
+		font-size: 25pt;
+		margin-top: 6%;
+		margin-bottom: 6%;
+		margin-left: 20px;
+	}
+	.fesInfoTitle li {
+		font-size: 15pt;
+	}
+	.fesInfoTitle ul li {
+		list-style-type: square;
+	}
+	
+	
+	
+	.fesInfoImg {
+		/* border: 3px solid blue; */
+		position: absolute;
+		width: auto;
+		height: auto;
+		/* min-height: 65%; */
+	    /* height: auto; */
+		/* float: right; */
+		/* text-align: center; */
+		margin-top: 20px;
+		margin-right: 20px;
+		right: 0;
+	}
+	.programLink {
+	/* 	border: 3px solid orange; */
+		position: absolute;
+		/* float: left; */
+		/*margin-top: 50px;*/
+		color: gray;
+		text-align: left;
+		width: 70%;
+		font-size: 7pt;
+		display: inline-flex;
+		margin-top: 350px;
+		left: 0;
+	}
+	.buttonKR {
+		cursor: pointer;
+		/* border: 3px solid purple; */
+		position: absolute;
+		display: inline-block;
+		margin: 20px;
+		/* float: right; */
+		width: 10%;
+		padding: 0;
+		/*margin: 30px 20px 10px 0;*/
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+		right: 0;
+		margin-top: 370px;
+		font-size: 10pt;
+	}
+	.btnLightBlue {
+		background: #78c7d2;
+	}
+	.btnLightBlue.btnPush {
+		box-shadow: 0px 5px 0px 0px #1E8185;
+	}
+	.buttonJP {
+		display: block;
+		position: relative;
+		float: right;
+		width: 120px;
+		padding: 0;
+		margin: 30px 20px 10px 0;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+	}
+	.btnLightRose {
+		background: #f4acb7;
+	}
+	.btnLightRose.btnPush {
+		box-shadow: 0px 5px 0px 0px #ef476f;
+	}
+	
+	}   /* min-width 1201 닫음 */
+	
+	
+@media ( max-width : 1200px ) {
+	
+	#container {
+		position: relative;
+	/* 	border: 5px solid black; */
+		width: 100%;
+		height: 400px;
+		margin-top: 3%;
+	}
+	#fesInfo {
+	/* 	border: 3px solid #cd0028; */
+		position: absolute;
+		width: 60%;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 20px;
+	   /*  padding-right: 300px;  */
+		/* padding-bottom: 17px;  */
+		border-radius: 35px;
+	/* 	color: #cd0028; */
+		
+	}
+	.fesInfoTitle {
+		text-align: left;
+		font-size: 20pt;
+		/* margin-top: 20px;
+		margin-left: 20px; */
+		margin: 20px;
+	}
+	.fesInfoTitle li {
+		font-size: 12pt;
+	}
+	.fesInfoTitle ul li {
+		list-style-type: square;
+	}
+	.fesInfoImg {
+		/* border: 3px solid blue; */
+		position: absolute;
+		width: 23%;
+		/* height: 65%; */
+		/* float: right; */
+		text-align: center;
+		margin-top: 20px;
+		margin-right: 20px;
+		right: 0;
+	}
+	.programLink {
+		/* border: 3px solid orange; */
+		position: absolute;
+		/* float: left; */
+		/*margin-top: 50px;*/
+		color: gray;
+		text-align: left;
+		width: 70%;
+		font-size: 7pt;
+		display: inline-flex;
+		margin-top: 250px;
+		left: 0;
+	}
+	.buttonKR {
+		cursor: pointer;
+		/* border: 3px solid purple; */
+		position: absolute;
+		display: inline-block;
+		margin: 20px;
+		/* float: right; */
+		width: 10%;
+		padding: 0;
+		/*margin: 30px 20px 10px 0;*/
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+		right: 0;
+		margin-top: 300px;
+		font-size: 9pt;
+	}
+	.btnLightBlue {
+		background: #78c7d2;
+	}
+	.btnLightBlue.btnPush {
+		box-shadow: 0px 5px 0px 0px #1E8185;
+	}
+	.buttonJP {
+		display: block;
+		position: relative;
+		float: right;
+		width: 120px;
+		padding: 0;
+		margin: 30px 20px 10px 0;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+	}
+	.btnLightRose {
+		background: #f4acb7;
+	}
+	.btnLightRose.btnPush {
+		box-shadow: 0px 5px 0px 0px #ef476f;
+	}
+	
+	}   /* max-width 1200 닫음 */
+	
+	
+@media ( max-width : 1000px ) {
+	
+	#container {
+		position: relative;
+	/* 	border: 5px solid black; */
+		width: 100%;
+		height: 300px;
+		margin-top: 3%;
+	}
+	#fesInfo {
+		/* border: 3px solid #cd0028; */
+		position: absolute;
+		width: 60%;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 20px;
+	   /*  padding-right: 300px;  */
+		/* padding-bottom: 17px;  */
+		border-radius: 35px;
+		/* color: blue;
+		 */
+	}
+	.fesInfoTitle {
+		text-align: left;
+		font-size: 15pt;
+		/* margin-top: 20px;
+		margin-left: 20px; */
+		margin: 20px;
+	}
+	.fesInfoTitle li {
+		font-size: 9pt;
+	}
+	.fesInfoTitle ul li {
+		list-style-type: square;
+	}
+	.fesInfoImg {
+	/* 	border: 3px solid blue; */
+		position: absolute;
+		width: 23%;
+		/* height: 65%; */
+		/* float: right; */
+		text-align: center;
+		margin-top: 20px;
+		margin-right: 20px;
+		right: 0;
+	}
+	.programLink {
+	/* 	border: 3px solid orange; */
+		position: absolute;
+		/* float: left; */
+		/*margin-top: 50px;*/
+		color: gray;
+		text-align: left;
+		width: 70%;
+		font-size: 7pt;
+		display: inline-flex;
+		margin-top: 200px;
+		left: 0;
+	}
+	.buttonKR {
+		cursor: pointer;
+	/* 	border: 3px solid purple; */
+		position: absolute;
+		display: inline-block;
+		margin: 20px;
+		/* float: right; */
+		width: 10%;
+		padding: 0;
+		/*margin: 30px 20px 10px 0;*/
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+		right: 0;
+		margin-top: 250px;
+		font-size: 8pt;
+	}
+	.btnLightBlue {
+		background: #78c7d2;
+	}
+	.btnLightBlue.btnPush {
+		box-shadow: 0px 5px 0px 0px #1E8185;
+	}
+	.buttonJP {
+		display: block;
+		position: relative;
+		float: right;
+		width: 120px;
+		padding: 0;
+		margin: 30px 20px 10px 0;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+	}
+	.btnLightRose {
+		background: #f4acb7;
+	}
+	.btnLightRose.btnPush {
+		box-shadow: 0px 5px 0px 0px #ef476f;
+	}
+	
+	}   /* max-width 1200 닫음 */
+	
+	
+	
+@media ( max-width : 800px ) {
+	
+	#container {
+		position: relative;
+		/* border: 5px solid black; */
+		width: 100%;
+		height: 250px;
+		margin-top: 3%;
+	}
+	#fesInfo {
+		/* border: 3px solid #cd0028; */
+		position: absolute;
+		width: 60%;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 20px;
+	   /*  padding-right: 300px;  */
+		/* padding-bottom: 17px;  */
+		border-radius: 35px;
+		/* color: green; */
+		
+	}
+	.fesInfoTitle {
+		text-align: left;
+		font-size: 12pt;
+		/* margin-top: 20px;
+		margin-left: 20px; */
+		margin: 20px;
+	}
+	.fesInfoTitle li {
+		font-size: 7pt;
+	}
+	.fesInfoTitle ul li {
+		list-style-type: square;
+	}
+	.fesInfoImg {
+		/* border: 3px solid blue; */
+		position: absolute;
+		width: 23%;
+		/* height: 65%; */
+		/* float: right; */
+		text-align: center;
+		margin-top: 20px;
+		margin-right: 20px;
+		right: 0;
+	}
+	.programLink {
+		/* border: 3px solid orange; */
+		position: absolute;
+		/* float: left; */
+		/*margin-top: 50px;*/
+		color: gray;
+		text-align: left;
+		width: 70%;
+		font-size: 5pt;
+		display: inline-flex;
+		margin-top: 180px;
+		left: 0;
+	}
+	.buttonKR {
+		cursor: pointer;
+		/* border: 3px solid purple; */
+		position: absolute;
+		display: inline-block;
+		margin: 20px;
+		/* float: right; */
+		width: 10%;
+		padding: 0;
+		/*margin: 30px 20px 10px 0;*/
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+		right: 0;
+		margin-top: 210px;
+		font-size: 7pt;
+	}
+	.btnLightBlue {
+		background: #78c7d2;
+	}
+	.btnLightBlue.btnPush {
+		box-shadow: 0px 5px 0px 0px #1E8185;
+	}
+	.buttonJP {
+		display: block;
+		position: relative;
+		float: right;
+		width: 120px;
+		padding: 0;
+		margin: 30px 20px 10px 0;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+	}
+	.btnLightRose {
+		background: #f4acb7;
+	}
+	.btnLightRose.btnPush {
+		box-shadow: 0px 5px 0px 0px #ef476f;
+	}
+	
+	}   /* max-width 1200 닫음 */
+@media ( max-width : 600px ) {
+	
+	#container {
+		position: relative;
+	/* 	border: 5px solid black; */
+		min-width: 400px;
+		height: 200px;
+		margin-top: 3%;
+	}
+	#fesInfo {
+	/* 	border: 3px solid #cd0028; */
+		position: absolute;
+		width: 60%;
+		height:100px;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 20px;
+	   /*  padding-right: 300px;  */
+		/* padding-bottom: 17px;  */
+		border-radius: 35px;
+		/* color: green; */
+		
+	}
+	.fesInfoTitle {
+		text-align: left;
+		font-size: 7pt;
+		/* margin-top: 20px;
+		margin-left: 20px; */
+		margin: 10px;
+	}
+	.fesInfoTitle li {
+		font-size: 5pt;
+	}
+	.fesInfoTitle ul li {
+		list-style-type: square;
+	}
+	.fesInfoImg {
+		/* border: 3px solid blue; */
+		position: absolute;
+		width: 23%;
+		/* height: 65%; */
+		/* float: right; */
+		text-align: center;
+		margin-top: 20px;
+		margin-right: 20px;
+		right: 0;
+	}
+	.programLink {
+	/* 	border: 3px solid orange; */
+		position: absolute;
+		/* float: left; */
+		/*margin-top: 50px;*/
+		color: gray;
+		text-align: left;
+		width: 70%;
+		font-size: 5pt;
+		display: inline-flex;
+		margin-top: 140px;
+		left: 0;
+	}
+	.buttonKR {
+		cursor: pointer;
+	/* 	border: 3px solid purple; */
+		position: absolute;
+		display: inline-block;
+		margin: 20px;
+		/* float: right; */
+		min-width: 50px;
+		height: 30px;
+		padding: 0;
+		/*margin: 30px 20px 10px 0;*/
+		font-weight: 600;
+		text-align: center;
+		line-height: 0px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+		right: 0;
+		margin-top: 150px;
+		font-size: 6pt;
+	}
+	.btnLightBlue {
+		background: #78c7d2;
+	}
+	.btnLightBlue.btnPush {
+		box-shadow: 0px 5px 0px 0px #1E8185;
+	}
+	.buttonJP {
+		display: block;
+		position: relative;
+		float: right;
+		width: 120px;
+		padding: 0;
+		margin: 30px 20px 10px 0;
+		font-weight: 600;
+		text-align: center;
+		line-height: 50px;
+		color: #FFF;
+		border-radius: 5px;
+		transition: all 0.2s;
+	}
+	.btnLightRose {
+		background: #f4acb7;
+	}
+	.btnLightRose.btnPush {
+		box-shadow: 0px 5px 0px 0px #ef476f;
+	}
+	
+	}   /* max-width 1200 닫음 */
 
-.fesInfoTitle {
-	text-align: left;
-	font-size: 25pt;
-	margin-top: 20px;
-	margin-left: 20px;
-}
 
-.fesInfoTitle li {
-	font-size: 15pt;
-}
 
-.fesInfoTitle ul li {
-	list-style-type: square;
-}
 
-.fesInfoImg {
-	width: 330px;
-	float: right;
-	text-align: center;
-	margin-top: 20px;
-	margin-right: 20px;
-}
 
-.programLink {
-	float: left;
-	/*margin-top: 50px;*/
-	color: gray;
-	text-align: left;
-	width: 70%;
-	font-size: 7pt;
-	display: inline-flex;
-}
 
-.buttonKR {
-	position: relative;
-	display: inline-block;
-	margin: 20px;
-	position: relative;
-	float: right;
-	width: 10%;
-	padding: 0;
-	/*margin: 30px 20px 10px 0;*/
-	font-weight: 600;
-	text-align: center;
-	line-height: 50px;
-	color: #FFF;
-	border-radius: 5px;
-	transition: all 0.2s;
-	/*position: absolute;*/
-}
 
-.btnLightBlue {
-	background: #78c7d2;
-}
 
-.btnLightBlue.btnPush {
-	box-shadow: 0px 5px 0px 0px #1E8185;
-}
-
-.buttonJP {
-	display: block;
-	position: relative;
-	float: right;
-	width: 120px;
-	padding: 0;
-	margin: 30px 20px 10px 0;
-	font-weight: 600;
-	text-align: center;
-	line-height: 50px;
-	color: #FFF;
-	border-radius: 5px;
-	transition: all 0.2s;
-}
-
-.btnLightRose {
-	background: #f4acb7;
-}
-
-.btnLightRose.btnPush {
-	box-shadow: 0px 5px 0px 0px #ef476f;
-}

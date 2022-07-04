@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="mj_fesInfo_board/css/fesInfoDeco.css">
 </head>
 <body>
+<div id="container">
 
 	<div id="fesInfo">
 		<div class="fesInfoTitle">
@@ -40,7 +41,7 @@
 		</div>
 	</div>
 		
-
+</div>
 
 	<!-- 날씨 위젯이랑 딱 달라붙는 이슈 해결을 위해 만든 빈 테이블 -->
 	<table style="width: 100%; height: 20px;">
