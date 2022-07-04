@@ -4,13 +4,13 @@
 	
 	#container {
 		position: relative;
-		border: 5px solid black;
+		/* border: 5px solid black; */
 		width: 100%;
 		height: 500px;
 		margin-top: 3%;
 	}
 	#fesInfo {
-		border: 3px solid #cd0028;
+	/* 	border: 3px solid #cd0028; */
 		position: absolute;
 		width: auto;
 		height: auto;
@@ -40,7 +40,7 @@
 	
 	
 	.fesInfoImg {
-		border: 3px solid blue;
+		/* border: 3px solid blue; */
 		position: absolute;
 		width: auto;
 		height: auto;
@@ -53,7 +53,7 @@
 		right: 0;
 	}
 	.programLink {
-		border: 3px solid orange;
+	/* 	border: 3px solid orange; */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -67,7 +67,7 @@
 	}
 	.buttonKR {
 		cursor: pointer;
-		border: 3px solid purple;
+		/* border: 3px solid purple; */
 		position: absolute;
 		display: inline-block;
 		margin: 20px;
@@ -119,13 +119,13 @@
 	
 	#container {
 		position: relative;
-		border: 5px solid black;
+	/* 	border: 5px solid black; */
 		width: 100%;
 		height: 400px;
 		margin-top: 3%;
 	}
 	#fesInfo {
-		border: 3px solid #cd0028;
+	/* 	border: 3px solid #cd0028; */
 		position: absolute;
 		width: 60%;
 		background-color: white;
@@ -134,7 +134,7 @@
 	   /*  padding-right: 300px;  */
 		/* padding-bottom: 17px;  */
 		border-radius: 35px;
-		color: #cd0028;
+	/* 	color: #cd0028; */
 		
 	}
 	.fesInfoTitle {
@@ -151,7 +151,7 @@
 		list-style-type: square;
 	}
 	.fesInfoImg {
-		border: 3px solid blue;
+		/* border: 3px solid blue; */
 		position: absolute;
 		width: 23%;
 		/* height: 65%; */
@@ -162,7 +162,7 @@
 		right: 0;
 	}
 	.programLink {
-		border: 3px solid orange;
+		/* border: 3px solid orange; */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -176,7 +176,7 @@
 	}
 	.buttonKR {
 		cursor: pointer;
-		border: 3px solid purple;
+		/* border: 3px solid purple; */
 		position: absolute;
 		display: inline-block;
 		margin: 20px;
@@ -228,13 +228,13 @@
 	
 	#container {
 		position: relative;
-		border: 5px solid black;
+	/* 	border: 5px solid black; */
 		width: 100%;
 		height: 300px;
 		margin-top: 3%;
 	}
 	#fesInfo {
-		border: 3px solid #cd0028;
+		/* border: 3px solid #cd0028; */
 		position: absolute;
 		width: 60%;
 		background-color: white;
@@ -243,8 +243,8 @@
 	   /*  padding-right: 300px;  */
 		/* padding-bottom: 17px;  */
 		border-radius: 35px;
-		color: blue;
-		
+		/* color: blue;
+		 */
 	}
 	.fesInfoTitle {
 		text-align: left;
@@ -260,7 +260,7 @@
 		list-style-type: square;
 	}
 	.fesInfoImg {
-		border: 3px solid blue;
+	/* 	border: 3px solid blue; */
 		position: absolute;
 		width: 23%;
 		/* height: 65%; */
@@ -271,7 +271,7 @@
 		right: 0;
 	}
 	.programLink {
-		border: 3px solid orange;
+	/* 	border: 3px solid orange; */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -285,7 +285,7 @@
 	}
 	.buttonKR {
 		cursor: pointer;
-		border: 3px solid purple;
+	/* 	border: 3px solid purple; */
 		position: absolute;
 		display: inline-block;
 		margin: 20px;
@@ -338,13 +338,13 @@
 	
 	#container {
 		position: relative;
-		border: 5px solid black;
+		/* border: 5px solid black; */
 		width: 100%;
 		height: 250px;
 		margin-top: 3%;
 	}
 	#fesInfo {
-		border: 3px solid #cd0028;
+		/* border: 3px solid #cd0028; */
 		position: absolute;
 		width: 60%;
 		background-color: white;
@@ -353,7 +353,7 @@
 	   /*  padding-right: 300px;  */
 		/* padding-bottom: 17px;  */
 		border-radius: 35px;
-		color: green;
+		/* color: green; */
 		
 	}
 	.fesInfoTitle {
@@ -370,7 +370,7 @@
 		list-style-type: square;
 	}
 	.fesInfoImg {
-		border: 3px solid blue;
+		/* border: 3px solid blue; */
 		position: absolute;
 		width: 23%;
 		/* height: 65%; */
@@ -381,7 +381,7 @@
 		right: 0;
 	}
 	.programLink {
-		border: 3px solid orange;
+		/* border: 3px solid orange; */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -395,7 +395,7 @@
 	}
 	.buttonKR {
 		cursor: pointer;
-		border: 3px solid purple;
+		/* border: 3px solid purple; */
 		position: absolute;
 		display: inline-block;
 		margin: 20px;
@@ -445,13 +445,13 @@
 	
 	#container {
 		position: relative;
-		border: 5px solid black;
+	/* 	border: 5px solid black; */
 		min-width: 400px;
 		height: 200px;
 		margin-top: 3%;
 	}
 	#fesInfo {
-		border: 3px solid #cd0028;
+	/* 	border: 3px solid #cd0028; */
 		position: absolute;
 		width: 60%;
 		height:100px;
@@ -461,7 +461,7 @@
 	   /*  padding-right: 300px;  */
 		/* padding-bottom: 17px;  */
 		border-radius: 35px;
-		color: green;
+		/* color: green; */
 		
 	}
 	.fesInfoTitle {
@@ -478,7 +478,7 @@
 		list-style-type: square;
 	}
 	.fesInfoImg {
-		border: 3px solid blue;
+		/* border: 3px solid blue; */
 		position: absolute;
 		width: 23%;
 		/* height: 65%; */
@@ -489,7 +489,7 @@
 		right: 0;
 	}
 	.programLink {
-		border: 3px solid orange;
+	/* 	border: 3px solid orange; */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -503,23 +503,23 @@
 	}
 	.buttonKR {
 		cursor: pointer;
-		border: 3px solid purple;
+	/* 	border: 3px solid purple; */
 		position: absolute;
 		display: inline-block;
 		margin: 20px;
 		/* float: right; */
 		min-width: 50px;
-		height: auto;
+		height: 30px;
 		padding: 0;
 		/*margin: 30px 20px 10px 0;*/
 		font-weight: 600;
 		text-align: center;
-		line-height: 50px;
+		line-height: 0px;
 		color: #FFF;
 		border-radius: 5px;
 		transition: all 0.2s;
 		right: 0;
-		margin-top: 140px;
+		margin-top: 150px;
 		font-size: 6pt;
 	}
 	.btnLightBlue {
