@@ -12,7 +12,7 @@
 	#fesInfo {
 	/* 	border: 3px solid #cd0028; */
 		position: absolute;
-		width: auto;
+		width: 50%;
 		height: auto;
 		background-color: white;
 		/* float: left; */
@@ -53,7 +53,7 @@
 		right: 0;
 	}
 	.programLink {
-	/* 	border: 3px solid orange; */
+	 	/* border: 3px solid orange;  */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -62,7 +62,7 @@
 		width: 70%;
 		font-size: 7pt;
 		display: inline-flex;
-		margin-top: 350px;
+		margin-top: 400px;
 		left: 0;
 	}
 	.buttonKR {
@@ -82,7 +82,7 @@
 		border-radius: 5px;
 		transition: all 0.2s;
 		right: 0;
-		margin-top: 370px;
+		margin-top: 350px;
 		font-size: 10pt;
 	}
 	.btnLightBlue {
@@ -162,7 +162,7 @@
 		right: 0;
 	}
 	.programLink {
-		/* border: 3px solid orange; */
+		/*  border: 3px solid orange;  */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -271,7 +271,7 @@
 		right: 0;
 	}
 	.programLink {
-	/* 	border: 3px solid orange; */
+	 	/* border: 3px solid orange;  */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
@@ -381,14 +381,14 @@
 		right: 0;
 	}
 	.programLink {
-		/* border: 3px solid orange; */
+		/*  border: 3px solid orange; */ 
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
 		color: gray;
 		text-align: left;
 		width: 70%;
-		font-size: 5pt;
+		font-size: 7pt;
 		display: inline-flex;
 		margin-top: 180px;
 		left: 0;
@@ -454,7 +454,7 @@
 	/* 	border: 3px solid #cd0028; */
 		position: absolute;
 		width: 60%;
-		height:100px;
+		height:150px;
 		background-color: white;
 		margin-top: 20px;
 		margin-left: 20px;
@@ -471,8 +471,16 @@
 		margin-left: 20px; */
 		margin: 10px;
 	}
+	
+/* 	.fesInfoTitle ul  {
+		margin-top: -10px;
+	} */
+	
 	.fesInfoTitle li {
 		font-size: 5pt;
+	}
+	.fesInfoTitle ul{
+		margin-left: -20px;
 	}
 	.fesInfoTitle ul li {
 		list-style-type: square;
@@ -489,16 +497,16 @@
 		right: 0;
 	}
 	.programLink {
-	/* 	border: 3px solid orange; */
+	 	/* border: 3px solid orange;  */
 		position: absolute;
 		/* float: left; */
 		/*margin-top: 50px;*/
 		color: gray;
 		text-align: left;
 		width: 70%;
-		font-size: 5pt;
+		font-size: 7pt;
 		display: inline-flex;
-		margin-top: 140px;
+		margin-top: 180px;
 		left: 0;
 	}
 	.buttonKR {
@@ -519,7 +527,7 @@
 		border-radius: 5px;
 		transition: all 0.2s;
 		right: 0;
-		margin-top: 150px;
+		margin-top: 130px;
 		font-size: 6pt;
 	}
 	.btnLightBlue {
