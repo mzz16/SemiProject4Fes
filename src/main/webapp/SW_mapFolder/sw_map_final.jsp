@@ -9,7 +9,7 @@
     <style type="text/css">
     a {text-decoration:none;}
     a:visited {text-decoration: none;}
-    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Do Hyeon', sans-serif;line-height: 1.5;}
+    .wrap {text-decoration:none; position: absolute;left: 0;bottom: 60px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 13px;font-family: 'Do Hyeon', sans-serif;line-height: 1.5;}
     .wrap * {padding: 0;margin: 0;}
     .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #fff;border-right: 1px solid #fff;overflow: hidden;background: #fff;}
     .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #fff;}
@@ -25,7 +25,7 @@
     .info .link {color: #5085BB;}
     .span1{font-size:13pt;margin-left: 20px; text-decoration: none; color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
     .span2{font-size:13pt; margin-left: 25px; text-decoration: none;color: #5085BB;font-family: 'Do Hyeon', sans-serif;}
-    .span3{font-size:8pt; margin-left: 10px; text-decoration: none; color: gray;font-family: 'Do Hyeon', sans-serif;}
+    .span3{font-size:9pt; margin-left: 10px; text-decoration: none; color: gray;font-family: 'Do Hyeon', sans-serif;}
     .infocontent{padding: 10px 0 0 10px;height: 20px;font-size: 11px; text-align: center;}
    
    
